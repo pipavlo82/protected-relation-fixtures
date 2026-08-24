@@ -79,6 +79,14 @@ Current state: **benchmark seed / methodology nucleus**.
 
 This repo already has a coherent starter corpus and framing, but it is still early-stage. The next expected steps are better canonical fixture formatting, clearer benchmark metadata, and eventual vectors/tests/adapters.
 
+## Relation to TSEI, ReceiptOS, and Chronicle-style systems
+
+- **TSEI**: this repo is a pressure-test lane for cases where preserved projections can tempt a verifier into overclaiming preserved semantics.
+- **ReceiptOS**: this repo can serve as an adversarial fixture corpus for independently recomputable receipt/verifier paths that must fail closed on false equivalence.
+- **Chronicle-style systems**: this repo is relevant wherever ordered event continuity or observable stability can be misread as preserved semantic identity.
+
+In short: this repo is not a replacement for those systems. It is a benchmark layer for testing whether they distinguish weak observational preservation from actual protected semantic preservation.
+
 ## Why keep this separate
 
 This repo is intentionally separate from any single TSEI run lane or overloaded product repository. The point is to give protected-relation fixtures their own identity so they can be reused across TSEI, Trustless AI, ReceiptOS-style verification work, or future provenance/semantic benchmark adapters.
