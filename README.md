@@ -10,6 +10,32 @@ Operational version:
 
 > Do not trust a preserved projection; recompute the protected semantic object and compare that instead.
 
+## Canonical visual formulations
+
+### Core negative class
+
+```text
+P(S0) = P(S1)
+while
+S0 !=protected S1
+```
+
+### Core mirror-positive class
+
+```text
+Raw(S0) != Raw(S1)
+while
+S0 =protected S1
+```
+
+### Operational rule
+
+```text
+preserved projection
+!=
+preserved protected semantics
+```
+
 ## What this repo is
 
 This repo is a small but serious benchmark seed for false-equivalence cases:
