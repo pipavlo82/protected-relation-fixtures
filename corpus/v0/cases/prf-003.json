@@ -1,0 +1,51 @@
+{
+  "schema": "protected-relation-fixture.v0",
+  "fixture_id": "prf-003",
+  "class": "unknown-state-preservation",
+  "protected_relation": {
+    "kind": "verifier_status_class",
+    "identity_policy": "anchored",
+    "relation_type_policy": "status-exact",
+    "multiplicity_policy": "not-applicable",
+    "direction_policy": "not-applicable",
+    "scope": "status-field",
+    "universe": "declared_status_space",
+    "equivalence_policy": "status-preserving",
+    "policy_version": "v0"
+  },
+  "before": {
+    "status": "UNVERIFIABLE",
+    "reason": "X"
+  },
+  "after": {
+    "status": "UNVERIFIABLE",
+    "reason": null,
+    "reason_vocabulary_preserved": false
+  },
+  "projections": [
+    {
+      "id": "parseability-downstream",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "id": "status-slot-present",
+      "before": true,
+      "after": true,
+      "preserved": true
+    }
+  ],
+  "expected": {
+    "semantic_outcome": "UNVERIFIABLE",
+    "projection_preserved": true,
+    "protected_relation_preserved": "unknown",
+    "reason_class": "version-skew-vocabulary-loss",
+    "fail_closed_required": true
+  },
+  "metadata": {
+    "tags": ["version-skew", "unknown-state", "status-class"],
+    "minimality_status": "seed",
+    "rationale": "Downstream parsing still works, but loss of exact reason vocabulary must not upgrade semantic status beyond UNVERIFIABLE."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "protected-relation-fixture.v0",
+  "fixture_id": "prf-005",
+  "class": "composition-sensitive",
+  "protected_relation": {
+    "kind": "composed_semantic_validity",
+    "identity_policy": "anchored",
+    "relation_type_policy": "typed-exact",
+    "multiplicity_policy": "not-applicable",
+    "direction_policy": "ordered-composition",
+    "scope": "transformation-pipeline",
+    "universe": "declared_pipeline_states",
+    "equivalence_policy": "composition-safe",
+    "policy_version": "v0"
+  },
+  "before": {
+    "state": "S0",
+    "transforms": ["T1", "T2"]
+  },
+  "after": {
+    "state": "S2",
+    "composition": "T2(T1(S0))"
+  },
+  "projections": [
+    {
+      "id": "T1-local-admissibility",
+      "before": null,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "id": "T2-local-admissibility",
+      "before": null,
+      "after": true,
+      "preserved": true
+    }
+  ],
+  "expected": {
+    "semantic_outcome": "VIOLATED",
+    "projection_preserved": true,
+    "protected_relation_preserved": false,
+    "reason_class": "pass-pass-compose-fail",
+    "fail_closed_required": true
+  },
+  "metadata": {
+    "tags": ["composition", "pipeline", "admissibility"],
+    "minimality_status": "seed",
+    "rationale": "Each step looks locally admissible, but the composed result violates the protected semantic relation."
+  }
+}

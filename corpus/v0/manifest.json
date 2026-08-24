@@ -1,4 +1,4 @@
-﻿{
+{
     "schema":  "protected-relation-corpus-manifest.v0",
     "corpus_version":  "v0",
     "canonical_serialization_rule":  "utf8-json-one-final-lf",
@@ -11,10 +11,22 @@
                   {
                       "path":  "cases/prf-002.json",
                       "sha256":  "cece63112465e8fa5b1402f3fed7c71c54bc9698f229fe317171d5443df08220"
+                  },
+                  {
+                      "path":  "cases/prf-003.json",
+                      "sha256":  "544221059bd9d5393960740a350305e427f684837b47cc5a53b92bfed29a8b4c"
+                  },
+                  {
+                      "path":  "cases/prf-004.json",
+                      "sha256":  "539d066dc0b072340a8d2453476f10ab3b7dfdc561ce69a18a7efda34a1dee75"
+                  },
+                  {
+                      "path":  "cases/prf-005.json",
+                      "sha256":  "9b0734fad90f80feb3216ae57c578fbda1699209ac5260feaec04ddc8bb11986"
                   }
               ],
     "oracle":  {
                    "path":  "oracle/expected-results.json",
-                   "sha256":  "1d6fe44585f38bf2c940dee283a2f90497566f351875316069695bb58a185b66"
+                   "sha256":  "64fbc642d1b58b8b79a579c85a756d6540303dde207aee8ecdec18e43ebbc1fc"
                }
 }
