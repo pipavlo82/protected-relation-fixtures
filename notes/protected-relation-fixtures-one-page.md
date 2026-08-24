@@ -1,6 +1,6 @@
-# Protected Relation Fixtures — One-Page Note
+﻿# Protected Relation Fixtures вЂ” One-Page Note
 
-**Status:** private research note
+**Status:** research note
 **Purpose:** compact framing for a future benchmark family where weak observational equality is not allowed to stand in for protected semantic equality.
 
 ## Core normative claim
@@ -71,3 +71,4 @@ informal interpretation drift.
 This looks like a promising benchmark / methodology lane for TSEI, Trustless AI,
 or ReceiptOS-style verification work, but it should remain separate from the
 currently frozen authority-run lanes.
+

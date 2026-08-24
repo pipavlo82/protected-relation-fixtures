@@ -1,21 +1,33 @@
-import json
-from pathlib import Path
+import unittest
 
-ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "corpus" / "v0" / "manifest.json"
+from tools.corpus_contract import (
+    validate_blind_challenge_views,
+    validate_fixture_case_shape,
+    validate_manifest_integrity,
+    validate_oracle_coverage,
+    recompute_projection_claims,
+    iter_case_paths,
+    load_json,
+)
 
 
-def test_manifest_shape_and_case_count() -> None:
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    assert manifest["schema"] == "protected-relation-corpus-manifest.v0"
-    assert manifest["corpus_version"] == "v0"
-    assert len(manifest["cases"]) == 5
+class CorpusContractTests(unittest.TestCase):
+    def test_manifest_integrity(self) -> None:
+        validate_manifest_integrity()
+
+    def test_all_cases_validate_against_seed_contract(self) -> None:
+        for path in iter_case_paths():
+            validate_fixture_case_shape(load_json(path), path=path)
+
+    def test_seed_oracle_covers_all_cases(self) -> None:
+        validate_oracle_coverage()
+
+    def test_seed_projection_claims_recompute(self) -> None:
+        recompute_projection_claims()
+
+    def test_blind_challenge_views_are_detached(self) -> None:
+        validate_blind_challenge_views()
 
 
-def test_seed_oracle_covers_all_cases() -> None:
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    oracle_path = MANIFEST.parent / manifest["oracle"]["path"]
-    oracle = json.loads(oracle_path.read_text(encoding="utf-8"))
-    case_ids = {Path(row["path"]).stem for row in manifest["cases"]}
-    oracle_ids = set(oracle["results"].keys())
-    assert case_ids == oracle_ids
+if __name__ == "__main__":
+    unittest.main()

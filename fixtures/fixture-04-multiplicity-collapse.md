@@ -1,6 +1,6 @@
-# Fixture 04 — Multiplicity Collapse
+﻿# Fixture 04 вЂ” Multiplicity Collapse
 
-**Status:** private benchmark seed
+**Status:** benchmark seed
 **Lane:** protected-relation fixtures
 
 ## Fixture ID
@@ -107,3 +107,4 @@ A benchmark/evaluator should answer at least:
 ```text
 same set != same multiplicity
 ```
+

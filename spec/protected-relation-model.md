@@ -246,7 +246,7 @@ A fixture should therefore make clear whether the protected relation is:
 
 ## 8. Minimal machine-readable shape
 
-A later machine-readable schema should be able to represent at least this shape:
+The current schema/corpus lane should be able to represent at least this shape:
 
 ```json
 {

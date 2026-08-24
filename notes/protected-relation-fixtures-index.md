@@ -1,6 +1,6 @@
-# Protected Relation Fixtures — Index
+﻿# Protected Relation Fixtures вЂ” Index
 
-**Status:** private benchmark seed index
+**Status:** benchmark seed index
 **Purpose:** tie together the emerging protected-relation fixture lane without mixing it into frozen TSEI authority-run artifacts.
 
 ## Core framing
@@ -24,7 +24,7 @@ Operational rule:
 - `research-local-neighborhood-vs-global-identity.md`
 - `protected-relation-fixtures-one-page.md`
 
-## Canonical fixture cards
+## Current seed fixture cards
 
 1. `fixture-01-local-neighborhood-identity.md`
    - same degree / local count
@@ -42,9 +42,12 @@ Operational rule:
    - same neighbor set
    - different multiplicity / repeated semantic links
 
+5. `fixture-05-pass-pass-compose-fail.md`
+   - each step looks locally admissible
+   - composition breaks the protected relation
+
 ## Suggested next fixtures
 
-- `fixture-05-pass-pass-compose-fail.md`
 - optional local-scope-vs-global-scope drift fixture
 - optional unknown-as-empty fixture split out from version-skew
 
@@ -61,3 +64,4 @@ For each fixture, ask:
 This is a strong complement to TSEI because it isolates false-equivalence cases
 that arise when observers preserve only counts, local structure, vocabulary,
 or transport-level compatibility while semantic identity has already drifted.
+

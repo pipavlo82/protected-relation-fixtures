@@ -1,0 +1,25 @@
+{
+  "schema": "protected-relation-challenge.v0",
+  "fixture_id": "prf-003",
+  "class": "unknown-state-preservation",
+  "protected_relation": {
+    "kind": "verifier_status_class",
+    "identity_policy": "anchored",
+    "relation_type_policy": "status-exact",
+    "multiplicity_policy": "not-applicable",
+    "direction_policy": "not-applicable",
+    "scope": "status-field",
+    "universe": "declared_status_space",
+    "equivalence_policy": "status-preserving",
+    "policy_version": "v0"
+  },
+  "before": {
+    "status": "UNVERIFIABLE",
+    "reason": "X"
+  },
+  "after": {
+    "status": "UNVERIFIABLE",
+    "reason": null,
+    "reason_vocabulary_preserved": false
+  }
+}

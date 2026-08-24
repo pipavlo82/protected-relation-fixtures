@@ -1,6 +1,6 @@
-# Fixture 01 — Local Neighborhood Preserved, Global Identity Changed
+﻿# Fixture 01 вЂ” Local Neighborhood Preserved, Global Identity Changed
 
-**Status:** private benchmark seed
+**Status:** benchmark seed
 **Lane:** protected-relation fixtures
 
 ## Fixture ID
@@ -107,3 +107,4 @@ A benchmark/evaluator should answer at least:
 ```text
 same degree != same neighborhood
 ```
+

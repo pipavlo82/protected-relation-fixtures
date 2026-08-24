@@ -1,6 +1,6 @@
-# Fixture 03 — Version Skew / Unknown-Member Collapse
+﻿# Fixture 03 вЂ” Version Skew / Unknown-Member Collapse
 
-**Status:** private benchmark seed
+**Status:** benchmark seed
 **Lane:** protected-relation fixtures
 
 ## Fixture ID
@@ -114,3 +114,4 @@ A benchmark/evaluator should answer at least:
 ```text
 unknown != ok
 ```
+

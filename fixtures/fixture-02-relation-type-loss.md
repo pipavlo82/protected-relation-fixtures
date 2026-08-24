@@ -1,6 +1,6 @@
-# Fixture 02 — Relation Type Changed, Shape Preserved
+﻿# Fixture 02 вЂ” Relation Type Changed, Shape Preserved
 
-**Status:** private benchmark seed
+**Status:** benchmark seed
 **Lane:** protected-relation fixtures
 
 ## Fixture ID
@@ -102,3 +102,4 @@ A benchmark/evaluator should answer at least:
 ```text
 same shape != same meaning
 ```
+

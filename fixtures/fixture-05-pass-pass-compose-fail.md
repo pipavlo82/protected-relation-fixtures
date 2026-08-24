@@ -1,6 +1,6 @@
-# Fixture 05 — Pass, Pass, Compose, Fail
+﻿# Fixture 05 вЂ” Pass, Pass, Compose, Fail
 
-**Status:** private benchmark seed
+**Status:** benchmark seed
 **Lane:** protected-relation fixtures
 
 ## Fixture ID
@@ -109,3 +109,4 @@ A benchmark/evaluator should answer at least:
 ```text
 pass + pass != composition-safe
 ```
+

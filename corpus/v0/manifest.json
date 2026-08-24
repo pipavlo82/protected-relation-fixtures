@@ -1,7 +1,13 @@
 {
     "schema":  "protected-relation-corpus-manifest.v0",
     "corpus_version":  "v0",
-    "canonical_serialization_rule":  "utf8-json-one-final-lf",
+    "byte_format_requirement":  {
+                                    "encoding":  "utf-8",
+                                    "json":  "yes",
+                                    "final_lf":  true,
+                                    "canonical_json":  false,
+                                    "note":  "Exact bytes are bound by SHA-256 digests; a fully standalone canonical JSON derivation contract is not yet frozen."
+                                },
     "fixture_schema":  "spec/fixture-schema.v0.json",
     "cases":  [
                   {

@@ -52,7 +52,7 @@ This repo is not:
 
 - a frozen TSEI authority-run artifact set;
 - a ReceiptOS run-history repository;
-- a claim that every fixture here already has a machine-readable canonical vector format;
+- a claim that every fixture here already has a fully frozen canonical vector contract;
 - a substitute for independently recomputing the protected semantic object.
 
 ## Current canonical fixture set
@@ -77,15 +77,35 @@ For each fixture:
 protected-relation-fixtures/
   README.md
   ROADMAP.md
+  LICENSE
+  CITATION.cff
   docs/
     core-claim.md
     fixture-design-principles.md
+    visual-formulations.md
+    corpus-contract-v0.md
+  spec/
+    protected-relation-model.md
+    outcome-model.md
+    projection-model.md
+    fixture-schema.v0.json
+  corpus/
+    v0/
+      manifest.json
+      cases/
+      challenge/
+      oracle/
   fixtures/
     fixture-01-local-neighborhood-identity.md
     fixture-02-relation-type-loss.md
     fixture-03-version-skew-unverifiable.md
     fixture-04-multiplicity-collapse.md
     fixture-05-pass-pass-compose-fail.md
+  tools/
+    validate_manifest.py
+    validate_seed_corpus.py
+  tests/
+    test_manifest_and_seed_corpus.py
   notes/
     protected-relation-fixtures-one-page.md
     protected-relation-fixtures-index.md
@@ -101,9 +121,9 @@ protected-relation-fixtures/
 
 ## Status
 
-Current state: **benchmark seed / methodology nucleus**.
+Current state: **benchmark seed / methodology nucleus with a machine-readable seed corpus**.
 
-This repo already has a coherent starter corpus and framing, but it is still early-stage. The next expected steps are better canonical fixture formatting, clearer benchmark metadata, and eventual vectors/tests/adapters.
+This repo already has a coherent starter corpus, framing, schema, manifest, oracle, and seed validation path. It is still early-stage: the current corpus contract is a seed surface rather than a fully frozen benchmark closure, and later work can still strengthen canonical formatting, semantic recomputation depth, and adapter/test coverage.
 
 ## Relation to TSEI, ReceiptOS, and Chronicle-style systems
 

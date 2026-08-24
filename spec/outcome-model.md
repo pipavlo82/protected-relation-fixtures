@@ -176,7 +176,7 @@ Therefore benchmark evaluation needs both:
 
 ## 7. Minimal machine-readable shape
 
-A later schema should support something at least like:
+The current schema/corpus lane should support something at least like:
 
 ```json
 {

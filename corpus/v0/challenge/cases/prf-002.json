@@ -1,0 +1,32 @@
+{
+  "schema": "protected-relation-challenge.v0",
+  "fixture_id": "prf-002",
+  "class": "projection-equivalent-relation-non-equivalent",
+  "protected_relation": {
+    "kind": "exact_typed_relation",
+    "identity_policy": "anchored",
+    "relation_type_policy": "typed-exact",
+    "multiplicity_policy": "set-collapsed",
+    "direction_policy": "directed-exact",
+    "scope": [
+      "A",
+      "B"
+    ],
+    "universe": [
+      "A",
+      "B"
+    ],
+    "equivalence_policy": "exact",
+    "policy_version": "v0"
+  },
+  "before": {
+    "source": "A",
+    "target": "B",
+    "relation": "owns"
+  },
+  "after": {
+    "source": "A",
+    "target": "B",
+    "relation": "depends_on"
+  }
+}
