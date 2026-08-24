@@ -1,0 +1,20 @@
+﻿{
+    "schema":  "protected-relation-corpus-manifest.v0",
+    "corpus_version":  "v0",
+    "canonical_serialization_rule":  "utf8-json-one-final-lf",
+    "fixture_schema":  "spec/fixture-schema.v0.json",
+    "cases":  [
+                  {
+                      "path":  "cases/prf-001.json",
+                      "sha256":  "2b1e85e1a799a37b015500202162402ea6b352f8685be39c3942caf1e7b3d188"
+                  },
+                  {
+                      "path":  "cases/prf-002.json",
+                      "sha256":  "cece63112465e8fa5b1402f3fed7c71c54bc9698f229fe317171d5443df08220"
+                  }
+              ],
+    "oracle":  {
+                   "path":  "oracle/expected-results.json",
+                   "sha256":  "1d6fe44585f38bf2c940dee283a2f90497566f351875316069695bb58a185b66"
+               }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "protected-relation-oracle.v0",
+  "corpus_version": "v0",
+  "results": {
+    "prf-001": {
+      "semantic_outcome": "VIOLATED",
+      "projection_preserved": true,
+      "protected_relation_preserved": false,
+      "reason_class": "same-degree-different-neighborhood-identity"
+    },
+    "prf-002": {
+      "semantic_outcome": "VIOLATED",
+      "projection_preserved": true,
+      "protected_relation_preserved": false,
+      "reason_class": "same-shape-different-relation-type"
+    }
+  }
+}

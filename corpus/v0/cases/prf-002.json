@@ -1,0 +1,52 @@
+{
+  "schema": "protected-relation-fixture.v0",
+  "fixture_id": "prf-002",
+  "class": "projection-equivalent-relation-non-equivalent",
+  "protected_relation": {
+    "kind": "exact_typed_relation",
+    "identity_policy": "anchored",
+    "relation_type_policy": "typed-exact",
+    "multiplicity_policy": "set-collapsed",
+    "direction_policy": "directed-exact",
+    "scope": ["A", "B"],
+    "universe": ["A", "B"],
+    "equivalence_policy": "exact",
+    "policy_version": "v0"
+  },
+  "before": {
+    "source": "A",
+    "target": "B",
+    "relation": "owns"
+  },
+  "after": {
+    "source": "A",
+    "target": "B",
+    "relation": "depends_on"
+  },
+  "projections": [
+    {
+      "id": "P0-edge-exists-A-B",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "id": "shape-same-endpoints",
+      "before": ["A", "B"],
+      "after": ["A", "B"],
+      "preserved": true
+    }
+  ],
+  "expected": {
+    "semantic_outcome": "VIOLATED",
+    "projection_preserved": true,
+    "protected_relation_preserved": false,
+    "reason_class": "same-shape-different-relation-type",
+    "fail_closed_required": true
+  },
+  "metadata": {
+    "tags": ["relation-type", "projection-strength", "typed-edge"],
+    "minimality_status": "seed",
+    "rationale": "The topology and endpoints stay the same, but the protected relation meaning changes."
+  }
+}
