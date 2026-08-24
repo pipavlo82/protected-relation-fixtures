@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pipavlo82/protected-relation-fixtures/blob/main/spec/fixture-schema.v0.json",
+  "title": "Protected Relation Fixture v0",
+  "description": "Machine-readable seed schema for protected-relation benchmark fixtures.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture_id",
+    "class",
+    "protected_relation",
+    "before",
+    "after",
+    "expected"
+  ],
+  "properties": {
+    "schema": {
+      "const": "protected-relation-fixture.v0"
+    },
+    "fixture_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9._-]+$",
+      "minLength": 1
+    },
+    "class": {
+      "type": "string",
+      "enum": [
+        "projection-equivalent-relation-non-equivalent",
+        "raw-different-relation-equivalent",
+        "composition-sensitive",
+        "unknown-state-preservation"
+      ]
+    },
+    "protected_relation": {
+      "$ref": "#/$defs/protectedRelation"
+    },
+    "before": {
+      "description": "Before-state object. Domain-specific content is intentionally open at v0.",
+      "$ref": "#/$defs/jsonValue"
+    },
+    "after": {
+      "description": "After-state object. Domain-specific content is intentionally open at v0.",
+      "$ref": "#/$defs/jsonValue"
+    },
+    "projections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/projectionObservation"
+      },
+      "default": []
+    },
+    "expected": {
+      "$ref": "#/$defs/expectedOutcome"
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    }
+  },
+  "$defs": {
+    "jsonValue": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": { "$ref": "#/$defs/jsonValue" } },
+        { "type": "array", "items": { "$ref": "#/$defs/jsonValue" } },
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "integer" },
+        { "type": "boolean" },
+        { "type": "null" }
+      ]
+    },
+    "protectedRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "identity_policy",
+        "relation_type_policy",
+        "multiplicity_policy",
+        "direction_policy",
+        "scope",
+        "universe",
+        "equivalence_policy",
+        "policy_version"
+      ],
+      "properties": {
+        "kind": { "type": "string", "minLength": 1 },
+        "identity_policy": { "type": "string", "minLength": 1 },
+        "relation_type_policy": { "type": "string", "minLength": 1 },
+        "multiplicity_policy": { "type": "string", "minLength": 1 },
+        "direction_policy": { "type": "string", "minLength": 1 },
+        "scope": {
+          "oneOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "array", "items": { "type": "string", "minLength": 1 } }
+          ]
+        },
+        "universe": {
+          "oneOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "array", "items": { "type": "string", "minLength": 1 } }
+          ]
+        },
+        "equivalence_policy": { "type": "string", "minLength": 1 },
+        "policy_version": { "type": "string", "minLength": 1 }
+      }
+    },
+    "projectionObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "preserved"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "before": { "$ref": "#/$defs/jsonValue" },
+        "after": { "$ref": "#/$defs/jsonValue" },
+        "preserved": {
+          "oneOf": [
+            { "type": "boolean" },
+            { "const": "unknown" }
+          ]
+        }
+      }
+    },
+    "expectedOutcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["semantic_outcome"],
+      "properties": {
+        "semantic_outcome": {
+          "type": "string",
+          "enum": ["PRESERVED", "VIOLATED", "UNVERIFIABLE"]
+        },
+        "projection_preserved": {
+          "oneOf": [
+            { "type": "boolean" },
+            { "const": "unknown" }
+          ]
+        },
+        "protected_relation_preserved": {
+          "oneOf": [
+            { "type": "boolean" },
+            { "const": "unknown" }
+          ]
+        },
+        "reason_class": {
+          "type": "string"
+        },
+        "fail_closed_required": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "derived_from": {
+          "type": "string"
+        },
+        "minimality_status": {
+          "type": "string"
+        },
+        "rationale": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
