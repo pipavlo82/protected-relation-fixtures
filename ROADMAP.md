@@ -2,46 +2,45 @@
 
 ## Current state
 
-Protected Relation Fixtures is currently a benchmark seed / methodology nucleus.
+Protected Relation Fixtures is currently a local contract-closure candidate for its v0 benchmark seed.
 
 It already contains:
 
 - a core normative claim;
 - fixture design principles;
-- five canonical fixture cards;
-- compact framing notes.
+- six canonical fixture vectors, including one mirror-positive control;
+- a machine-readable Draft 2020-12 schema;
+- exact-byte manifest and oracle bindings;
+- detached challenge derivation;
+- projection and semantic recomputation for every current vector;
+- negative tests that remain active under `python -O`;
+- a GitHub Actions validation workflow.
 
 ## Near-term next steps
 
-1. **Stabilize canonical framing**
-   - tighten fixture wording where needed;
-   - keep the protected relation explicit in every fixture;
-   - separate canonical docs from looser notes.
+1. **Independent exact-diff review**
+   - review the v0 fixture and schema changes;
+   - reproduce all validation commands from a clean checkout;
+   - verify manifest and oracle bytes independently.
 
-2. **Define a machine-readable fixture format**
-   - fixture id;
-   - weak observable;
-   - protected relation;
-   - expected fail-closed outcome;
-   - minimal before/after object form.
+2. **Freeze decision**
+   - decide whether the reviewed bytes become the first frozen v0 corpus release;
+   - record the exact commit, tree, manifest digest, and validator environment;
+   - do not call the current local candidate frozen before that decision.
 
-3. **Add benchmark metadata**
-   - scope tags (identity, relation-type, multiplicity, version-skew, composition);
-   - expected evaluator behavior;
-   - rationale for why weak observation still passes.
+3. **External adapter contract**
+   - define how an external evaluator consumes challenge inputs without oracle leakage;
+   - keep adapter outcomes separate from corpus integrity;
+   - require fail-closed behavior for unsupported future fixture classes.
 
 ## Medium-term next steps
 
-4. **Create canonical vectors/examples**
-   - compact examples for each fixture;
-   - before/after representations;
-   - expected verifier output.
+4. **Add external adapters and conformance tests**
+   - optional adapters for TSEI / Trustless AI / ReceiptOS-style evaluators;
+   - require adapters to report unsupported classes rather than infer an answer;
+   - preserve the challenge/oracle separation.
 
-5. **Add adapters/tests**
-   - small harnesses for exercising fixture expectations;
-   - optional adapters for TSEI / Trustless AI / ReceiptOS-style evaluators.
-
-6. **Add a benchmark summary doc**
+5. **Add a benchmark summary doc**
    - comparison table of fixture classes;
    - what each class protects against;
    - how this lane complements transformation-stability methods.

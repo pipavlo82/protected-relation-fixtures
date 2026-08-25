@@ -1,0 +1,64 @@
+{
+  "schema": "protected-relation-fixture.v0",
+  "fixture_id": "prf-006",
+  "class": "raw-different-relation-equivalent",
+  "protected_relation": {
+    "kind": "normalized_typed_relation",
+    "identity_policy": "alias-permitted",
+    "relation_type_policy": "type-normalized",
+    "multiplicity_policy": "set-collapsed",
+    "direction_policy": "directed-exact",
+    "scope": ["alice", "document-A"],
+    "universe": ["alice", "document-A"],
+    "equivalence_policy": "canonical-alias-and-type-normalization",
+    "policy_version": "v0",
+    "normalization": {
+      "identity_aliases": {
+        "acct:001": "alice",
+        "user:alice": "alice",
+        "doc:alpha": "document-A",
+        "document:A": "document-A"
+      },
+      "relation_aliases": {
+        "OWNER": "owns",
+        "owns": "owns"
+      }
+    }
+  },
+  "before": {
+    "source": "acct:001",
+    "target": "doc:alpha",
+    "relation": "OWNER"
+  },
+  "after": {
+    "source": "user:alice",
+    "target": "document:A",
+    "relation": "owns"
+  },
+  "projections": [
+    {
+      "id": "raw-relation-triple",
+      "before": ["acct:001", "OWNER", "doc:alpha"],
+      "after": ["user:alice", "owns", "document:A"],
+      "preserved": false
+    },
+    {
+      "id": "canonical-relation-triple",
+      "before": ["alice", "owns", "document-A"],
+      "after": ["alice", "owns", "document-A"],
+      "preserved": true
+    }
+  ],
+  "expected": {
+    "semantic_outcome": "PRESERVED",
+    "projection_preserved": false,
+    "protected_relation_preserved": true,
+    "reason_class": "canonical-alias-normalization-preserves-relation",
+    "fail_closed_required": false
+  },
+  "metadata": {
+    "tags": ["mirror-positive", "alias-normalization", "typed-relation"],
+    "minimality_status": "seed",
+    "rationale": "Raw identifiers and relation spelling change, while the declared canonical protected relation remains identical."
+  }
+}

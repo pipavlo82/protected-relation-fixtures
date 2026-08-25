@@ -64,7 +64,6 @@
         { "type": "array", "items": { "$ref": "#/$defs/jsonValue" } },
         { "type": "string" },
         { "type": "number" },
-        { "type": "integer" },
         { "type": "boolean" },
         { "type": "null" }
       ]
@@ -92,23 +91,40 @@
         "scope": {
           "oneOf": [
             { "type": "string", "minLength": 1 },
-            { "type": "array", "items": { "type": "string", "minLength": 1 } }
+            { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true }
           ]
         },
         "universe": {
           "oneOf": [
             { "type": "string", "minLength": 1 },
-            { "type": "array", "items": { "type": "string", "minLength": 1 } }
+            { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true }
           ]
         },
         "equivalence_policy": { "type": "string", "minLength": 1 },
-        "policy_version": { "type": "string", "minLength": 1 }
+        "policy_version": { "type": "string", "minLength": 1 },
+        "normalization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["identity_aliases", "relation_aliases"],
+          "properties": {
+            "identity_aliases": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": { "type": "string", "minLength": 1 }
+            },
+            "relation_aliases": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
       }
     },
     "projectionObservation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "preserved"],
+      "required": ["id", "before", "after", "preserved"],
       "properties": {
         "id": { "type": "string", "minLength": 1 },
         "before": { "$ref": "#/$defs/jsonValue" },
@@ -124,7 +140,13 @@
     "expectedOutcome": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["semantic_outcome"],
+      "required": [
+        "semantic_outcome",
+        "projection_preserved",
+        "protected_relation_preserved",
+        "reason_class",
+        "fail_closed_required"
+      ],
       "properties": {
         "semantic_outcome": {
           "type": "string",
@@ -143,7 +165,8 @@
           ]
         },
         "reason_class": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "fail_closed_required": {
           "type": "boolean",
@@ -161,13 +184,16 @@
           "uniqueItems": true
         },
         "derived_from": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "minimality_status": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "rationale": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         }
       }
     }

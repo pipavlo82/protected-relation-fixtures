@@ -62,6 +62,7 @@ This repo is not:
 3. **Version skew / unknown-member collapse**
 4. **Multiplicity collapse**
 5. **Pass, pass, compose, fail**
+6. **Raw representation changed, canonical relation preserved**
 
 ## Minimal benchmark question
 
@@ -101,7 +102,9 @@ protected-relation-fixtures/
     fixture-03-version-skew-unverifiable.md
     fixture-04-multiplicity-collapse.md
     fixture-05-pass-pass-compose-fail.md
+    fixture-06-canonical-relation-preserved.md
   tools/
+    derive_challenge_views.py
     validate_manifest.py
     validate_seed_corpus.py
   tests/
@@ -121,9 +124,21 @@ protected-relation-fixtures/
 
 ## Status
 
-Current state: **benchmark seed / methodology nucleus with a machine-readable seed corpus**.
+Current state: **local contract-closure candidate for the v0 seed corpus**.
 
-This repo already has a coherent starter corpus, framing, schema, manifest, oracle, and seed validation path. It is still early-stage: the current corpus contract is a seed surface rather than a fully frozen benchmark closure, and later work can still strengthen canonical formatting, semantic recomputation depth, and adapter/test coverage.
+The repository now carries six machine-readable fixtures, including a mirror-positive control. The local validation path enforces exact stored-byte requirements, manifest and oracle digests, Draft 2020-12 schema conformance, detached challenge views, projection recomputation, and seed semantic recomputation against both the fixture expectations and oracle. The same negative suite runs under normal Python and `python -O`, and CI executes both modes.
+
+This remains a review candidate, not a frozen release. The current recomputers cover the declared v0 fixture classes; future classes require an explicit recomputation rule and tests before entering the manifest.
+
+## Local verification
+
+```text
+python -m pip install -r requirements-dev.txt
+python tools/validate_manifest.py
+python tools/validate_seed_corpus.py
+python -m unittest discover -s tests -v
+python -O -m unittest discover -s tests -v
+```
 
 ## Relation to TSEI, ReceiptOS, and Chronicle-style systems
 

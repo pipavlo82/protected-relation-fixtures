@@ -1,0 +1,44 @@
+{
+  "schema": "protected-relation-challenge.v0",
+  "fixture_id": "prf-006",
+  "class": "raw-different-relation-equivalent",
+  "protected_relation": {
+    "kind": "normalized_typed_relation",
+    "identity_policy": "alias-permitted",
+    "relation_type_policy": "type-normalized",
+    "multiplicity_policy": "set-collapsed",
+    "direction_policy": "directed-exact",
+    "scope": [
+      "alice",
+      "document-A"
+    ],
+    "universe": [
+      "alice",
+      "document-A"
+    ],
+    "equivalence_policy": "canonical-alias-and-type-normalization",
+    "policy_version": "v0",
+    "normalization": {
+      "identity_aliases": {
+        "acct:001": "alice",
+        "user:alice": "alice",
+        "doc:alpha": "document-A",
+        "document:A": "document-A"
+      },
+      "relation_aliases": {
+        "OWNER": "owns",
+        "owns": "owns"
+      }
+    }
+  },
+  "before": {
+    "source": "acct:001",
+    "target": "doc:alpha",
+    "relation": "OWNER"
+  },
+  "after": {
+    "source": "user:alice",
+    "target": "document:A",
+    "relation": "owns"
+  }
+}

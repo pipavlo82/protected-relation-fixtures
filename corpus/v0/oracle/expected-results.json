@@ -6,31 +6,43 @@
                                     "semantic_outcome":  "VIOLATED",
                                     "projection_preserved":  true,
                                     "protected_relation_preserved":  false,
-                                    "reason_class":  "same-degree-different-neighborhood-identity"
+                                    "reason_class":  "same-degree-different-neighborhood-identity",
+                                    "fail_closed_required":  true
                                 },
                     "prf-002":  {
                                     "semantic_outcome":  "VIOLATED",
                                     "projection_preserved":  true,
                                     "protected_relation_preserved":  false,
-                                    "reason_class":  "same-shape-different-relation-type"
+                                    "reason_class":  "same-shape-different-relation-type",
+                                    "fail_closed_required":  true
                                 },
                     "prf-003":  {
                                     "semantic_outcome":  "UNVERIFIABLE",
                                     "projection_preserved":  true,
                                     "protected_relation_preserved":  "unknown",
-                                    "reason_class":  "version-skew-vocabulary-loss"
+                                    "reason_class":  "version-skew-vocabulary-loss",
+                                    "fail_closed_required":  true
                                 },
                     "prf-004":  {
                                     "semantic_outcome":  "VIOLATED",
                                     "projection_preserved":  true,
                                     "protected_relation_preserved":  false,
-                                    "reason_class":  "multiplicity-collapse"
+                                    "reason_class":  "multiplicity-collapse",
+                                    "fail_closed_required":  true
                                 },
                     "prf-005":  {
                                     "semantic_outcome":  "VIOLATED",
                                     "projection_preserved":  true,
                                     "protected_relation_preserved":  false,
-                                    "reason_class":  "pass-pass-compose-fail"
+                                    "reason_class":  "pass-pass-compose-fail",
+                                    "fail_closed_required":  true
+                                },
+                    "prf-006":  {
+                                    "semantic_outcome":  "PRESERVED",
+                                    "projection_preserved":  false,
+                                    "protected_relation_preserved":  true,
+                                    "reason_class":  "canonical-alias-normalization-preserves-relation",
+                                    "fail_closed_required":  false
                                 }
                 }
 }
