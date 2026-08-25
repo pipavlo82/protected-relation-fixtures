@@ -28,11 +28,15 @@
                   },
                   {
                       "path":  "cases/prf-005.json",
-                      "sha256":  "9b0734fad90f80feb3216ae57c578fbda1699209ac5260feaec04ddc8bb11986"
+                      "sha256":  "7bfb9d4e648724ca39d7f35fdbeb8f72578042bc312004a105b429e7018ec1c1"
+                  },
+                  {
+                      "path":  "cases/prf-006.json",
+                      "sha256":  "181c6f69f584593204a8f9456abf5aa9da33040da7b9aebfb7d4de9a326b6458"
                   }
               ],
     "oracle":  {
                    "path":  "oracle/expected-results.json",
-                   "sha256":  "64fbc642d1b58b8b79a579c85a756d6540303dde207aee8ecdec18e43ebbc1fc"
+                   "sha256":  "8fa93a5ef4a61c3a7d80c8951c131e694d4947f16a9f38c9c813dd0a29a0b6e5"
                }
 }

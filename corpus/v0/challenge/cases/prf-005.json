@@ -14,14 +14,40 @@
     "policy_version": "v0"
   },
   "before": {
-    "state": "S0",
+    "state": {
+      "id": "S0",
+      "authorization_scope": "agent-A-only"
+    },
     "transforms": [
-      "T1",
-      "T2"
-    ]
+      {
+        "id": "T1",
+        "locally_admissible": true
+      },
+      {
+        "id": "T2",
+        "locally_admissible": true
+      }
+    ],
+    "protected_predicate": {
+      "path": "authorization_scope",
+      "equals": "agent-A-only"
+    }
   },
   "after": {
-    "state": "S2",
-    "composition": "T2(T1(S0))"
+    "state": {
+      "id": "S2",
+      "authorization_scope": "agent-A-and-B"
+    },
+    "composition": "T2(T1(S0))",
+    "step_results": [
+      {
+        "id": "T1",
+        "locally_admissible": true
+      },
+      {
+        "id": "T2",
+        "locally_admissible": true
+      }
+    ]
   }
 }
