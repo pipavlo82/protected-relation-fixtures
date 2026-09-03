@@ -16,6 +16,9 @@ It already contains:
 - negative tests that remain active under `python -O`;
 - a GitHub Actions validation workflow.
 
+The additive `relation-discrimination-v0` lane is the next hardening step. It
+must be completed and independently reviewed before any v0 freeze decision.
+
 ## Near-term next steps
 
 1. **Independent exact-diff review**
@@ -23,24 +26,33 @@ It already contains:
    - reproduce all validation commands from a clean checkout;
    - verify manifest and oracle bytes independently.
 
-2. **Freeze decision**
+2. **Relation-discrimination hardening**
+   - validate independent synthetic witnesses for identity, relation type,
+     multiplicity, direction, and scope policy distinctions;
+   - require every declared policy pair to be observationally separated;
+   - keep the new expected matrix independent of the seed oracle and its
+     fixture-specific semantic recomputer;
+   - prove with mutation controls that collapsing any required axis makes the
+     gate fail.
+
+3. **Freeze decision**
    - decide whether the reviewed bytes become the first frozen v0 corpus release;
    - record the exact commit, tree, manifest digest, and validator environment;
    - do not call the current local candidate frozen before that decision.
 
-3. **External adapter contract**
+4. **External adapter contract**
    - define how an external evaluator consumes challenge inputs without oracle leakage;
    - keep adapter outcomes separate from corpus integrity;
    - require fail-closed behavior for unsupported future fixture classes.
 
 ## Medium-term next steps
 
-4. **Add external adapters and conformance tests**
+5. **Add external adapters and conformance tests**
    - optional adapters for TSEI / Trustless AI / ReceiptOS-style evaluators;
    - require adapters to report unsupported classes rather than infer an answer;
    - preserve the challenge/oracle separation.
 
-5. **Add a benchmark summary doc**
+6. **Add a benchmark summary doc**
    - comparison table of fixture classes;
    - what each class protects against;
    - how this lane complements transformation-stability methods.
