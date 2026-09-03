@@ -1,0 +1,826 @@
+{
+  "artifact_schema": "relation-discrimination-independent-first-run.v0",
+  "base_sha": "154d35d0a4748da2ef40332e310a01d1549948fa",
+  "blindness_disclosure": "Reviewer had inspected the candidate implementation during an earlier task; this run is not blind.",
+  "candidate_implementation_imported": false,
+  "contract_sources": [
+    "spec/relation-discrimination-v0.md",
+    "conformance/relation-discrimination-v0/suite.json"
+  ],
+  "expected_matrix_matches": true,
+  "independent_implementation_sha256": "1d8adf8e502484ab462f06cd6bd2c3eb2ca1d76bf61cc849b9f9c093c3dd4cc6",
+  "matrix": {
+    "direction": {
+      "differing_policy_fields": [
+        "direction_policy"
+      ],
+      "left_policy": "strict-global",
+      "required_witnesses": [
+        "direction-reversal"
+      ],
+      "results": {
+        "direction-reversal": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "identity-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "incomplete-global-scope": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "UNVERIFIABLE",
+            "right": "UNVERIFIABLE"
+          },
+          "left": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          },
+          "right": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          }
+        },
+        "multiplicity-collapse": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "positive-control": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "PRESERVED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "relation-type-normalization": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "scope-outside-drift": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "undeclared-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        }
+      },
+      "right_policy": "undirected-global",
+      "separating_witnesses": [
+        "direction-reversal"
+      ],
+      "status": "SEPARATED"
+    },
+    "identity": {
+      "differing_policy_fields": [
+        "identity_policy"
+      ],
+      "left_policy": "strict-global",
+      "required_witnesses": [
+        "identity-alias"
+      ],
+      "results": {
+        "direction-reversal": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "identity-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "incomplete-global-scope": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "UNVERIFIABLE",
+            "right": "UNVERIFIABLE"
+          },
+          "left": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          },
+          "right": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          }
+        },
+        "multiplicity-collapse": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "positive-control": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "PRESERVED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "relation-type-normalization": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "scope-outside-drift": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "undeclared-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "UNVERIFIABLE"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "after:identity-alias-undeclared:alias:mallory"
+          }
+        }
+      },
+      "right_policy": "alias-global",
+      "separating_witnesses": [
+        "identity-alias",
+        "undeclared-alias"
+      ],
+      "status": "SEPARATED"
+    },
+    "multiplicity": {
+      "differing_policy_fields": [
+        "multiplicity_policy"
+      ],
+      "left_policy": "strict-global",
+      "required_witnesses": [
+        "multiplicity-collapse"
+      ],
+      "results": {
+        "direction-reversal": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "identity-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "incomplete-global-scope": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "UNVERIFIABLE",
+            "right": "UNVERIFIABLE"
+          },
+          "left": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          },
+          "right": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          }
+        },
+        "multiplicity-collapse": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "positive-control": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "PRESERVED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "relation-type-normalization": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "scope-outside-drift": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "undeclared-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        }
+      },
+      "right_policy": "set-global",
+      "separating_witnesses": [
+        "multiplicity-collapse"
+      ],
+      "status": "SEPARATED"
+    },
+    "relation_type": {
+      "differing_policy_fields": [
+        "relation_type_policy"
+      ],
+      "left_policy": "strict-global",
+      "required_witnesses": [
+        "relation-type-normalization"
+      ],
+      "results": {
+        "direction-reversal": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "identity-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "incomplete-global-scope": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "UNVERIFIABLE",
+            "right": "UNVERIFIABLE"
+          },
+          "left": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          },
+          "right": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          }
+        },
+        "multiplicity-collapse": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "positive-control": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "PRESERVED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "relation-type-normalization": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "scope-outside-drift": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "undeclared-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        }
+      },
+      "right_policy": "type-normalized-global",
+      "separating_witnesses": [
+        "relation-type-normalization"
+      ],
+      "status": "SEPARATED"
+    },
+    "scope": {
+      "differing_policy_fields": [
+        "scope_anchor",
+        "scope_policy"
+      ],
+      "left_policy": "strict-global",
+      "required_witnesses": [
+        "scope-outside-drift",
+        "incomplete-global-scope"
+      ],
+      "results": {
+        "direction-reversal": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "identity-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "incomplete-global-scope": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "UNVERIFIABLE",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "UNVERIFIABLE",
+            "reason": "before:global-scope-incomplete"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "multiplicity-collapse": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "positive-control": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "PRESERVED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "relation-type-normalization": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        },
+        "scope-outside-drift": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "PRESERVED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "PRESERVED",
+            "reason": "canonical-semantic-objects-equal"
+          }
+        },
+        "undeclared-alias": {
+          "comparison": {
+            "left": "MATCH",
+            "right": "MATCH"
+          },
+          "declared_expected": {
+            "left": "VIOLATED",
+            "right": "VIOLATED"
+          },
+          "left": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          },
+          "right": {
+            "outcome": "VIOLATED",
+            "reason": "canonical-semantic-objects-differ"
+          }
+        }
+      },
+      "right_policy": "strict-local",
+      "separating_witnesses": [
+        "scope-outside-drift",
+        "incomplete-global-scope"
+      ],
+      "status": "SEPARATED"
+    }
+  },
+  "policy_pair_witness_side_outcomes": 80,
+  "pr_head_sha": "b14d63e0d8f869c0b7aa0efdb1d2a0a23ed6dd68",
+  "required_axes": 5,
+  "review_mode": "NON_BLIND_SECOND_IMPLEMENTATION",
+  "separated_axes": 5,
+  "status": "REPRODUCED",
+  "suite_sha256": "acc7b82ac0c2f87e7c6c78e099482481bb72ca604f45d6f17f991834b5aaeb18",
+  "witnesses": 8
+}

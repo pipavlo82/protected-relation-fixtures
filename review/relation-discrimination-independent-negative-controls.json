@@ -1,0 +1,62 @@
+{
+  "artifact_schema": "relation-discrimination-independent-negative-controls.v0",
+  "controls": {
+    "collapse_direction": {
+      "killed": true,
+      "observed": "UNRESOLVED_RELATION_DISCRIMINATION"
+    },
+    "collapse_identity": {
+      "killed": true,
+      "observed": "UNRESOLVED_RELATION_DISCRIMINATION"
+    },
+    "collapse_multiplicity": {
+      "killed": true,
+      "observed": "UNRESOLVED_RELATION_DISCRIMINATION"
+    },
+    "collapse_relation_type": {
+      "killed": true,
+      "observed": "UNRESOLVED_RELATION_DISCRIMINATION"
+    },
+    "collapse_scope": {
+      "killed": true,
+      "observed": "UNRESOLVED_RELATION_DISCRIMINATION"
+    },
+    "incomplete_global_scope": {
+      "killed": true,
+      "observed": {
+        "outcome": "UNVERIFIABLE",
+        "reason": "before:global-scope-incomplete"
+      }
+    },
+    "missing_required_witness": {
+      "killed": true,
+      "observed": "MISSING_REQUIRED_WITNESS:direction:['direction-reversal']"
+    },
+    "undeclared_identity_alias": {
+      "killed": true,
+      "observed": {
+        "outcome": "UNVERIFIABLE",
+        "reason": "after:identity-alias-undeclared:alias:mallory"
+      }
+    },
+    "unsafe_false_preservation": {
+      "killed": true,
+      "observed": "UNSAFE_FALSE_PRESERVATION"
+    },
+    "unsafe_unverifiable_upgrade": {
+      "killed": true,
+      "observed": "UNSAFE_UNVERIFIABLE_UPGRADE"
+    },
+    "unsupported_policy_value": {
+      "killed": true,
+      "observed": {
+        "outcome": "UNVERIFIABLE",
+        "reason": "before:direction-policy-unsupported:future-unknown-direction"
+      }
+    }
+  },
+  "passed": 11,
+  "review_mode": "NON_BLIND_SECOND_IMPLEMENTATION",
+  "status": "PASS",
+  "total": 11
+}
