@@ -1,0 +1,458 @@
+{
+  "schema": "protected-relation-discrimination.v0",
+  "required_axes": [
+    "identity",
+    "relation_type",
+    "multiplicity",
+    "direction",
+    "scope"
+  ],
+  "policies": {
+    "strict-global": {
+      "kind": "edge-relation",
+      "identity_policy": "anchored",
+      "identity_aliases": {
+        "id:alice": "person:alice",
+        "alias:alice": "person:alice",
+        "id:bob": "person:bob",
+        "id:carol": "person:carol",
+        "id:dave": "person:dave",
+        "id:eve": "person:eve"
+      },
+      "relation_type_policy": "typed-exact",
+      "relation_type_aliases": {
+        "member-of": "member",
+        "membership": "member",
+        "authorizes": "authorizes",
+        "observes": "observes",
+        "links": "links"
+      },
+      "multiplicity_policy": "multiset-exact",
+      "direction_policy": "directed-exact",
+      "scope_policy": "global",
+      "scope_anchor": null
+    },
+    "alias-global": {
+      "kind": "edge-relation",
+      "identity_policy": "alias-permitted",
+      "identity_aliases": {
+        "id:alice": "person:alice",
+        "alias:alice": "person:alice",
+        "id:bob": "person:bob",
+        "id:carol": "person:carol",
+        "id:dave": "person:dave",
+        "id:eve": "person:eve"
+      },
+      "relation_type_policy": "typed-exact",
+      "relation_type_aliases": {
+        "member-of": "member",
+        "membership": "member",
+        "authorizes": "authorizes",
+        "observes": "observes",
+        "links": "links"
+      },
+      "multiplicity_policy": "multiset-exact",
+      "direction_policy": "directed-exact",
+      "scope_policy": "global",
+      "scope_anchor": null
+    },
+    "type-normalized-global": {
+      "kind": "edge-relation",
+      "identity_policy": "anchored",
+      "identity_aliases": {
+        "id:alice": "person:alice",
+        "alias:alice": "person:alice",
+        "id:bob": "person:bob",
+        "id:carol": "person:carol",
+        "id:dave": "person:dave",
+        "id:eve": "person:eve"
+      },
+      "relation_type_policy": "type-normalized",
+      "relation_type_aliases": {
+        "member-of": "member",
+        "membership": "member",
+        "authorizes": "authorizes",
+        "observes": "observes",
+        "links": "links"
+      },
+      "multiplicity_policy": "multiset-exact",
+      "direction_policy": "directed-exact",
+      "scope_policy": "global",
+      "scope_anchor": null
+    },
+    "set-global": {
+      "kind": "edge-relation",
+      "identity_policy": "anchored",
+      "identity_aliases": {
+        "id:alice": "person:alice",
+        "alias:alice": "person:alice",
+        "id:bob": "person:bob",
+        "id:carol": "person:carol",
+        "id:dave": "person:dave",
+        "id:eve": "person:eve"
+      },
+      "relation_type_policy": "typed-exact",
+      "relation_type_aliases": {
+        "member-of": "member",
+        "membership": "member",
+        "authorizes": "authorizes",
+        "observes": "observes",
+        "links": "links"
+      },
+      "multiplicity_policy": "set-collapsed",
+      "direction_policy": "directed-exact",
+      "scope_policy": "global",
+      "scope_anchor": null
+    },
+    "undirected-global": {
+      "kind": "edge-relation",
+      "identity_policy": "anchored",
+      "identity_aliases": {
+        "id:alice": "person:alice",
+        "alias:alice": "person:alice",
+        "id:bob": "person:bob",
+        "id:carol": "person:carol",
+        "id:dave": "person:dave",
+        "id:eve": "person:eve"
+      },
+      "relation_type_policy": "typed-exact",
+      "relation_type_aliases": {
+        "member-of": "member",
+        "membership": "member",
+        "authorizes": "authorizes",
+        "observes": "observes",
+        "links": "links"
+      },
+      "multiplicity_policy": "multiset-exact",
+      "direction_policy": "direction-ignored",
+      "scope_policy": "global",
+      "scope_anchor": null
+    },
+    "strict-local": {
+      "kind": "edge-relation",
+      "identity_policy": "anchored",
+      "identity_aliases": {
+        "id:alice": "person:alice",
+        "alias:alice": "person:alice",
+        "id:bob": "person:bob",
+        "id:carol": "person:carol",
+        "id:dave": "person:dave",
+        "id:eve": "person:eve"
+      },
+      "relation_type_policy": "typed-exact",
+      "relation_type_aliases": {
+        "member-of": "member",
+        "membership": "member",
+        "authorizes": "authorizes",
+        "observes": "observes",
+        "links": "links"
+      },
+      "multiplicity_policy": "multiset-exact",
+      "direction_policy": "directed-exact",
+      "scope_policy": "local-bounded",
+      "scope_anchor": "local:A"
+    }
+  },
+  "witnesses": [
+    {
+      "witness_id": "identity-alias",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "alias:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "relation-type-normalization",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "member-of",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "membership",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "multiplicity-collapse",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          },
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "direction-reversal",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "authorizes",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:bob",
+            "relation_type": "authorizes",
+            "target": "id:alice",
+            "scope": "local:A"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "scope-outside-drift",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "observes",
+            "target": "id:bob",
+            "scope": "local:A"
+          },
+          {
+            "source": "id:carol",
+            "relation_type": "authorizes",
+            "target": "id:dave",
+            "scope": "global:outside"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "observes",
+            "target": "id:bob",
+            "scope": "local:A"
+          },
+          {
+            "source": "id:carol",
+            "relation_type": "authorizes",
+            "target": "id:eve",
+            "scope": "global:outside"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "positive-control",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "undeclared-alias",
+      "before": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["global", "local:A"],
+        "relations": [
+          {
+            "source": "alias:mallory",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      }
+    },
+    {
+      "witness_id": "incomplete-global-scope",
+      "before": {
+        "complete_scopes": ["local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      },
+      "after": {
+        "complete_scopes": ["local:A"],
+        "relations": [
+          {
+            "source": "id:alice",
+            "relation_type": "links",
+            "target": "id:bob",
+            "scope": "local:A"
+          }
+        ]
+      }
+    }
+  ],
+  "policy_pairs": [
+    {
+      "axis": "identity",
+      "left_policy": "strict-global",
+      "right_policy": "alias-global",
+      "required_witnesses": ["identity-alias"],
+      "expected_outcomes": {
+        "identity-alias": {"left": "VIOLATED", "right": "PRESERVED"},
+        "relation-type-normalization": {"left": "VIOLATED", "right": "VIOLATED"},
+        "multiplicity-collapse": {"left": "VIOLATED", "right": "VIOLATED"},
+        "direction-reversal": {"left": "VIOLATED", "right": "VIOLATED"},
+        "scope-outside-drift": {"left": "VIOLATED", "right": "VIOLATED"},
+        "positive-control": {"left": "PRESERVED", "right": "PRESERVED"},
+        "undeclared-alias": {"left": "VIOLATED", "right": "UNVERIFIABLE"},
+        "incomplete-global-scope": {"left": "UNVERIFIABLE", "right": "UNVERIFIABLE"}
+      }
+    },
+    {
+      "axis": "relation_type",
+      "left_policy": "strict-global",
+      "right_policy": "type-normalized-global",
+      "required_witnesses": ["relation-type-normalization"],
+      "expected_outcomes": {
+        "identity-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "relation-type-normalization": {"left": "VIOLATED", "right": "PRESERVED"},
+        "multiplicity-collapse": {"left": "VIOLATED", "right": "VIOLATED"},
+        "direction-reversal": {"left": "VIOLATED", "right": "VIOLATED"},
+        "scope-outside-drift": {"left": "VIOLATED", "right": "VIOLATED"},
+        "positive-control": {"left": "PRESERVED", "right": "PRESERVED"},
+        "undeclared-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "incomplete-global-scope": {"left": "UNVERIFIABLE", "right": "UNVERIFIABLE"}
+      }
+    },
+    {
+      "axis": "multiplicity",
+      "left_policy": "strict-global",
+      "right_policy": "set-global",
+      "required_witnesses": ["multiplicity-collapse"],
+      "expected_outcomes": {
+        "identity-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "relation-type-normalization": {"left": "VIOLATED", "right": "VIOLATED"},
+        "multiplicity-collapse": {"left": "VIOLATED", "right": "PRESERVED"},
+        "direction-reversal": {"left": "VIOLATED", "right": "VIOLATED"},
+        "scope-outside-drift": {"left": "VIOLATED", "right": "VIOLATED"},
+        "positive-control": {"left": "PRESERVED", "right": "PRESERVED"},
+        "undeclared-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "incomplete-global-scope": {"left": "UNVERIFIABLE", "right": "UNVERIFIABLE"}
+      }
+    },
+    {
+      "axis": "direction",
+      "left_policy": "strict-global",
+      "right_policy": "undirected-global",
+      "required_witnesses": ["direction-reversal"],
+      "expected_outcomes": {
+        "identity-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "relation-type-normalization": {"left": "VIOLATED", "right": "VIOLATED"},
+        "multiplicity-collapse": {"left": "VIOLATED", "right": "VIOLATED"},
+        "direction-reversal": {"left": "VIOLATED", "right": "PRESERVED"},
+        "scope-outside-drift": {"left": "VIOLATED", "right": "VIOLATED"},
+        "positive-control": {"left": "PRESERVED", "right": "PRESERVED"},
+        "undeclared-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "incomplete-global-scope": {"left": "UNVERIFIABLE", "right": "UNVERIFIABLE"}
+      }
+    },
+    {
+      "axis": "scope",
+      "left_policy": "strict-global",
+      "right_policy": "strict-local",
+      "required_witnesses": ["scope-outside-drift", "incomplete-global-scope"],
+      "expected_outcomes": {
+        "identity-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "relation-type-normalization": {"left": "VIOLATED", "right": "VIOLATED"},
+        "multiplicity-collapse": {"left": "VIOLATED", "right": "VIOLATED"},
+        "direction-reversal": {"left": "VIOLATED", "right": "VIOLATED"},
+        "scope-outside-drift": {"left": "VIOLATED", "right": "PRESERVED"},
+        "positive-control": {"left": "PRESERVED", "right": "PRESERVED"},
+        "undeclared-alias": {"left": "VIOLATED", "right": "VIOLATED"},
+        "incomplete-global-scope": {"left": "UNVERIFIABLE", "right": "PRESERVED"}
+      }
+    }
+  ]
+}
