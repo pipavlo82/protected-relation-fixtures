@@ -1,0 +1,36 @@
+{
+  "schema": "prf-invinoveritas-epistemic-basis-evidence.v0",
+  "case_study_id": "invinoveritas-epistemic-basis-commitment-v18",
+  "classification": "ADDITIVE_POST_V0_REAL_WORLD_CASE_STUDY",
+  "starting_prf_main": "d3f81f7fa8806135649a616a4b609fbb4f7eca44",
+  "frozen_v0": {
+    "commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+    "tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63"
+  },
+  "public_source_authority": {
+    "repository": "babyblueviper1/invinoveritas",
+    "default_branch": "main",
+    "commit": "3bdea4f08d7a399acd07c4e6d36e34dd38fadee8",
+    "tree": "4f0d45ba90bde841b304477ecda86d7aac18da70"
+  },
+  "public_production_authority": {
+    "event_id": "725eaec0331a0f08f5311fef3c6f85c5d7f080eec87bf12098682ab9bb924c87",
+    "decision_ref": "sha256:55d9f7032dd271c495a0187d866ca45a9edd78d78a55b77cbd7405442bbc520d",
+    "legacy_ledger_entry": 260
+  },
+  "artifact_inventory": {
+    "path": "source-inventory.json",
+    "artifact_count": 10,
+    "total_bytes": 83231,
+    "sha256": "8fd61d761eb8c6e3fff55d356ac0a69e55ca2078096bac89ead9b6c1dddfd433"
+  },
+  "metadata_digests": {
+    "README.md": "34e55d7ccae10754761e10d55d165cccaf0f59e9d3d8042d3f8f282f8868d953",
+    "REPORT.md": "da7e0acbcce4bbd409dbad53f2dc56c974675a52fa8e5b2bd1802822ba717030",
+    "case-results.json": "3a8b1fc702cf7c6e23dd4b98f5fc343d8b408afca84307152d1617da972ec115",
+    "cases.json": "378112302667570112442c8a20858e40a715629a13f77367f83702549b87306c",
+    "live-reproduction-summary.json": "59e3f8a05f9a67894cb452591d5a4845c880f2354998c9763b35ff9e2585d2cf",
+    "upstream-report.json": "8618cc5745f74cb78e72fe88b9d541e7990a5f081f8a08e8289c4bb55dfea8b1"
+  },
+  "authority_boundary": "Independent public-production evidence establishes the captured v18 commitment behavior and v17 compatibility behavior. Upstream-reported implementation commits and tests remain separately classified where public repository provenance could not be resolved. Frozen v0 is not modified or reinterpreted."
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "prf-invinoveritas-source-inventory.v0",
+  "case_study_id": "invinoveritas-epistemic-basis-commitment-v18",
+  "repositories": {
+    "babyblueviper1/invinoveritas": {
+      "default_branch": "main",
+      "commit": "3bdea4f08d7a399acd07c4e6d36e34dd38fadee8",
+      "tree": "4f0d45ba90bde841b304477ecda86d7aac18da70"
+    }
+  },
+  "artifact_count": 10,
+  "total_bytes": 83231,
+  "artifacts": [
+    {
+      "relative_path": "live/v17-ledger-260-verify.request.json",
+      "classification": "LIVE_REQUEST",
+      "source_uri": "https://api.babyblueviper.com/verify-proof",
+      "byte_length": 4059,
+      "sha256": "1c193d63083d137f19146b10bdf016cfcb4dc8df469c3d777025909a95f032c9",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v17-ledger-260-verify.response.json",
+      "classification": "LIVE_RESPONSE",
+      "source_uri": "https://api.babyblueviper.com/verify-proof",
+      "byte_length": 10095,
+      "sha256": "f2250c7ca9a860885138bda9c58f3327962c344b7775c7158603df0b0899f5bd",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v17-ledger-260.response.json",
+      "classification": "LIVE_RESPONSE",
+      "source_uri": "https://api.babyblueviper.com/ledger/260",
+      "byte_length": 13897,
+      "sha256": "18d67d9db0bb718061b4bf309912d61f48692776709a7298b1802678e2a21ad9",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v18-original-retrieval.response.json",
+      "classification": "LIVE_RESPONSE",
+      "source_uri": "https://api.babyblueviper.com/verdict-proofs/725eaec0331a0f08f5311fef3c6f85c5d7f080eec87bf12098682ab9bb924c87",
+      "byte_length": 8780,
+      "sha256": "46f7bb703f524206d5763c5e9c4047b5397da9ca47825c7f32db7b1ce7d064c1",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v18-original-verify.request.json",
+      "classification": "LIVE_REQUEST",
+      "source_uri": "https://api.babyblueviper.com/verify-proof",
+      "byte_length": 4613,
+      "sha256": "2fe480a3cd125caa90fcf4fcaeb6d23c9109da024f4ba8fd598c060780de5153",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v18-original-verify.response.json",
+      "classification": "LIVE_RESPONSE",
+      "source_uri": "https://api.babyblueviper.com/verify-proof",
+      "byte_length": 11806,
+      "sha256": "530230a64b738cc78fea061c08b0e4b92fcedc766e57f07f340e29dad55f8de3",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v18-tamper-diff.json",
+      "classification": "DERIVED_TAMPER_DESCRIPTION",
+      "source_uri": "local:single-field-mutation-of-v18-original",
+      "byte_length": 261,
+      "sha256": "411b06aa38d4c2bfc71b5f6ec5e640f4483fff11a3e7b9dfc9c9fda53104b968",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v18-tampered-verify.request.json",
+      "classification": "DERIVED_LIVE_REQUEST",
+      "source_uri": "https://api.babyblueviper.com/verify-proof",
+      "byte_length": 4629,
+      "sha256": "94aa19dca268965262fd92653ddecf75a73c8f752afcc58a5ac20685fc66bba0",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "live/v18-tampered-verify.response.json",
+      "classification": "LIVE_RESPONSE_TO_DERIVED_REQUEST",
+      "source_uri": "https://api.babyblueviper.com/verify-proof",
+      "byte_length": 10881,
+      "sha256": "7ec22d04f64956a86cb8f8433458a6a19d224123351d6fc98f32750e33f195b0",
+      "git_blob_sha1": null
+    },
+    {
+      "relative_path": "sources/invinoveritas/examples/rvr-verdict-worked-example/verdict_proof_v17.json",
+      "classification": "SOURCE_GIT_BLOB",
+      "source_uri": "https://github.com/babyblueviper1/invinoveritas/blob/3bdea4f08d7a399acd07c4e6d36e34dd38fadee8/examples/rvr-verdict-worked-example/verdict_proof_v17.json",
+      "repository": "babyblueviper1/invinoveritas",
+      "commit": "3bdea4f08d7a399acd07c4e6d36e34dd38fadee8",
+      "tree": "4f0d45ba90bde841b304477ecda86d7aac18da70",
+      "source_path": "examples/rvr-verdict-worked-example/verdict_proof_v17.json",
+      "git_blob_sha1": "2b30c729503f96f5545f8d8875e3d473d884a9eb",
+      "byte_length": 14210,
+      "sha256": "7f83f9bd8b2c6cba0631d642043510ace279fa76d97515eec336277c7829233b"
+    }
+  ]
+}

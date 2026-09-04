@@ -1,0 +1,58 @@
+{
+  "schema": "prf-live-reproduction-summary.v0",
+  "case_study_id": "invinoveritas-epistemic-basis-commitment-v18",
+  "observed_at": "2026-09-04T22:18:30Z",
+  "timestamp_authority": "NON_AUTHORITATIVE_METADATA",
+  "checks": [
+    {
+      "check_id": "IV-LIVE-001",
+      "method": "GET",
+      "endpoint": "https://api.babyblueviper.com/verdict-proofs/725eaec0331a0f08f5311fef3c6f85c5d7f080eec87bf12098682ab9bb924c87",
+      "status": "LIVE_REPRODUCED",
+      "http_status": 200,
+      "response_path": "live/v18-original-retrieval.response.json"
+    },
+    {
+      "check_id": "IV-LIVE-002",
+      "method": "POST",
+      "endpoint": "https://api.babyblueviper.com/verify-proof",
+      "status": "LIVE_REPRODUCED",
+      "http_status": 200,
+      "request_path": "live/v18-original-verify.request.json",
+      "response_path": "live/v18-original-verify.response.json",
+      "result": "ORIGINAL_V18_VALID"
+    },
+    {
+      "check_id": "IV-LIVE-003",
+      "method": "POST",
+      "endpoint": "https://api.babyblueviper.com/verify-proof",
+      "status": "LIVE_REPRODUCED",
+      "http_status": 200,
+      "request_path": "live/v18-tampered-verify.request.json",
+      "response_path": "live/v18-tampered-verify.response.json",
+      "result": "DECISION_REF_RECOMPUTATION_FAILED"
+    },
+    {
+      "check_id": "IV-LIVE-004",
+      "method": "GET",
+      "endpoint": "https://api.babyblueviper.com/ledger/260",
+      "status": "LIVE_REPRODUCED",
+      "http_status": 200,
+      "response_path": "live/v17-ledger-260.response.json"
+    },
+    {
+      "check_id": "IV-LIVE-005",
+      "method": "POST",
+      "endpoint": "https://api.babyblueviper.com/verify-proof",
+      "status": "LIVE_REPRODUCED",
+      "http_status": 200,
+      "request_path": "live/v17-ledger-260-verify.request.json",
+      "response_path": "live/v17-ledger-260-verify.response.json",
+      "result": "LEGACY_V17_VALID"
+    }
+  ],
+  "offline_decision_ref_recomputation": {
+    "status": "NOT_PERFORMED",
+    "reason": "The PRF repository has no independently pinned RFC 8785 implementation for this InvinoVeritas preimage contract. An approximate canonicalizer is not substituted for public verifier reproduction."
+  }
+}
