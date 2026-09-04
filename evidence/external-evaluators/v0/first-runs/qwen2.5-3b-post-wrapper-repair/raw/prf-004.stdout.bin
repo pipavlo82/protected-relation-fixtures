@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The relation 'supports' with the scope ['A', 'B'] from the before state is no longer present in the after state. This represents a change that violates the protected relation profile's direction policy, as it shows an absence of a relation instead of its presence."}
+

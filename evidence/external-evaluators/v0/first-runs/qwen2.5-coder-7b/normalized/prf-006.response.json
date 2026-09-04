@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "743f06792deb278a079c97b5577c027a7a134792f9e72a9a88ff48ebed304d1e",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2/model-dae161e27b0e",
+    "config_digest": "15f4520d96a7bf405b87e23378a0c6fd238da134f981908e94cd6b219f7cd25a"
+  },
+  "evaluator_output_digest": "b745f1e9e223004ccfdf15ce958fa4523a5cefa858a87a827d1a58da56d08cde",
+  "invocation_digest": "30dfdff33053245d6a3721053039be7abcfe89e07a0545df072713f720728d40",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"detail\":\"Insufficient semantic information to determine preservation or violation under the given protected relation profile. The before and after states do not provide enough context to validate against the policies specified in the profile.\"}",
+  "evidence": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "protected-relation-external-adapter-score.v0",
+  "requests": 6,
+  "semantic_responses": 6,
+  "adapter_failures": {},
+  "adapter_failure_total": 0,
+  "classifications": {
+    "MATCH": 2,
+    "UNSAFE_FALSE_PRESERVATION": 1,
+    "UNSAFE_UNVERIFIABLE_UPGRADE": 1,
+    "FALSE_VIOLATION": 0,
+    "PRESERVATION_NOT_ESTABLISHED": 1,
+    "VIOLATION_NOT_ESTABLISHED": 1,
+    "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+  },
+  "classification_rates": {
+    "MATCH": 0.3333333333333333,
+    "UNSAFE_FALSE_PRESERVATION": 0.16666666666666666,
+    "UNSAFE_UNVERIFIABLE_UPGRADE": 0.16666666666666666,
+    "FALSE_VIOLATION": 0.0,
+    "PRESERVATION_NOT_ESTABLISHED": 0.16666666666666666,
+    "VIOLATION_NOT_ESTABLISHED": 0.16666666666666666,
+    "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0.0
+  },
+  "details": [
+    {
+      "challenge_id": "prf-001",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "UNVERIFIABLE",
+      "classification": "VIOLATION_NOT_ESTABLISHED"
+    },
+    {
+      "challenge_id": "prf-002",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "VIOLATED",
+      "classification": "MATCH"
+    },
+    {
+      "challenge_id": "prf-003",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "PRESERVED",
+      "classification": "UNSAFE_UNVERIFIABLE_UPGRADE"
+    },
+    {
+      "challenge_id": "prf-004",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "VIOLATED",
+      "classification": "MATCH"
+    },
+    {
+      "challenge_id": "prf-005",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "PRESERVED",
+      "classification": "UNSAFE_FALSE_PRESERVATION"
+    },
+    {
+      "challenge_id": "prf-006",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "UNVERIFIABLE",
+      "classification": "PRESERVATION_NOT_ESTABLISHED"
+    }
+  ]
+}

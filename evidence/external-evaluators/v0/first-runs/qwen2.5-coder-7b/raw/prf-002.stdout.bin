@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The relation type policy is set to 'typed-exact', but the before state uses 'owns' while the after state uses 'depends_on'. The protected relation profile enforces exact typed relations, leading to a violation."}
+

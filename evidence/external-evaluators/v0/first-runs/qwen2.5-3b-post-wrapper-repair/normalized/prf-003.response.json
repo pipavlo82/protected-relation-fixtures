@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+  },
+  "evaluator_output_digest": "ca9317db19dd217b7b0f86db03f56c74f92360561dfd917fdd3cc8a19e9e1f24",
+  "invocation_digest": "a2a1317151932283809f6ea8c82143996765a95cdda52c9024ec5a1caa7a9863",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "Insufficient semantic information to evaluate the protected relation based on the provided state.",
+  "evidence": []
+}

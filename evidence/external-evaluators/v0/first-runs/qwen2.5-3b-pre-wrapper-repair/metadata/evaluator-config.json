@@ -1,0 +1,14 @@
+{
+  "provider": "local-ollama-wsl",
+  "wsl_distro": "Ubuntu",
+  "ollama_executable": "/usr/local/bin/ollama",
+  "ollama_version": "0.15.2",
+  "model": "qwen2.5:3b-instruct",
+  "model_id": "357c53fb659c",
+  "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+  "response_format": "json",
+  "hide_thinking": true,
+  "keepalive": "0",
+  "history": false,
+  "model_calls_per_challenge": 1
+}

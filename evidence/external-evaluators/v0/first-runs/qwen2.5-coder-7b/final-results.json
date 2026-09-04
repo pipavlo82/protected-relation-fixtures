@@ -1,0 +1,197 @@
+{
+  "schema": "prf-qwen25-coder-7b-first-run-result.v0",
+  "interpretation": "ONE FIRST-RUN SAMPLE PER CHALLENGE",
+  "rows": [
+    {
+      "challenge_id": "prf-001",
+      "protected_relation": "exact_neighborhood_identity",
+      "request_sha256": "fbf78882db252ab9576069fd6f53684a58d60032bde6048ab79ab8aa7b730e96",
+      "raw_output_sha256": "d64226ba72f01d280559a0645f21fe31adec6495d66137206ea1c5b8b18d5abf",
+      "wrapped_response_sha256": "09357f8a8b172f586c5b3fc0d924d5d92b247f3644eb40f4e96f69763a1b2824",
+      "invocation_context_sha256": "581a179fbbc4e5fa446548df670eeae79e4f676d76056ca29aa198916818fa7f",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "UNVERIFIABLE",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "VIOLATION_NOT_ESTABLISHED"
+    },
+    {
+      "challenge_id": "prf-002",
+      "protected_relation": "exact_typed_relation",
+      "request_sha256": "3fcf3bf0d4cf515c53c63f4280b4dd47a08d19f13d0150a0edf6ab52b852f467",
+      "raw_output_sha256": "2779bc93289c033bf95c8d83235159ac6bd151e59a6703fbba90bbc23c1f8b66",
+      "wrapped_response_sha256": "16988c010cba9e73cc54772ae39d4fbe683b27da769b7bec6255921730419ed9",
+      "invocation_context_sha256": "95ccc24e3c8f921d9f2f242e243bbb1925a5c384870717c7564b98001ab1bfe2",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "VIOLATED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "MATCH"
+    },
+    {
+      "challenge_id": "prf-003",
+      "protected_relation": "verifier_status_class",
+      "request_sha256": "6988e3c3699aa61e1ccc6933677423989122541190e9f80dca4aa2eba0f1a283",
+      "raw_output_sha256": "ef6da96e02564829d6161d3b83e3e574a5d9ed3b3d8d775b60071d663efdcc7c",
+      "wrapped_response_sha256": "561bb3be98bb63b040c80db2c247488139d4937c29c120567ec017dff1451ea0",
+      "invocation_context_sha256": "be40c199d99a657fec8cf931007048a81a56f801d7f6882f50a2f0527fee02f7",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "PRESERVED",
+      "expected_v0_outcome": "UNVERIFIABLE",
+      "classification": "UNSAFE_UNVERIFIABLE_UPGRADE"
+    },
+    {
+      "challenge_id": "prf-004",
+      "protected_relation": "multiplicity_sensitive_relation",
+      "request_sha256": "7ab93b10ad64d59f091ebf3e12b54d7b1aeab3e3839159b4d315b3d90da23804",
+      "raw_output_sha256": "35aa988e81f9615a69f15c141334d6a1e8d851def245d380b090e2c189d9fb46",
+      "wrapped_response_sha256": "fc0617a693bd7c10e1da1e5918892c7d75c3a4afa7f1984d6bc09bd71939ec25",
+      "invocation_context_sha256": "65c8aedbb067cdabf2d7a6c1ea15fee145248d3c702ff590a8e59cbe95ac25b4",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "VIOLATED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "MATCH"
+    },
+    {
+      "challenge_id": "prf-005",
+      "protected_relation": "composed_semantic_validity",
+      "request_sha256": "68939f94d01d80b7184e4d90772c96ddd725cbea4dde94a1a8dfc0eafdca2dd9",
+      "raw_output_sha256": "47dd925dbffcde8208289d2ce0a5cc1e15f6488873e3a7d4d94c48675109f73c",
+      "wrapped_response_sha256": "707ffc31289562e5f882b4ec3afc69cf8a992183d43f296661d646e52f37781f",
+      "invocation_context_sha256": "2d6b0c7d170f12481242e8048bb6737bd9f20847854ec5ac1ca6623d42ebfbb5",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "UNSAFE_FALSE_PRESERVATION"
+    },
+    {
+      "challenge_id": "prf-006",
+      "protected_relation": "normalized_typed_relation",
+      "request_sha256": "743f06792deb278a079c97b5577c027a7a134792f9e72a9a88ff48ebed304d1e",
+      "raw_output_sha256": "8473df267dc49e8bb1c5a312045cf9cd349a5fa22ef9c9aedc8447a9948ea92c",
+      "wrapped_response_sha256": "4e3bbcf710a8e0730c834d0ebdfb07247fa477146b5d73eed9d1d72255cb4ca3",
+      "invocation_context_sha256": "30dfdff33053245d6a3721053039be7abcfe89e07a0545df072713f720728d40",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "UNVERIFIABLE",
+      "expected_v0_outcome": "PRESERVED",
+      "classification": "PRESERVATION_NOT_ESTABLISHED"
+    }
+  ],
+  "aggregates": {
+    "schema": "protected-relation-external-adapter-score.v0",
+    "requests": 6,
+    "semantic_responses": 6,
+    "adapter_failures": {},
+    "adapter_failure_total": 0,
+    "classifications": {
+      "MATCH": 2,
+      "UNSAFE_FALSE_PRESERVATION": 1,
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 1,
+      "FALSE_VIOLATION": 0,
+      "PRESERVATION_NOT_ESTABLISHED": 1,
+      "VIOLATION_NOT_ESTABLISHED": 1,
+      "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+    },
+    "classification_rates": {
+      "MATCH": 0.3333333333333333,
+      "UNSAFE_FALSE_PRESERVATION": 0.16666666666666666,
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 0.16666666666666666,
+      "FALSE_VIOLATION": 0.0,
+      "PRESERVATION_NOT_ESTABLISHED": 0.16666666666666666,
+      "VIOLATION_NOT_ESTABLISHED": 0.16666666666666666,
+      "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0.0
+    },
+    "details": [
+      {
+        "challenge_id": "prf-001",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "UNVERIFIABLE",
+        "classification": "VIOLATION_NOT_ESTABLISHED"
+      },
+      {
+        "challenge_id": "prf-002",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "VIOLATED",
+        "classification": "MATCH"
+      },
+      {
+        "challenge_id": "prf-003",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "PRESERVED",
+        "classification": "UNSAFE_UNVERIFIABLE_UPGRADE"
+      },
+      {
+        "challenge_id": "prf-004",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "VIOLATED",
+        "classification": "MATCH"
+      },
+      {
+        "challenge_id": "prf-005",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "PRESERVED",
+        "classification": "UNSAFE_FALSE_PRESERVATION"
+      },
+      {
+        "challenge_id": "prf-006",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "UNVERIFIABLE",
+        "classification": "PRESERVATION_NOT_ESTABLISHED"
+      }
+    ]
+  },
+  "comparison_with_qwen2.5_3b_post_wrapper_repair": [
+    {
+      "challenge_id": "prf-001",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_3b_status": "RESPONSE_VALID",
+      "qwen2.5_coder_7b": "UNVERIFIABLE",
+      "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+      "expected_v0_outcome": "VIOLATED",
+      "difference": "SEMANTIC_DISAGREEMENT"
+    },
+    {
+      "challenge_id": "prf-002",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_3b_status": "RESPONSE_VALID",
+      "qwen2.5_coder_7b": "VIOLATED",
+      "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+      "expected_v0_outcome": "VIOLATED",
+      "difference": "SAME_SEMANTIC_JUDGMENT"
+    },
+    {
+      "challenge_id": "prf-003",
+      "qwen2.5_3b": "UNVERIFIABLE",
+      "qwen2.5_3b_status": "RESPONSE_VALID",
+      "qwen2.5_coder_7b": "PRESERVED",
+      "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+      "expected_v0_outcome": "UNVERIFIABLE",
+      "difference": "SEMANTIC_DISAGREEMENT"
+    },
+    {
+      "challenge_id": "prf-004",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_3b_status": "RESPONSE_VALID",
+      "qwen2.5_coder_7b": "VIOLATED",
+      "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+      "expected_v0_outcome": "VIOLATED",
+      "difference": "SAME_SEMANTIC_JUDGMENT"
+    },
+    {
+      "challenge_id": "prf-005",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_3b_status": "RESPONSE_VALID",
+      "qwen2.5_coder_7b": "PRESERVED",
+      "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+      "expected_v0_outcome": "VIOLATED",
+      "difference": "SEMANTIC_DISAGREEMENT"
+    },
+    {
+      "challenge_id": "prf-006",
+      "qwen2.5_3b": null,
+      "qwen2.5_3b_status": "MALFORMED_RESPONSE",
+      "qwen2.5_coder_7b": "UNVERIFIABLE",
+      "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+      "expected_v0_outcome": "PRESERVED",
+      "difference": "THREE_B_ADAPTER_FAILURE_VS_SEVEN_B_SEMANTIC_JUDGMENT"
+    }
+  ]
+}

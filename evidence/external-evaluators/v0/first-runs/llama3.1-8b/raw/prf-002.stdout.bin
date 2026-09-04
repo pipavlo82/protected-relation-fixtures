@@ -1,0 +1,3 @@
+{ "outcome": "VIOLATED", 
+  "reason_detail": "{\"relation_type_policy\":\"typed-exact\",\"equivalence_policy\":\"exact\"} Violation justified: Before 'owns' and after 'depends_on' are not equivalent under the protected relation profile's exact equivalence policy." }
+

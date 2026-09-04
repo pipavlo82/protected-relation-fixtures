@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "fbf78882db252ab9576069fd6f53684a58d60032bde6048ab79ab8aa7b730e96",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2/model-dae161e27b0e",
+    "config_digest": "15f4520d96a7bf405b87e23378a0c6fd238da134f981908e94cd6b219f7cd25a"
+  },
+  "evaluator_output_digest": "62c50a32e54bb7fccbc0b2b46020196e1621858f6189478fe793f4f14fc3b38a",
+  "invocation_digest": "581a179fbbc4e5fa446548df670eeae79e4f676d76056ca29aa198916818fa7f",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"error\":\"Insufficient information to determine the protected relation preservation. The scope and universe provided do not clearly define the protected elements or their relationships.\"}",
+  "evidence": []
+}

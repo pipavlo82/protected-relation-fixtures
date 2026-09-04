@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "2a6111aca0be8f4382133ea5b2b0eecac9f9eebca0b8e0cb735a8f7786db2202",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+  },
+  "evaluator_output_digest": "250eb1e359dac11ea0d59067aff3e0acbeb7be0550e85d2f643eab140f41dc3c",
+  "invocation_digest": "ff2f1dab20f8a67c39c55cdd30aa2fa106d11fcc7c16d3d952df6553f0e84c93",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The relation 'supports' with the scope ['A', 'B'] from the before state is no longer present in the after state. This represents a change that violates the protected relation profile's direction policy, as it shows an absence of a relation instead of its presence.",
+  "evidence": []
+}

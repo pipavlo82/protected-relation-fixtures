@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "7ab93b10ad64d59f091ebf3e12b54d7b1aeab3e3839159b4d315b3d90da23804",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2/model-dae161e27b0e",
+    "config_digest": "15f4520d96a7bf405b87e23378a0c6fd238da134f981908e94cd6b219f7cd25a"
+  },
+  "evaluator_output_digest": "308eedf3ed6943b189b915e336eaf5ad65e1af8dc2985b7053406a32b335d3d3",
+  "invocation_digest": "65c8aedbb067cdabf2d7a6c1ea15fee145248d3c702ff590a8e59cbe95ac25b4",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"before\": \"The relation between 'A' and 'B' has a multiplicity of 2 (two supporting links).\", \"after\": \"The relation between 'A' and 'B' now has a multiplicity of 1 (one supporting link), which is less than the before state, violating the multiplicity policy of 'multiset-exact'.\"}",
+  "evidence": []
+}

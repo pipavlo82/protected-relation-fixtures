@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The identity of 'A' has changed from ['B', 'C', 'D', 'E', 'F', 'G'] to ['B', 'C', 'D', 'H', 'I', 'J'], which does not match the exact neighborhood defined in the protected relation profile."}
+

@@ -1,0 +1,142 @@
+{
+  "schema": "protected-relation-external-evaluator-evidence-record.v0",
+  "version": "v0",
+  "benchmark": "Protected Relation Fixtures",
+  "authority": {
+    "frozen_v0_commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+    "frozen_v0_tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63",
+    "external_adapter_commit": "cf39a37d66222522368e719e3910c27a3eab31dd",
+    "evaluator_output_schema_sha256": "60c3c89bf2ae7d5d406c4449da5e3de728cd37c9ab3749038b7da30193a33fff",
+    "response_schema_sha256": "a8557965c090cb8e6d1a4dbc0e2b7cd44832e1b16dd2021d63a92729aaab0a7a"
+  },
+  "payload_inventory": {
+    "path": "payload-inventory.json",
+    "sha256": "8af09d9081def37c6a7012b6f4349642a7ce7553c8b5bf21b0b447199b9b9d87",
+    "total_files": 211,
+    "total_bytes": 1765722
+  },
+  "first_run_matrix": {
+    "path": "first-run-matrix.json",
+    "sha256": "3a55ddd5c502c0a5d4ab8255b7a76a271e8fce415d56400bddfbe65e70af786d",
+    "comparable_experiments": [
+      "qwen2.5-3b-post-wrapper-repair",
+      "qwen2.5-coder-7b",
+      "llama3.1-8b"
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_id": "qwen2.5-3b-pre-wrapper-repair",
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair",
+      "phase": "PRE_WRAPPER_REPAIR",
+      "comparable_semantic_baseline": false,
+      "model_identity": {
+        "provider": "local-ollama-wsl",
+        "runtime": "Ollama",
+        "runtime_version": "0.15.2",
+        "model": "qwen2.5:3b-instruct",
+        "model_id": "357c53fb659c",
+        "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6"
+      },
+      "capture_evidence": {
+        "model_calls": 6,
+        "one_call_per_challenge": true,
+        "no_retries": null,
+        "no_conversation_memory": true,
+        "oracle_leakage": "PASS",
+        "capture_before_scoring": null
+      },
+      "payload": {
+        "file_count": 49,
+        "byte_total": 241111,
+        "aggregate_inventory_sha256": "98c924d73b33b622f3f5649fb3929ef757325177379e55d5158c0948d648bd1b"
+      }
+    },
+    {
+      "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair",
+      "phase": "POST_WRAPPER_REPAIR",
+      "comparable_semantic_baseline": true,
+      "model_identity": {
+        "provider": "local-wsl-ollama",
+        "runtime": "Ollama",
+        "runtime_version": "0.15.2",
+        "model": "qwen2.5:3b-instruct",
+        "model_id": "357c53fb659c",
+        "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6"
+      },
+      "capture_evidence": {
+        "model_calls": 6,
+        "one_call_per_challenge": true,
+        "no_retries": true,
+        "no_conversation_memory": true,
+        "oracle_leakage": "PASS",
+        "capture_before_scoring": true
+      },
+      "payload": {
+        "file_count": 50,
+        "byte_total": 149711,
+        "aggregate_inventory_sha256": "3dbb31d3f248469c17fa765a1e094af4a138c3039a4a104ed31f850d9c4538c8"
+      }
+    },
+    {
+      "experiment_id": "qwen2.5-coder-7b",
+      "path": "first-runs/qwen2.5-coder-7b",
+      "phase": "POST_WRAPPER_REPAIR",
+      "comparable_semantic_baseline": true,
+      "model_identity": {
+        "provider": "local-wsl-ollama",
+        "runtime": "Ollama",
+        "runtime_version": "0.15.2",
+        "model": "qwen2.5-coder:7b",
+        "model_id": "dae161e27b0e",
+        "model_blob_digest": "sha256:60e05f2100071479f596b964f89f510f057ce397ea22f2833a0cfe029bfc2463"
+      },
+      "capture_evidence": {
+        "model_calls": 6,
+        "one_call_per_challenge": true,
+        "no_retries": true,
+        "no_conversation_memory": true,
+        "oracle_leakage": "PASS",
+        "capture_before_scoring": true
+      },
+      "payload": {
+        "file_count": 56,
+        "byte_total": 679849,
+        "aggregate_inventory_sha256": "bb0941cc334c8820fb86a1cbb720731a980725d9e8aa5d170cc7d7365e100a58"
+      }
+    },
+    {
+      "experiment_id": "llama3.1-8b",
+      "path": "first-runs/llama3.1-8b",
+      "phase": "POST_WRAPPER_REPAIR",
+      "comparable_semantic_baseline": true,
+      "model_identity": {
+        "provider": "local-wsl-ollama",
+        "runtime": "Ollama",
+        "runtime_version": "0.15.2",
+        "model": "llama3.1:8b",
+        "model_id": "46e0c10c039e",
+        "model_blob_digest": "sha256:667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29"
+      },
+      "capture_evidence": {
+        "model_calls": 6,
+        "one_call_per_challenge": true,
+        "no_retries": true,
+        "no_conversation_memory": true,
+        "oracle_leakage": "PASS",
+        "capture_before_scoring": true
+      },
+      "payload": {
+        "file_count": 56,
+        "byte_total": 695051,
+        "aggregate_inventory_sha256": "ccacad93df0b7d1e47da19509378550ba8d6ad96b3357aa4d0379119889b6a46"
+      }
+    }
+  ],
+  "authority_boundary": {
+    "reproduction_claim": "Committed transcripts bind what was observed under the recorded evaluator identity and configuration; they do not prove that a nondeterministic evaluator will reproduce the same judgment.",
+    "oracle_claim": "The frozen v0 oracle is benchmark authority for these comparisons, not a claim of universal external-domain truth.",
+    "sampling_claim": "Each comparable result is one first-run sample per model and challenge, with no retry and no stability or statistical-significance claim."
+  }
+}

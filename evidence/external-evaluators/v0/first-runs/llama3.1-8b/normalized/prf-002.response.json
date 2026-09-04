@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "a854d86d92aef60f811415c764d891e826ccc28c0439b7e2cc850657bf913034",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "id": "local-ollama-llama3.1-8b",
+    "version": "ollama-0.15.2/model-46e0c10c039e",
+    "config_digest": "d2246b550214152ac5f7ee7e15e83f8bd9b4be027d1413569a511bceda7893e2"
+  },
+  "evaluator_output_digest": "cb4eea6afdbef4d16ebc00f693a8135ea9b2cf188d5ec5374e29b8bc301f3bbc",
+  "invocation_digest": "34228490ba1916487188d286ede6822d451d187a5de8e281b668b89e2785508b",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"relation_type_policy\":\"typed-exact\",\"equivalence_policy\":\"exact\"} Violation justified: Before 'owns' and after 'depends_on' are not equivalent under the protected relation profile's exact equivalence policy.",
+  "evidence": []
+}

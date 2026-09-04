@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"\"evaluation_input\": {\"after\": {\"relation\": \"depends_on\", \"source\": \"A\", \"target\": \"B\"}, \"before\": {\"relation\": \"owns\", \"source\": \"A\", \"target\": \"B\"}}"}
+

@@ -1,0 +1,44 @@
+{
+  "schema": "prf-oracle-leakage-check.v0",
+  "status": "PASS",
+  "requests_checked": 6,
+  "answer_bearing_markers_found": 0,
+  "checks": [
+    {
+      "challenge_id": "prf-001",
+      "request_guard": "PASS",
+      "forbidden_keys": [],
+      "forbidden_values": []
+    },
+    {
+      "challenge_id": "prf-002",
+      "request_guard": "PASS",
+      "forbidden_keys": [],
+      "forbidden_values": []
+    },
+    {
+      "challenge_id": "prf-003",
+      "request_guard": "PASS",
+      "forbidden_keys": [],
+      "forbidden_values": []
+    },
+    {
+      "challenge_id": "prf-004",
+      "request_guard": "PASS",
+      "forbidden_keys": [],
+      "forbidden_values": []
+    },
+    {
+      "challenge_id": "prf-005",
+      "request_guard": "PASS",
+      "forbidden_keys": [],
+      "forbidden_values": []
+    },
+    {
+      "challenge_id": "prf-006",
+      "request_guard": "PASS",
+      "forbidden_keys": [],
+      "forbidden_values": []
+    }
+  ]
+}

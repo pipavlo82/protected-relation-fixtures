@@ -1,0 +1,1062 @@
+{
+  "schema": "protected-relation-external-evaluator-payload-inventory.v0",
+  "entries": [
+    {
+      "path": "first-runs/llama3.1-8b/capture-summary.json",
+      "byte_length": 6754,
+      "sha256": "6c6ca56376c2d4eb1d5e54be4f4d9e1a8b057590b2bf48832b4fbe508458b1cf"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/capture_run.py",
+      "byte_length": 7519,
+      "sha256": "b7e21626e518f2b7e5d537d8ffdd406c8d50b1ac6890c860d5fbec030d0f4890"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/final-results.json",
+      "byte_length": 7300,
+      "sha256": "f895e29e7a433be640964008994c8041eb6be359fd93aaf0d88ee3492f1aa042"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/llama_evaluator.py",
+      "byte_length": 2292,
+      "sha256": "4a847e7e34449905c41ce2dade076451189628995b1c2ebdf98c3942bda0c51c"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/oracle-leakage-check.json",
+      "byte_length": 950,
+      "sha256": "402fd3a144fb357435f1c5404627ed4eda922e2f4ad450c55232c16385fa2225"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/prf-001.json",
+      "byte_length": 913,
+      "sha256": "b641d7bb444b3bf033325142298b3b1619bd0fd8a459af186fb406027208825a"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/prf-002.json",
+      "byte_length": 912,
+      "sha256": "7af2943016a6bba2ba81267daa4eebe2ca1415841caa9e20908ec438832d1caf"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/prf-003.json",
+      "byte_length": 912,
+      "sha256": "dc6020a1c80cda8f3dc735bc67f13caf1580588fc58ebbc9d8c66fe095bb6a43"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/prf-004.json",
+      "byte_length": 913,
+      "sha256": "c2df291f098f36bd64aa728d7a775b2ba2051b59e7903e94e1d7bf5eba9d495e"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/prf-005.json",
+      "byte_length": 913,
+      "sha256": "e373b9e77f6b6ab8de2dd8507cfae93ac04a9d7c436c8d8c462e2dfe492e8c57"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/metadata/prf-006.json",
+      "byte_length": 912,
+      "sha256": "92c39c2b4a30a8bf56bc89519e6f821d4825b7789fff1612ce9f42efc51098cb"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-001.evaluator-output.json",
+      "byte_length": 166,
+      "sha256": "ea3bfa91aaa44a7bbfdd8735aada45d065d4c42ea230ec0f9d1401b5b93bdb60"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-001.response.json",
+      "byte_length": 1025,
+      "sha256": "1aaf5d606652cfb3b2aa501307e977aa57658a2db23ac0fcffb4b7e4049bcea4"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-002.evaluator-output.json",
+      "byte_length": 268,
+      "sha256": "955c96d48be7b8bd04055fa38031d55db0665d9aadd3ec25f266e815eca0bd36"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-002.response.json",
+      "byte_length": 1127,
+      "sha256": "63c0de3703d78f79ac4aa909700c013bb2e9eea31ec9fc1ebddb07aba53a959d"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-003.evaluator-output.json",
+      "byte_length": 135,
+      "sha256": "2e1e5194b661d8c1cabc8e3e25982feff6b52927c42cd6f6c96de83204134327"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-003.response.json",
+      "byte_length": 994,
+      "sha256": "0014b14e4951b24c89fd177b22108e1dd02da483b8d89bedce027b22b409a585"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-004.evaluator-output.json",
+      "byte_length": 666,
+      "sha256": "39fe4d2f946f2d3aade98e4547a904080386863aad0339cacb1d028bb0364379"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-004.response.json",
+      "byte_length": 1525,
+      "sha256": "10671399e1766e4c433bb21ce6403a037599422ea4bceec986f681aecaa77f8d"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-005.evaluator-output.json",
+      "byte_length": 221,
+      "sha256": "3a18c4bf9c67054fdf38bd62bee2c8a8f07ffed6b08c3e5dba56a38581180ac1"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-005.response.json",
+      "byte_length": 1080,
+      "sha256": "3320605b09659db2622ba35bd2a4ed2d967f039dc10b674e0163b17a3543f8f3"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-006.evaluator-output.json",
+      "byte_length": 128,
+      "sha256": "1177f3436ab4e6780e2d6934ef357a1cf1ac135f5b975973751e00d61ba3f89d"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/normalized/prf-006.response.json",
+      "byte_length": 987,
+      "sha256": "b01caf81dc70a9a26412a25fdeb12d97d5bca43ca41365eae5775b5642fed27e"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/prompts/prf-001.prompt.txt",
+      "byte_length": 1746,
+      "sha256": "4200d577bd50760cfb247965d9c230b665f1ca5a6f6b846f1c79cded0195fe59"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/prompts/prf-002.prompt.txt",
+      "byte_length": 1741,
+      "sha256": "cf77f9339176348b7c5f4b2112b869862c49df0bb01a74428ca355698cda917e"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/prompts/prf-003.prompt.txt",
+      "byte_length": 1792,
+      "sha256": "b8f8ec6a01215cb621837ce1cf3ca741bb7cf3f7b3ac68fc39570a41a883e83f"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/prompts/prf-004.prompt.txt",
+      "byte_length": 1874,
+      "sha256": "0929b81cf1765bf421587fc9741af0873486d41b63a234b19d36de023aef5759"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/prompts/prf-005.prompt.txt",
+      "byte_length": 2106,
+      "sha256": "0b547ef9f703c5429593fbb56222cd62b190e34f4da2d3eb4f13010e135bab39"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/prompts/prf-006.prompt.txt",
+      "byte_length": 2024,
+      "sha256": "6658bfd9dd377d0d78e8ee7a18a92866f6f03e4312945db3cee0cbdfeacad558"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-001.stderr.bin",
+      "byte_length": 93034,
+      "sha256": "44d4bfd8927843a04fdc5bf36215af57a859dfbf897a41f80236fc7bbbf8d5eb"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-001.stdout.bin",
+      "byte_length": 161,
+      "sha256": "b0a70ac994498ccf2332f0aa43683c366b5a0e2e57f6f28cb9390fb71240da78"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-002.stderr.bin",
+      "byte_length": 40426,
+      "sha256": "e32956a0f28d089aeb0c1e5d276db142f4338750d44db5aa7d02f179b161033b"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-002.stdout.bin",
+      "byte_length": 268,
+      "sha256": "b882aff70c824b34145ece072f78dd6637670ec91cdbce82de213af9c63d6494"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-003.stderr.bin",
+      "byte_length": 5443,
+      "sha256": "bc283b87a4114eec1c428aa98025afd1f463ab78dc62b9128c276910c25c6c39"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-003.stdout.bin",
+      "byte_length": 129,
+      "sha256": "649ee8e1e2708ed669cc786ea7a7b8ebd4235dacee7041f2c340442ec8e67730"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-004.stderr.bin",
+      "byte_length": 3508,
+      "sha256": "fa2fb442f7dd24b8bc7aa5ee635f04124024d45e0cc94b1fff2ded636f7e2209"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-004.stdout.bin",
+      "byte_length": 670,
+      "sha256": "70f8b9ffe5703d18f7f41fc3e55aa26bba93861e8611bc008f9b196ef20cde63"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-005.stderr.bin",
+      "byte_length": 2398,
+      "sha256": "875b99f0707a9242a07ceb0b8f3502ed56296d09c358cfc66d76e83923d4872a"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-005.stdout.bin",
+      "byte_length": 216,
+      "sha256": "cccfcd5d37e08f80eb6b83f641ea3f1635847dae4012d4a2872c65d4b35cc554"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-006.stderr.bin",
+      "byte_length": 2380,
+      "sha256": "535d3cf8ce2f32ef83bc6e95909aff9173bb344133dd1ebba741009a202a294e"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/raw/prf-006.stdout.bin",
+      "byte_length": 123,
+      "sha256": "48e035b0820a1389a6141bbffa51c13b5b8e253f9025e8329ef91a57b65feb2d"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/requests/prf-001.json",
+      "byte_length": 981,
+      "sha256": "13ef0b055760d50ad66cce4472ca8b89b8ed4375db5e93c10e12e52fc8164a5d"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/requests/prf-002.json",
+      "byte_length": 976,
+      "sha256": "a854d86d92aef60f811415c764d891e826ccc28c0439b7e2cc850657bf913034"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/requests/prf-003.json",
+      "byte_length": 1027,
+      "sha256": "d24479e92bbc0583afeb12950669b0477e513d7b4ccd6dc64424064430a1f215"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/requests/prf-004.json",
+      "byte_length": 1109,
+      "sha256": "6ef13c746649b3cc4b2ea5723a7c2d684ae24e74b1f858969b246321d62d8924"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/requests/prf-005.json",
+      "byte_length": 1341,
+      "sha256": "0c51400bd5737a8f7182f7d457195467973ad6d22140cae6090be12eb9a7900f"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/requests/prf-006.json",
+      "byte_length": 1259,
+      "sha256": "6c36950c895e4b5dc11c2753e49d10320be50aca798b25551d1efa171d0040ac"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/score-report.json",
+      "byte_length": 1840,
+      "sha256": "7ffdc11532f32e9db73350b629cf19082d8db8b908d58b1004640b1e17847b1c"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/score_run.py",
+      "byte_length": 3710,
+      "sha256": "ecf419d3e317502166a6675f5ab42cf1132c82cc12c50a25a87df520c9a59205"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/three-model-comparison.json",
+      "byte_length": 1101,
+      "sha256": "b301001646c6195ea20bcb1034a94bd0415b0197898c571ae50390b73062e72e"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/transcripts/prf-001.transcript.json",
+      "byte_length": 292605,
+      "sha256": "50b0e8c0ac93d729adc58d7d6855c513e75185ac34b41af9aa5c7bafb91bb63b"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/transcripts/prf-002.transcript.json",
+      "byte_length": 129843,
+      "sha256": "c49a327eea645bec78c205e4ebd2b5aebb18a31ee223cd1111d63fae896267d2"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/transcripts/prf-003.transcript.json",
+      "byte_length": 20696,
+      "sha256": "68899f68b7205c8021bee91be6809f2027f3d68996259a116d869e7b82acafe2"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/transcripts/prf-004.transcript.json",
+      "byte_length": 17099,
+      "sha256": "f84413cc4fbe807efd0ed3588fe6ce286307734162164de374a150aac054840e"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/transcripts/prf-005.transcript.json",
+      "byte_length": 11656,
+      "sha256": "ec06b20249fad3825f57ed817dfde7e1f4de6909fc99c5e884938a6d0670271c"
+    },
+    {
+      "path": "first-runs/llama3.1-8b/transcripts/prf-006.transcript.json",
+      "byte_length": 11157,
+      "sha256": "d7277951e97971bac2cf9cf9b42e64c67f4dbffd879f723ef45cc7fdbc2a7637"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/capture-summary.json",
+      "byte_length": 5517,
+      "sha256": "14980e02c1bc9b4269e96ec3aae90ee195f282f4abf67fc13720d9af8ef00a5e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/capture_run.py",
+      "byte_length": 8588,
+      "sha256": "1d9b9bb3bc1ecbbfa791df75fdf6f28a0aa2d1148807939b3ec34d4ca530df64"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/final-results.json",
+      "byte_length": 5724,
+      "sha256": "bdafd32d694d69b60ba085fbb4d04633c62e2601254c987ed74b906c885f4f1a"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/oracle-leakage-check.json",
+      "byte_length": 950,
+      "sha256": "402fd3a144fb357435f1c5404627ed4eda922e2f4ad450c55232c16385fa2225"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/original-run-inventory-after.json",
+      "byte_length": 7714,
+      "sha256": "cd718a7d88aeab5de93b837a0ba70d0ef006f8b746c5e0ec0083a9a62939dedf"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/original-run-inventory-before.json",
+      "byte_length": 7714,
+      "sha256": "cd718a7d88aeab5de93b837a0ba70d0ef006f8b746c5e0ec0083a9a62939dedf"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/prf-001.json",
+      "byte_length": 725,
+      "sha256": "8c093f4e868b15dd9b92d64b15502e0632bc14a3c650a26d85e8cf72a2f7ce4e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/prf-002.json",
+      "byte_length": 725,
+      "sha256": "1619d2ed439e4e1e77f8fa4e153868c289be9a4b29580e0a58252ec299dd22a9"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/prf-003.json",
+      "byte_length": 729,
+      "sha256": "d219f8c60fcf0c2acaeb54c1b783520a95fff310280e03f2e956085790976776"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/prf-004.json",
+      "byte_length": 725,
+      "sha256": "4843b6017cfa7655da38ac60a56243770025fd22aced7327571d03fd503f3147"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/prf-005.json",
+      "byte_length": 725,
+      "sha256": "a639d128cc5d65307bf98de619ee535aa6febdc5b2d61893980e0fbce16a8fb6"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/metadata/prf-006.json",
+      "byte_length": 599,
+      "sha256": "9e3714be1f5eb08a3ae65c5c3753a10382846e26dcc72089d18091f9456dca4c"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/normalized/prf-001.response.json",
+      "byte_length": 1107,
+      "sha256": "5d7d4413edf440893feb19afa2cb3decbb6c982ea4706b131fdc27af284ae2f5"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/normalized/prf-002.response.json",
+      "byte_length": 1097,
+      "sha256": "112715bf80cbd6164739e5affe9a2de8c0b4279f0aef808485bcce13dd194586"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/normalized/prf-003.response.json",
+      "byte_length": 1019,
+      "sha256": "79a4553c1de479d5a19bd242ac93ec45b0826409dbb549f032325f02468ffa13"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/normalized/prf-004.response.json",
+      "byte_length": 1182,
+      "sha256": "f042c21617ac64eae606a86ec7496725a214c61e90d5f6cc1db7c7c3fac9e89a"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/normalized/prf-005.response.json",
+      "byte_length": 1040,
+      "sha256": "13171b2442a5d23f78bc3472b3fd1483413d18b39ada4b1299c427ef25f1d644"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/prompts/prf-001.prompt.txt",
+      "byte_length": 1763,
+      "sha256": "f8391595ad12d877e46427be70fde7fc271e405f892e633e4ffb17132acc9242"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/prompts/prf-002.prompt.txt",
+      "byte_length": 1758,
+      "sha256": "08fd7245d5b5138f151fd508a36ad12666d959d66b7837fbf902489665c7c6a4"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/prompts/prf-003.prompt.txt",
+      "byte_length": 1809,
+      "sha256": "8ac89bf6d4c58296277808f95fb91e676f8a42eb4d9230a81e926406843f8f88"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/prompts/prf-004.prompt.txt",
+      "byte_length": 1891,
+      "sha256": "2d7eb66df5cb5a6895a0e8b893891393fb316ccf1bab01ac13956e1f8bcd5c3a"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/prompts/prf-005.prompt.txt",
+      "byte_length": 2123,
+      "sha256": "52bfc7805072235e4e1ce482c7722842df211137eac33876ad89c437e9e26336"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/prompts/prf-006.prompt.txt",
+      "byte_length": 2041,
+      "sha256": "b57d6c0f2a8eb7b118f9a3843ec209ff9f961b1da566eee5877b8d93da80dc22"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/qwen_evaluator.py",
+      "byte_length": 2390,
+      "sha256": "37e8537dbd1252fd4ec16246051506f6e71bb20c6f16beb9e547ce0efd1c2a44"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-001.stderr.bin",
+      "byte_length": 2857,
+      "sha256": "a8f8a00a2871834f825e0506952d7cb25dcfbc847481f34076586c62d6c45ba4"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-001.stdout.bin",
+      "byte_length": 232,
+      "sha256": "272b9e56d77d4c6c1d0fb19ed23ad3a8e0ac2b4e88aaf1de7309a967412438ee"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-002.stderr.bin",
+      "byte_length": 2254,
+      "sha256": "14f9b9002d57225c5207063859a82974210dd286415d5d41495713cbd6b98a3d"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-002.stdout.bin",
+      "byte_length": 222,
+      "sha256": "435dda96ebdb4967cf5ba6cadbcee12e954c11961b97c8756c11b358450ef430"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-003.stderr.bin",
+      "byte_length": 1588,
+      "sha256": "57f46690a7accf8b40fd5af79343a1ce2669a947cb9a67239d856332074954dd"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-003.stdout.bin",
+      "byte_length": 144,
+      "sha256": "a51fc4b6320898e52ba349f35cf9815dc7aac63a6ec4583fc70bc6cea3e9f874"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-004.stderr.bin",
+      "byte_length": 2200,
+      "sha256": "7a3511c733e6e4190ec077bfa413c1a49338edec3379e3058f837330695f4858"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-004.stdout.bin",
+      "byte_length": 307,
+      "sha256": "917156b314eaaef18aae28139e27736f12e0932805a00ce5e2621de83c25d016"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-005.stderr.bin",
+      "byte_length": 2017,
+      "sha256": "224ec43efb7b1c728baca3faae60fa8b555ead3d84e4b874a78001a49ffc7f9c"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-005.stdout.bin",
+      "byte_length": 165,
+      "sha256": "4cd7b256a13ca20d6a9419dcd5a1ddbb2788f460b3411647259106583d33706e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-006.stderr.bin",
+      "byte_length": 2143,
+      "sha256": "9f808ed8e263c4288c2810dedff7c3e55799ada8984e617c88217b3150b17abf"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/raw/prf-006.stdout.bin",
+      "byte_length": 99,
+      "sha256": "614b26af96417c0a67c077cbcd92bd00662173631b5ba718a70726a37dc754d5"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/requests/prf-001.json",
+      "byte_length": 998,
+      "sha256": "e64f4eabec6026bb569dc16b6c2b731cfe8f1d492ffac46678dbf6eed9dd9415"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/requests/prf-002.json",
+      "byte_length": 993,
+      "sha256": "b95d79c0cf3ef16625d22c18be0039785c3f9f8ad5d448dad496ba5177812c46"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/requests/prf-003.json",
+      "byte_length": 1044,
+      "sha256": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/requests/prf-004.json",
+      "byte_length": 1126,
+      "sha256": "2a6111aca0be8f4382133ea5b2b0eecac9f9eebca0b8e0cb735a8f7786db2202"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/requests/prf-005.json",
+      "byte_length": 1358,
+      "sha256": "de58d458428484069c4a970ad9010d97976e0247afdeec9291dcf51a98ef398e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/requests/prf-006.json",
+      "byte_length": 1276,
+      "sha256": "faa7887b20815390f9c3299385588150d54aafd2036422147dcce18f5c79f264"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/score-report.json",
+      "byte_length": 1683,
+      "sha256": "ebb38143f403512d380e9024533c454d9f0cf6493f5e1d2a83c262e2d2efdb59"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/score_run.py",
+      "byte_length": 2898,
+      "sha256": "94b8f2a756ec61dc817ecb5d9dcd4c7aece05b85350f9514041dab3d392ab3cf"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/transcripts/prf-001.transcript.json",
+      "byte_length": 13211,
+      "sha256": "03d761b3349d1e2d6ca86b6a038a1fa27672b977fdb605562b4992592c17404e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/transcripts/prf-002.transcript.json",
+      "byte_length": 11348,
+      "sha256": "9106110dae9c4b523f8e8d13db2f39a3d0aa3a195dd36f7ffae538e34c9c564c"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/transcripts/prf-003.transcript.json",
+      "byte_length": 8856,
+      "sha256": "7f698122a2c8deb99945853f0a3239abc9e5216b05224b914fb59b1d71a688a6"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/transcripts/prf-004.transcript.json",
+      "byte_length": 11493,
+      "sha256": "6829522ad4532017286c477c4ed6faf27b2fe267dd8bcbcf4922a454e8f8c834"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/transcripts/prf-005.transcript.json",
+      "byte_length": 10288,
+      "sha256": "f8f33d92a0eb269ffd5f13b21ea688d2ddfc4e7e34bceb6df8dddfc7e18d5bdf"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-post-wrapper-repair/transcripts/prf-006.transcript.json",
+      "byte_length": 9256,
+      "sha256": "1ea983b34c6d2cf3a72ed2263d77ed2a3a4c7aaa6d6d70bf66572ccf520bcd4e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/capture-summary.json",
+      "byte_length": 3851,
+      "sha256": "aaf5534c4aefee0aa830955fac33835fca498a593c6aa6b34a55f1c754e00429"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/capture_first_run.py",
+      "byte_length": 6294,
+      "sha256": "9afb994772332c4daf8f9a1f0a235f8bb8b7318626d7ab8895569cbb2b3a55da"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/final-results.json",
+      "byte_length": 5392,
+      "sha256": "a6e017ec58aa4117f1b074cd3c6ca6372ddb26897f02fac800f43c6739a0557b"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/evaluator-config.json",
+      "byte_length": 431,
+      "sha256": "927577d95fac64f4584efdfec3ffadb708b75d5d5beb0e809df468e972eb8677"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/ollama-server.pid",
+      "byte_length": 7,
+      "sha256": "5742858c1808dba8c6eea7183979ca8a17f3bf8f7292177a689e8882a44cea3b"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/ollama-server.stdout.log",
+      "byte_length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/oracle-leakage-check.json",
+      "byte_length": 848,
+      "sha256": "da8bb1ba6d8c48fe9c4f32d428562ace9f11c721ab7dfa572abf30a6a12557e0"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/prf-001.invocation.json",
+      "byte_length": 994,
+      "sha256": "dcfa5f929c1649fe9791357eddd5e5bb0979b488c7c9289fb02ab86ffa1cafb2"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/prf-002.invocation.json",
+      "byte_length": 994,
+      "sha256": "b574fc6f14e75fa9c603fb74a7b1010a00736c8c74676a521950a4087648e46b"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/prf-003.invocation.json",
+      "byte_length": 994,
+      "sha256": "0ebd29c2dd05c304641518766ad8d6aee748355fe96a8aef41d58f764d919679"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/prf-004.invocation.json",
+      "byte_length": 994,
+      "sha256": "af356c42bb6535d18ba116a9e1e98520f249e359b40e0d9a9c337d60d03e1ec3"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/prf-005.invocation.json",
+      "byte_length": 994,
+      "sha256": "71b6f1b2de86445035d63498031534c1533d92adb044ca2fdf3a6da12c83c2af"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/metadata/prf-006.invocation.json",
+      "byte_length": 994,
+      "sha256": "4101ba07bb5007ffbe76ea5dbf946394c5d8afde1c5dc9875606ce60b8ad75e0"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/normalized/prf-001.response.json",
+      "byte_length": 883,
+      "sha256": "94f3bc73e296e229ef504f4b59854a855da9e0e84fa49c3e2c5f31a1e55ea253"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/normalized/prf-004.response.json",
+      "byte_length": 709,
+      "sha256": "872d20c6101f70cea644b0d2a280fc9471bd1e6461969ec9eb1cdcf3c5ad6fe2"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/prompts/prf-001.prompt.txt",
+      "byte_length": 3955,
+      "sha256": "a9a7cb241f0cf625e4bbc32e0d0a38cb54c093fe28c2ec048546688bd00caa8f"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/prompts/prf-002.prompt.txt",
+      "byte_length": 3950,
+      "sha256": "a8d397f7fd31cc94e6554f6d0bb5ccd8820076a21395c40cfd8a5a5de7b6abc5"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/prompts/prf-003.prompt.txt",
+      "byte_length": 4001,
+      "sha256": "bbd7c48c12bc45e7b913da041eeb8abbb07ee68cefeb28d3ef5881eb159a1e95"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/prompts/prf-004.prompt.txt",
+      "byte_length": 4083,
+      "sha256": "e89cede11cd36c2e8c4f71a9d2822622ea6709018e0560b6b6eafc33af671c33"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/prompts/prf-005.prompt.txt",
+      "byte_length": 4315,
+      "sha256": "25d78f290f6ca03a1fea58d68d191e865d9d739188b74be772f9bf9136fadd68"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/prompts/prf-006.prompt.txt",
+      "byte_length": 4233,
+      "sha256": "7cfe44d42cd998532b4af0a5f31df9ebda0d2eac1cd9d4c05c1d231e94606087"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/qwen_adapter.py",
+      "byte_length": 4780,
+      "sha256": "c04718dd2a066d077f4f3a0f8f90027b932293a9414acdd5a35affaca55d1368"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-001.stderr.bin",
+      "byte_length": 23686,
+      "sha256": "f0baf062f7ceaffbbf85ef36fc958e54f4695571905b4c1aaf241cfa5defddb4"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-001.stdout.bin",
+      "byte_length": 884,
+      "sha256": "57417b72d2fb7c5d8fb75b4b10476a0e9d4a522a270fabf248a84a83e701e44e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-002.stderr.bin",
+      "byte_length": 5654,
+      "sha256": "609ad2a9993db7180a2229a4ef44c90515fdc7b8d8930e8f30d01ad305118d70"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-002.stdout.bin",
+      "byte_length": 402,
+      "sha256": "88888440fdd70c0ad91640c47b2c01468727ea4b5bfa66cabb8607712291a128"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-003.stderr.bin",
+      "byte_length": 6499,
+      "sha256": "d9ea789c049984dfeeb972a0356b522cf8de58adfe44e6da4ca9922882e7d751"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-003.stdout.bin",
+      "byte_length": 672,
+      "sha256": "5c6a6437752fcbf54560eafe36efd10ad3400983a92b642b219031bfc5cc4b8c"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-004.stderr.bin",
+      "byte_length": 5356,
+      "sha256": "d7e928a35a58b15b3ef754d1691b9c26b3f91753972eab72330c5e0d268961a8"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-004.stdout.bin",
+      "byte_length": 686,
+      "sha256": "1080eecf5c828cae9744271e491d5afe48762bc30728e8a375bc677b069e9214"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-005.stderr.bin",
+      "byte_length": 7300,
+      "sha256": "4cf4091ce94085c1efb9d0275ea227cbc23e0dfcb8e0de4e7d4458b7906ee296"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-005.stdout.bin",
+      "byte_length": 1316,
+      "sha256": "8be46fd964501556633f95e809e87267baf7af683485d4647bb1f1ad7d6e5e52"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-006.stderr.bin",
+      "byte_length": 5503,
+      "sha256": "c2275e73cf19b93aabb72ae4300b3ecb9ff385dae1ebb4e863d558969737161e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/raw/prf-006.stdout.bin",
+      "byte_length": 686,
+      "sha256": "7e48e122617bdb44b4c809f547831df40a141b676b011edde4676f0c619b9d6d"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/requests/prf-001.request.json",
+      "byte_length": 988,
+      "sha256": "615067eef86ef0b7d9fd7ec95a0e73f76475e9eef23286d0e30432254f6febd0"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/requests/prf-002.request.json",
+      "byte_length": 983,
+      "sha256": "e229d651459bfb209637903988b97caa6ae3214eb053b3322ea3137c3379ec54"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/requests/prf-003.request.json",
+      "byte_length": 1034,
+      "sha256": "b69caeec71d1a3e7c6e65d8187586f4720baecd776e582c197ebb025b0d12996"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/requests/prf-004.request.json",
+      "byte_length": 1116,
+      "sha256": "aa03fa5593a3495d7f60445f477d8cdf39b128bc01be26f6829cc4a77fdd90df"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/requests/prf-005.request.json",
+      "byte_length": 1348,
+      "sha256": "b4d7b207af5f1af42c9a323e4594a6d2f5c24c10a5234414639c2a18b1aedd7d"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/requests/prf-006.request.json",
+      "byte_length": 1266,
+      "sha256": "5dcdbb0076d7687214a1705ad612007da78d78de09a05f72caae983db6d505f9"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/score-report.json",
+      "byte_length": 1579,
+      "sha256": "2338ab1688dafeba37c7ffe995ae10e8952699fe771cb3eb082f24c7370eaeb3"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/score_captured_run.py",
+      "byte_length": 3252,
+      "sha256": "62ffc6cf2736122d5e8a2acdb02389a78b4a56cebd907d6bca8cdb003d5d212d"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/start-ollama.sh",
+      "byte_length": 503,
+      "sha256": "c3ffcf2a1807d5386f8baa6fc1fa448c58e2949765ccf428d102a7fd542a7d0e"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/transcripts/prf-001.transcript.json",
+      "byte_length": 46407,
+      "sha256": "3a4df6240c2a815e01217815d09fa1a71a4b22b116dccb1b56b6d654680606a5"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/transcripts/prf-002.transcript.json",
+      "byte_length": 11977,
+      "sha256": "95e5d312cccaf84a67561e085188f17d918ec73b39f8fed4781ad5765177f0fa"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/transcripts/prf-003.transcript.json",
+      "byte_length": 14508,
+      "sha256": "a648e63a7c47c20db33bd6a09654fd104f6eb2ea5ff4391cbc1dfde4d4e9cf0a"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/transcripts/prf-004.transcript.json",
+      "byte_length": 13289,
+      "sha256": "8368aef1184f32598646561d2c31585582b35782d9aa0682115b6014e908eaf5"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/transcripts/prf-005.transcript.json",
+      "byte_length": 17735,
+      "sha256": "2003912ab2ac3fad86715f28829f1c44f97929d90f60068a2456b3339488b0e7"
+    },
+    {
+      "path": "first-runs/qwen2.5-3b-pre-wrapper-repair/transcripts/prf-006.transcript.json",
+      "byte_length": 12786,
+      "sha256": "28083a9bafae79bbdec06c1cffa0c5607bf4e145faac78bf0796cb2d8f4aead7"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/capture-summary.json",
+      "byte_length": 6771,
+      "sha256": "4420d87cd5fb1b204cce22e68f7f96ff0cc0a07b54c03ba68ceda415a871c1cc"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/capture_run.py",
+      "byte_length": 7797,
+      "sha256": "f2111c70c055f44ff4ca8fa5efaa94e434d79c518d782744dba46d4748094dd8"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/comparison-with-qwen2.5-3b.json",
+      "byte_length": 1727,
+      "sha256": "1979ca6f3b0a87d5a3aa61e2357070100f5f6a7519f2c7e633735f248912feaa"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/final-results.json",
+      "byte_length": 7986,
+      "sha256": "45e892a5ee624c7051f1d12b5821fc7671653d60411c97e888f1da79d6a335ff"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/oracle-leakage-check.json",
+      "byte_length": 950,
+      "sha256": "402fd3a144fb357435f1c5404627ed4eda922e2f4ad450c55232c16385fa2225"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/prf-001.json",
+      "byte_length": 916,
+      "sha256": "ce37771cd974b3144712c5da77cb966a009438726fc4b5d156c914bf3f65d862"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/prf-002.json",
+      "byte_length": 912,
+      "sha256": "f74990ecdef01a78ca40e2e67b957f68ed0cd7e81139579d2b8e4204f1fec13a"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/prf-003.json",
+      "byte_length": 913,
+      "sha256": "72f7d2eb3f3a21168bb87d561e93aa0a23fe1f680ada9e66584035eeebd23758"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/prf-004.json",
+      "byte_length": 912,
+      "sha256": "a1c653ac89aac0a008e7ab6ad2986a466686fad8477d97c32a8d7dbc58c63498"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/prf-005.json",
+      "byte_length": 913,
+      "sha256": "0264ff065f252fc3e99dc61fd72536d3010270442115af7980f4bdad83d57d98"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/metadata/prf-006.json",
+      "byte_length": 916,
+      "sha256": "be107b3a77439024ca1142f546164091aef547fb6277a486946a1398ab01642a"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-001.evaluator-output.json",
+      "byte_length": 246,
+      "sha256": "b8d384bf8bb9c8392daae0e53a297071495b721b9ab1bc9d9885aba687c944f1"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-001.response.json",
+      "byte_length": 1110,
+      "sha256": "a9644b206718ad4944e6faf81c0540b6ead16e90f326df625e5773d1bcb53e36"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-002.evaluator-output.json",
+      "byte_length": 261,
+      "sha256": "6fe69692791201f06e612c99f58f88ee30861386738d5e0543d084f96c5aecff"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-002.response.json",
+      "byte_length": 1125,
+      "sha256": "cc79f4300596c9292ae4e914575f1a0dbf07e0ead5510b1f24d90d913703e89d"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-003.evaluator-output.json",
+      "byte_length": 135,
+      "sha256": "a1cbab19103d14cdd69668dced8d8234b51de91d700281475d63e02208ff28be"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-003.response.json",
+      "byte_length": 999,
+      "sha256": "deec7d3153439ffe3b0544f472c2975454a5e04057d3037019c01a932981ea1e"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-004.evaluator-output.json",
+      "byte_length": 341,
+      "sha256": "08253047d0f748fc49c48a8acd27443920c753708fd44dd8ea7711c4f460e23a"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-004.response.json",
+      "byte_length": 1205,
+      "sha256": "d3de4536ea16390146ee008b06865d9295578169421830fec604552867f9d2b8"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-005.evaluator-output.json",
+      "byte_length": 517,
+      "sha256": "724b53756ef461650c9d88e10df8160f46305750b62400403fc702568dd9a913"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-005.response.json",
+      "byte_length": 1381,
+      "sha256": "9bdf882223253d45a457209afd92e7ca83444521541bec48d49ab187184cd156"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-006.evaluator-output.json",
+      "byte_length": 305,
+      "sha256": "a190decebf23a93a92acfcc4beb8494045ec7a0f40ab1c0069a192a5f1434fcb"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/normalized/prf-006.response.json",
+      "byte_length": 1169,
+      "sha256": "a9abfdeec92af6b786df5c96fafa1ce6d4397bbbef5cfa9c8ddc99e3b492fc74"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/prompts/prf-001.prompt.txt",
+      "byte_length": 1756,
+      "sha256": "10f062f4ae3099ee7abd51b45021665384e80fb99bff33da4b16e6f90f9294be"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/prompts/prf-002.prompt.txt",
+      "byte_length": 1751,
+      "sha256": "a943705e38178156f2261278b5927925a163d3b3b2695c40a28e69055fba953a"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/prompts/prf-003.prompt.txt",
+      "byte_length": 1802,
+      "sha256": "bad33cd1620b899dbe4f5835145eab86a48fa0fb671d025eed07d462d35c6ed5"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/prompts/prf-004.prompt.txt",
+      "byte_length": 1884,
+      "sha256": "2f8d5d9b496420e81f624a08dfbae321cc91fd57ce2841a471d1d99c8e32cddc"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/prompts/prf-005.prompt.txt",
+      "byte_length": 2116,
+      "sha256": "a936eedc87f07f76b1336877d172df1da8e8ff901da0f84ac54a1ef9ef14768a"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/prompts/prf-006.prompt.txt",
+      "byte_length": 2034,
+      "sha256": "b005d93e454f32b71cf729eb0a25afa7d7106338df0bd5ceccd246c53bce73b5"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/qwen_evaluator.py",
+      "byte_length": 2387,
+      "sha256": "453163f20418ff714ff890d4a3e58484d5773389f401c709d7baedf099b34f53"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-001.stderr.bin",
+      "byte_length": 43519,
+      "sha256": "59801645385ad44edad150a103c5a994e45143e26716d436edbecf8b82565931"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-001.stdout.bin",
+      "byte_length": 247,
+      "sha256": "d64226ba72f01d280559a0645f21fe31adec6495d66137206ea1c5b8b18d5abf"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-002.stderr.bin",
+      "byte_length": 54496,
+      "sha256": "9c6f0bc1567801e118b1d6ea21f5f0869da42b3a2d27a064c50d3f902205d081"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-002.stdout.bin",
+      "byte_length": 253,
+      "sha256": "2779bc93289c033bf95c8d83235159ac6bd151e59a6703fbba90bbc23c1f8b66"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-003.stderr.bin",
+      "byte_length": 29500,
+      "sha256": "f80071b68137308f78c989b4b1a6b3c5944bcacce01e3ed89029b39d8562b313"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-003.stdout.bin",
+      "byte_length": 136,
+      "sha256": "ef6da96e02564829d6161d3b83e3e574a5d9ed3b3d8d775b60071d663efdcc7c"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-004.stderr.bin",
+      "byte_length": 8998,
+      "sha256": "6be5bbe06ff3d3716f27542207069c236de83904e51fd477b7e2d5e1d64caabd"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-004.stdout.bin",
+      "byte_length": 342,
+      "sha256": "35aa988e81f9615a69f15c141334d6a1e8d851def245d380b090e2c189d9fb46"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-005.stderr.bin",
+      "byte_length": 3247,
+      "sha256": "f585202f0280d3ad844b0491809fbedaf532524f1735180a72d62ec410ef1f8c"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-005.stdout.bin",
+      "byte_length": 518,
+      "sha256": "47dd925dbffcde8208289d2ce0a5cc1e15f6488873e3a7d4d94c48675109f73c"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-006.stderr.bin",
+      "byte_length": 2611,
+      "sha256": "533d776eb44f032c643a309129aecd855feafb0c3c3c945e73d04b0818ac9101"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/raw/prf-006.stdout.bin",
+      "byte_length": 306,
+      "sha256": "8473df267dc49e8bb1c5a312045cf9cd349a5fa22ef9c9aedc8447a9948ea92c"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/requests/prf-001.json",
+      "byte_length": 991,
+      "sha256": "fbf78882db252ab9576069fd6f53684a58d60032bde6048ab79ab8aa7b730e96"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/requests/prf-002.json",
+      "byte_length": 986,
+      "sha256": "3fcf3bf0d4cf515c53c63f4280b4dd47a08d19f13d0150a0edf6ab52b852f467"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/requests/prf-003.json",
+      "byte_length": 1037,
+      "sha256": "6988e3c3699aa61e1ccc6933677423989122541190e9f80dca4aa2eba0f1a283"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/requests/prf-004.json",
+      "byte_length": 1119,
+      "sha256": "7ab93b10ad64d59f091ebf3e12b54d7b1aeab3e3839159b4d315b3d90da23804"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/requests/prf-005.json",
+      "byte_length": 1351,
+      "sha256": "68939f94d01d80b7184e4d90772c96ddd725cbea4dde94a1a8dfc0eafdca2dd9"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/requests/prf-006.json",
+      "byte_length": 1269,
+      "sha256": "743f06792deb278a079c97b5577c027a7a134792f9e72a9a88ff48ebed304d1e"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/score-report.json",
+      "byte_length": 1859,
+      "sha256": "986ed8f52e3aae5b5282b0bc5fa3f9276ae4daa61c63c56788896010dc646042"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/score_run.py",
+      "byte_length": 4503,
+      "sha256": "a04aeaef2fe79f0c7c54100c8fb6a29eb18a38f594d6083aecf6548bbfc6835f"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/transcripts/prf-001.transcript.json",
+      "byte_length": 139365,
+      "sha256": "eea299dfee4e689cf2c97fd51a4b81702f6523ee0f8081253e4090d7dbf230b4"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/transcripts/prf-002.transcript.json",
+      "byte_length": 173461,
+      "sha256": "aeb276a39d9ad572d9cc45f3fd9bcfa4896e56adee535c90a3a237a8f10149e7"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/transcripts/prf-003.transcript.json",
+      "byte_length": 95399,
+      "sha256": "7532e65d26235d425fc8008bbc28290dbf7e6c5807fa46814ddc2aaf08b4548f"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/transcripts/prf-004.transcript.json",
+      "byte_length": 32713,
+      "sha256": "ff69de8cab7a30d65a12c28bcf4baee06214648106bd2c5eb8b2eee681a1f6b4"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/transcripts/prf-005.transcript.json",
+      "byte_length": 15680,
+      "sha256": "81a3996c716ec2a551d66e117c086f724dae69ad2063b3c66c940e86c9098d39"
+    },
+    {
+      "path": "first-runs/qwen2.5-coder-7b/transcripts/prf-006.transcript.json",
+      "byte_length": 12706,
+      "sha256": "e9355e526bbef556abfc6e90e00a661edee4e3a69154cbf805bd6f2fe7a730ef"
+    }
+  ],
+  "total_files": 211,
+  "total_bytes": 1765722
+}

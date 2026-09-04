@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The protected relation 'agent-A-only' is replaced by 'agent-A-and-B' which violates the original policy of 'agent-A-only'."}
+

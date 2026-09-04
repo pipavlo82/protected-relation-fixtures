@@ -1,0 +1,5 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"reason\":\"The transformation pipeline preserves the protected predicate 'agent-A-only' throughout the composition. The before and after states both have the authorization_scope set to 'agent-A-only', and the transforms T1 and T2 do not change this attribute, ensuring that the protected relation is maintained.\",\"before_state\":{\"authorization_scope\":\"agent-A-only\",\"id\":\"S0\"},\"after_state\":{\"authorization_scope\":\"agent-A-only\",\"id\":\"S2\"}}}"
+}
+

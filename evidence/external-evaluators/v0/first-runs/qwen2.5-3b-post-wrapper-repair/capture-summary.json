@@ -1,0 +1,117 @@
+{
+  "schema": "prf-qwen25-3b-post-wrapper-repair-capture.v0",
+  "capture_complete": true,
+  "scoring_performed": false,
+  "one_call_per_challenge": true,
+  "no_retries": true,
+  "no_conversation_memory": true,
+  "model_calls": 6,
+  "configuration": {
+    "provider": "local-wsl-ollama",
+    "wsl_distro": "Ubuntu",
+    "ollama_path": "/usr/local/bin/ollama",
+    "ollama_version": "0.15.2",
+    "model": "qwen2.5:3b-instruct",
+    "model_id": "357c53fb659c",
+    "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+    "environment": {
+      "OLLAMA_NOHISTORY": "1"
+    },
+    "ollama_flags": [
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0"
+    ],
+    "retry_policy": "NO_RETRY_ONE_CALL_PER_CHALLENGE"
+  },
+  "configuration_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b",
+  "original_experiment_unchanged": true,
+  "results": [
+    {
+      "challenge_id": "prf-001",
+      "request_sha256": "e64f4eabec6026bb569dc16b6c2b731cfe8f1d492ffac46678dbf6eed9dd9415",
+      "prompt_sha256": "f8391595ad12d877e46427be70fde7fc271e405f892e633e4ffb17132acc9242",
+      "raw_response_sha256": "272b9e56d77d4c6c1d0fb19ed23ad3a8e0ac2b4e88aaf1de7309a967412438ee",
+      "normalized_response_sha256": "72923bf083587c34ebfc83f71eececda94e9e6e08f084ced4a79a7dbe2fb2e44",
+      "evaluator_output_sha256": "b7f0d466d86c2e303817bf8996284c54fe711d5171edb115712e0c20a1a719fa",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "VIOLATED",
+      "exit_code": 0,
+      "started_at": "2026-09-04T01:42:32.773075+00:00",
+      "ended_at": "2026-09-04T01:42:41.584794+00:00",
+      "timestamp_authoritative": false
+    },
+    {
+      "challenge_id": "prf-002",
+      "request_sha256": "b95d79c0cf3ef16625d22c18be0039785c3f9f8ad5d448dad496ba5177812c46",
+      "prompt_sha256": "08fd7245d5b5138f151fd508a36ad12666d959d66b7837fbf902489665c7c6a4",
+      "raw_response_sha256": "435dda96ebdb4967cf5ba6cadbcee12e954c11961b97c8756c11b358450ef430",
+      "normalized_response_sha256": "6edb623c8a9c1ec8941d6f09430aa58ac438421eb6c0359341f6e7d916ca15f5",
+      "evaluator_output_sha256": "9a38761989bf4ac65f35fbe9dd74a7cb0a5ff360ac26099e7fbdc0f80ebf45b7",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "VIOLATED",
+      "exit_code": 0,
+      "started_at": "2026-09-04T01:42:41.589842+00:00",
+      "ended_at": "2026-09-04T01:42:49.215562+00:00",
+      "timestamp_authoritative": false
+    },
+    {
+      "challenge_id": "prf-003",
+      "request_sha256": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+      "prompt_sha256": "8ac89bf6d4c58296277808f95fb91e676f8a42eb4d9230a81e926406843f8f88",
+      "raw_response_sha256": "a51fc4b6320898e52ba349f35cf9815dc7aac63a6ec4583fc70bc6cea3e9f874",
+      "normalized_response_sha256": "62530d43d031740bdd4715bbad14add6ffe4a354ae01718c93640d0b33ea8c43",
+      "evaluator_output_sha256": "ca9317db19dd217b7b0f86db03f56c74f92360561dfd917fdd3cc8a19e9e1f24",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "UNVERIFIABLE",
+      "exit_code": 0,
+      "started_at": "2026-09-04T01:42:49.220579+00:00",
+      "ended_at": "2026-09-04T01:42:54.297717+00:00",
+      "timestamp_authoritative": false
+    },
+    {
+      "challenge_id": "prf-004",
+      "request_sha256": "2a6111aca0be8f4382133ea5b2b0eecac9f9eebca0b8e0cb735a8f7786db2202",
+      "prompt_sha256": "2d7eb66df5cb5a6895a0e8b893891393fb316ccf1bab01ac13956e1f8bcd5c3a",
+      "raw_response_sha256": "917156b314eaaef18aae28139e27736f12e0932805a00ce5e2621de83c25d016",
+      "normalized_response_sha256": "71b8f8362e7b62b3a836de930dde3828ea94bbf605711447d93ffff639d5611a",
+      "evaluator_output_sha256": "250eb1e359dac11ea0d59067aff3e0acbeb7be0550e85d2f643eab140f41dc3c",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "VIOLATED",
+      "exit_code": 0,
+      "started_at": "2026-09-04T01:42:54.302683+00:00",
+      "ended_at": "2026-09-04T01:43:01.808354+00:00",
+      "timestamp_authoritative": false
+    },
+    {
+      "challenge_id": "prf-005",
+      "request_sha256": "de58d458428484069c4a970ad9010d97976e0247afdeec9291dcf51a98ef398e",
+      "prompt_sha256": "52bfc7805072235e4e1ce482c7722842df211137eac33876ad89c437e9e26336",
+      "raw_response_sha256": "4cd7b256a13ca20d6a9419dcd5a1ddbb2788f460b3411647259106583d33706e",
+      "normalized_response_sha256": "65971d503c1531272ac6f24e599de8ce1288655ab55397db2c26329eae6f437b",
+      "evaluator_output_sha256": "ed8d16931173be5e2b7557b741f88cc33fadd2111bcff201e7e0c1c6b7180764",
+      "adapter_status": "RESPONSE_VALID",
+      "semantic_outcome": "VIOLATED",
+      "exit_code": 0,
+      "started_at": "2026-09-04T01:43:01.812870+00:00",
+      "ended_at": "2026-09-04T01:43:08.069443+00:00",
+      "timestamp_authoritative": false
+    },
+    {
+      "challenge_id": "prf-006",
+      "request_sha256": "faa7887b20815390f9c3299385588150d54aafd2036422147dcce18f5c79f264",
+      "prompt_sha256": "b57d6c0f2a8eb7b118f9a3843ec209ff9f961b1da566eee5877b8d93da80dc22",
+      "raw_response_sha256": "614b26af96417c0a67c077cbcd92bd00662173631b5ba718a70726a37dc754d5",
+      "normalized_response_sha256": null,
+      "evaluator_output_sha256": null,
+      "adapter_status": "MALFORMED_RESPONSE",
+      "semantic_outcome": null,
+      "exit_code": 0,
+      "started_at": "2026-09-04T01:43:08.072965+00:00",
+      "ended_at": "2026-09-04T01:43:15.069258+00:00",
+      "timestamp_authoritative": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "id": "local-ollama/qwen2.5:3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c

@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"before\": \"The relation between 'A' and 'B' has a multiplicity of 2 (two supporting links).\", \"after\": \"The relation between 'A' and 'B' now has a multiplicity of 1 (one supporting link), which is less than the before state, violating the multiplicity policy of 'multiset-exact'.\"}"
+}

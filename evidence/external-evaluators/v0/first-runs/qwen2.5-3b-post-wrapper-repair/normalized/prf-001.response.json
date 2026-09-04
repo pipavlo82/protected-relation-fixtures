@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "e64f4eabec6026bb569dc16b6c2b731cfe8f1d492ffac46678dbf6eed9dd9415",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+  },
+  "evaluator_output_digest": "b7f0d466d86c2e303817bf8996284c54fe711d5171edb115712e0c20a1a719fa",
+  "invocation_digest": "fcd60445293e0dc71f805adce2e4ee63bbe5c2ab0f5afebf05ea20162113e763",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The identity of 'A' has changed from ['B', 'C', 'D', 'E', 'F', 'G'] to ['B', 'C', 'D', 'H', 'I', 'J'], which does not match the exact neighborhood defined in the protected relation profile.",
+  "evidence": []
+}
