@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pipavlo82/protected-relation-fixtures/adapters/v0/request-schema.json",
+  "title": "Protected Relation Fixtures external adapter request v0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "adapter_contract_version",
+    "challenge_id",
+    "challenge_digest",
+    "protected_relation_profile",
+    "protected_relation_profile_digest",
+    "evaluator",
+    "evaluation_input"
+  ],
+  "properties": {
+    "schema": {
+      "const": "protected-relation-external-adapter-request.v0"
+    },
+    "adapter_contract_version": {
+      "const": "v0"
+    },
+    "challenge_id": {
+      "type": "string",
+      "pattern": "^prf-[0-9]{3}$"
+    },
+    "challenge_digest": {
+      "$ref": "#/$defs/sha256"
+    },
+    "protected_relation_profile": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "protected_relation_profile_digest": {
+      "$ref": "#/$defs/sha256"
+    },
+    "evaluator": {
+      "$ref": "#/$defs/evaluator"
+    },
+    "evaluation_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["before", "after"],
+      "properties": {
+        "before": {},
+        "after": {}
+      }
+    },
+    "execution_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "invocation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "request_created_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "evaluator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "config_digest"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "config_digest": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pipavlo82/protected-relation-fixtures/adapters/v0/evaluator-output-schema.json",
+  "title": "Protected Relation Fixtures external evaluator semantic output v0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["outcome", "reason_detail"],
+  "properties": {
+    "outcome": {
+      "enum": ["PRESERVED", "VIOLATED", "UNVERIFIABLE"]
+    },
+    "reason_detail": {
+      "type": "string"
+    }
+  }
+}

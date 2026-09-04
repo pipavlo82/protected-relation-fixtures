@@ -1,0 +1,1 @@
+"""External evaluator adapter contracts."""
