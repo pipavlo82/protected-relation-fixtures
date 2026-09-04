@@ -1,0 +1,31 @@
+{
+  "schema": "prf-upstream-implementation-report.v0",
+  "case_study_id": "invinoveritas-epistemic-basis-commitment-v18",
+  "public_repository_checked": {
+    "repository": "babyblueviper1/invinoveritas",
+    "default_branch": "main",
+    "commit": "3bdea4f08d7a399acd07c4e6d36e34dd38fadee8",
+    "tree": "4f0d45ba90bde841b304477ecda86d7aac18da70"
+  },
+  "resolution": {
+    "status": "UPSTREAM_REPORTED_NOT_PUBLICLY_RESOLVED",
+    "binding_commit_reported": "56e5999d",
+    "preview_docstring_commit_reported": "0a40e39f",
+    "github_commit_lookup": {
+      "56e5999d": "NOT_FOUND_IN_PUBLIC_REPOSITORY",
+      "0a40e39f": "NOT_FOUND_IN_PUBLIC_REPOSITORY"
+    },
+    "github_global_commit_prefix_search": {
+      "56e5999d": "NO_PUBLIC_RESULTS",
+      "0a40e39f": "TWO_UNRELATED_PREFIX_COLLISIONS; NO_INVINO_VERITAS_RESULT"
+    }
+  },
+  "reported_facts_not_used_as_independent_public_authority": [
+    "epistemic_basis exposed the semantic distinction at response level before it was included in decision_ref, recursively reproducing the protected-relation collapse at the commitment layer.",
+    "The binding change adds epistemic_basis to the decision_ref preimage.",
+    "A test named test_different_epistemic_basis_produces_different_decision_ref produces distinct decision_refs for evidence_against, insufficient_evidence, and unset with otherwise identical inputs.",
+    "verify_proof_event recomputes from each proof's own stored decision_ref_preimage_fields, preserving v17 behavior.",
+    "The verdict=reject fail-closed action projection did not change."
+  ],
+  "independent_boundary": "The production retrieval and verification captures independently establish the recorded v18 and v17 behavior. They do not turn unresolved implementation commit reports into verified repository provenance."
+}

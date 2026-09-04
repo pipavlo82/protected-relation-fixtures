@@ -1,0 +1,69 @@
+{
+  "schema": "prf-real-world-case-study.v0",
+  "case_study_id": "invinoveritas-epistemic-basis-commitment-v18",
+  "cases": [
+    {
+      "case_id": "invinoveritas-epistemic-basis-commitment-v18",
+      "title": "InvinoVeritas v18 epistemic-basis decision commitment",
+      "status": "INCLUDED_POST_V0_CASE_STUDY",
+      "source_refs": [
+        "live/v18-original-retrieval.response.json",
+        "live/v18-original-verify.request.json",
+        "live/v18-original-verify.response.json",
+        "live/v18-tampered-verify.request.json",
+        "live/v18-tampered-verify.response.json",
+        "live/v18-tamper-diff.json",
+        "live/v17-ledger-260.response.json",
+        "live/v17-ledger-260-verify.request.json",
+        "live/v17-ledger-260-verify.response.json",
+        "sources/invinoveritas/examples/rvr-verdict-worked-example/verdict_proof_v17.json"
+      ],
+      "raw_observed_state": {
+        "v18_event_id": "725eaec0331a0f08f5311fef3c6f85c5d7f080eec87bf12098682ab9bb924c87",
+        "v18_policy_version": "invinoveritas.review.v18",
+        "v18_verdict": "reject",
+        "v18_epistemic_basis": null,
+        "v18_decision_ref": "sha256:55d9f7032dd271c495a0187d866ca45a9edd78d78a55b77cbd7405442bbc520d",
+        "tampered_epistemic_basis": "evidence_against",
+        "tampered_verdict": "reject",
+        "legacy_policy_version": "invinoveritas.review.v17",
+        "legacy_epistemic_basis": "UNKNOWN"
+      },
+      "weak_projection": {
+        "field": "verdict",
+        "value": "reject",
+        "before_equals_after": true
+      },
+      "protected_semantic_states": [
+        "reject/evidence_against",
+        "reject/insufficient_evidence"
+      ],
+      "protected_relation": "epistemic_basis_decision_commitment",
+      "protected_scope": [
+        "response-level epistemic distinction",
+        "decision_ref authenticated preimage membership",
+        "per-proof stored preimage contract"
+      ],
+      "state_before": {
+        "layer_1": "reject/evidence_against != reject/insufficient_evidence",
+        "layer_2": "epistemic distinction is a named decision_ref preimage field",
+        "commitment_status": "ORIGINAL_V18_COMMITMENT_RECOMPUTES"
+      },
+      "state_after": {
+        "layer_1": "verdict remains reject while epistemic_basis changes",
+        "layer_2": "stored decision_ref is unchanged and no longer recomputes",
+        "commitment_status": "COMMITMENT_VIOLATION_DETECTED"
+      },
+      "expected_outcome": "VIOLATED",
+      "rationale": "Weak projection to verdict=reject hides the epistemic distinction. The v18 stored preimage contract names epistemic_basis, so changing only that value while retaining the signed event identity and decision_ref must invalidate decision_ref recomputation.",
+      "authority_boundary": "The public production verifier establishes the observed v18 commitment behavior for the captured proof. It does not independently establish that both non-null epistemic values were issued in production, and it does not retroactively assign an epistemic basis to v17 records.",
+      "system_property_class": "REAL_WORLD_PROTECTED_RELATION_COMMITMENT_CLOSURE",
+      "legacy_control": {
+        "entry": 260,
+        "policy_version": "invinoveritas.review.v17",
+        "epistemic_basis_interpretation": "legacy pre-v18 / epistemic basis unknown",
+        "classification": "LEGACY_COMPATIBILITY_CONTROL"
+      }
+    }
+  ]
+}

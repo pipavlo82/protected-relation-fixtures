@@ -1,0 +1,52 @@
+{
+  "schema": "prf-real-world-case-results.v0",
+  "case_study_id": "invinoveritas-epistemic-basis-commitment-v18",
+  "result": {
+    "expected_outcome": "VIOLATED",
+    "observed_outcome": "VIOLATED",
+    "classification": "COMMITMENT_VIOLATION_DETECTED",
+    "underlying_reviewer_verdict_changed": false,
+    "v18_original": {
+      "policy_version": "invinoveritas.review.v18",
+      "valid": true,
+      "id_integrity": true,
+      "signature_valid": true,
+      "decision_ref_recomputes": true,
+      "epistemic_basis": null,
+      "preimage_fields_include_epistemic_basis": true
+    },
+    "v18_tamper": {
+      "changed_content_fields": [
+        "epistemic_basis"
+      ],
+      "before": null,
+      "after": "evidence_against",
+      "stored_decision_ref_changed": false,
+      "stored_event_id_changed": false,
+      "stored_signature_changed": false,
+      "verdict_changed": false,
+      "valid": false,
+      "id_integrity": false,
+      "signature_valid": false,
+      "decision_ref_recomputes": false
+    },
+    "legacy_v17_control": {
+      "ledger_entry": 260,
+      "policy_version": "invinoveritas.review.v17",
+      "epistemic_basis_present": false,
+      "preimage_fields_include_epistemic_basis": false,
+      "epistemic_basis_interpretation": "legacy pre-v18 / epistemic basis unknown",
+      "valid": true,
+      "id_integrity": true,
+      "signature_valid": true,
+      "decision_ref_recomputes": true,
+      "classification": "LEGACY_COMPATIBILITY_CONTROL"
+    }
+  },
+  "non_claims": [
+    "The capture does not prove that both evidence_against and insufficient_evidence were independently observed in production.",
+    "The tampered request is a local mutation, not a separately issued production proof.",
+    "No epistemic_basis is inferred or backfilled for v17.",
+    "This is not classified as an exploit or vulnerability."
+  ]
+}

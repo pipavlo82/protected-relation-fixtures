@@ -1,0 +1,16 @@
+{
+  "outer_fields_unchanged": [
+    "id",
+    "sig",
+    "pubkey",
+    "created_at",
+    "kind",
+    "tags"
+  ],
+  "content_fields_changed": [
+    "epistemic_basis"
+  ],
+  "before": null,
+  "after": "evidence_against",
+  "stored_decision_ref_unchanged": true
+}
