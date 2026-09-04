@@ -1,0 +1,79 @@
+{
+  "schema": "prf-trustless-ai-deterministic-case-results.v0",
+  "method": "SOURCE_AND_PUBLIC_EVIDENCE_DETERMINISTIC_COMPARISON",
+  "model_calls": 0,
+  "results": [
+    {
+      "case_id": "TAI-001",
+      "deterministic_outcome": "VIOLATED",
+      "finding_classes": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "SOURCE_BACKED_AUTHORITY_OVERCLAIM",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ],
+      "finding": "The MPT proof is re-derived relative to an RPC-supplied stateRoot, while the header remains RPC_TRUSTED. recompute-storage-proof overstates that root as canonical and says no trusted RPC read; verify-layer correctly exposes the split."
+    },
+    {
+      "case_id": "TAI-002",
+      "deterministic_outcome": "VIOLATED",
+      "finding_classes": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "LIVE_REPRODUCED_RELATION_DISTINCTION"
+      ],
+      "finding": "Chain identity and network tier are part of anchor authority. A live Base Sepolia commitment cannot be collapsed with a source-documented Ethereum mainnet anchor under DIGEST_IS_ANCHORED. The same digest was not independently found on mainnet or in Bitcoin OTS."
+    },
+    {
+      "case_id": "TAI-003",
+      "deterministic_outcome": "VIOLATED",
+      "finding_classes": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ],
+      "finding": "TAS derives repository locator, commit, and path from the Profile snapshot. Identical returned bytes from a different repository do not preserve Profile-authorized repository identity; the resolver has no caller override and rejects non-canonical locators."
+    },
+    {
+      "case_id": "TAI-004",
+      "deterministic_outcome": "VIOLATED",
+      "finding_classes": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ],
+      "finding": "An identical value read by block number or current-state fallback does not preserve exact hash-bound as-of authority. TAS uses blockHash plus requireCanonical and fails closed rather than retrying by number."
+    },
+    {
+      "case_id": "TAI-005",
+      "deterministic_outcome": "VIOLATED",
+      "finding_classes": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "LIVE_REPRODUCED_RELATION_DISTINCTION"
+      ],
+      "finding": "A public response and successful chain event reproduce commitment to declared input/output observation fields. The same human-readable result without that binding does not preserve claim_to_observation_binding. Commitment alone does not semantically verify the claim."
+    },
+    {
+      "case_id": "TAI-006",
+      "deterministic_outcome": "UNVERIFIABLE",
+      "finding_classes": [
+        "DEFERRED_NO_CURRENT_SOURCE_SURFACE"
+      ],
+      "finding": "The pinned sources do not define a general nested-receipt rule that upgrades committed inner bytes to recursively reproduced inner semantics."
+    },
+    {
+      "case_id": "TAI-007",
+      "deterministic_outcome": "PRESERVED",
+      "finding_classes": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ],
+      "finding": "LF versus CRLF wrapping in a GitHub base64 transport field is explicitly normalized while repository, commit, path, decoded size, and decoded bytes remain fixed."
+    }
+  ],
+  "finding_counts": {
+    "SOURCE_BACKED_SEMANTIC_DISTINCTION": 6,
+    "SOURCE_BACKED_AUTHORITY_OVERCLAIM": 1,
+    "LIVE_REPRODUCED_RELATION_DISTINCTION": 2,
+    "POSITIVE_FAIL_CLOSED_PROPERTY": 4,
+    "PREVIOUS_GAP_REPAIRED": 0,
+    "UNVERIFIABLE_OR_DEFERRED": 1
+  },
+  "authority_boundary": "Source-backed relation distinctions and documentation findings are not automatically exploitable vulnerabilities. No model judgment is used as authority."
+}

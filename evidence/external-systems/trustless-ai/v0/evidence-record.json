@@ -1,0 +1,34 @@
+{
+  "schema": "prf-trustless-ai-deterministic-evidence-record.v0",
+  "study": "PRF Applied to Trustless AI — Deterministic Protected-Relation Audit v0",
+  "method": "ZERO_MODEL_SOURCE_AND_PUBLIC_EVIDENCE_AUDIT",
+  "authority": {
+    "starting_prf_main": "3d74bdb944cd9b8b625fe7c8f08dbb266fc7d5dc",
+    "frozen_prf_v0_commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+    "frozen_prf_v0_tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63"
+  },
+  "trustless_ai_repositories": {
+    "agent-contracts-examples": "60855b200745d2f6dfd24b266f95ca92ce102ed2",
+    "agent-ercs": "01283ca57305f915afb560d23359a27fd748eb5a",
+    "ccip-router": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+    "primitives": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+    "recompute-kit": "d21bcc718bf505b46c4d32d7f3c858dff9d3e8bc",
+    "trustless-agent-substrate": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+    "verify-layer": "84afc4b738dc37269089c858404eed8086435f5d"
+  },
+  "bindings": {
+    "source_inventory_sha256": "da5e757e364625e0a8b7b06fa34ceb70f6646689d5ae71493286feadaf493357",
+    "cases_sha256": "5eb4f042061cae9c40402b9628ddedad8db26e475fd2f5a8295c546648c7db2c",
+    "case_results_sha256": "6d1ecf48586372241eaa687fb98a6723da7315cbafb7e63074acd6d456212863",
+    "live_reproduction_summary_sha256": "5ca3b156eebce7ec983f28c04f1e4ea9e4e6c657018f5498499916e44105a196",
+    "report_sha256": "a67ac423f1756650f38951988eacc09d22c901d41db16e546419b6b259d8ca33"
+  },
+  "capture": {
+    "source_and_live_artifacts": 55,
+    "source_and_live_bytes": 232259,
+    "model_calls": 0,
+    "credentials_used": false,
+    "chat_used_as_authority": false
+  },
+  "authority_boundary": "This audit applies PRF protected-relation methodology deterministically to pinned public Trustless AI sources and reproduced public surfaces. It tests whether security- and authority-relevant relations remain distinguishable under weak observational equality. Source/documentation inconsistencies are not automatically exploitable vulnerabilities, and no LLM judgment is used as authority in this audit."
+}

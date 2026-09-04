@@ -1,0 +1,106 @@
+{
+  "schema": "prf-trustless-ai-live-reproduction-summary.v0",
+  "captured_at": "2026-09-04T11:56:36Z",
+  "timestamp_role": "NON_AUTHORITATIVE_CAPTURE_METADATA",
+  "checks": [
+    {
+      "check_id": "LIVE-001",
+      "case_ids": ["TAI-002", "TAI-005"],
+      "status": "LIVE_REPRODUCED",
+      "surface": "https://gateway.verticecriativo.pt/agent/verify/0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+      "evidence": [
+        "live/gateway-verify.request.txt",
+        "live/gateway-verify.headers.txt",
+        "live/gateway-verify.response.json"
+      ],
+      "observed": {
+        "verified": true,
+        "input_hash": "0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+        "output_hash": "0x701b037a8c7303271285d82b462ed5bb973f3f62b2ea3518a35eb29a78aef329",
+        "l3_tx": "0x458cf8a3b8f39c032dcec9eb2bf2932b7ca9be41662e35e4fbc21d0ea9eab381"
+      },
+      "boundary": "The endpoint response is an observed public result, not independent proof of fields that are not cryptographically bound by the captured transaction and event."
+    },
+    {
+      "check_id": "LIVE-002",
+      "case_ids": ["TAI-002", "TAI-005"],
+      "status": "LIVE_REPRODUCED",
+      "surface": "https://sepolia.base.org",
+      "chain_id": "84532",
+      "block_number": "0x2c26737",
+      "block_hash": "0x148626a43a7df72931ed965d2d8d7f63920d5b021f970b4662627b76ecdb26ba",
+      "transaction": "0x458cf8a3b8f39c032dcec9eb2bf2932b7ca9be41662e35e4fbc21d0ea9eab381",
+      "contract": "0x0963Fd33DF80c94360F2DC22e5c09517AeE7ED5c",
+      "evidence": [
+        "live/base-sepolia-chain-id.request.json",
+        "live/base-sepolia-chain-id.response.json",
+        "live/base-sepolia-attestation-tx.request.json",
+        "live/base-sepolia-attestation-tx.response.json",
+        "live/base-sepolia-attestation-receipt.request.json",
+        "live/base-sepolia-attestation-receipt.response.json",
+        "live/base-sepolia-attestation-block.request.json",
+        "live/base-sepolia-attestation-block.response.json",
+        "live/base-sepolia-truth-anchor-code.request.json",
+        "live/base-sepolia-truth-anchor-code.response.json"
+      ],
+      "observed": {
+        "transaction_status": "0x1",
+        "recorded_topic0": "0xdca60c2087041cbb12d9a57628c6cad28ecbd0437e47c7ab6c3aa6e162bf4497",
+        "recorded_digest": "0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+        "committer": "0x85fa13511d170fbe173761b63d7f8dd4a6f6bf1a",
+        "contract_code_nonempty": true
+      },
+      "boundary": "This reproduces a Base Sepolia commitment and its exact block binding. It does not establish a stronger mainnet or Bitcoin anchor for the same digest."
+    },
+    {
+      "check_id": "LIVE-003",
+      "case_ids": ["TAI-002"],
+      "status": "LIVE_REPRODUCED",
+      "surface": "https://ethereum-rpc.publicnode.com",
+      "chain_id": "1",
+      "block_number": "0x18b42c0",
+      "contract": "0x1e2A118a2bf1C240aE6fDe187c07f905D360f094",
+      "evidence": [
+        "live/ethereum-chain-id.request.json",
+        "live/ethereum-chain-id.response.json",
+        "live/ethereum-truth-anchor-code.request.json",
+        "live/ethereum-truth-anchor-code.response.json"
+      ],
+      "observed": {
+        "contract_code_nonempty": true,
+        "same_digest_event_found": false
+      },
+      "boundary": "Contract code at a pinned Ethereum block was reproduced. No event for the case digest was claimed or inferred."
+    },
+    {
+      "check_id": "LIVE-004",
+      "case_ids": ["TAI-001"],
+      "status": "LIVE_REPRODUCTION_REQUIRES_CREDENTIALS",
+      "surface": "verify-layer runtime",
+      "evidence": ["sources/verify-layer/verify.mjs"],
+      "boundary": "The captured script expects a local Alchemy key. No hidden or private credential was used. The source-level trust classification remains independently auditable."
+    },
+    {
+      "check_id": "LIVE-005",
+      "case_ids": ["TAI-001"],
+      "status": "LIVE_REPRODUCTION_UNAVAILABLE_LOCAL_RUNTIME",
+      "surface": "recompute-storage-proof runtime",
+      "evidence": ["sources/recompute-kit/bin/recompute-storage-proof"],
+      "boundary": "The Foundry cast executable required by the script was not available locally. No runtime success is claimed; the source behavior is captured exactly."
+    },
+    {
+      "check_id": "LIVE-006",
+      "case_ids": ["TAI-006"],
+      "status": "DEFERRED_NO_CURRENT_SOURCE_SURFACE",
+      "surface": "nested receipt semantic transitivity",
+      "evidence": [
+        "sources/recompute-kit/RECOMPUTE.md",
+        "sources/recompute-kit/bin/recompute-receipt-proof",
+        "sources/agent-ercs/contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol"
+      ],
+      "boundary": "No general nested semantic closure surface was found in the pinned sources, so no live success is manufactured."
+    }
+  ],
+  "credentials_used": false,
+  "model_calls": 0
+}

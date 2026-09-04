@@ -1,0 +1,358 @@
+{
+  "schema": "prf-trustless-ai-deterministic-cases.v0",
+  "authority": {
+    "starting_prf_main": "3d74bdb944cd9b8b625fe7c8f08dbb266fc7d5dc",
+    "prf_v0_commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+    "prf_v0_tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63"
+  },
+  "cases": [
+    {
+      "case_id": "TAI-001",
+      "status": "INCLUDED",
+      "title": "State proof versus header authority",
+      "source_refs": [
+        "sources/recompute-kit/bin/recompute-storage-proof",
+        "sources/verify-layer/verify.mjs"
+      ],
+      "raw_observed_state": {
+        "recompute_storage_proof_header_source": "supplied JSON-RPC eth_getBlockByNumber",
+        "recompute_storage_proof_verification": "account and storage MPT paths checked against returned stateRoot",
+        "recompute_storage_proof_wording": [
+          "header stateRoot, which is canonical",
+          "no trusted RPC read"
+        ],
+        "verify_layer_disclosure": {
+          "state": "RE-DERIVED",
+          "header": "RPC-TRUSTED"
+        }
+      },
+      "state_before": {
+        "state_proof_authority": "RE_DERIVED",
+        "header_state_root_authority": "RPC_TRUSTED"
+      },
+      "state_after": {
+        "state_proof_authority": "RE_DERIVED",
+        "header_state_root_authority": "CONSENSUS_RE_DERIVED"
+      },
+      "weak_observation": {
+        "account_or_storage_value": "SAME",
+        "state_root": "SAME",
+        "mpt_path_valid": true
+      },
+      "protected_relation": "verification_authority_class",
+      "protected_scope": [
+        "state_proof_authority",
+        "header_state_root_authority"
+      ],
+      "expected_outcome": "VIOLATED",
+      "rationale": "A valid MPT path establishes the state value relative to the supplied stateRoot; it does not authenticate the header that supplied that root. The current verify-layer preserves this split explicitly.",
+      "authority_boundary": "The wording mismatch is a narrow source/documentation finding, not an exploit or proof that an RPC returned false data.",
+      "system_property_class": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "SOURCE_BACKED_AUTHORITY_OVERCLAIM",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ]
+    },
+    {
+      "case_id": "TAI-002",
+      "status": "INCLUDED",
+      "title": "Anchor security authority class",
+      "source_refs": [
+        "sources/primitives/README.md",
+        "sources/primitives/primitives.json",
+        "sources/agent-contracts-examples/truth-anchor/README.md",
+        "sources/agent-ercs/contracts/verify/ERC8281/README.md",
+        "live/base-sepolia-chain-id.response.json",
+        "live/base-sepolia-truth-anchor-code.response.json",
+        "live/base-sepolia-attestation-tx.response.json",
+        "live/base-sepolia-attestation-receipt.response.json",
+        "live/ethereum-chain-id.response.json",
+        "live/ethereum-truth-anchor-code.response.json"
+      ],
+      "raw_observed_state": {
+        "live_commitment_digest": "0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+        "live_anchor_chain_id": "84532",
+        "live_anchor_transaction": "0x458cf8a3b8f39c032dcec9eb2bf2932b7ca9be41662e35e4fbc21d0ea9eab381",
+        "documented_mainnet_anchor": "0x1e2A118a2bf1C240aE6fDe187c07f905D360f094",
+        "bitcoin_ots_for_exact_object": "NOT_ESTABLISHED"
+      },
+      "state_before": {
+        "digest": "0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+        "chain_id": "84532",
+        "anchor_tier": "ROLLUP_TESTNET_ANCHORED",
+        "anchor_contract": "0x0963Fd33DF80c94360F2DC22e5c09517AeE7ED5c"
+      },
+      "state_after": {
+        "digest": "0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+        "chain_id": "1",
+        "anchor_tier": "ETHEREUM_MAINNET_ANCHORED",
+        "anchor_contract": "0x1e2A118a2bf1C240aE6fDe187c07f905D360f094",
+        "status": "SOURCE_SUPPORTED_COUNTERFACTUAL_FOR_THE_SAME_DIGEST"
+      },
+      "weak_observation": {
+        "digest_is_anchored": true,
+        "digest": "SAME"
+      },
+      "protected_relation": "anchor_security_authority_class",
+      "protected_scope": [
+        "chain_identity",
+        "network_security_tier",
+        "anchor_contract_identity"
+      ],
+      "expected_outcome": "VIOLATED",
+      "rationale": "Current ERC-8281 documentation makes chain identity part of commitment validity and explicitly rejects checking a mainnet commitment against Sepolia logs. A generic ANCHORED observation cannot collapse distinct chain/security authority classes.",
+      "authority_boundary": "The Base Sepolia leg is live reproduced. The same-digest Ethereum-mainnet leg is a source-supported counterfactual. No exact Bitcoin OTS or exact mainnet event for this digest is claimed.",
+      "system_property_class": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "LIVE_REPRODUCED_RELATION_DISTINCTION"
+      ]
+    },
+    {
+      "case_id": "TAI-003",
+      "status": "INCLUDED",
+      "title": "Profile-authorized repository identity",
+      "source_refs": [
+        "sources/trustless-agent-substrate/src/core/profile/types.ts",
+        "sources/trustless-agent-substrate/src/core/repository/types.ts",
+        "sources/trustless-agent-substrate/src/core/repository/locator.ts",
+        "sources/trustless-agent-substrate/src/core/repository/resolver.ts",
+        "sources/trustless-agent-substrate/src/clients/repository/githubRepositoryClient.ts",
+        "sources/trustless-agent-substrate/test/unit/repository/resolver.test.ts"
+      ],
+      "raw_observed_state": {
+        "profile_fields": [
+          "repository",
+          "commitHash",
+          "path"
+        ],
+        "repository_resolver_output": [
+          "profile blockHash",
+          "canonical repository locator",
+          "owner",
+          "repository",
+          "exact full commit",
+          "charter path"
+        ],
+        "caller_repository_override": "NOT_PRESENT_IN_RESOLVER_API"
+      },
+      "state_before": {
+        "profile_selected_repository": "https://github.com/example/authorized-repository",
+        "exact_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "path": "charter/",
+        "returned_bytes_sha256": "X"
+      },
+      "state_after": {
+        "profile_selected_repository": "https://github.com/example/different-repository",
+        "exact_commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "path": "charter/",
+        "returned_bytes_sha256": "X"
+      },
+      "weak_observation": {
+        "returned_bytes": "SAME",
+        "relative_path": "SAME",
+        "skill_text": "SAME"
+      },
+      "protected_relation": "profile_authorized_repository_identity",
+      "protected_scope": [
+        "profile_block_hash",
+        "repository_locator",
+        "exact_commit",
+        "charter_path"
+      ],
+      "expected_outcome": "VIOLATED",
+      "rationale": "TAS resolves repository owner/name, commit and path from the selected Profile snapshot. Equal bytes from another repository do not preserve that authority identity.",
+      "authority_boundary": "The two example repositories are a counterfactual pair over the current resolver contract, not assertions about deployed Profile values.",
+      "system_property_class": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ]
+    },
+    {
+      "case_id": "TAI-004",
+      "status": "INCLUDED",
+      "title": "Exact as-of chain authority",
+      "source_refs": [
+        "sources/trustless-agent-substrate/src/core/profile/types.ts",
+        "sources/trustless-agent-substrate/src/clients/chain/viemProfileReader.ts",
+        "sources/trustless-agent-substrate/test/integration/viemProfileReader.test.ts"
+      ],
+      "raw_observed_state": {
+        "contract_read_binding": {
+          "blockHash": "resolved exact block hash",
+          "requireCanonical": true
+        },
+        "final_check": "block number is re-fetched and hash must remain unchanged",
+        "weaker_fallback": "explicitly absent; unsupported EIP-1898 fails closed"
+      },
+      "state_before": {
+        "returned_value": "X",
+        "selector": "EXACT_BLOCK_HASH",
+        "requireCanonical": true,
+        "fallback": "NONE"
+      },
+      "state_after": {
+        "returned_value": "X",
+        "selector": "BLOCK_NUMBER_OR_CURRENT_STATE",
+        "requireCanonical": false,
+        "fallback": "NUMBER_ONLY_OR_CURRENT_STATE"
+      },
+      "weak_observation": {
+        "returned_value": "SAME"
+      },
+      "protected_relation": "as_of_chain_authority",
+      "protected_scope": [
+        "selected_block_hash",
+        "canonicality_requirement",
+        "absence_of_current_state_fallback"
+      ],
+      "expected_outcome": "VIOLATED",
+      "rationale": "An equal value from a current or number-only read does not preserve an exact hash-bound as-of claim. TAS binds reads with EIP-1898 and rejects weaker fallback.",
+      "authority_boundary": "State B is a deliberate counterfactual. Current TAS is recorded as fail-closed, not as exhibiting the weaker behavior.",
+      "system_property_class": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ]
+    },
+    {
+      "case_id": "TAI-005",
+      "status": "INCLUDED",
+      "title": "Claim versus observation binding",
+      "source_refs": [
+        "sources/agent-ercs/contracts/verify/ERC8281/IObservationCommitment.sol",
+        "sources/agent-ercs/contracts/verify/ERC8299/IWyriweAttestation.sol",
+        "sources/ccip-router/src/attestation/ocp.ts",
+        "sources/ccip-router/src/verify/ocp.ts",
+        "sources/ccip-router/src/verify/verify.ts",
+        "live/gateway-verify.response.json",
+        "live/base-sepolia-attestation-tx.response.json",
+        "live/base-sepolia-attestation-receipt.response.json"
+      ],
+      "raw_observed_state": {
+        "public_verify_response": {
+          "verified": true,
+          "input_hash": "0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91",
+          "output_hash": "0x701b037a8c7303271285d82b462ed5bb973f3f62b2ea3518a35eb29a78aef329",
+          "l3_tx": "0x458cf8a3b8f39c032dcec9eb2bf2932b7ca9be41662e35e4fbc21d0ea9eab381"
+        },
+        "rpc_receipt": "successful Recorded event binds the input digest and committer",
+        "ocp_boundary": "opaque commitment; semantic truth of the observation remains off-chain"
+      },
+      "state_before": {
+        "human_readable_claim": "X",
+        "claim_status": "CLAIM_COMMITTED",
+        "observation_status": "OBSERVATION_BOUND_TO_DECLARED_INPUT_OUTPUT_FIELDS",
+        "semantic_status": "NOT_ESTABLISHED_BY_COMMITMENT_ALONE"
+      },
+      "state_after": {
+        "human_readable_claim": "X",
+        "claim_status": "CLAIM_COMMITTED",
+        "observation_status": "OBSERVATION_BINDING_ABSENT_OR_UNAVAILABLE",
+        "semantic_status": "NOT_ESTABLISHED_BY_CLAIM_TEXT"
+      },
+      "weak_observation": {
+        "human_readable_claim": "SAME",
+        "declared_result": "SAME"
+      },
+      "protected_relation": "claim_to_observation_binding",
+      "protected_scope": [
+        "observation_preimage_fields",
+        "commitment_digest",
+        "chain_and_log_binding"
+      ],
+      "expected_outcome": "VIOLATED",
+      "rationale": "OCP and WYRIWE bind declared observation fields and their commitment; removing that binding changes the relation even if the human-facing claim remains identical.",
+      "authority_boundary": "The live response and chain event establish commitment/binding evidence. They do not prove tool execution details not present in the commitment or the semantic truth of the model output.",
+      "system_property_class": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "LIVE_REPRODUCED_RELATION_DISTINCTION"
+      ]
+    },
+    {
+      "case_id": "TAI-006",
+      "status": "DEFERRED_NO_CURRENT_SOURCE_SURFACE",
+      "title": "Nested receipt semantic transitivity",
+      "source_refs": [
+        "sources/recompute-kit/RECOMPUTE.md",
+        "sources/recompute-kit/bin/recompute-receipt-proof",
+        "sources/agent-ercs/contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol"
+      ],
+      "raw_observed_state": {
+        "searched_current_surface": "receipt, proof, recompute and record-pointer material in pinned repositories",
+        "general_nested_semantic_rule": "NOT_FOUND"
+      },
+      "state_before": {
+        "inner_receipt_bytes": "COMMITTED",
+        "inner_semantics": "NOT_REPRODUCED_BY_A_DEFINED_OUTER_RULE"
+      },
+      "state_after": {
+        "inner_receipt_bytes": "COMMITTED",
+        "inner_semantics": "RECURSIVE_REPRODUCTION_REQUESTED_BUT_NO_CURRENT_RULE"
+      },
+      "weak_observation": {
+        "inner_receipt_bytes": "SAME",
+        "inner_declared_outcome": "VERIFIED"
+      },
+      "protected_relation": "nested_semantic_recomputation_requirement",
+      "protected_scope": [
+        "inner_dependency_closure",
+        "outer_profile_semantic_requirement"
+      ],
+      "expected_outcome": "UNVERIFIABLE",
+      "rationale": "The pinned current material does not define a general outer-profile rule that turns committed inner receipt bytes into recursively reproduced inner semantics.",
+      "authority_boundary": "This is deferred for lack of a sufficient current source surface. It is not evidence that nested composition is impossible or that any implementation silently upgrades it.",
+      "system_property_class": [
+        "DEFERRED_NO_CURRENT_SOURCE_SURFACE"
+      ]
+    },
+    {
+      "case_id": "TAI-007",
+      "status": "INCLUDED",
+      "title": "Repository transport normalization preservation control",
+      "source_refs": [
+        "sources/trustless-agent-substrate/src/core/repository/types.ts",
+        "sources/trustless-agent-substrate/src/clients/repository/githubRepositoryClient.ts"
+      ],
+      "raw_observed_state": {
+        "normalization_rule": "GitHub base64 response content removes LF or CRLF before strict canonical base64 decoding",
+        "identity_fields": [
+          "Profile-selected repository",
+          "exact commit",
+          "exact path",
+          "decoded bytes"
+        ]
+      },
+      "state_before": {
+        "repository_identity": "R",
+        "exact_commit": "C",
+        "path": "P",
+        "base64_transport_line_endings": "LF",
+        "decoded_file_bytes": "X"
+      },
+      "state_after": {
+        "repository_identity": "R",
+        "exact_commit": "C",
+        "path": "P",
+        "base64_transport_line_endings": "CRLF",
+        "decoded_file_bytes": "X"
+      },
+      "weak_observation": {
+        "transport_representation": "CHANGED",
+        "decoded_file_bytes": "SAME"
+      },
+      "protected_relation": "profile_authorized_repository_file_identity",
+      "protected_scope": [
+        "profile_selected_repository",
+        "exact_commit",
+        "exact_path",
+        "decoded_file_bytes"
+      ],
+      "expected_outcome": "PRESERVED",
+      "rationale": "The current TAS GitHub client explicitly treats LF and CRLF base64 wrapping as transport-equivalent while requiring the same repository source, commit, path, decoded length and canonical decoded bytes.",
+      "authority_boundary": "Only base64 transport line wrapping is outside the protected relation. Repository, commit, path or decoded-byte substitution remains prohibited.",
+      "system_property_class": [
+        "SOURCE_BACKED_SEMANTIC_DISTINCTION",
+        "POSITIVE_FAIL_CLOSED_PROPERTY"
+      ]
+    }
+  ]
+}

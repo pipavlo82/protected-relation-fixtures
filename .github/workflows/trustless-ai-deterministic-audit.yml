@@ -1,0 +1,26 @@
+name: trustless-ai-deterministic-audit
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python tools/validate_v0_freeze.py
+      - run: python tools/validate_trustless_ai_deterministic_case_study.py
+      - run: python -m unittest tests.test_trustless_ai_deterministic_case_study -v
+      - run: python -O -m unittest tests.test_trustless_ai_deterministic_case_study -v
