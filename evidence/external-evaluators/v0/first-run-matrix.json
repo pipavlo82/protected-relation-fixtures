@@ -1,0 +1,282 @@
+{
+  "schema": "protected-relation-external-evaluator-first-run-matrix.v0",
+  "comparable_experiments": [
+    "qwen2.5-3b-post-wrapper-repair",
+    "qwen2.5-coder-7b",
+    "llama3.1-8b"
+  ],
+  "excluded_experiments": [
+    {
+      "experiment_id": "qwen2.5-3b-pre-wrapper-repair",
+      "reason": "PRE_WRAPPER_REPAIR_PROTOCOL_EVIDENCE_NOT_A_COMPARABLE_SEMANTIC_BASELINE"
+    }
+  ],
+  "models": [
+    {
+      "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+      "bundle_path": "first-runs/qwen2.5-3b-post-wrapper-repair",
+      "source_result_path": "first-runs/qwen2.5-3b-post-wrapper-repair/final-results.json",
+      "observations": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "e64f4eabec6026bb569dc16b6c2b731cfe8f1d492ffac46678dbf6eed9dd9415",
+          "raw_output_sha256": "272b9e56d77d4c6c1d0fb19ed23ad3a8e0ac2b4e88aaf1de7309a967412438ee",
+          "wrapped_response_sha256": "72923bf083587c34ebfc83f71eececda94e9e6e08f084ced4a79a7dbe2fb2e44"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "b95d79c0cf3ef16625d22c18be0039785c3f9f8ad5d448dad496ba5177812c46",
+          "raw_output_sha256": "435dda96ebdb4967cf5ba6cadbcee12e954c11961b97c8756c11b358450ef430",
+          "wrapped_response_sha256": "6edb623c8a9c1ec8941d6f09430aa58ac438421eb6c0359341f6e7d916ca15f5"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "evaluator_outcome": "UNVERIFIABLE",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+          "raw_output_sha256": "a51fc4b6320898e52ba349f35cf9815dc7aac63a6ec4583fc70bc6cea3e9f874",
+          "wrapped_response_sha256": "62530d43d031740bdd4715bbad14add6ffe4a354ae01718c93640d0b33ea8c43"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "2a6111aca0be8f4382133ea5b2b0eecac9f9eebca0b8e0cb735a8f7786db2202",
+          "raw_output_sha256": "917156b314eaaef18aae28139e27736f12e0932805a00ce5e2621de83c25d016",
+          "wrapped_response_sha256": "71b8f8362e7b62b3a836de930dde3828ea94bbf605711447d93ffff639d5611a"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "de58d458428484069c4a970ad9010d97976e0247afdeec9291dcf51a98ef398e",
+          "raw_output_sha256": "4cd7b256a13ca20d6a9419dcd5a1ddbb2788f460b3411647259106583d33706e",
+          "wrapped_response_sha256": "65971d503c1531272ac6f24e599de8ce1288655ab55397db2c26329eae6f437b"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "evaluator_outcome": null,
+          "frozen_expected_outcome": "PRESERVED",
+          "mismatch_classification": null,
+          "adapter_status": "MALFORMED_RESPONSE",
+          "request_sha256": "faa7887b20815390f9c3299385588150d54aafd2036422147dcce18f5c79f264",
+          "raw_output_sha256": "614b26af96417c0a67c077cbcd92bd00662173631b5ba718a70726a37dc754d5",
+          "wrapped_response_sha256": null
+        }
+      ],
+      "aggregates": {
+        "valid_semantic_judgments": 5,
+        "adapter_failures": 1,
+        "MATCH": 5,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      }
+    },
+    {
+      "experiment_id": "qwen2.5-coder-7b",
+      "bundle_path": "first-runs/qwen2.5-coder-7b",
+      "source_result_path": "first-runs/qwen2.5-coder-7b/final-results.json",
+      "observations": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "evaluator_outcome": "UNVERIFIABLE",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "VIOLATION_NOT_ESTABLISHED",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "fbf78882db252ab9576069fd6f53684a58d60032bde6048ab79ab8aa7b730e96",
+          "raw_output_sha256": "d64226ba72f01d280559a0645f21fe31adec6495d66137206ea1c5b8b18d5abf",
+          "wrapped_response_sha256": "09357f8a8b172f586c5b3fc0d924d5d92b247f3644eb40f4e96f69763a1b2824"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "3fcf3bf0d4cf515c53c63f4280b4dd47a08d19f13d0150a0edf6ab52b852f467",
+          "raw_output_sha256": "2779bc93289c033bf95c8d83235159ac6bd151e59a6703fbba90bbc23c1f8b66",
+          "wrapped_response_sha256": "16988c010cba9e73cc54772ae39d4fbe683b27da769b7bec6255921730419ed9"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "evaluator_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "mismatch_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "6988e3c3699aa61e1ccc6933677423989122541190e9f80dca4aa2eba0f1a283",
+          "raw_output_sha256": "ef6da96e02564829d6161d3b83e3e574a5d9ed3b3d8d775b60071d663efdcc7c",
+          "wrapped_response_sha256": "561bb3be98bb63b040c80db2c247488139d4937c29c120567ec017dff1451ea0"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "7ab93b10ad64d59f091ebf3e12b54d7b1aeab3e3839159b4d315b3d90da23804",
+          "raw_output_sha256": "35aa988e81f9615a69f15c141334d6a1e8d851def245d380b090e2c189d9fb46",
+          "wrapped_response_sha256": "fc0617a693bd7c10e1da1e5918892c7d75c3a4afa7f1984d6bc09bd71939ec25"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "evaluator_outcome": "PRESERVED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "UNSAFE_FALSE_PRESERVATION",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "68939f94d01d80b7184e4d90772c96ddd725cbea4dde94a1a8dfc0eafdca2dd9",
+          "raw_output_sha256": "47dd925dbffcde8208289d2ce0a5cc1e15f6488873e3a7d4d94c48675109f73c",
+          "wrapped_response_sha256": "707ffc31289562e5f882b4ec3afc69cf8a992183d43f296661d646e52f37781f"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "evaluator_outcome": "UNVERIFIABLE",
+          "frozen_expected_outcome": "PRESERVED",
+          "mismatch_classification": "PRESERVATION_NOT_ESTABLISHED",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "743f06792deb278a079c97b5577c027a7a134792f9e72a9a88ff48ebed304d1e",
+          "raw_output_sha256": "8473df267dc49e8bb1c5a312045cf9cd349a5fa22ef9c9aedc8447a9948ea92c",
+          "wrapped_response_sha256": "4e3bbcf710a8e0730c834d0ebdfb07247fa477146b5d73eed9d1d72255cb4ca3"
+        }
+      ],
+      "aggregates": {
+        "valid_semantic_judgments": 6,
+        "adapter_failures": 0,
+        "MATCH": 2,
+        "UNSAFE_FALSE_PRESERVATION": 1,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 1,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 1,
+        "VIOLATION_NOT_ESTABLISHED": 1,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      }
+    },
+    {
+      "experiment_id": "llama3.1-8b",
+      "bundle_path": "first-runs/llama3.1-8b",
+      "source_result_path": "first-runs/llama3.1-8b/final-results.json",
+      "observations": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "evaluator_outcome": "PRESERVED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "UNSAFE_FALSE_PRESERVATION",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "13ef0b055760d50ad66cce4472ca8b89b8ed4375db5e93c10e12e52fc8164a5d",
+          "raw_output_sha256": "b0a70ac994498ccf2332f0aa43683c366b5a0e2e57f6f28cb9390fb71240da78",
+          "wrapped_response_sha256": "c8c411e42267b5307ae053deb6d44b10ddd11b1734c1b7c9a10ff00c14c60617"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "MATCH",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "a854d86d92aef60f811415c764d891e826ccc28c0439b7e2cc850657bf913034",
+          "raw_output_sha256": "b882aff70c824b34145ece072f78dd6637670ec91cdbce82de213af9c63d6494",
+          "wrapped_response_sha256": "590e6e74ad3620e61e1c840affaede1badb1efdcc5c420b4cc94c18a7a604420"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "mismatch_classification": "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "d24479e92bbc0583afeb12950669b0477e513d7b4ccd6dc64424064430a1f215",
+          "raw_output_sha256": "649ee8e1e2708ed669cc786ea7a7b8ebd4235dacee7041f2c340442ec8e67730",
+          "wrapped_response_sha256": "55ddb691660f2da4b24fc43454aa8109ca6875a7d9f022a84a6c389618ca2707"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "evaluator_outcome": "PRESERVED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "UNSAFE_FALSE_PRESERVATION",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "6ef13c746649b3cc4b2ea5723a7c2d684ae24e74b1f858969b246321d62d8924",
+          "raw_output_sha256": "70f8b9ffe5703d18f7f41fc3e55aa26bba93861e8611bc008f9b196ef20cde63",
+          "wrapped_response_sha256": "83af093b09708013b1731dac465ef6aada89591d797f23fa8db8b9db4281fb1b"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "evaluator_outcome": "PRESERVED",
+          "frozen_expected_outcome": "VIOLATED",
+          "mismatch_classification": "UNSAFE_FALSE_PRESERVATION",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "0c51400bd5737a8f7182f7d457195467973ad6d22140cae6090be12eb9a7900f",
+          "raw_output_sha256": "cccfcd5d37e08f80eb6b83f641ea3f1635847dae4012d4a2872c65d4b35cc554",
+          "wrapped_response_sha256": "532f94f44d072769b36ac90174dfe1a95f2d683d89c55d7490e4432067e4a865"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "evaluator_outcome": "VIOLATED",
+          "frozen_expected_outcome": "PRESERVED",
+          "mismatch_classification": "FALSE_VIOLATION",
+          "adapter_status": "RESPONSE_VALID",
+          "request_sha256": "6c36950c895e4b5dc11c2753e49d10320be50aca798b25551d1efa171d0040ac",
+          "raw_output_sha256": "48e035b0820a1389a6141bbffa51c13b5b8e253f9025e8329ef91a57b65feb2d",
+          "wrapped_response_sha256": "7da82a69910736361c50b7c5c614bdd7a5dc2dcbaa2cf86ce2caf407396bed46"
+        }
+      ],
+      "aggregates": {
+        "valid_semantic_judgments": 6,
+        "adapter_failures": 0,
+        "MATCH": 1,
+        "UNSAFE_FALSE_PRESERVATION": 3,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 1,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 1
+      }
+    }
+  ],
+  "repeated_security_significant_observations": [
+    {
+      "challenge_id": "prf-005",
+      "frozen_expected_outcome": "VIOLATED",
+      "classification": "UNSAFE_FALSE_PRESERVATION",
+      "experiments": [
+        "qwen2.5-coder-7b",
+        "llama3.1-8b"
+      ],
+      "observation_count": 2,
+      "finding": "prf-005 produced UNSAFE_FALSE_PRESERVATION in two distinct evaluated model families/configurations in these exact first-run observations."
+    }
+  ],
+  "sampling_boundary": "ONE_FIRST_RUN_SAMPLE_PER_MODEL_AND_CHALLENGE_NO_STABILITY_CLAIM"
+}

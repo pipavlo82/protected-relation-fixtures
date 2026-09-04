@@ -1,0 +1,5 @@
+{ 
+  "outcome": "PRESERVED", 
+  "reason_detail": "{\"description\":\"The link L1 between A and B in the after state is present in the before state. The direction policy is directed-exact, so we must check if the relation type is exact as well. In this case, it is typed-exact, but there are no actual relation types, so we ignore the type. We also check the kind of relation and find that it is multiplicity_sensitive_relation which does not require any changes to be preserved under directed-exact policy. Finally, the scope of A and B in the after state matches the universe provided by the protected relation profile and includes all elements involved in L1.\"}" 
+}
+

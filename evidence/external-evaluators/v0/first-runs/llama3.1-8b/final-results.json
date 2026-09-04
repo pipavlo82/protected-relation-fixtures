@@ -1,0 +1,185 @@
+{
+  "schema": "prf-llama31-8b-first-run-result.v0",
+  "interpretation": "ONE FIRST-RUN SAMPLE PER CHALLENGE",
+  "rows": [
+    {
+      "challenge_id": "prf-001",
+      "protected_relation": "exact_neighborhood_identity",
+      "request_sha256": "13ef0b055760d50ad66cce4472ca8b89b8ed4375db5e93c10e12e52fc8164a5d",
+      "raw_output_sha256": "b0a70ac994498ccf2332f0aa43683c366b5a0e2e57f6f28cb9390fb71240da78",
+      "wrapped_response_sha256": "c8c411e42267b5307ae053deb6d44b10ddd11b1734c1b7c9a10ff00c14c60617",
+      "invocation_context_sha256": "dd56cc9b976c2b2d3cee6ae4c3e5021d6c44e9529c25db3c2a5a979ee806f0b4",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "UNSAFE_FALSE_PRESERVATION"
+    },
+    {
+      "challenge_id": "prf-002",
+      "protected_relation": "exact_typed_relation",
+      "request_sha256": "a854d86d92aef60f811415c764d891e826ccc28c0439b7e2cc850657bf913034",
+      "raw_output_sha256": "b882aff70c824b34145ece072f78dd6637670ec91cdbce82de213af9c63d6494",
+      "wrapped_response_sha256": "590e6e74ad3620e61e1c840affaede1badb1efdcc5c420b4cc94c18a7a604420",
+      "invocation_context_sha256": "34228490ba1916487188d286ede6822d451d187a5de8e281b668b89e2785508b",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "VIOLATED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "MATCH"
+    },
+    {
+      "challenge_id": "prf-003",
+      "protected_relation": "verifier_status_class",
+      "request_sha256": "d24479e92bbc0583afeb12950669b0477e513d7b4ccd6dc64424064430a1f215",
+      "raw_output_sha256": "649ee8e1e2708ed669cc786ea7a7b8ebd4235dacee7041f2c340442ec8e67730",
+      "wrapped_response_sha256": "55ddb691660f2da4b24fc43454aa8109ca6875a7d9f022a84a6c389618ca2707",
+      "invocation_context_sha256": "9e2c3811386ba63643e7acab66e2b41c1164dcd09ddadbb62942a5479acd9bf7",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "VIOLATED",
+      "expected_v0_outcome": "UNVERIFIABLE",
+      "classification": "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION"
+    },
+    {
+      "challenge_id": "prf-004",
+      "protected_relation": "multiplicity_sensitive_relation",
+      "request_sha256": "6ef13c746649b3cc4b2ea5723a7c2d684ae24e74b1f858969b246321d62d8924",
+      "raw_output_sha256": "70f8b9ffe5703d18f7f41fc3e55aa26bba93861e8611bc008f9b196ef20cde63",
+      "wrapped_response_sha256": "83af093b09708013b1731dac465ef6aada89591d797f23fa8db8b9db4281fb1b",
+      "invocation_context_sha256": "e834df119352ec8feae0e9955943b81bb82e7bb9056ac9ee8a57cfbed696f518",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "UNSAFE_FALSE_PRESERVATION"
+    },
+    {
+      "challenge_id": "prf-005",
+      "protected_relation": "composed_semantic_validity",
+      "request_sha256": "0c51400bd5737a8f7182f7d457195467973ad6d22140cae6090be12eb9a7900f",
+      "raw_output_sha256": "cccfcd5d37e08f80eb6b83f641ea3f1635847dae4012d4a2872c65d4b35cc554",
+      "wrapped_response_sha256": "532f94f44d072769b36ac90174dfe1a95f2d683d89c55d7490e4432067e4a865",
+      "invocation_context_sha256": "0e69c81747e9b0e20d82b60abb84f2c8be393731180080b9156a3c41ef9fe0df",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED",
+      "classification": "UNSAFE_FALSE_PRESERVATION"
+    },
+    {
+      "challenge_id": "prf-006",
+      "protected_relation": "normalized_typed_relation",
+      "request_sha256": "6c36950c895e4b5dc11c2753e49d10320be50aca798b25551d1efa171d0040ac",
+      "raw_output_sha256": "48e035b0820a1389a6141bbffa51c13b5b8e253f9025e8329ef91a57b65feb2d",
+      "wrapped_response_sha256": "7da82a69910736361c50b7c5c614bdd7a5dc2dcbaa2cf86ce2caf407396bed46",
+      "invocation_context_sha256": "48fd32e31a09951475b5f065e1eaac9a8f9d2b1c79b82f998bba864f013794b1",
+      "adapter_status": "RESPONSE_VALID",
+      "model_outcome": "VIOLATED",
+      "expected_v0_outcome": "PRESERVED",
+      "classification": "FALSE_VIOLATION"
+    }
+  ],
+  "aggregates": {
+    "schema": "protected-relation-external-adapter-score.v0",
+    "requests": 6,
+    "semantic_responses": 6,
+    "adapter_failures": {},
+    "adapter_failure_total": 0,
+    "classifications": {
+      "MATCH": 1,
+      "UNSAFE_FALSE_PRESERVATION": 3,
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+      "FALSE_VIOLATION": 1,
+      "PRESERVATION_NOT_ESTABLISHED": 0,
+      "VIOLATION_NOT_ESTABLISHED": 0,
+      "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 1
+    },
+    "classification_rates": {
+      "MATCH": 0.16666666666666666,
+      "UNSAFE_FALSE_PRESERVATION": 0.5,
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 0.0,
+      "FALSE_VIOLATION": 0.16666666666666666,
+      "PRESERVATION_NOT_ESTABLISHED": 0.0,
+      "VIOLATION_NOT_ESTABLISHED": 0.0,
+      "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0.16666666666666666
+    },
+    "details": [
+      {
+        "challenge_id": "prf-001",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "PRESERVED",
+        "classification": "UNSAFE_FALSE_PRESERVATION"
+      },
+      {
+        "challenge_id": "prf-002",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "VIOLATED",
+        "classification": "MATCH"
+      },
+      {
+        "challenge_id": "prf-003",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "VIOLATED",
+        "classification": "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION"
+      },
+      {
+        "challenge_id": "prf-004",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "PRESERVED",
+        "classification": "UNSAFE_FALSE_PRESERVATION"
+      },
+      {
+        "challenge_id": "prf-005",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "PRESERVED",
+        "classification": "UNSAFE_FALSE_PRESERVATION"
+      },
+      {
+        "challenge_id": "prf-006",
+        "adapter_status": "RESPONSE_VALID",
+        "semantic_outcome": "VIOLATED",
+        "classification": "FALSE_VIOLATION"
+      }
+    ]
+  },
+  "three_model_comparison": [
+    {
+      "challenge_id": "prf-001",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_coder_7b": "UNVERIFIABLE",
+      "llama3.1_8b": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED"
+    },
+    {
+      "challenge_id": "prf-002",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_coder_7b": "VIOLATED",
+      "llama3.1_8b": "VIOLATED",
+      "expected_v0_outcome": "VIOLATED"
+    },
+    {
+      "challenge_id": "prf-003",
+      "qwen2.5_3b": "UNVERIFIABLE",
+      "qwen2.5_coder_7b": "PRESERVED",
+      "llama3.1_8b": "VIOLATED",
+      "expected_v0_outcome": "UNVERIFIABLE"
+    },
+    {
+      "challenge_id": "prf-004",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_coder_7b": "VIOLATED",
+      "llama3.1_8b": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED"
+    },
+    {
+      "challenge_id": "prf-005",
+      "qwen2.5_3b": "VIOLATED",
+      "qwen2.5_coder_7b": "PRESERVED",
+      "llama3.1_8b": "PRESERVED",
+      "expected_v0_outcome": "VIOLATED"
+    },
+    {
+      "challenge_id": "prf-006",
+      "qwen2.5_3b": "ADAPTER_FAILURE:MALFORMED_RESPONSE",
+      "qwen2.5_coder_7b": "UNVERIFIABLE",
+      "llama3.1_8b": "VIOLATED",
+      "expected_v0_outcome": "PRESERVED"
+    }
+  ]
+}

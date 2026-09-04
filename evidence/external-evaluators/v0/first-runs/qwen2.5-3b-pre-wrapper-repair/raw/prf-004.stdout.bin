@@ -1,0 +1,21 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "id": "local-ollama/qwen2.5:3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "1ac6de6fe2bca2ba85ec638f622b8a58d1c14592147fa3847050a7025721a739"
+  },
+  "outcome": "VIOLATED",
+  "reason_code": "MULTIPLICITY_VIOLATION",
+  "reason_detail": null,
+  "evidence": [
+    {
+      "kind": "universe_members",
+      "value": ["A", "B"]
+    }
+  ]
+}
+

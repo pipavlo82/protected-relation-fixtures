@@ -1,0 +1,33 @@
+{
+  "schema": "prf-local-ollama-invocation.v0",
+  "challenge_id": "prf-005",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "OLLAMA_NOHISTORY=1",
+    "/usr/local/bin/ollama",
+    "run",
+    "qwen2.5:3b-instruct",
+    "--format",
+    "json",
+    "--hidethinking",
+    "--keepalive",
+    "0"
+  ],
+  "model": "qwen2.5:3b-instruct",
+  "ollama_version": "0.15.2",
+  "model_id": "357c53fb659c",
+  "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+  "prompt_sha256": "25d78f290f6ca03a1fea58d68d191e865d9d739188b74be772f9bf9136fadd68",
+  "raw_stdout_sha256": "8be46fd964501556633f95e809e87267baf7af683485d4647bb1f1ad7d6e5e52",
+  "raw_stderr_sha256": "4cf4091ce94085c1efb9d0275ea227cbc23e0dfcb8e0de4e7d4458b7906ee296",
+  "started_at": "2026-09-04T01:20:45.125433+00:00",
+  "ended_at": "2026-09-04T01:21:17.085140+00:00",
+  "timestamps_authoritative": false,
+  "timeout_seconds": 300,
+  "timed_out": false,
+  "exit_code": 0
+}

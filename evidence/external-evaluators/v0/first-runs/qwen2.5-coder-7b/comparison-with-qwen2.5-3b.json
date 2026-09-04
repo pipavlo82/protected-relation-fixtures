@@ -1,0 +1,56 @@
+[
+  {
+    "challenge_id": "prf-001",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_3b_status": "RESPONSE_VALID",
+    "qwen2.5_coder_7b": "UNVERIFIABLE",
+    "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+    "expected_v0_outcome": "VIOLATED",
+    "difference": "SEMANTIC_DISAGREEMENT"
+  },
+  {
+    "challenge_id": "prf-002",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_3b_status": "RESPONSE_VALID",
+    "qwen2.5_coder_7b": "VIOLATED",
+    "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+    "expected_v0_outcome": "VIOLATED",
+    "difference": "SAME_SEMANTIC_JUDGMENT"
+  },
+  {
+    "challenge_id": "prf-003",
+    "qwen2.5_3b": "UNVERIFIABLE",
+    "qwen2.5_3b_status": "RESPONSE_VALID",
+    "qwen2.5_coder_7b": "PRESERVED",
+    "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+    "expected_v0_outcome": "UNVERIFIABLE",
+    "difference": "SEMANTIC_DISAGREEMENT"
+  },
+  {
+    "challenge_id": "prf-004",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_3b_status": "RESPONSE_VALID",
+    "qwen2.5_coder_7b": "VIOLATED",
+    "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+    "expected_v0_outcome": "VIOLATED",
+    "difference": "SAME_SEMANTIC_JUDGMENT"
+  },
+  {
+    "challenge_id": "prf-005",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_3b_status": "RESPONSE_VALID",
+    "qwen2.5_coder_7b": "PRESERVED",
+    "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+    "expected_v0_outcome": "VIOLATED",
+    "difference": "SEMANTIC_DISAGREEMENT"
+  },
+  {
+    "challenge_id": "prf-006",
+    "qwen2.5_3b": null,
+    "qwen2.5_3b_status": "MALFORMED_RESPONSE",
+    "qwen2.5_coder_7b": "UNVERIFIABLE",
+    "qwen2.5_coder_7b_status": "RESPONSE_VALID",
+    "expected_v0_outcome": "PRESERVED",
+    "difference": "THREE_B_ADAPTER_FAILURE_VS_SEVEN_B_SEMANTIC_JUDGMENT"
+  }
+]

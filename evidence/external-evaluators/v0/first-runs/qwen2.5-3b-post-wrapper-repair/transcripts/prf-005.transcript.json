@@ -1,0 +1,71 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "de58d458428484069c4a970ad9010d97976e0247afdeec9291dcf51a98ef398e",
+  "response_digest": "65971d503c1531272ac6f24e599de8ce1288655ab55397db2c26329eae6f437b",
+  "evaluator_output_digest": "ed8d16931173be5e2b7557b741f88cc33fadd2111bcff201e7e0c1c6b7180764",
+  "raw_response_digest": "4cd7b256a13ca20d6a9419dcd5a1ddbb2788f460b3411647259106583d33706e",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVGhlIHByb3RlY3RlZCByZWxhdGlvbiAnYWdlbnQtQS1vbmx5JyBpcyByZXBsYWNlZCBieSAnYWdlbnQtQS1hbmQtQicgd2hpY2ggdmlvbGF0ZXMgdGhlIG9yaWdpbmFsIHBvbGljeSBvZiAnYWdlbnQtQS1vbmx5Jy4ifQoK",
+  "stderr_digest": "224ec43efb7b1c728baca3faae60fa8b555ead3d84e4b874a78001a49ffc7f9c",
+  "stderr_base64": "G1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjVsG1s/MjAyNmgbWz8yNWwbWzFHG1tLG1s/MjVoG1s/MjAyNmwbWzJLG1sxRxtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aA==",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "de58d458428484069c4a970ad9010d97976e0247afdeec9291dcf51a98ef398e",
+    "evaluator": {
+      "id": "local-ollama-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2/model-357c53fb659c",
+      "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "D:\\prf-experiments\\qwen2.5-3b-instruct-post-wrapper-repair\\qwen_evaluator.py",
+      "--prompt-file",
+      "D:\\prf-experiments\\qwen2.5-3b-instruct-post-wrapper-repair\\prompts\\prf-005.prompt.txt"
+    ],
+    "metadata": {
+      "invocation_id": "qwen25-3b-post-wrapper-repair-prf-005",
+      "provider": "local-wsl-ollama",
+      "model": "qwen2.5:3b-instruct",
+      "model_id": "357c53fb659c",
+      "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+      "ollama_version": "0.15.2",
+      "prompt_sha256": "52bfc7805072235e4e1ce482c7722842df211137eac33876ad89c437e9e26336",
+      "retry_policy": "NO_RETRY_ONE_CALL_PER_CHALLENGE"
+    }
+  },
+  "invocation_digest": "3d48a35456d77e186272607884049b1477a4cfb18a063edf82adc9918354cab9",
+  "recorded_at": "2026-09-04T01:43:01.812870+00:00",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The protected relation 'agent-A-only' is replaced by 'agent-A-and-B' which violates the original policy of 'agent-A-only'.\"}\n\n",
+  "stderr": "\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "de58d458428484069c4a970ad9010d97976e0247afdeec9291dcf51a98ef398e",
+    "challenge_id": "prf-005",
+    "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+    "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+    "evaluator": {
+      "id": "local-ollama-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2/model-357c53fb659c",
+      "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+    },
+    "evaluator_output_digest": "ed8d16931173be5e2b7557b741f88cc33fadd2111bcff201e7e0c1c6b7180764",
+    "invocation_digest": "3d48a35456d77e186272607884049b1477a4cfb18a063edf82adc9918354cab9",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The protected relation 'agent-A-only' is replaced by 'agent-A-and-B' which violates the original policy of 'agent-A-only'.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The protected relation 'agent-A-only' is replaced by 'agent-A-and-B' which violates the original policy of 'agent-A-only'."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "response validated",
+  "exit_code": 0
+}

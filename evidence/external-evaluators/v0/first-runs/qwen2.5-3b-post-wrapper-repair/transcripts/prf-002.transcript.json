@@ -1,0 +1,71 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "b95d79c0cf3ef16625d22c18be0039785c3f9f8ad5d448dad496ba5177812c46",
+  "response_digest": "6edb623c8a9c1ec8941d6f09430aa58ac438421eb6c0359341f6e7d916ca15f5",
+  "evaluator_output_digest": "9a38761989bf4ac65f35fbe9dd74a7cb0a5ff360ac26099e7fbdc0f80ebf45b7",
+  "raw_response_digest": "435dda96ebdb4967cf5ba6cadbcee12e954c11961b97c8756c11b358450ef430",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiXCJldmFsdWF0aW9uX2lucHV0XCI6IHtcImFmdGVyXCI6IHtcInJlbGF0aW9uXCI6IFwiZGVwZW5kc19vblwiLCBcInNvdXJjZVwiOiBcIkFcIiwgXCJ0YXJnZXRcIjogXCJCXCJ9LCBcImJlZm9yZVwiOiB7XCJyZWxhdGlvblwiOiBcIm93bnNcIiwgXCJzb3VyY2VcIjogXCJBXCIsIFwidGFyZ2V0XCI6IFwiQlwifX0ifQoK",
+  "stderr_digest": "14f9b9002d57225c5207063859a82974210dd286415d5d41495713cbd6b98a3d",
+  "stderr_base64": "G1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjVsG1s/MjAyNmgbWz8yNWwbWzFHG1tLG1s/MjVoG1s/MjAyNmwbWzJLG1sxRxtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aA==",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "b95d79c0cf3ef16625d22c18be0039785c3f9f8ad5d448dad496ba5177812c46",
+    "evaluator": {
+      "id": "local-ollama-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2/model-357c53fb659c",
+      "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "D:\\prf-experiments\\qwen2.5-3b-instruct-post-wrapper-repair\\qwen_evaluator.py",
+      "--prompt-file",
+      "D:\\prf-experiments\\qwen2.5-3b-instruct-post-wrapper-repair\\prompts\\prf-002.prompt.txt"
+    ],
+    "metadata": {
+      "invocation_id": "qwen25-3b-post-wrapper-repair-prf-002",
+      "provider": "local-wsl-ollama",
+      "model": "qwen2.5:3b-instruct",
+      "model_id": "357c53fb659c",
+      "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+      "ollama_version": "0.15.2",
+      "prompt_sha256": "08fd7245d5b5138f151fd508a36ad12666d959d66b7837fbf902489665c7c6a4",
+      "retry_policy": "NO_RETRY_ONE_CALL_PER_CHALLENGE"
+    }
+  },
+  "invocation_digest": "f2cd96537160a76d178082ad91b77d9a24b81b1d7bb35b4fb1e84d8abbfeabb6",
+  "recorded_at": "2026-09-04T01:42:41.589842+00:00",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"\\\"evaluation_input\\\": {\\\"after\\\": {\\\"relation\\\": \\\"depends_on\\\", \\\"source\\\": \\\"A\\\", \\\"target\\\": \\\"B\\\"}, \\\"before\\\": {\\\"relation\\\": \\\"owns\\\", \\\"source\\\": \\\"A\\\", \\\"target\\\": \\\"B\\\"}}\"}\n\n",
+  "stderr": "\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "b95d79c0cf3ef16625d22c18be0039785c3f9f8ad5d448dad496ba5177812c46",
+    "challenge_id": "prf-002",
+    "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+    "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+    "evaluator": {
+      "id": "local-ollama-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2/model-357c53fb659c",
+      "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+    },
+    "evaluator_output_digest": "9a38761989bf4ac65f35fbe9dd74a7cb0a5ff360ac26099e7fbdc0f80ebf45b7",
+    "invocation_digest": "f2cd96537160a76d178082ad91b77d9a24b81b1d7bb35b4fb1e84d8abbfeabb6",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "\"evaluation_input\": {\"after\": {\"relation\": \"depends_on\", \"source\": \"A\", \"target\": \"B\"}, \"before\": {\"relation\": \"owns\", \"source\": \"A\", \"target\": \"B\"}}",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "\"evaluation_input\": {\"after\": {\"relation\": \"depends_on\", \"source\": \"A\", \"target\": \"B\"}, \"before\": {\"relation\": \"owns\", \"source\": \"A\", \"target\": \"B\"}}"
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "response validated",
+  "exit_code": 0
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "6ef13c746649b3cc4b2ea5723a7c2d684ae24e74b1f858969b246321d62d8924",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "id": "local-ollama-llama3.1-8b",
+    "version": "ollama-0.15.2/model-46e0c10c039e",
+    "config_digest": "d2246b550214152ac5f7ee7e15e83f8bd9b4be027d1413569a511bceda7893e2"
+  },
+  "evaluator_output_digest": "2da7e75d5e2fcba4551f5cf8e93476fc0391aa5a47783338f311f254491cdbf6",
+  "invocation_digest": "e834df119352ec8feae0e9955943b81bb82e7bb9056ac9ee8a57cfbed696f518",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"description\":\"The link L1 between A and B in the after state is present in the before state. The direction policy is directed-exact, so we must check if the relation type is exact as well. In this case, it is typed-exact, but there are no actual relation types, so we ignore the type. We also check the kind of relation and find that it is multiplicity_sensitive_relation which does not require any changes to be preserved under directed-exact policy. Finally, the scope of A and B in the after state matches the universe provided by the protected relation profile and includes all elements involved in L1.\"}",
+  "evidence": []
+}

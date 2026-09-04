@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "3fcf3bf0d4cf515c53c63f4280b4dd47a08d19f13d0150a0edf6ab52b852f467",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2/model-dae161e27b0e",
+    "config_digest": "15f4520d96a7bf405b87e23378a0c6fd238da134f981908e94cd6b219f7cd25a"
+  },
+  "evaluator_output_digest": "eacbbc900b7b1e1a6a97302f6431ea5c48893b3386244cedd3aaa56407f0bdfc",
+  "invocation_digest": "95ccc24e3c8f921d9f2f242e243bbb1925a5c384870717c7564b98001ab1bfe2",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The relation type policy is set to 'typed-exact', but the before state uses 'owns' while the after state uses 'depends_on'. The protected relation profile enforces exact typed relations, leading to a violation.",
+  "evidence": []
+}

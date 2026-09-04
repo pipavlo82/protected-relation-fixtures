@@ -1,0 +1,71 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+  "response_digest": "62530d43d031740bdd4715bbad14add6ffe4a354ae01718c93640d0b33ea8c43",
+  "evaluator_output_digest": "ca9317db19dd217b7b0f86db03f56c74f92360561dfd917fdd3cc8a19e9e1f24",
+  "raw_response_digest": "a51fc4b6320898e52ba349f35cf9815dc7aac63a6ec4583fc70bc6cea3e9f874",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVU5WRVJJRklBQkxFIiwicmVhc29uX2RldGFpbCI6Ikluc3VmZmljaWVudCBzZW1hbnRpYyBpbmZvcm1hdGlvbiB0byBldmFsdWF0ZSB0aGUgcHJvdGVjdGVkIHJlbGF0aW9uIGJhc2VkIG9uIHRoZSBwcm92aWRlZCBzdGF0ZS4ifQoK",
+  "stderr_digest": "57f46690a7accf8b40fd5af79343a1ce2669a947cb9a67239d856332074954dd",
+  "stderr_base64": "G1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjVsG1s/MjAyNmgbWz8yNWwbWzFHG1tLG1s/MjVoG1s/MjAyNmwbWzJLG1sxRxtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aA==",
+  "evaluator": {
+    "id": "local-ollama-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2/model-357c53fb659c",
+    "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+    "evaluator": {
+      "id": "local-ollama-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2/model-357c53fb659c",
+      "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "D:\\prf-experiments\\qwen2.5-3b-instruct-post-wrapper-repair\\qwen_evaluator.py",
+      "--prompt-file",
+      "D:\\prf-experiments\\qwen2.5-3b-instruct-post-wrapper-repair\\prompts\\prf-003.prompt.txt"
+    ],
+    "metadata": {
+      "invocation_id": "qwen25-3b-post-wrapper-repair-prf-003",
+      "provider": "local-wsl-ollama",
+      "model": "qwen2.5:3b-instruct",
+      "model_id": "357c53fb659c",
+      "model_blob_digest": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+      "ollama_version": "0.15.2",
+      "prompt_sha256": "8ac89bf6d4c58296277808f95fb91e676f8a42eb4d9230a81e926406843f8f88",
+      "retry_policy": "NO_RETRY_ONE_CALL_PER_CHALLENGE"
+    }
+  },
+  "invocation_digest": "a2a1317151932283809f6ea8c82143996765a95cdda52c9024ec5a1caa7a9863",
+  "recorded_at": "2026-09-04T01:42:49.220579+00:00",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"UNVERIFIABLE\",\"reason_detail\":\"Insufficient semantic information to evaluate the protected relation based on the provided state.\"}\n\n",
+  "stderr": "\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+    "challenge_id": "prf-003",
+    "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+    "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+    "evaluator": {
+      "id": "local-ollama-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2/model-357c53fb659c",
+      "config_digest": "0e45f450147e786dd1ff3198843835cff814f3d43535b2e429782f5bf0cbac8b"
+    },
+    "evaluator_output_digest": "ca9317db19dd217b7b0f86db03f56c74f92360561dfd917fdd3cc8a19e9e1f24",
+    "invocation_digest": "a2a1317151932283809f6ea8c82143996765a95cdda52c9024ec5a1caa7a9863",
+    "outcome": "UNVERIFIABLE",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "Insufficient semantic information to evaluate the protected relation based on the provided state.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "UNVERIFIABLE",
+    "reason_detail": "Insufficient semantic information to evaluate the protected relation based on the provided state."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "response validated",
+  "exit_code": 0
+}

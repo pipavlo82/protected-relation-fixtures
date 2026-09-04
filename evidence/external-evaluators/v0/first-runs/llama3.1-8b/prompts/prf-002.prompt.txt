@@ -1,0 +1,17 @@
+You are an external Protected Relation Fixtures semantic evaluator.
+
+Apply ONLY the protected relation profile supplied by the request to the supplied before/after state.
+
+Do not guess benchmark correctness and do not invent a different protected relation.
+
+Return PRESERVED only if preservation is justified under the supplied relation.
+Return VIOLATED only if violation is justified.
+If the available semantic information is insufficient, return UNVERIFIABLE.
+
+Return only one JSON object with exactly these two fields and no others:
+{"outcome":"PRESERVED | VIOLATED | UNVERIFIABLE","reason_detail":"string"}
+
+The outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.
+
+Validated blind request:
+{"adapter_contract_version":"v0","challenge_digest":"8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7","challenge_id":"prf-002","evaluation_input":{"after":{"relation":"depends_on","source":"A","target":"B"},"before":{"relation":"owns","source":"A","target":"B"}},"evaluator":{"config_digest":"d2246b550214152ac5f7ee7e15e83f8bd9b4be027d1413569a511bceda7893e2","id":"local-ollama-llama3.1-8b","version":"ollama-0.15.2/model-46e0c10c039e"},"execution_metadata":{"invocation_id":"llama31-8b-first-run-prf-002"},"protected_relation_profile":{"direction_policy":"directed-exact","equivalence_policy":"exact","identity_policy":"anchored","kind":"exact_typed_relation","multiplicity_policy":"set-collapsed","policy_version":"v0","relation_type_policy":"typed-exact","scope":["A","B"],"universe":["A","B"]},"protected_relation_profile_digest":"985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499","schema":"protected-relation-external-adapter-request.v0"}

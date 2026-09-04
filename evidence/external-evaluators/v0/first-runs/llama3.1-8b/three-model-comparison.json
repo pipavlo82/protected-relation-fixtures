@@ -1,0 +1,44 @@
+[
+  {
+    "challenge_id": "prf-001",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_coder_7b": "UNVERIFIABLE",
+    "llama3.1_8b": "PRESERVED",
+    "expected_v0_outcome": "VIOLATED"
+  },
+  {
+    "challenge_id": "prf-002",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_coder_7b": "VIOLATED",
+    "llama3.1_8b": "VIOLATED",
+    "expected_v0_outcome": "VIOLATED"
+  },
+  {
+    "challenge_id": "prf-003",
+    "qwen2.5_3b": "UNVERIFIABLE",
+    "qwen2.5_coder_7b": "PRESERVED",
+    "llama3.1_8b": "VIOLATED",
+    "expected_v0_outcome": "UNVERIFIABLE"
+  },
+  {
+    "challenge_id": "prf-004",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_coder_7b": "VIOLATED",
+    "llama3.1_8b": "PRESERVED",
+    "expected_v0_outcome": "VIOLATED"
+  },
+  {
+    "challenge_id": "prf-005",
+    "qwen2.5_3b": "VIOLATED",
+    "qwen2.5_coder_7b": "PRESERVED",
+    "llama3.1_8b": "PRESERVED",
+    "expected_v0_outcome": "VIOLATED"
+  },
+  {
+    "challenge_id": "prf-006",
+    "qwen2.5_3b": "ADAPTER_FAILURE:MALFORMED_RESPONSE",
+    "qwen2.5_coder_7b": "UNVERIFIABLE",
+    "llama3.1_8b": "VIOLATED",
+    "expected_v0_outcome": "PRESERVED"
+  }
+]

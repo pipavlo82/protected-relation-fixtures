@@ -1,0 +1,71 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "0c51400bd5737a8f7182f7d457195467973ad6d22140cae6090be12eb9a7900f",
+  "response_digest": "532f94f44d072769b36ac90174dfe1a95f2d683d89c55d7490e4432067e4a865",
+  "evaluator_output_digest": "4412f42a4529c40dca159c4488d737bd28b43f4fe4d95255528a1a8104c0a2a0",
+  "raw_response_digest": "cccfcd5d37e08f80eb6b83f641ea3f1635847dae4012d4a2872c65d4b35cc554",
+  "raw_response_base64": "eyJvdXRjb21lIjogIlBSRVNFUlZFRCIsICJyZWFzb25fZGV0YWlsIjogIntcInJlbGF0aW9uX25hbWVcIjpcImFnZW50LUEtYW5kLUJcIixcImJlZm9yZVwiOntcInN0YXRlXCI6e1wiYXV0aG9yaXphdGlvbl9zY29wZVwiOlwiYWdlbnQtQS1vbmx5XCJ9fSxcImFmdGVyXCI6e1wic3RhdGVcIjp7XCJhdXRob3JpemF0aW9uX3Njb3BlXCI6XCJhZ2VudC1BLWFuZC1CXCJ9fX0ifQoK",
+  "stderr_digest": "875b99f0707a9242a07ceb0b8f3502ed56296d09c358cfc66d76e83923d4872a",
+  "stderr_base64": "G1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCLIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC0IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCmIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCnIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCHIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCPIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qCZIBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC5IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC4IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjAyNmgbWz8yNWwbWzFH4qC8IBtbSxtbPzI1aBtbPzIwMjZsG1s/MjVsG1s/MjAyNmgbWz8yNWwbWzFHG1tLG1s/MjVoG1s/MjAyNmwbWzJLG1sxRxtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aBtbPzI1bBtbPzI1aA==",
+  "evaluator": {
+    "id": "local-ollama-llama3.1-8b",
+    "version": "ollama-0.15.2/model-46e0c10c039e",
+    "config_digest": "d2246b550214152ac5f7ee7e15e83f8bd9b4be027d1413569a511bceda7893e2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "0c51400bd5737a8f7182f7d457195467973ad6d22140cae6090be12eb9a7900f",
+    "evaluator": {
+      "id": "local-ollama-llama3.1-8b",
+      "version": "ollama-0.15.2/model-46e0c10c039e",
+      "config_digest": "d2246b550214152ac5f7ee7e15e83f8bd9b4be027d1413569a511bceda7893e2"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "D:\\prf-experiments\\llama3.1-8b-first-run\\llama_evaluator.py",
+      "--prompt-file",
+      "D:\\prf-experiments\\llama3.1-8b-first-run\\prompts\\prf-005.prompt.txt"
+    ],
+    "metadata": {
+      "invocation_id": "llama31-8b-first-run-prf-005",
+      "provider": "local-wsl-ollama",
+      "model": "llama3.1:8b",
+      "model_id": "46e0c10c039e",
+      "model_blob_digest": "sha256:667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29",
+      "ollama_version": "0.15.2",
+      "prompt_sha256": "0b547ef9f703c5429593fbb56222cd62b190e34f4da2d3eb4f13010e135bab39",
+      "retry_policy": "NO_RETRY_ONE_CALL_PER_CHALLENGE"
+    }
+  },
+  "invocation_digest": "0e69c81747e9b0e20d82b60abb84f2c8be393731180080b9156a3c41ef9fe0df",
+  "recorded_at": "2026-09-04T02:26:53.588619+00:00",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\": \"PRESERVED\", \"reason_detail\": \"{\\\"relation_name\\\":\\\"agent-A-and-B\\\",\\\"before\\\":{\\\"state\\\":{\\\"authorization_scope\\\":\\\"agent-A-only\\\"}},\\\"after\\\":{\\\"state\\\":{\\\"authorization_scope\\\":\\\"agent-A-and-B\\\"}}}\"}\n\n",
+  "stderr": "\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠴ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠧ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠇ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠏ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "0c51400bd5737a8f7182f7d457195467973ad6d22140cae6090be12eb9a7900f",
+    "challenge_id": "prf-005",
+    "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+    "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+    "evaluator": {
+      "id": "local-ollama-llama3.1-8b",
+      "version": "ollama-0.15.2/model-46e0c10c039e",
+      "config_digest": "d2246b550214152ac5f7ee7e15e83f8bd9b4be027d1413569a511bceda7893e2"
+    },
+    "evaluator_output_digest": "4412f42a4529c40dca159c4488d737bd28b43f4fe4d95255528a1a8104c0a2a0",
+    "invocation_digest": "0e69c81747e9b0e20d82b60abb84f2c8be393731180080b9156a3c41ef9fe0df",
+    "outcome": "PRESERVED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "{\"relation_name\":\"agent-A-and-B\",\"before\":{\"state\":{\"authorization_scope\":\"agent-A-only\"}},\"after\":{\"state\":{\"authorization_scope\":\"agent-A-and-B\"}}}",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "PRESERVED",
+    "reason_detail": "{\"relation_name\":\"agent-A-and-B\",\"before\":{\"state\":{\"authorization_scope\":\"agent-A-only\"}},\"after\":{\"state\":{\"authorization_scope\":\"agent-A-and-B\"}}}"
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "response validated",
+  "exit_code": 0
+}

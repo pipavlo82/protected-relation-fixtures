@@ -1,0 +1,14 @@
+{
+  "challenge_id": "prf-003",
+  "request_sha256": "6adfd483e96ba01db3be392fc521fe4d1ccce7ef91ac1ba8534faf81b5648615",
+  "prompt_sha256": "8ac89bf6d4c58296277808f95fb91e676f8a42eb4d9230a81e926406843f8f88",
+  "raw_response_sha256": "a51fc4b6320898e52ba349f35cf9815dc7aac63a6ec4583fc70bc6cea3e9f874",
+  "normalized_response_sha256": "62530d43d031740bdd4715bbad14add6ffe4a354ae01718c93640d0b33ea8c43",
+  "evaluator_output_sha256": "ca9317db19dd217b7b0f86db03f56c74f92360561dfd917fdd3cc8a19e9e1f24",
+  "adapter_status": "RESPONSE_VALID",
+  "semantic_outcome": "UNVERIFIABLE",
+  "exit_code": 0,
+  "started_at": "2026-09-04T01:42:49.220579+00:00",
+  "ended_at": "2026-09-04T01:42:54.297717+00:00",
+  "timestamp_authoritative": false
+}
