@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pipavlo82/protected-relation-fixtures/adapters/v0/response-schema.json",
+  "title": "Protected Relation Fixtures external adapter response v0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "challenge_id",
+    "challenge_digest",
+    "protected_relation_profile_digest",
+    "evaluator",
+    "outcome",
+    "reason_code",
+    "reason_detail",
+    "evidence"
+  ],
+  "properties": {
+    "schema": {
+      "const": "protected-relation-external-adapter-response.v0"
+    },
+    "challenge_id": {
+      "type": "string",
+      "pattern": "^prf-[0-9]{3}$"
+    },
+    "challenge_digest": {
+      "$ref": "#/$defs/sha256"
+    },
+    "protected_relation_profile_digest": {
+      "$ref": "#/$defs/sha256"
+    },
+    "evaluator": {
+      "$ref": "#/$defs/evaluator"
+    },
+    "outcome": {
+      "enum": ["PRESERVED", "VIOLATED", "UNVERIFIABLE"]
+    },
+    "reason_code": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "reason_detail": {
+      "type": ["string", "null"]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "value"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "evaluator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "config_digest"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "config_digest": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  }
+}
