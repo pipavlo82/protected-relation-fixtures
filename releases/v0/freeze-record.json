@@ -1,0 +1,72 @@
+{
+  "schema": "protected-relation-fixtures-freeze-record.v0",
+  "corpus_version": "v0",
+  "freeze_status": "FREEZE_CLOSURE_CANDIDATE",
+  "source_repository": "https://github.com/pipavlo82/protected-relation-fixtures",
+  "source_binding": {
+    "pre_freeze_commit": "46b34ac17d4fc67b5d95aa68835202b83040b4cf",
+    "git_tree": "2033469318234335aa1c5f5d4729f4ce5c1fa166"
+  },
+  "freeze_commit_model": {
+    "mode": "PARENT_BOUND_INTRODUCTION_COMMIT",
+    "bound_parent": "46b34ac17d4fc67b5d95aa68835202b83040b4cf",
+    "introduction_commit": "DERIVE_FROM_GIT_HISTORY",
+    "self_referential_commit_claim": false,
+    "description": "The first commit containing this record must have the bound pre-freeze source commit as its direct parent; its actual commit identifier is derived after creation and is not embedded in itself."
+  },
+  "inventory": {
+    "path": "releases/v0/sha256-inventory.json",
+    "sha256": "d29597ea7005c9aac31cfd50cca915d84cb0b203a18564fe654217d7733ded55",
+    "entry_count": 40,
+    "byte_total": 213457,
+    "self_reference_model": "The inventory excludes itself and freeze-record.json. Their exact bytes and the inventory payload are bound together by the introduction commit."
+  },
+  "validation_environment": "releases/v0/environment.json",
+  "validation_commands": [
+    "python tools/validate_manifest.py",
+    "python tools/validate_seed_corpus.py",
+    "python tools/validate_relation_discrimination.py",
+    "python tools/validate_v0_freeze.py",
+    "python -m unittest discover -s tests -v",
+    "python -O -m unittest discover -s tests -v",
+    "git diff --check"
+  ],
+  "relation_discrimination": {
+    "contract": "relation-discrimination-v0",
+    "suite_sha256": "acc7b82ac0c2f87e7c6c78e099482481bb72ca604f45d6f17f991834b5aaeb18",
+    "status": "SEPARATED",
+    "required_axes": 5,
+    "separated_axes": 5,
+    "witnesses": 8
+  },
+  "independent_review": {
+    "reviewed_pr_head": "b14d63e0d8f869c0b7aa0efdb1d2a0a23ed6dd68",
+    "review_mode": "NON_BLIND_SECOND_IMPLEMENTATION",
+    "verdict": "REPRODUCED",
+    "independent_implementation_sha256": "1d8adf8e502484ab462f06cd6bd2c3eb2ca1d76bf61cc849b9f9c093c3dd4cc6",
+    "first_run_artifact_sha256": "b918fd86b3ebd68b22dd92241e03194162dfab04effc37bca0d69550b2674510",
+    "negative_control_artifact_sha256": "edd7daf99df34600ce9ac29d6a610405eec2a414e2524c45fb0c6b93fb5bd5e1",
+    "semantic_outcomes_matched": 80,
+    "semantic_mismatches": 0,
+    "separated_axes": 5,
+    "negative_controls_passed": 11
+  },
+  "authority_boundary": {
+    "freeze_establishes": "Exact benchmark artifacts, declared semantic contracts, validation machinery, discrimination witnesses, and second-implementation reproduction evidence are bound to an immutable repository state and exact-byte inventory.",
+    "second_review_claim": "Two separately implemented evaluators reproduce the declared relation-discrimination contract over the exact synthetic witness suite.",
+    "remaining_boundary": "The synthetic witness construction, alias maps, scope declarations, and completeness markers remain declared benchmark inputs. Agreement between two implementations does not independently establish that those declarations correctly model every external domain.",
+    "does_not_establish": [
+      "objective semantic truth for every external domain",
+      "correctness of every real-world alias map",
+      "correctness of every future scope declaration",
+      "universal equivalence semantics",
+      "correctness of external evaluators not covered by this release"
+    ]
+  },
+  "versioning": {
+    "rewrite_frozen_v0_in_place": false,
+    "semantic_changes_require_successor": true,
+    "metadata_corrections_are_append_only": true,
+    "future_fixture_additions_require_successor": true
+  }
+}

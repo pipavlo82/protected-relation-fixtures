@@ -1,0 +1,246 @@
+{
+  "schema": "protected-relation-fixtures-sha256-inventory.v0",
+  "corpus_version": "v0",
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "byte_length": 166,
+      "sha256": "1c61a45cc19fc4527533354f3d6c62376b7ef0da25b3a51e576fc3c345434eef",
+      "role": "byte-policy"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "byte_length": 919,
+      "sha256": "e4b6b15ab5298089065c69bc93b51b35746bfb0c4848063b323c53976afea4f2",
+      "role": "validation-environment"
+    },
+    {
+      "path": "conformance/relation-discrimination-v0/suite.json",
+      "byte_length": 14034,
+      "sha256": "acc7b82ac0c2f87e7c6c78e099482481bb72ca604f45d6f17f991834b5aaeb18",
+      "role": "discrimination-suite"
+    },
+    {
+      "path": "corpus/v0/cases/prf-001.json",
+      "byte_length": 1363,
+      "sha256": "2b1e85e1a799a37b015500202162402ea6b352f8685be39c3942caf1e7b3d188",
+      "role": "seed-case"
+    },
+    {
+      "path": "corpus/v0/cases/prf-002.json",
+      "byte_length": 1363,
+      "sha256": "cece63112465e8fa5b1402f3fed7c71c54bc9698f229fe317171d5443df08220",
+      "role": "seed-case"
+    },
+    {
+      "path": "corpus/v0/cases/prf-003.json",
+      "byte_length": 1412,
+      "sha256": "544221059bd9d5393960740a350305e427f684837b47cc5a53b92bfed29a8b4c",
+      "role": "seed-case"
+    },
+    {
+      "path": "corpus/v0/cases/prf-004.json",
+      "byte_length": 1520,
+      "sha256": "539d066dc0b072340a8d2453476f10ab3b7dfdc561ce69a18a7efda34a1dee75",
+      "role": "seed-case"
+    },
+    {
+      "path": "corpus/v0/cases/prf-005.json",
+      "byte_length": 1899,
+      "sha256": "7bfb9d4e648724ca39d7f35fdbeb8f72578042bc312004a105b429e7018ec1c1",
+      "role": "seed-case"
+    },
+    {
+      "path": "corpus/v0/cases/prf-006.json",
+      "byte_length": 1895,
+      "sha256": "181c6f69f584593204a8f9456abf5aa9da33040da7b9aebfb7d4de9a326b6458",
+      "role": "seed-case"
+    },
+    {
+      "path": "corpus/v0/challenge/cases/prf-001.json",
+      "byte_length": 808,
+      "sha256": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+      "role": "blind-challenge"
+    },
+    {
+      "path": "corpus/v0/challenge/cases/prf-002.json",
+      "byte_length": 684,
+      "sha256": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+      "role": "blind-challenge"
+    },
+    {
+      "path": "corpus/v0/challenge/cases/prf-003.json",
+      "byte_length": 672,
+      "sha256": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+      "role": "blind-challenge"
+    },
+    {
+      "path": "corpus/v0/challenge/cases/prf-004.json",
+      "byte_length": 965,
+      "sha256": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+      "role": "blind-challenge"
+    },
+    {
+      "path": "corpus/v0/challenge/cases/prf-005.json",
+      "byte_length": 1196,
+      "sha256": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+      "role": "blind-challenge"
+    },
+    {
+      "path": "corpus/v0/challenge/cases/prf-006.json",
+      "byte_length": 1056,
+      "sha256": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+      "role": "blind-challenge"
+    },
+    {
+      "path": "corpus/v0/manifest.json",
+      "byte_length": 1988,
+      "sha256": "ab83841f2703848bbb6be592f075c8e62098dcd768bee530eebe5c8ec48a3ee8",
+      "role": "seed-manifest"
+    },
+    {
+      "path": "corpus/v0/oracle/expected-results.json",
+      "byte_length": 2745,
+      "sha256": "8fa93a5ef4a61c3a7d80c8951c131e694d4947f16a9f38c9c813dd0a29a0b6e5",
+      "role": "seed-oracle"
+    },
+    {
+      "path": "docs/corpus-contract-v0.md",
+      "byte_length": 3226,
+      "sha256": "72764270b8776e6274bcff6d26eebd1553c26073e551b84214b280d7712d0ed7",
+      "role": "semantic-contract"
+    },
+    {
+      "path": "releases/v0/README.md",
+      "byte_length": 3207,
+      "sha256": "0b29eb4a732438ca5fb51a5455a8a41d0e561cd785f577352048b0a2326fca7d",
+      "role": "freeze-documentation"
+    },
+    {
+      "path": "releases/v0/environment.json",
+      "byte_length": 1073,
+      "sha256": "b4b9f18552c53b2dbce8339a03b4273174ad38267bdeeb1a0d2513e01c22ae65",
+      "role": "validation-environment"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "byte_length": 19,
+      "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+      "role": "validation-environment"
+    },
+    {
+      "path": "review/relation-discrimination-independent-first-run.json",
+      "byte_length": 23124,
+      "sha256": "b918fd86b3ebd68b22dd92241e03194162dfab04effc37bca0d69550b2674510",
+      "role": "independent-review-result"
+    },
+    {
+      "path": "review/relation-discrimination-independent-negative-controls.json",
+      "byte_length": 1710,
+      "sha256": "edd7daf99df34600ce9ac29d6a610405eec2a414e2524c45fb0c6b93fb5bd5e1",
+      "role": "independent-review-negative-controls"
+    },
+    {
+      "path": "review/relation-discrimination-v0-independent-review.md",
+      "byte_length": 3432,
+      "sha256": "27e97f207da21f29647e0b301deac74a2fbd0d1ff4396de9515b8a4a088f32a5",
+      "role": "independent-review-record"
+    },
+    {
+      "path": "review/relation_discrimination_independent.py",
+      "byte_length": 19607,
+      "sha256": "1d8adf8e502484ab462f06cd6bd2c3eb2ca1d76bf61cc849b9f9c093c3dd4cc6",
+      "role": "independent-review-evaluator"
+    },
+    {
+      "path": "spec/fixture-schema.v0.json",
+      "byte_length": 5749,
+      "sha256": "5e58830c65f2bbc1d6da08d721fff5eb04fb0edd10e1077817c874f2eab1ce0c",
+      "role": "fixture-schema"
+    },
+    {
+      "path": "spec/outcome-model.md",
+      "byte_length": 4762,
+      "sha256": "2da70a526ed34a57b992752b3190f3bb58e20ed248cfeb7c23c93101d375c8a8",
+      "role": "semantic-contract"
+    },
+    {
+      "path": "spec/projection-model.md",
+      "byte_length": 4754,
+      "sha256": "b57039b17375d7f17ff894ace6ec08c506d236e533623b78d950f16bd7a5e45c",
+      "role": "semantic-contract"
+    },
+    {
+      "path": "spec/protected-relation-model.md",
+      "byte_length": 7391,
+      "sha256": "a985f324348890dfe085827e959ba6be1a7e5636f2d6ee1dff5e0869e2365e9a",
+      "role": "semantic-contract"
+    },
+    {
+      "path": "spec/relation-discrimination-v0.md",
+      "byte_length": 5936,
+      "sha256": "c960102058d5e5ef14c94e618eee513299ff58a8fb45d7a9bb82bc4c5763809e",
+      "role": "discrimination-contract"
+    },
+    {
+      "path": "tests/test_manifest_and_seed_corpus.py",
+      "byte_length": 5816,
+      "sha256": "b503b114e3cbff0c8cfe598ffa0d0fab25da0c1d0930e0fc2a66a07236151a0b",
+      "role": "seed-tests"
+    },
+    {
+      "path": "tests/test_relation_discrimination.py",
+      "byte_length": 8583,
+      "sha256": "0610500a88577569ce99234f4165091788ed1ab300a19a6704f261c12f9b157c",
+      "role": "discrimination-tests"
+    },
+    {
+      "path": "tests/test_v0_freeze.py",
+      "byte_length": 15569,
+      "sha256": "127370df3599431880580522a7701a1b69e5d8e282f5975a6edd242996859570",
+      "role": "freeze-tests"
+    },
+    {
+      "path": "tools/corpus_contract.py",
+      "byte_length": 22166,
+      "sha256": "cd66f9a4a567daa393f231db920124f3a2879028ca8dbe72a4ae808cc9a30940",
+      "role": "seed-evaluator"
+    },
+    {
+      "path": "tools/derive_challenge_views.py",
+      "byte_length": 594,
+      "sha256": "cb549a3cbdbec90cfe7bbfc0cb0cea47608b774ea7f0ac986bf40c86259ff7ac",
+      "role": "challenge-deriver"
+    },
+    {
+      "path": "tools/relation_discrimination.py",
+      "byte_length": 16710,
+      "sha256": "c3df8f7a9b6706939331851b55e3191e1e5e19ad234ca784f3b6f688388b7faa",
+      "role": "discrimination-evaluator"
+    },
+    {
+      "path": "tools/validate_manifest.py",
+      "byte_length": 278,
+      "sha256": "7f1116bf6efd36b535b846d74fe0c7cae3b2f34f4fe8a8ecbd4af25fc7e4118c",
+      "role": "seed-validator"
+    },
+    {
+      "path": "tools/validate_relation_discrimination.py",
+      "byte_length": 613,
+      "sha256": "9173db528ef95982dd25c6a88d6b0d7bab2b12f41e8bb611818f9b403a59e365",
+      "role": "discrimination-validator"
+    },
+    {
+      "path": "tools/validate_seed_corpus.py",
+      "byte_length": 754,
+      "sha256": "a9a068289088f212ec90e8f375d469bf7c9688d013ba38817e9c4ce506e07f04",
+      "role": "seed-validator"
+    },
+    {
+      "path": "tools/validate_v0_freeze.py",
+      "byte_length": 23699,
+      "sha256": "54f934c2e9bb35830eee2b1834ed007d1121e7f6db7b373723fbc38c0a41ec4b",
+      "role": "freeze-validator"
+    }
+  ]
+}
