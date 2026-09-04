@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -22,6 +24,8 @@ jobs:
       - run: python tools/validate_seed_corpus.py
       - name: Validate relation-discrimination policy separation
         run: python tools/validate_relation_discrimination.py
+      - name: Validate frozen v0 closure
+        run: python tools/validate_v0_freeze.py
       - run: python -m unittest discover -s tests -v
       - name: Prove optimized mode cannot disable contract checks
         run: python -O -m unittest discover -s tests -v

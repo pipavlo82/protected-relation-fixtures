@@ -1,0 +1,29 @@
+{
+  "schema": "protected-relation-fixtures-validation-environment.v0",
+  "status": "RECORDED_NOT_HERMETIC",
+  "canonical_ci": {
+    "runner": "ubuntu-latest",
+    "python": "3.12",
+    "dependencies": {
+      "jsonschema": "4.26.0"
+    },
+    "json_schema_dialect": "https://json-schema.org/draft/2020-12/schema"
+  },
+  "observed_freeze_closure_environment": {
+    "python_implementation": "CPython",
+    "python_version": "3.12.10",
+    "operating_system": "Windows 11",
+    "machine": "AMD64",
+    "jsonschema": "4.26.0"
+  },
+  "validation_commands": [
+    "python tools/validate_manifest.py",
+    "python tools/validate_seed_corpus.py",
+    "python tools/validate_relation_discrimination.py",
+    "python tools/validate_v0_freeze.py",
+    "python -m unittest discover -s tests -v",
+    "python -O -m unittest discover -s tests -v",
+    "git diff --check"
+  ],
+  "determinism_boundary": "The validator environment is recorded. Bit-for-bit runtime determinism is not claimed; ubuntu-latest and major-version GitHub Action tags are not content-addressed runtime images."
+}
