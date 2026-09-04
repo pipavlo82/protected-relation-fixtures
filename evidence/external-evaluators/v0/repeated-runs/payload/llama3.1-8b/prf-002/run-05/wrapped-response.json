@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "cff80201ebdcbef5cc7cde9928ec9bdd39df38f7ad80b3c6e4062580fe978328",
+  "invocation_digest": "bf051f4cdbe097316052f7944b1f38f5a3f7c2ad583f4f96ed1483410e022062",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "Insufficient semantic information to evaluate relation validity between 'A' and 'B'. No clear direction or equivalence policy is provided in the protected relation profile.",
+  "evidence": []
+}

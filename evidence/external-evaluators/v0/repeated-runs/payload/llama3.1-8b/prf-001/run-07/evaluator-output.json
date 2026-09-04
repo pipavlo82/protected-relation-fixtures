@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"relation_set_diff\":[\"A\", \"B\"], \"violated_equivalence_policy\": {\"policy_name\":\"exact\",\"policy_type\":\"equivalence\",\"universe_element\":\"E\"}, \"violated_multiplicity_policy\": {\"policy_name\":\"set-collapsed\",\"policy_type\":\"multiplicity\",\"extra_element_in_before\":\"F\"}}"
+}

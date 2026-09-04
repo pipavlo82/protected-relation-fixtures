@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The set A in the after state is a subset of the set A in the before state, preserving the exact_neighborhood_identity relation as per the provided protected_relation_profile."
+}

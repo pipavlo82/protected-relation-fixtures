@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"relation_type_policy\":\"typed-exact\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\"} supports (L1) A B and supports (L2) A B are equivalent."
+}

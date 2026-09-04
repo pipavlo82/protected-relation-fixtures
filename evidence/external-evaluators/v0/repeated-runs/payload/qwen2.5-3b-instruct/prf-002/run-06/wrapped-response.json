@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cde464777d1a479f38fbdd2f5422e14bb0546c9d4444545eb99e8b5d587010d8",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "b6b0d522b7e75277bf80ef1926cb1705ad9082c740e3c31c9106aed38411ca89",
+  "invocation_digest": "bed16a103d657d693c0872eae09cfdcb36aacd3826d870ee17e233b6a904a6cc",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"direction\":\"depends_on\",\"identity\":{\"source\":\"A\",\"target\":\"B\"},\"kind\":\"exact_typed_relation\",\"multiplicity\":\"set_collapsed\",\"origin\":\"universe\",\"scope\":[\"A\",\"B\"]}",
+  "evidence": []
+}

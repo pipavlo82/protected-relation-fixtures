@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The original relation 'owns' between source 'A' and target 'B' is not compatible with the new relation type 'depends_on'. According to the provided protected relation profile, the only valid relations are those defined in the scope ['A', 'B']. The change from 'owns' to 'depends_on' does not align with this profile."}
+

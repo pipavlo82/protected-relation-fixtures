@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The authorization_scope in the before state is 'agent-A-only' while in the after state it is 'T2(T1(S0))'. According to the protected relation profile, the authorization_scope should only contain 'agent-A', but now it contains a composed operation 'T2(T1(S0))' which implies that other agents like 'B' are also involved."
+}

@@ -1,0 +1,2 @@
+{ "outcome": "PRESERVED", "reason_detail": "{\"link_id\":\"L1\",\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"} is preserved under the protected relation profile because it is exact and directed, matches the type policy, has correct multiplicity, is in scope, and has correct identity." }
+

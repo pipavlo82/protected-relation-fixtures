@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "b7d00332221ad0ea289b8fe90e5197a04a6892f03932bd50fc03cecdfbeea76e",
+  "invocation_digest": "ebb0a77b67796e6b3177029bb80a5f3d8a110766bd6facee27dbd107a0bbc9fd",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"message\": \"Violation of protected relation profile: 'owns' is not a subset of 'depends_on', and 'A' is not a subtype of 'B' as per the given profile, in the context of relation evaluation between 'before' and 'after' states.\"}",
+  "evidence": []
+}

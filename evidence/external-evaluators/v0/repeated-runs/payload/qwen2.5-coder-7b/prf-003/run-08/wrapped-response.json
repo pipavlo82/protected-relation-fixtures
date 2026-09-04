@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "8bc2505e8428adea68fb1a89784a45471b585e78bc68aa5902c7b438285b7fe7",
+  "invocation_digest": "82b9f1582bd0be2e21c96d4751d02c590f437345d84defc0d4d17da85417b020",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The provided protected relation profile specifies 'status-preserving' and 'status-exact', but the evaluation input does not provide enough information to determine if the status has been preserved or violated. The 'before' state only indicates a status of 'UNVERIFIABLE', and there is no clear indication of what the status should be in the 'after' state.",
+  "evidence": []
+}

@@ -1,0 +1,2 @@
+{"outcome": "VIOLATED", "reason_detail": "{\"message\": \"Violation of protected relation profile: 'owns' is not a subset of 'depends_on', and 'A' is not a subtype of 'B' as per the given profile, in the context of relation evaluation between 'before' and 'after' states.\"}"}
+

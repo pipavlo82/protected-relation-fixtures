@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The 'authorization_scope' in the 'before' state is 'agent-A-only', but in the 'after' state it changes to 'agent-A-and-B'. This violates the protected relation profile which states that the 'authorization_scope' should be 'agent-A-only'."
+}

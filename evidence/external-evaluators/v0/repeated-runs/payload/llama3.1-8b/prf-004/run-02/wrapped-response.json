@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "d3db6fd0dc5febc325737d8b9d96ccc6830cb424dea65bafb624151504a64679",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "ca33eab4eaa69943ca618af963ac80688fe2bab3b0b8b0a453d812a21120221a",
+  "invocation_digest": "46a0ebd4e67b8316ce0825510e5122b9472455faea8a0110700e6f893650c460",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"} matches the protected relation profile. The relation type is typed-exact and the provided relation is of type supports, which is an exact match. The relation direction is directed-exact and the link L1 in the before state has a direction that agrees with the protected relation. The multiplicity is multiset-exact and both occurrences of the link L1 in the before state have multiplicity 1, which agrees with the protected relation. The source and target nodes are within the scope, which matches the protected relation.",
+  "evidence": []
+}

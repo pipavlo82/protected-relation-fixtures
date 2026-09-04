@@ -1,0 +1,5 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"after\":{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"},\"before\":{\"relation\":\"OWNER\",\"source\":\"acct:001\",\"target\":\"doc:alpha\"}} is equivalent under the supplied protected relation profile."
+}
+

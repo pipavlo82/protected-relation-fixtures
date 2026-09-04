@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"\"T2(T1(S0))\" and \"T2(T1(S0))\" have the same authorization_scope 'agent-A-only', so the protected relation is preserved under the given profile."}
+

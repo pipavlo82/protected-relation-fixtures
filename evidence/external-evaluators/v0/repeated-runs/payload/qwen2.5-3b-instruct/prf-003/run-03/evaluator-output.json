@@ -1,0 +1,4 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "JSON objects for 'after' and 'before' states are both UNVERIFIABLE, hence the relation cannot be evaluated."
+}

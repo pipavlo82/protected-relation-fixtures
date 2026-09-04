@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"relation\":\"depends_on\",\"source\":\"A\",\"target\":\"B\"} preserves the ownership of B by A, as the depends_on relation is transitive with respect to the owns relation."
+}

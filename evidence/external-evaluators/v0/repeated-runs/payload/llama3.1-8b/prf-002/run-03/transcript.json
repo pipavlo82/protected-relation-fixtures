@@ -1,0 +1,77 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "response_digest": "65a2a77739fa1692b2b742a04ee6a69d1a5192dbdf3ca2453c65c43f55d70bc4",
+  "evaluator_output_digest": "15cce7a5e2c146d6f1f35bed5d25fa599e0ce88a56726fee69d0dd3e59df10f9",
+  "raw_response_digest": "f55bb1d2ecbb561e41413b7e4d4d1e2eb66c015ff1eac306269370438c80460c",
+  "stderr_digest": "6dfb826d9e35926e91a95709c3bcca17f74b8a8414cd2b8ddf73379da02cd7d1",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "llama3.1:8b",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7\",\"challenge_id\":\"prf-002\",\"evaluation_input\":{\"after\":{\"relation\":\"depends_on\",\"source\":\"A\",\"target\":\"B\"},\"before\":{\"relation\":\"owns\",\"source\":\"A\",\"target\":\"B\"}},\"evaluator\":{\"config_digest\":\"61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726\",\"id\":\"local-ollama-repeated-llama3.1-8b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"directed-exact\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"kind\":\"exact_typed_relation\",\"multiplicity_policy\":\"set-collapsed\",\"policy_version\":\"v0\",\"relation_type_policy\":\"typed-exact\",\"scope\":[\"A\",\"B\"],\"universe\":[\"A\",\"B\"]},\"protected_relation_profile_digest\":\"985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-002",
+      "run_index": 3,
+      "request_bytes_sha256": "10a01192336b2db0ec757e24b4db45f2cf91ca04c6effabc4dc0004fafcec984",
+      "prompt_sha256": "f9e6502ddf25b5afc82ad14d5ec98f77bc0bf38c20b37b4862376fa3b42792c0",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "5dbdb653dfff7c3390e5969058bab257b60d4fc3dc86621fa325eaade96382f0",
+  "recorded_at": "2026-09-04T03:41:12.991413+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+    "challenge_id": "prf-002",
+    "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+    "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "evaluator_output_digest": "15cce7a5e2c146d6f1f35bed5d25fa599e0ce88a56726fee69d0dd3e59df10f9",
+    "invocation_digest": "5dbdb653dfff7c3390e5969058bab257b60d4fc3dc86621fa325eaade96382f0",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "\"The protected relation depends on (depends_on) A to B, but the before state owns (owns) A to B. The direction policy is directed-exact and the equivalence policy is exact, so a relation cannot depend on another relation with a different type.\"",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "\"The protected relation depends on (depends_on) A to B, but the before state owns (owns) A to B. The direction policy is directed-exact and the equivalence policy is exact, so a relation cannot depend on another relation with a different type.\""
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "evaluator semantic payload validated and deterministically wrapped",
+  "exit_code": 0
+}

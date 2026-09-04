@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "daa5e5ec09450084761dbe2e0ce8f91281cdd483552628493a261354c7cb99ad",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "a0621cbfb0ed64f3c1bb4adde233d1b9d2cf8bf0380f8c842ff7d2049addb0fa",
+  "invocation_digest": "efa9b6bfb6b1693884da87eeb9d25acda9cca5019fa03c2894bd2cc408775d3f",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"context\": \"The provided protected relation profile does not provide enough information to determine if the outcome is PRESERVED or VIOLATED. The scope and universe are both limited to ['A', 'B'], but the number of links allowed between these nodes under different relations is not specified. Without explicit policies for the number of 'supports' relations that can exist between A and B, it's impossible to determine if the before or after state violates the protected relation profile.\"}",
+  "evidence": []
+}

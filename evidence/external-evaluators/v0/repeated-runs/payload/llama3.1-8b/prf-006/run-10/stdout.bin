@@ -1,0 +1,5 @@
+{ 
+  "outcome": "PRESERVED", 
+  "reason_detail": "The relation 'owns' in the after state is equivalent to the relation 'OWNER' in the before state, according to the protected relation profile's equivalence policy." 
+}
+

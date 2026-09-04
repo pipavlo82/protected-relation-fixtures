@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "\"relation \"owns\" matches the protected relation profile's normalization rules for the before state (OWNER) and after state (owns)\", \"the source in both states is an alias of \"alice\"\", \"the target in both states is an alias of \"document-A\"\"}"
+}

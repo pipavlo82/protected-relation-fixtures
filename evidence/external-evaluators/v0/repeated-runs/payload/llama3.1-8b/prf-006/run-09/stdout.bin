@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"The protected relation profile is applied directly without further evaluation, as the supplied before/after state contains only one relevant field. The 'relation' field in the 'before' section is mapped to the 'owns' relation in the normalization policy, and the 'relation' field in the 'after' section matches this mapping. Therefore, the outcome is PRESERVED."}
+

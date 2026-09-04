@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"{\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]},\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"scope Allowed Elements\":\"[\\u2026B, C, D, E, F, G\\u2026]\",\"added Elements\":\"[\\u2026H, I, J\\u2026]\"}"}
+

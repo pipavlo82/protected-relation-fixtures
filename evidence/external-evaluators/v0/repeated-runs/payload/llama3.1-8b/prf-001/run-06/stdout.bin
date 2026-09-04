@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"The protected relation has the exact kind 'exact_neighborhood_identity', which specifies that two sets are equivalent if they have exactly the same elements in a specific order. The before and after states of set A are {'A': ['B', 'C', 'D', 'E', 'F', 'G']}"}
+

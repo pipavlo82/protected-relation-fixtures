@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cde464777d1a479f38fbdd2f5422e14bb0546c9d4444545eb99e8b5d587010d8",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "95014089e2d93435468ee08abd4208e36d62432a8c2bb1e345cd35c3ee9ceb5e",
+  "invocation_digest": "ba6a4660aa00e481ca279292d5645a699a8352cde622a87b848497a7660cc846",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The direction of the relation has changed from 'owns' (owned by) to 'depends_on' (dependent on), which violates the directed-exact policy defined in the protected relation profile.",
+  "evidence": []
+}

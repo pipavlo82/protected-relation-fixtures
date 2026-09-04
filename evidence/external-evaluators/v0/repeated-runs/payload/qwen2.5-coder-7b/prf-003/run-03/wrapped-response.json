@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "512df3e1d6e2499e245dc6deeb840c90ed1b0f669f7dc8a844c801a14ce8e2ce",
+  "invocation_digest": "eb1b62bdf8f66817bdbc6fa04ee4f283d46d383bfe405db72ca620ba8adbb432",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"unverifiable_reason\": \"Insufficient semantic information to determine if the protected relation profile is preserved, violated, or unverifiable.\"}",
+  "evidence": []
+}

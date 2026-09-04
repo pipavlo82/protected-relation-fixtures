@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The relation 'supports' for source 'A' and target 'B' is removed from the state, which violates the protected relation profile's identity policy of 'anchored'. The relation should not be modified under this policy."
+}

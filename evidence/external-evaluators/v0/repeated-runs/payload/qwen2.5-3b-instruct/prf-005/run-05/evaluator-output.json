@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The 'authorization_scope' in the state changed from 'agent-A-only' to 'agent-A-and-B', which violates the protected predicate 'agent-A-only' at path 'authorization_scope'. The direction policy is ordered-composition, and the equivalence policy is composition-safe, which means that changes must be consistent with the original relation."
+}

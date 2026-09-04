@@ -1,0 +1,77 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "7c91f4a18fdab32cceeeddcd7063ed38b2516deed459b5b483acc645d710ee93",
+  "response_digest": "133e583f2b22e3453f18808e84dae770b07777cad929e27a2d0558dc8ee300cd",
+  "evaluator_output_digest": "4e85f697cc7ccd6d85b9f7a6a2250c6079c7701f7a5bebefbc7050350041eeeb",
+  "raw_response_digest": "d1414ce3a40f4246696044ebdf53801fbf83a54cd2c2ef8e5d37771ce158544a",
+  "stderr_digest": "cfbab212c67b83f987487c697e0d5b2ffce5b97db6d2af3fc143b01793ac3051",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "7c91f4a18fdab32cceeeddcd7063ed38b2516deed459b5b483acc645d710ee93",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "llama3.1:8b",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d\",\"challenge_id\":\"prf-006\",\"evaluation_input\":{\"after\":{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"},\"before\":{\"relation\":\"OWNER\",\"source\":\"acct:001\",\"target\":\"doc:alpha\"}},\"evaluator\":{\"config_digest\":\"61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726\",\"id\":\"local-ollama-repeated-llama3.1-8b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"directed-exact\",\"equivalence_policy\":\"canonical-alias-and-type-normalization\",\"identity_policy\":\"alias-permitted\",\"kind\":\"normalized_typed_relation\",\"multiplicity_policy\":\"set-collapsed\",\"normalization\":{\"identity_aliases\":{\"acct:001\":\"alice\",\"doc:alpha\":\"document-A\",\"document:A\":\"document-A\",\"user:alice\":\"alice\"},\"relation_aliases\":{\"OWNER\":\"owns\",\"owns\":\"owns\"}},\"policy_version\":\"v0\",\"relation_type_policy\":\"type-normalized\",\"scope\":[\"alice\",\"document-A\"],\"universe\":[\"alice\",\"document-A\"]},\"protected_relation_profile_digest\":\"5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-006",
+      "run_index": 1,
+      "request_bytes_sha256": "4cca1e96f146afe52e68a022aae0e073b1e5c4c67cefbd40f6a9a10db1bc06f5",
+      "prompt_sha256": "09d553ecb45d4b54a546e3c1f02d5198ab1690b7ab830f44e74acdce5be75e53",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "f207ac1972afbc2f74d12c2dabf078cebcb7153e8adfe8b8bbf820d78e740b26",
+  "recorded_at": "2026-09-04T03:47:03.526655+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "7c91f4a18fdab32cceeeddcd7063ed38b2516deed459b5b483acc645d710ee93",
+    "challenge_id": "prf-006",
+    "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+    "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "evaluator_output_digest": "4e85f697cc7ccd6d85b9f7a6a2250c6079c7701f7a5bebefbc7050350041eeeb",
+    "invocation_digest": "f207ac1972afbc2f74d12c2dabf078cebcb7153e8adfe8b8bbf820d78e740b26",
+    "outcome": "PRESERVED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"} is a permitted relation under the protected profile. The normalized relation \"owns\" has been found in both the before and after states, with alias mapping \n acct:001 -> alice\n doc:alpha -> document-A\n user:alice -> alice\n OWNER -> owns\n owning -> owning\n This matches the expected behavior of the protected profile.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "PRESERVED",
+    "reason_detail": "{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"} is a permitted relation under the protected profile. The normalized relation \"owns\" has been found in both the before and after states, with alias mapping \n acct:001 -> alice\n doc:alpha -> document-A\n user:alice -> alice\n OWNER -> owns\n owning -> owning\n This matches the expected behavior of the protected profile."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "evaluator semantic payload validated and deterministically wrapped",
+  "exit_code": 0
+}

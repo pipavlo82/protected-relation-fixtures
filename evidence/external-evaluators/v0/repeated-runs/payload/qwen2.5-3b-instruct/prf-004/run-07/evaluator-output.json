@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The relation supports between A and B has been removed from the before state but not from the after state, violating the multiplicity_sensitive_relation with multiset-exact policy."
+}

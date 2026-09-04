@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"before\": \"user:alice owns document-A\", \"after\": \"user:alice owns document-A\"}"
+}

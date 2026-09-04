@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "569654fc5d1050e30f855c45c373301f7aaf6593ef34ae64c5e784755d9d8f6f",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "a480acd703b44349adaec0a63b92792afcda66bfd7b2bb5c07b743f6bcda493a",
+  "invocation_digest": "ab00ecf5579fb8d151b92d6b2f92ce29dd4752609f4f23e7ce719a5bc13b9241",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The relation 'supports' for the link with link_id 'L2' is removed in the evaluation input, which violates the protected relation profile of multiplicity_sensitive_relation with multiset-exact multiplicity policy.",
+  "evidence": []
+}

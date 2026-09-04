@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"reason\": \"The protected relation profile specifies that the status field is preserved, and the after state's reason and reason_vocabulary_preserved are null and false respectively, which matches the equivalence policy of the relation profile. The before state's reason is 'X', but it does not affect the preservation of the status field.\"}"
+}

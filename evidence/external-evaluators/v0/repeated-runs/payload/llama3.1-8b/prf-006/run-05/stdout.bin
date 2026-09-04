@@ -1,0 +1,2 @@
+{ "outcome": "PRESERVED", "reason_detail": "{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"} is preserved by the protected relation profile." }
+

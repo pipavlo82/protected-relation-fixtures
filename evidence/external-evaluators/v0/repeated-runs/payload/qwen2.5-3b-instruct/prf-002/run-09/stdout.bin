@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The direction of the relation has changed from 'owns' (owned by) to 'depends_on' (dependent on), which violates the directed-exact policy defined in the protected relation profile."}
+

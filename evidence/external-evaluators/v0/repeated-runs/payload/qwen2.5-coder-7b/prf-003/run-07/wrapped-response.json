@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "3499cc33d441fdb8f3ddcfe24a1477179155d8c2b1ce2fc71665b81f2eb49f58",
+  "invocation_digest": "1ae1352ceb206e1f3a7d1de0b8c624789721a5180656a719bc3213664945bbed",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"message\": \"Insufficient semantic information to determine preservation or violation. Both before and after states have a status of 'UNVERIFIABLE' and no additional details are provided to evaluate against the protected relation profile.\"}",
+  "evidence": []
+}

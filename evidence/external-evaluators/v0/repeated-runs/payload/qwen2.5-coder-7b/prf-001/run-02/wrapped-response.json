@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "a20c4cfa48b0e1ee23234d8ce8d40e7303529354d565af735ec4aceb65bcd1d6",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "c664c304fae0809b68ae58115c566455f404b90e7c641dd68e9292602fef8e0a",
+  "invocation_digest": "282ca72b4940d20f6fe3e2a9bbe50653880b1c7879c8ac09ec1270a0cb066005",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"A\": \"The before and after states differ only in the addition of nodes 'E', 'F', and 'G'. Since these new nodes are not part of the protected relation defined by 'exact_neighborhood_identity' policy, they do not violate the relation. The identity policy is anchored to 'A', so any change within 'A' is preserved as it doesn't affect the 'exact_neighborhood_identity' relation between 'A' and other nodes.\"}",
+  "evidence": []
+}

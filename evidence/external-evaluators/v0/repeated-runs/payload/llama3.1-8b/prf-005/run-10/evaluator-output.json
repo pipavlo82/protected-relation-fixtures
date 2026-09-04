@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"error_code\":\"PRF-EVAL-001\",\"short_message\":\"Invalid protected relation profile application\",\"long_message\":\"The protected predicate 'agent-A-only' does not match the initial state's 'authorization_scope'.\"}"
+}

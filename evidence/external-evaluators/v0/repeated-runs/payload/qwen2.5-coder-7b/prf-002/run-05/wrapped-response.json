@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cc4262fd51952b7ff024ad1d5399ccb60bbaf72bf8b9823b7381c09ff2897f6e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "f23b235a7b5a47cacb33a6ba422f2a5d121b781279b998dbec84f76bc4bb1879",
+  "invocation_digest": "5b2a1f26d73f4603acd05f0d425c14495551d8b9d44be54a4eb6745d0994a023",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The protected relation profile specifies that the relation 'depends_on' between 'A' and 'B' must be exactly preserved, but the before state shows a different relation 'owns' between them.",
+  "evidence": []
+}

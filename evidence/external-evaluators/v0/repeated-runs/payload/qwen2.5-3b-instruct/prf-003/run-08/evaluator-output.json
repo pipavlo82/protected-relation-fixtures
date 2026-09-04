@@ -1,0 +1,4 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "The status field in the before and after states are both UNVERIFIABLE, hence the relation cannot be evaluated."
+}

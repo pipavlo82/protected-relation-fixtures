@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "1c5979440b826aab2757e9a9537ad462b918cad0641648265ce21c0f0f48b225",
+  "challenge_id": "prf-005",
+  "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+  "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "f29821a88888d91eaf03cc5ca379f04d68897255467e8bbaf9ed1d7b8c9189ea",
+  "invocation_digest": "345298eb7c9de1e3c05dbfb566291061e63b5992685b6cfaa245ac364e3d8bcf",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The authorization_scope in the before state is 'agent-A-only' while in the after state it is 'T2(T1(S0))'. According to the protected relation profile, the authorization_scope should only contain 'agent-A', but now it contains a composed operation 'T2(T1(S0))' which implies that other agents like 'B' are also involved.",
+  "evidence": []
+}

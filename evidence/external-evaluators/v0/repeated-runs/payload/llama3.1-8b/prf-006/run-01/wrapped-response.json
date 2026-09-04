@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "7c91f4a18fdab32cceeeddcd7063ed38b2516deed459b5b483acc645d710ee93",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "4e85f697cc7ccd6d85b9f7a6a2250c6079c7701f7a5bebefbc7050350041eeeb",
+  "invocation_digest": "f207ac1972afbc2f74d12c2dabf078cebcb7153e8adfe8b8bbf820d78e740b26",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"} is a permitted relation under the protected profile. The normalized relation \"owns\" has been found in both the before and after states, with alias mapping \n acct:001 -> alice\n doc:alpha -> document-A\n user:alice -> alice\n OWNER -> owns\n owning -> owning\n This matches the expected behavior of the protected profile.",
+  "evidence": []
+}

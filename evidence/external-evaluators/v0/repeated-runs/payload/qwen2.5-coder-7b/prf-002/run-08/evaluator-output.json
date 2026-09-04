@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"before\":{\"relation\":\"owns\",\"source\":\"A\",\"target\":\"B\"},\"after\":{\"relation\":\"depends_on\",\"source\":\"A\",\"target\":\"B\"}} The protected relation profile specifies that the relation type must be exactly 'exact_typed_relation', but the before and after states use different relation types ('owns' vs 'depends_on'). This violates the protected relation policy."
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "prf-external-evaluator-repeated-evidence-record.v0",
+  "version": "v0",
+  "benchmark": "Protected Relation Fixtures",
+  "authority": {
+    "frozen_v0_commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+    "frozen_v0_tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63",
+    "external_adapter_commit": "cf39a37d66222522368e719e3910c27a3eab31dd",
+    "first_run_evidence_canonical_main": "5fdd96a0ca9df399bb946fdba089992b8b3ad4db",
+    "evaluator_output_schema_sha256": "60c3c89bf2ae7d5d406c4449da5e3de728cd37c9ab3749038b7da30193a33fff",
+    "response_schema_sha256": "a8557965c090cb8e6d1a4dbc0e2b7cd44832e1b16dd2021d63a92729aaab0a7a"
+  },
+  "methodology": {
+    "scheduled_fresh_observations": 180,
+    "runs_per_model_challenge": 10,
+    "one_call_per_observation": true,
+    "semantic_retries": 0,
+    "no_conversation_memory": true,
+    "capture_before_scoring": true,
+    "oracle_leakage_check": "PASS",
+    "historical_first_runs_counted_in_fresh_denominator": false,
+    "pre_wrapper_repair_comparable": false
+  },
+  "models": [
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "model": "qwen2.5:3b-instruct",
+      "model_id": "357c53fb659c",
+      "payload_sha256": "5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+      "runtime": "Ollama",
+      "runtime_version": "0.15.2",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "scheduled_observations": 60
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "model": "qwen2.5-coder:7b",
+      "model_id": "dae161e27b0e",
+      "payload_sha256": "60e05f2100071479f596b964f89f510f057ce397ea22f2833a0cfe029bfc2463",
+      "runtime": "Ollama",
+      "runtime_version": "0.15.2",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "scheduled_observations": 60
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "model": "llama3.1:8b",
+      "model_id": "46e0c10c039e",
+      "payload_sha256": "667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29",
+      "runtime": "Ollama",
+      "runtime_version": "0.15.2",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "scheduled_observations": 60
+    }
+  ],
+  "payload_inventory": {
+    "path": "payload-inventory.json",
+    "sha256": "cc508112873f76feaab08f8f1766b02716d00620bdc184157d26dde49b92eda9",
+    "total_files": 1856,
+    "total_bytes": 4004000
+  },
+  "capture_summary": {
+    "path": "payload/capture-summary.json",
+    "sha256": "5b7fe3224f37bf526b658ca8042ca7cb5a1a05ee9b0a3130b4a36ad030b58775"
+  },
+  "secret_scan": {
+    "status": "PASS",
+    "actual_credentials_detected": 0,
+    "detector_source_literal_matches": 1,
+    "detector_source_literal_path": "payload/harness/prepare_capture.py"
+  },
+  "derived_summaries": {
+    "repeated-run-matrix.json": {
+      "path": "repeated-run-matrix.json",
+      "sha256": "1bcba212948f4109a983bb706bfead927184b4d2cc1ebf8dce16cf9bf31ffe28"
+    },
+    "stability-summary.json": {
+      "path": "stability-summary.json",
+      "sha256": "2dd4fe92b4d1095bff85da7568620add50a0a45abb804da60fac74c49e7c00d2"
+    },
+    "cross-model-summary.json": {
+      "path": "cross-model-summary.json",
+      "sha256": "fdbeb4b4ec4a05bbe843d23eed1c8657cd174d6e68f9f8056252a11b70ce1b66"
+    }
+  },
+  "authority_boundary": "These results characterize the recorded repeated blind observations under the frozen PRF v0 benchmark and recorded evaluator configurations. They do not establish universal model behavior, deterministic semantic outcomes, statistical significance by themselves, or external-domain truth beyond the benchmark authority."
+}

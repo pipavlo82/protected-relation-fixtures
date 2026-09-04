@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The relation 'supports' with source 'A' and target 'B' is removed from the links in the before state, violating the protected relation profile which mandates that this relation must exist for nodes A and B."}
+

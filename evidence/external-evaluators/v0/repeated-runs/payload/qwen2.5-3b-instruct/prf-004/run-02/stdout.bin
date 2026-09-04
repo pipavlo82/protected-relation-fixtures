@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The relation 'supports' for the link with link_id 'L2' is removed in the evaluation input, which violates the protected relation profile of multiplicity_sensitive_relation with multiset-exact multiplicity policy."}
+

@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"reason\":\"Both the before and after states contain a single link with the same relation (supports), source (A), and target (B). The protected relation profile specifies an exact multiplicity policy, which means that the number of occurrences of the link must remain unchanged. Since there is only one such link in both states, the preservation condition is met.\"}"
+}

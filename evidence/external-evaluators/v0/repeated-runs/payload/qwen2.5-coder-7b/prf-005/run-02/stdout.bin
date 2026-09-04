@@ -1,0 +1,5 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "The provided protected relation profile does not specify a policy for evaluating the change in state before and after the transformation pipeline. Without this information, it is impossible to determine whether the preservation or violation of the protected relation can be justified."
+}
+

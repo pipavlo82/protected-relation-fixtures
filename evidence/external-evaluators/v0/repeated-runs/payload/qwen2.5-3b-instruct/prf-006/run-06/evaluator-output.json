@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The provided relation 'owns' in the before state matches the 'owns' relation in the after state, which is within the allowed scope and universe according to the protected relation profile."
+}

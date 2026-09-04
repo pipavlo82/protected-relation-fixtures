@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"relation_type\":\"owns\",\"source\":\"A\",\"target\":\"B\"} violates the relation depends_on from A to B in the before state, while it's not present in the after state."
+}

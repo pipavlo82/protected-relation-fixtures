@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "\"The status field has changed from UNVERIFIABLE to PRESERVED in the after state. The relation type policy is 'status-exact', which means that equivalence must be exact. Since the reason vocabulary was not preserved, violation of the protected relation is justified under this equivalence policy.\""
+}

@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "\"The target 'document:A' is owned by a different source in the after state ('user:alice') than in the before state ('acct:001'), violating the direction policy of 'directed-exact'\""
+}

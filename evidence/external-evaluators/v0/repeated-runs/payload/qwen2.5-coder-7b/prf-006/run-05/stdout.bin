@@ -1,0 +1,5 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"source\":\"user:alice\",\"target\":\"document:A\",\"relation\":\"owns\"}"
+}
+

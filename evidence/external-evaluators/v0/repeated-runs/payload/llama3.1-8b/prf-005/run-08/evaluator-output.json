@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"policy\":\"equivalence_policy\",\"sub_policy\":\"composition-safe\",\"evaluation_input\":{\"after\":{\"composition\":\"T2(T1(S0))\"},\"before\":{\"state\":{\"authorization_scope\":\"agent-A-only\",\"id\":\"S0\"}}}"
+}

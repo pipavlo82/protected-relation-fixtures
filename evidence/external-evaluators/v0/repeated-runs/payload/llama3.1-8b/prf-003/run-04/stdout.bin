@@ -1,0 +1,2 @@
+{"outcome": "PRESERVED", "reason_detail": "The protected relation profile specifies an equivalence policy of 'status-preserving', which means that if the after status is UNVERIFIABLE and the before status is also UNVERIFIABLE, then preservation is justified."}
+

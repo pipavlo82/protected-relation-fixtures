@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The before state contains a link with relation 'supports', source 'A', and target 'B' which is not present in the after state. This indicates a change that violates the directed-exact identity policy of the protected relation profile."}
+

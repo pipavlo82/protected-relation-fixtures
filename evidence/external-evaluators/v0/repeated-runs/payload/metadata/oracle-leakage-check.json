@@ -1,0 +1,171 @@
+{
+  "schema": "prf-repeated-oracle-leakage-check.v0",
+  "status": "PASS",
+  "templates_checked": 18,
+  "answer_bearing_markers_found": 0,
+  "secret_markers_found": 0,
+  "checks": [
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-001",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "89bcf6057c308d4925976a8b51560fe88da78534fdf604d767b14e3c306c8625",
+      "prompt_sha256": "92364f1aa2f6bbf5ffd19119d3f4fd6086911c496d40a22c6206314db4a6c4f0"
+    },
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-002",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "32d34aec4a55767192e159d79082fc8c1799d1ce09a7c0c7dd4b12c40e34c7f7",
+      "prompt_sha256": "ecfa7831c6cfca494643e67c39f1de09f80969696900f754f2ba679074c8b652"
+    },
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-003",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "d4e77400099acc7da70f99dba44662d51b0ad603b165147fc16e03409af1b048",
+      "prompt_sha256": "4b90255275422714199712112bef02ac3011a57aa57ce9815af434ec0e23fe0b"
+    },
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-004",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "422b18526a28a0797306d52d4219990501c0078cd56209b970d88a25df054658",
+      "prompt_sha256": "55bc6f97af30f68791e3a8e36898867406c40a840e284f584c2f0297f4c1995c"
+    },
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-005",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "d92e9a1e1808e4f2227fc660108b3a10e5314b60e2e9e07011414f4127bb3cb4",
+      "prompt_sha256": "ce64561ddd952be476abbf2efeeb980685df4b3207c145cbbd7f7e2cfed8811c"
+    },
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-006",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "74409c3328e73d824b906bce590c2e30f86153faa89fce9a480599e6cf803e54",
+      "prompt_sha256": "87b57062f1d5e1d8eebfb23d093c3d6759f18a6d769d3dca4581862e46424c40"
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-001",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "c1ac06b93c5b270bb8c81efa6149f6d5a84d1744db692a0751c8453d283eb33b",
+      "prompt_sha256": "ba4ed828e8b908589bd721f87791df38078982b0415dadde64cd7a17de72ea39"
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-002",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "717739540cf598b09e5519ff9e5af8d59ee786da15839a404ecdb10ee978f228",
+      "prompt_sha256": "de1f01d4fc8542e57553e272038d1d0d56e3e0828bf78bb2565bea51a992c753"
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-003",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "4fc747926a9f432719e12c03d1eea3ab18deba464e899820554a05efe931d127",
+      "prompt_sha256": "1d1455d04a7850d2db90d7bad32c6ccc81d810710736524b76fb3b241db62d31"
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-004",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "73c07c9b21957d91ab9564d10ac99005781c05f698a96f787bf82fc4827a822c",
+      "prompt_sha256": "47062610f12c873e644d2832125975b7337707df0c12cfa79ae40edfe744f129"
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-005",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "f6fe68db6be1a15f062049ee5e65e75e3621426e5f049a15432c6f4dd55171c6",
+      "prompt_sha256": "63fcbb59688fc81f4586a44452bc652653207b3e7c9e91c0592a1c25eb6e582e"
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-006",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "3a67b3321f6323deb5202548458120d99384751518c2adc8f35f4f23e105451f",
+      "prompt_sha256": "187d974ee9be7773eacf6b5820cade4ae03146e59da20eb17d40883c8fd062c7"
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-001",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "c694e166afaada91c5c983a91e92ef24e1dd57a14f0e22dca6d265f262a8a5b2",
+      "prompt_sha256": "e7e632cc7f123a6153118a0f19891703ad98ccdd4b5c25ac007557d3a97c7ac6"
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-002",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "10a01192336b2db0ec757e24b4db45f2cf91ca04c6effabc4dc0004fafcec984",
+      "prompt_sha256": "f9e6502ddf25b5afc82ad14d5ec98f77bc0bf38c20b37b4862376fa3b42792c0"
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-003",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "a437678c5d5292ce0c83651b939efe20bdb0736324117c83c6c4a1c00d98ef76",
+      "prompt_sha256": "212e998c7e883ea24af82c2300b4c384aa8f8f8075029b019d181f7827ad50a5"
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-004",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "ef5b6f828508828a1ab4675da8bd3fc68ee81e52a432cb971a17a0d4649eaf0f",
+      "prompt_sha256": "40a0ef86d8aa066bc688ff7fb964f966aabe7f0c2c2ba7e2fd9b6f298195be22"
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-005",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "26c834da4463877e80dad0ba918bf7ac5fd0693913d6c34296ccdaa8a84d463a",
+      "prompt_sha256": "148f50dda7c49b4dad4fd95e70885182dd69c6182276443e39c62d262d9dc3ee"
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-006",
+      "request_guard": "PASS",
+      "answer_bearing_markers": [],
+      "secret_markers": [],
+      "request_sha256": "4cca1e96f146afe52e68a022aae0e073b1e5c4c67cefbd40f6a9a10db1bc06f5",
+      "prompt_sha256": "09d553ecb45d4b54a546e3c1f02d5198ab1690b7ab830f44e74acdce5be75e53"
+    }
+  ]
+}

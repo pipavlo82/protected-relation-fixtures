@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"type\":\"relation-preservation\",\"subType\":\"normalized-typed-relation\",\"description\":\"After relation 'owns' is equivalent to before relation OWNER according to normalization rules.\",\"details\":{\"before\":{\"relation\":\"OWNER\",\"source\":\"acct:001\",\"target\":\"doc:alpha\"},\"after\":{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"}}}"
+}

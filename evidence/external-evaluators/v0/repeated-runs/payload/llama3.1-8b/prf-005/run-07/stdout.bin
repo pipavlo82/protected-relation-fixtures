@@ -1,0 +1,5 @@
+{ 
+  "outcome": "PRESERVED", 
+  "reason_detail": "{\"evaluation_input\":{\"before\":{\"state\":{\"authorization_scope\":\"agent-A-only\"},\"transforms\":[{\"id\":\"T1\",\"locally_admissible\":true},{\"id\":\"T2\",\"locally_admissible\":true}]}}," 
+                    }
+

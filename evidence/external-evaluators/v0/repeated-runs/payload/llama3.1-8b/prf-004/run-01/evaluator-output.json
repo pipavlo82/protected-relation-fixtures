@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"details\":\"relation L2 is not in after state\",\"policy_name\":\"multiplicity_sensitive_relation\",\"scope\":[\"A\", \"B\"]}"
+}

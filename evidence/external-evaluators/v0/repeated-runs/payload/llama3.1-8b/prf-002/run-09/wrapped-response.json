@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "f66d1a24a9aad2cc826a0ef928c8a5b730c79cf55c79830f8ac268b160330632",
+  "invocation_digest": "0ea8fd31867e809740c845e3f589c1afdd4e94906114695e91e5a79fae9a6030",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"relation_type\":\"owns\",\"source\":\"A\",\"target\":\"B\"} matches the protected relation profile's exact typed relation, anchored identity, directed policy, and universe [\"A\", \"B\"]; however, it is not a dependency, so it is not PRESERVED under the 'depends_on' relation.",
+  "evidence": []
+}

@@ -1,0 +1,5 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"scope\":[\"A\"], \"universe\":[\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\"], \"kind\":\"exact_neighborhood_identity\", \"identity_policy\":\"anchored\", \"equivalence_policy\":\"exact\", \"multiplicity_policy\":\"set-collapsed\", \"relation_type_policy\":\"type-ignored\", \"direction_policy\":\"direction-ignored\"}"
+}
+

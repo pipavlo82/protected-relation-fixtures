@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "0ad3178742277a138e99a17a932da964652b886789a2f10ad12fc3fcc2545447",
+  "challenge_id": "prf-005",
+  "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+  "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "f65e56483ea470eabbe0cb93a80b6b1d6753041930cd42762f8d3dfc7f2fe00c",
+  "invocation_digest": "26b1fef0dfc9552cd4422a6a888156542e1dd2b11d8b0fd66a134d1fe5bf0c7d",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"error_code\":\"PRF-EVAL-001\",\"short_message\":\"Invalid protected relation profile application\",\"long_message\":\"The protected predicate 'agent-A-only' does not match the initial state's 'authorization_scope'.\"}",
+  "evidence": []
+}

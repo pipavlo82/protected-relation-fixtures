@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "124a50961c8d81b926f19fab5e12451c8b4106cf9c1e4caa9d1533d420595b7d",
+  "invocation_digest": "9c791dd4f41d084797e53faf69eb2b94fa90471d2f8900f9ae7081cc8c3d7112",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"status\":\"The evaluation input does not provide sufficient information to determine if the protected relation is preserved or violated. The before and after states both have a status of 'UNVERIFIABLE', which indicates that there is no meaningful comparison that can be made under the given protected relation profile.\"}",
+  "evidence": []
+}

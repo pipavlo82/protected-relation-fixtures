@@ -1,0 +1,689 @@
+{
+  "schema": "prf-external-evaluator-semantic-stability-summary.v0",
+  "denominator_rule": "valid semantic judgments only; adapter failures excluded",
+  "frequency_interpretation": "empirical observed frequencies, not calibrated probabilities",
+  "models": [
+    {
+      "model_key": "qwen2.5-3b-instruct",
+      "challenges": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 9,
+            "VIOLATED": 1,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 9,
+            "denominator": 10,
+            "decimal": 0.9
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 1,
+            "denominator": 10,
+            "decimal": 0.1
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 9,
+            "denominator": 45,
+            "decimal": 0.2
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_NONMODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 10,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "decimal": 0.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 10
+          },
+          "modal_outcomes": [
+            "UNVERIFIABLE"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "decimal": 0.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "UNVERIFIABLE",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 10,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "decimal": 0.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 10,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "decimal": 0.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 10,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "decimal": 0.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-3b-post-wrapper-repair",
+            "adapter_status": "MALFORMED_RESPONSE",
+            "semantic_outcome": null,
+            "benchmark_classification": null,
+            "fresh_distribution_recurrence": "HISTORICAL_ADAPTER_FAILURE",
+            "counted_in_fresh_denominator": false
+          }
+        }
+      ]
+    },
+    {
+      "model_key": "qwen2.5-coder-7b",
+      "challenges": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 4
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 4,
+            "denominator": 10,
+            "decimal": 0.4
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 24,
+            "denominator": 45,
+            "decimal": 0.533333333333
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-coder-7b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "UNVERIFIABLE",
+            "benchmark_classification": "VIOLATION_NOT_ESTABLISHED",
+            "fresh_distribution_recurrence": "RECURRED_NONMODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 8,
+            "UNVERIFIABLE": 2
+          },
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 8,
+            "denominator": 10,
+            "decimal": 0.8
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 2,
+            "denominator": 10,
+            "decimal": 0.2
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 16,
+            "denominator": 45,
+            "decimal": 0.355555555556
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-coder-7b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 10
+          },
+          "modal_outcomes": [
+            "UNVERIFIABLE"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "decimal": 0.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-coder-7b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "PRESERVED",
+            "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+            "fresh_distribution_recurrence": "DID_NOT_RECUR",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 2,
+            "UNVERIFIABLE": 2
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 4,
+            "denominator": 10,
+            "decimal": 0.4
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 28,
+            "denominator": 45,
+            "decimal": 0.622222222222
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-coder-7b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_NONMODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 9,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 1
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 9,
+            "denominator": 10,
+            "decimal": 0.9
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 1,
+            "denominator": 10,
+            "decimal": 0.1
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 9,
+            "denominator": 45,
+            "decimal": 0.2
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-coder-7b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "PRESERVED",
+            "benchmark_classification": "UNSAFE_FALSE_PRESERVATION",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 5,
+            "VIOLATED": 2,
+            "UNVERIFIABLE": 3
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 5,
+            "denominator": 10,
+            "decimal": 0.5
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 5,
+            "denominator": 10,
+            "decimal": 0.5
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 31,
+            "denominator": 45,
+            "decimal": 0.688888888889
+          },
+          "historical_first_run": {
+            "experiment_id": "qwen2.5-coder-7b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "UNVERIFIABLE",
+            "benchmark_classification": "PRESERVATION_NOT_ESTABLISHED",
+            "fresh_distribution_recurrence": "RECURRED_NONMODAL",
+            "counted_in_fresh_denominator": false
+          }
+        }
+      ]
+    },
+    {
+      "model_key": "llama3.1-8b",
+      "challenges": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 4,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 4,
+            "denominator": 10,
+            "decimal": 0.4
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 24,
+            "denominator": 45,
+            "decimal": 0.533333333333
+          },
+          "historical_first_run": {
+            "experiment_id": "llama3.1-8b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "PRESERVED",
+            "benchmark_classification": "UNSAFE_FALSE_PRESERVATION",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "valid_semantic_observations": 9,
+          "adapter_failures": 1,
+          "outcome_counts": {
+            "PRESERVED": 3,
+            "VIOLATED": 4,
+            "UNVERIFIABLE": 2
+          },
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 4,
+            "denominator": 9,
+            "decimal": 0.444444444444
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 5,
+            "denominator": 9,
+            "decimal": 0.555555555556
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 26,
+            "denominator": 36,
+            "decimal": 0.722222222222
+          },
+          "historical_first_run": {
+            "experiment_id": "llama3.1-8b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "MATCH",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "valid_semantic_observations": 9,
+          "adapter_failures": 1,
+          "outcome_counts": {
+            "PRESERVED": 4,
+            "VIOLATED": 4,
+            "UNVERIFIABLE": 1
+          },
+          "modal_outcomes": [
+            "PRESERVED",
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 4,
+            "denominator": 9,
+            "decimal": 0.444444444444
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 5,
+            "denominator": 9,
+            "decimal": 0.555555555556
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 24,
+            "denominator": 36,
+            "decimal": 0.666666666667
+          },
+          "historical_first_run": {
+            "experiment_id": "llama3.1-8b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 8,
+            "VIOLATED": 2,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 8,
+            "denominator": 10,
+            "decimal": 0.8
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 2,
+            "denominator": 10,
+            "decimal": 0.2
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 16,
+            "denominator": 45,
+            "decimal": 0.355555555556
+          },
+          "historical_first_run": {
+            "experiment_id": "llama3.1-8b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "PRESERVED",
+            "benchmark_classification": "UNSAFE_FALSE_PRESERVATION",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "valid_semantic_observations": 10,
+          "adapter_failures": 0,
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 3,
+            "UNVERIFIABLE": 1
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 4,
+            "denominator": 10,
+            "decimal": 0.4
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 27,
+            "denominator": 45,
+            "decimal": 0.6
+          },
+          "historical_first_run": {
+            "experiment_id": "llama3.1-8b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "PRESERVED",
+            "benchmark_classification": "UNSAFE_FALSE_PRESERVATION",
+            "fresh_distribution_recurrence": "RECURRED_MODAL",
+            "counted_in_fresh_denominator": false
+          }
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "valid_semantic_observations": 9,
+          "adapter_failures": 1,
+          "outcome_counts": {
+            "PRESERVED": 8,
+            "VIOLATED": 1,
+            "UNVERIFIABLE": 0
+          },
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 8,
+            "denominator": 9,
+            "decimal": 0.888888888889
+          },
+          "nonmodal_valid_judgment_rate": {
+            "numerator": 1,
+            "denominator": 9,
+            "decimal": 0.111111111111
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 8,
+            "denominator": 36,
+            "decimal": 0.222222222222
+          },
+          "historical_first_run": {
+            "experiment_id": "llama3.1-8b",
+            "adapter_status": "RESPONSE_VALID",
+            "semantic_outcome": "VIOLATED",
+            "benchmark_classification": "FALSE_VIOLATION",
+            "fresh_distribution_recurrence": "RECURRED_NONMODAL",
+            "counted_in_fresh_denominator": false
+          }
+        }
+      ]
+    }
+  ]
+}

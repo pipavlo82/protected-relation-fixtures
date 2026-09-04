@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "bc7e15dbc826c26cac4bc3a662144f5cbec4ae2e8b0bfd729b18682fc5805e5f",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "bf138267ba66ca4d9dbbe1ec34d3b1911ed052cce352da80a374a8ebc3f7796a",
+  "invocation_digest": "d8a1d3ab6d03323ae4f2275f7164a2a942e5359e216e224616f21ae2183a320a",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"status\":\"UNVERIFIABLE\",\"before\":{\"reason\":\"X\"},\"after\":{\"reason\":null,\"reason_vocabulary_preserved\":false,\"status\":\"UNVERIFIABLE\"}}",
+  "evidence": []
+}

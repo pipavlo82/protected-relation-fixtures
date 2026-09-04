@@ -1,0 +1,5 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "{\"message\": \"Insufficient semantic information to determine preservation or violation. Both before and after states have a status of 'UNVERIFIABLE' and no additional details are provided to evaluate against the protected relation profile.\"}"
+}
+

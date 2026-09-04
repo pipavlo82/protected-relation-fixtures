@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "1c5979440b826aab2757e9a9537ad462b918cad0641648265ce21c0f0f48b225",
+  "challenge_id": "prf-005",
+  "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+  "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "ef661d8b5efc1939368201c926e4602bfdee7d3ea194bf3fad876ec3cdc1545b",
+  "invocation_digest": "a2bd23f83dbb0c452b11f4b4885bc6d371c5063d957b5e23719565998e591d59",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The authorization_scope in the state has changed from 'agent-A-only' to 'agent-A-and-B', which does not match the protected predicate 'agent-A-only'.",
+  "evidence": []
+}

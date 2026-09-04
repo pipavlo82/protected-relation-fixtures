@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "\"The protected relation depends on (depends_on) A to B, but the before state owns (owns) A to B. The direction policy is directed-exact and the equivalence policy is exact, so a relation cannot depend on another relation with a different type.\""
+}

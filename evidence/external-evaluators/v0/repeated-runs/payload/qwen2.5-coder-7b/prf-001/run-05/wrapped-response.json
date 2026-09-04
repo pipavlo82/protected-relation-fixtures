@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "a20c4cfa48b0e1ee23234d8ce8d40e7303529354d565af735ec4aceb65bcd1d6",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "9f2f370129107f86c166162d8bc8b0d0d0edd3c00017b43e59afe9d5aaec43ca",
+  "invocation_digest": "0b58902e88f87434ff7f5a9c2eb2385cd292c97dabd673908d30b0fec5782039",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The protected relation profile requires an exact identity policy and an anchored scope. The elements in set A are the same before and after, preserving the exact identity and neighborhood.",
+  "evidence": []
+}

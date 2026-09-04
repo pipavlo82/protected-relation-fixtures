@@ -1,0 +1,2 @@
+{"outcome": "PRESERVED", "reason_detail": "{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"} is a permitted relation under the protected profile. The normalized relation \"owns\" has been found in both the before and after states, with alias mapping \n acct:001 -> alice\n doc:alpha -> document-A\n user:alice -> alice\n OWNER -> owns\n owning -> owning\n This matches the expected behavior of the protected profile."}
+

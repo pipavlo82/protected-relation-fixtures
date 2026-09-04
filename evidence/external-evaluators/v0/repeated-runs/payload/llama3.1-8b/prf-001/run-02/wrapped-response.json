@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "d8cd877a430e3b051e32f9266d48cfc7d07d6bf18926346fba865d2c89c9b9d4",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "ed469d91192893371dc20d79ab1c529e0cda55227acf135538c3e911e10f9059",
+  "invocation_digest": "e2edec1fc6ed8e6ce81c894450403160727209d4d7a6b24df201872952b65cdb",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The relation 'A' is the same before and after. The exact neighborhood identity policy with anchored identity ignores changes in the multiplicity of elements, but not their order or absence. Since A has the same neighbors (B, C, D) and no new or deleted elements, the protected relation remains preserved.",
+  "evidence": []
+}

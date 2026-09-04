@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cde464777d1a479f38fbdd2f5422e14bb0546c9d4444545eb99e8b5d587010d8",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "46fc8a76d26b1b90586f4d5fcc105dae35d058da1e7057cc532e5b930fec8d47",
+  "invocation_digest": "cb3a5bd2f308f9b7c3daebede5aa6041ae56fd4706c032798583e0634fbf539f",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The 'owns' relation in the before state is not preserved. The protected relation profile indicates that the 'A' and 'B' entities are fixed, but the target of the new 'depends_on' relation ('B') does not match the source/target of the old 'owns' relation ('A').",
+  "evidence": []
+}

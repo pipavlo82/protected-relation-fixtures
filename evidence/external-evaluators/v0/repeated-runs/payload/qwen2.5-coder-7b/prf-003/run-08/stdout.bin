@@ -1,0 +1,2 @@
+{"outcome":"UNVERIFIABLE","reason_detail":"The provided protected relation profile specifies 'status-preserving' and 'status-exact', but the evaluation input does not provide enough information to determine if the status has been preserved or violated. The 'before' state only indicates a status of 'UNVERIFIABLE', and there is no clear indication of what the status should be in the 'after' state."}
+

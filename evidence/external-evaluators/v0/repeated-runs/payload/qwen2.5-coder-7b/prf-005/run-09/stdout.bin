@@ -1,0 +1,5 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"before_state\":{\"authorization_scope\":\"agent-A-only\"},\"after_state\":{\"authorization_scope\":\"agent-A-and-B\"}}"
+}
+

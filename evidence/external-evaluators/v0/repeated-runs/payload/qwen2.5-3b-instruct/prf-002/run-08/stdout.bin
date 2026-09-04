@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The 'owns' relation in the before state is not preserved. The protected relation profile indicates that the 'A' and 'B' entities are fixed, but the target of the new 'depends_on' relation ('B') does not match the source/target of the old 'owns' relation ('A')."}
+

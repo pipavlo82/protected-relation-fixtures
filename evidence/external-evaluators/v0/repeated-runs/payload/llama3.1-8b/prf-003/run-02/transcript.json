@@ -1,0 +1,56 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "bc7e15dbc826c26cac4bc3a662144f5cbec4ae2e8b0bfd729b18682fc5805e5f",
+  "response_digest": null,
+  "evaluator_output_digest": null,
+  "raw_response_digest": "de6e726ad7baca3daaa683b96da34adf20dc1be80e5e873e99d5f97bac3be63c",
+  "stderr_digest": "e66661dbf36bcb5a1981643f424760c6dc2589ec8d36989483595f948bd31c22",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "bc7e15dbc826c26cac4bc3a662144f5cbec4ae2e8b0bfd729b18682fc5805e5f",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "llama3.1:8b",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227\",\"challenge_id\":\"prf-003\",\"evaluation_input\":{\"after\":{\"reason\":null,\"reason_vocabulary_preserved\":false,\"status\":\"UNVERIFIABLE\"},\"before\":{\"reason\":\"X\",\"status\":\"UNVERIFIABLE\"}},\"evaluator\":{\"config_digest\":\"61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726\",\"id\":\"local-ollama-repeated-llama3.1-8b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"not-applicable\",\"equivalence_policy\":\"status-preserving\",\"identity_policy\":\"anchored\",\"kind\":\"verifier_status_class\",\"multiplicity_policy\":\"not-applicable\",\"policy_version\":\"v0\",\"relation_type_policy\":\"status-exact\",\"scope\":\"status-field\",\"universe\":\"declared_status_space\"},\"protected_relation_profile_digest\":\"0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-003",
+      "run_index": 2,
+      "request_bytes_sha256": "a437678c5d5292ce0c83651b939efe20bdb0736324117c83c6c4a1c00d98ef76",
+      "prompt_sha256": "212e998c7e883ea24af82c2300b4c384aa8f8f8075029b019d181f7827ad50a5",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "37c21406d03be82fd1f5943be97cbf93c4ff8ee464a2c87b0f44a54d8a1e603c",
+  "recorded_at": "2026-09-04T03:42:34.445767+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": null,
+  "evaluator_output": null,
+  "adapter_status": "INVALID_EVALUATOR_OUTPUT",
+  "adapter_detail": "evaluator output schema violation at reason_detail: {} is not of type 'string'",
+  "exit_code": 0
+}
