@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The relation 'A' is the same before and after. The exact neighborhood identity policy with anchored identity ignores changes in the multiplicity of elements, but not their order or absence. Since A has the same neighbors (B, C, D) and no new or deleted elements, the protected relation remains preserved."
+}

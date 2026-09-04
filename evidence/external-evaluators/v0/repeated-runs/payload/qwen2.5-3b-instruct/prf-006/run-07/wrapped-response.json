@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "3035ea08230540aa0ce9335bb9ba7e36db8fda1f2124a9dad655f19b02e196d4",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "dd5e4f321735bd696df24271aad041d02cd6c9dffcfe598051e975fe133fa98f",
+  "invocation_digest": "b262ba21329c2039a1fe0c9f9314aa88fb2a623f170d52d7bcbb612a2de10afb",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The relation 'owns' is preserved under the given protected relation profile. The direction, identity aliases, normalization, and universe scopes are consistent with the original 'OWNER' relation to 'doc:alpha'.",
+  "evidence": []
+}

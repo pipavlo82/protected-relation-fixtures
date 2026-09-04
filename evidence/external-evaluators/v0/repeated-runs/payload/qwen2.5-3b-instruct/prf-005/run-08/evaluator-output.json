@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The authorization_scope in the state has changed from 'agent-A-only' to 'agent-A-and-B', which does not match the protected predicate 'agent-A-only'."
+}

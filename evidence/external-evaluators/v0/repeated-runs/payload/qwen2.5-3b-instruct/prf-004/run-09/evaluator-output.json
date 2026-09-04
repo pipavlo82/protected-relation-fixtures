@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The relation 'supports' between the subjects 'A' and 'B' was removed from the before state to just one in the after state. This is a violation of the multiplicity-sensitive relation protection policy, which requires that the relation must exist in both states."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "prf-repeated-model-block.v0",
+  "model_key": "llama3.1-8b",
+  "available": true,
+  "capture_complete": true,
+  "scheduled": 60,
+  "attempted": 60,
+  "captured": 60,
+  "valid_semantic_responses": 57,
+  "adapter_failures": 3,
+  "status_counts": {
+    "INVALID_EVALUATOR_OUTPUT": 1,
+    "MALFORMED_RESPONSE": 2,
+    "RESPONSE_VALID": 57
+  }
+}

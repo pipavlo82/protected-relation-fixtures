@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"policy_version\":\"v0\",\"universe\":[\"A\",\"B\"],\"scope\":[\"A\",\"B\"],\"direction_policy\":\"directed-exact\",\"relation_type_policy\":\"typed-exact\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"multiplicity_policy\":\"multiset-exact\",\"kind\":\"multiplicity_sensitive_relation\"}"
+}

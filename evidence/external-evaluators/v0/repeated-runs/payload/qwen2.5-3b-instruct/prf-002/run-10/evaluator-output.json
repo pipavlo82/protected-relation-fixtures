@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The relation type 'owns' in the before state is not compatible with the protected_relation_profile. The protected relation profile specifies a different relation type ('depends_on')."
+}

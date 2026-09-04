@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"preservation_justified\": true, \"reason\": \"The sets of elements in scope 'A' are identical after the change, thus preserving the exact neighborhood identity under the given protected relation profile.\"}"
+}

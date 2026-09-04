@@ -1,0 +1,5 @@
+{ 
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"links\":[{\"link_id\":\"L2\",\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"}]}" 
+}
+

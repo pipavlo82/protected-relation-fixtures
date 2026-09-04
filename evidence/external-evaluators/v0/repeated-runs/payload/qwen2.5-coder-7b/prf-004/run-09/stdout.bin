@@ -1,0 +1,5 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "{\"context\": \"The provided protected relation profile does not provide enough information to determine if the outcome is PRESERVED or VIOLATED. The scope and universe are both limited to ['A', 'B'], but the number of links allowed between these nodes under different relations is not specified. Without explicit policies for the number of 'supports' relations that can exist between A and B, it's impossible to determine if the before or after state violates the protected relation profile.\"}"
+}
+

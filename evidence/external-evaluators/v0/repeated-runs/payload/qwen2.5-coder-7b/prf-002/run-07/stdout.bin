@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The before state indicates an 'owns' relationship between A and B, while the after state shows a 'depends_on' relationship. These are fundamentally different types of relations that violate the protected relation profile which specifies exact type for the relation."}
+

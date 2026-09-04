@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "d3db6fd0dc5febc325737d8b9d96ccc6830cb424dea65bafb624151504a64679",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "b5cf784d3e19587ea4e66fb0717c8c297d76102e15fe47c84e0ea5c0331d79e2",
+  "invocation_digest": "2f3ea77833cff049ed96bcf6641ece76e437c67930eb5b3ae0e3cd0a09ffcbe9",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"relation_type_policy\":\"typed-exact\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\"} supports (L1) A B and supports (L2) A B are equivalent.",
+  "evidence": []
+}

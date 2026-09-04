@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cc4262fd51952b7ff024ad1d5399ccb60bbaf72bf8b9823b7381c09ff2897f6e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "84ec6d102635f0503360d55ba2083681c7a4d379d748f7a00f9f7df4c0aa546b",
+  "invocation_digest": "8f3263f240e57b400e19ac3f83810c546bb290235f58051c4db8941b44b74788",
+  "outcome": "UNVERIFIABLE",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "Insufficient semantic information provided to determine if the protected relation was preserved or violated.",
+  "evidence": []
+}

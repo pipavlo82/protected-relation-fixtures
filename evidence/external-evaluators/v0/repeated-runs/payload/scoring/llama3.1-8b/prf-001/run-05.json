@@ -1,0 +1,17 @@
+{
+  "model_key": "llama3.1-8b",
+  "challenge_id": "prf-001",
+  "protected_relation": "exact_neighborhood_identity",
+  "run_index": 5,
+  "scheduled_observations": 1,
+  "adapter_status": "RESPONSE_VALID",
+  "semantic_outcome": "PRESERVED",
+  "frozen_expected_outcome": "VIOLATED",
+  "benchmark_classification": "UNSAFE_FALSE_PRESERVATION",
+  "request_bytes_sha256": "c694e166afaada91c5c983a91e92ef24e1dd57a14f0e22dca6d265f262a8a5b2",
+  "stdout_sha256": "00f1bffe371736aa07c713e8280f7e84627ddc878f2ec3dfd77d9cdf5e239d13",
+  "stderr_sha256": "abe7f4b29d469b7b588f1a7d67af437936762fa88e1ecac6c41742b182752c23",
+  "evaluator_output_digest": "cdbff80385f295d6a483fd1cb6a9d75a6c6cdbd71c38923f396fc1894bb3c8b1",
+  "wrapped_response_digest": "fff446a1e272a422f13f2e24efc26deadbf4c64b96f5af1bfa281a6622d14579",
+  "invocation_context_digest": "76d5c66114a3bd77c7ebb3820afd67e3f54912c92c6baa1030b0b87e5787cc96"
+}

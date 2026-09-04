@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "bc7e15dbc826c26cac4bc3a662144f5cbec4ae2e8b0bfd729b18682fc5805e5f",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "3e3f31309b62c14b8804f542e3e7b310fb9d183d96077f569012eb076e4780fe",
+  "invocation_digest": "dc04bf3378568a8b12b116c43a314067528c477895743dcea9c46c5abf0f028c",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "\"The status field has changed from UNVERIFIABLE to PRESERVED in the after state. The relation type policy is 'status-exact', which means that equivalence must be exact. Since the reason vocabulary was not preserved, violation of the protected relation is justified under this equivalence policy.\"",
+  "evidence": []
+}

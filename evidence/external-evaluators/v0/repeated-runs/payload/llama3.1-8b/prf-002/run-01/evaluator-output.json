@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"description\":\"Relation preservation is justified by the exact-typed relation profile supplied. The before and after states contain an 'owns' and a 'depends_on' relation respectively, but these relations are anchored to different identities within the set-collapsed multiplicity policy. As such, no violation occurs under the directed-exact direction policy and the exact equivalence policy.\"}"
+}

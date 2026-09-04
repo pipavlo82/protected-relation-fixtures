@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"relation\":\"depends_on\",\"target\":\"B\"} violates the policy of \"owns\" as specified by source A in the before state"
+}

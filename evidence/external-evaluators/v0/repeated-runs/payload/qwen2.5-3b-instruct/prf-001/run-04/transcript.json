@@ -1,0 +1,77 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "71048a28a9f948f628ce27afd7153b535946f22d4216f4ca1ca8eec631934d13",
+  "response_digest": "3165d755491e5c7c4ff2b47e64854358dd598e17e65d5a5a05fa3d6a0d976b16",
+  "evaluator_output_digest": "fc777815fcc6b424e578cb2d99df2a6ddee55603d605a180ddcd0395252bfae9",
+  "raw_response_digest": "911785f358dcd7d14e679a530ce1696ae23db241a57100c302d343aeea663650",
+  "stderr_digest": "7f22d0b4e4ec5a91035175605e63288fcd4db730ed0dade487791fe7736dcd62",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "71048a28a9f948f628ce27afd7153b535946f22d4216f4ca1ca8eec631934d13",
+    "evaluator": {
+      "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+      "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "qwen2.5:3b-instruct",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0\",\"challenge_id\":\"prf-001\",\"evaluation_input\":{\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]}},\"evaluator\":{\"config_digest\":\"87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019\",\"id\":\"local-ollama-repeated-qwen2.5-3b-instruct\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"direction-ignored\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"kind\":\"exact_neighborhood_identity\",\"multiplicity_policy\":\"set-collapsed\",\"policy_version\":\"v0\",\"relation_type_policy\":\"type-ignored\",\"scope\":[\"A\"],\"universe\":[\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\"]},\"protected_relation_profile_digest\":\"0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "qwen2.5-3b-instruct",
+      "challenge_id": "prf-001",
+      "run_index": 4,
+      "request_bytes_sha256": "89bcf6057c308d4925976a8b51560fe88da78534fdf604d767b14e3c306c8625",
+      "prompt_sha256": "92364f1aa2f6bbf5ffd19119d3f4fd6086911c496d40a22c6206314db4a6c4f0",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "8dd564d0205cbdeaed556c5f3d2f313d6bab8ad4e94c6c54b35f240e16867670",
+  "recorded_at": "2026-09-04T03:20:10.588103+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "71048a28a9f948f628ce27afd7153b535946f22d4216f4ca1ca8eec631934d13",
+    "challenge_id": "prf-001",
+    "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+    "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+    "evaluator": {
+      "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+      "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+      "version": "ollama-0.15.2"
+    },
+    "evaluator_output_digest": "fc777815fcc6b424e578cb2d99df2a6ddee55603d605a180ddcd0395252bfae9",
+    "invocation_digest": "8dd564d0205cbdeaed556c5f3d2f313d6bab8ad4e94c6c54b35f240e16867670",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "{\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]},\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"scope Allowed Elements\":\"[\\u2026B, C, D, E, F, G\\u2026]\",\"added Elements\":\"[\\u2026H, I, J\\u2026]\"}",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "{\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]},\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"scope Allowed Elements\":\"[\\u2026B, C, D, E, F, G\\u2026]\",\"added Elements\":\"[\\u2026H, I, J\\u2026]\"}"
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "evaluator semantic payload validated and deterministically wrapped",
+  "exit_code": 0
+}

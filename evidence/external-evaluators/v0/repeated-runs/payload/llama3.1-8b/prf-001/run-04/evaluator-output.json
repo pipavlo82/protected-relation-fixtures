@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The protected relation profile specifies an exact neighborhood identity, and all elements in the after state are also present in the before state with the same multiplicity. Additionally, the equivalence policy is set to exact, which means that all elements must be identical, not just equivalent."
+}

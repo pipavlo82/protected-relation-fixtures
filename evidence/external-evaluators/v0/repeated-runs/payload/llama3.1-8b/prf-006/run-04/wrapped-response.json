@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "7c91f4a18fdab32cceeeddcd7063ed38b2516deed459b5b483acc645d710ee93",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "ab3577d77244b2fec976cc08e67304b7aad2d46ccaa8baefdebd53298755b217",
+  "invocation_digest": "05c19af0b7ea5bc8a20f0e9b31ccb775a21861ccf61a88dbde9cda53999c9ead",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "\"relation \"owns\" matches the protected relation profile's normalization rules for the before state (OWNER) and after state (owns)\", \"the source in both states is an alias of \"alice\"\", \"the target in both states is an alias of \"document-A\"\"}",
+  "evidence": []
+}

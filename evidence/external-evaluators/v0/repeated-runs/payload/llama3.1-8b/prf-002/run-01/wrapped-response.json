@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "3e80d0313c08cd17849a37df688c4e6d7039643a507be017c22758044d661b96",
+  "invocation_digest": "d245960df84993365c71339e2a0672ffd2a0b40935db92b039d01f2e6610caaa",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"description\":\"Relation preservation is justified by the exact-typed relation profile supplied. The before and after states contain an 'owns' and a 'depends_on' relation respectively, but these relations are anchored to different identities within the set-collapsed multiplicity policy. As such, no violation occurs under the directed-exact direction policy and the exact equivalence policy.\"}",
+  "evidence": []
+}

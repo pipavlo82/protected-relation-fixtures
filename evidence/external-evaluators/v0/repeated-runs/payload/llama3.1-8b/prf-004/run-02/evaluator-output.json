@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"} matches the protected relation profile. The relation type is typed-exact and the provided relation is of type supports, which is an exact match. The relation direction is directed-exact and the link L1 in the before state has a direction that agrees with the protected relation. The multiplicity is multiset-exact and both occurrences of the link L1 in the before state have multiplicity 1, which agrees with the protected relation. The source and target nodes are within the scope, which matches the protected relation."
+}

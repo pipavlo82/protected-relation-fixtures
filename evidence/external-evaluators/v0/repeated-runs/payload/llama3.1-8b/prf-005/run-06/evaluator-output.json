@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"transform_id\":\"T1\",\"authorization_scope_before\":\"agent-A-only\",\"authorization_scope_after\":\"agent-A-and-B\"}"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "15cce7a5e2c146d6f1f35bed5d25fa599e0ce88a56726fee69d0dd3e59df10f9",
+  "invocation_digest": "5dbdb653dfff7c3390e5969058bab257b60d4fc3dc86621fa325eaade96382f0",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "\"The protected relation depends on (depends_on) A to B, but the before state owns (owns) A to B. The direction policy is directed-exact and the equivalence policy is exact, so a relation cannot depend on another relation with a different type.\"",
+  "evidence": []
+}

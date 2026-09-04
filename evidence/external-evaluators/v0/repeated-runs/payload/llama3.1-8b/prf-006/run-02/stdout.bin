@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"The relation 'owns' between source 'user:alice' and target 'document:A' is preserved under the normalized typed relation profile with direction policy 'directed-exact', equivalence policy 'canonical-alias-and-type-normalization', identity policy 'alias-permitted', kind 'normalized_typed_relation', multiplicity policy 'set-collapsed', normalization {identity_aliases: {...}, relation_aliases: {'OWNER': 'owns'}}, policy version 'v0', relation type policy 'type-normalized', and scope ['alice', 'document-A']"}
+

@@ -1,0 +1,17 @@
+{
+  "model_key": "qwen2.5-3b-instruct",
+  "challenge_id": "prf-005",
+  "protected_relation": "composed_semantic_validity",
+  "run_index": 2,
+  "scheduled_observations": 1,
+  "adapter_status": "RESPONSE_VALID",
+  "semantic_outcome": "VIOLATED",
+  "frozen_expected_outcome": "VIOLATED",
+  "benchmark_classification": "MATCH",
+  "request_bytes_sha256": "d92e9a1e1808e4f2227fc660108b3a10e5314b60e2e9e07011414f4127bb3cb4",
+  "stdout_sha256": "58dc4c2c14a37061eda0e53cb6eead1ae8707f0a84f0d94dc2da0c9dd0816ddb",
+  "stderr_sha256": "cbc0fa7199ab17d98042d0d70d7c5bcd98c0a8fdbb7f53db86c68048a7745cee",
+  "evaluator_output_digest": "f29821a88888d91eaf03cc5ca379f04d68897255467e8bbaf9ed1d7b8c9189ea",
+  "wrapped_response_digest": "73b85ae45487310b1dea6b7b5222f9a4339019a57334ff341d24104ffcb33232",
+  "invocation_context_digest": "345298eb7c9de1e3c05dbfb566291061e63b5992685b6cfaa245ac364e3d8bcf"
+}

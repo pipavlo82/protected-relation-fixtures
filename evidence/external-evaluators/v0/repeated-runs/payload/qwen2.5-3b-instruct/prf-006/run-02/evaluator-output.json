@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The relation type 'owns' is preserved under the provided protected relation profile. The source and target identities are also consistent with the provided profiles."
+}

@@ -1,0 +1,2 @@
+{ "outcome": "VIOLATED", "reason_detail": "{\"violated_policy\":\"multiplicity_sensitive_relation\", \"violated_relation_id\":\"L2\", \"description\": \"Relation multiplicity is not preserved under the protected relation profile.\"}" }
+

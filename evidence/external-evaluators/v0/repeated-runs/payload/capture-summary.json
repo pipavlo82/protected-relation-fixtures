@@ -1,0 +1,202 @@
+{
+  "schema": "prf-external-evaluator-repeated-capture-summary.v0",
+  "capture_closed": true,
+  "scoring_performed": false,
+  "scheduled_observations": 180,
+  "attempted_observations": 180,
+  "captured_observations": 180,
+  "valid_semantic_responses": 177,
+  "adapter_failures": 3,
+  "per_model": {
+    "qwen2.5-3b-instruct": {
+      "schema": "prf-repeated-model-block.v0",
+      "model_key": "qwen2.5-3b-instruct",
+      "available": true,
+      "capture_complete": true,
+      "scheduled": 60,
+      "attempted": 60,
+      "captured": 60,
+      "valid_semantic_responses": 60,
+      "adapter_failures": 0,
+      "status_counts": {
+        "RESPONSE_VALID": 60
+      }
+    },
+    "qwen2.5-coder-7b": {
+      "schema": "prf-repeated-model-block.v0",
+      "model_key": "qwen2.5-coder-7b",
+      "available": true,
+      "capture_complete": true,
+      "scheduled": 60,
+      "attempted": 60,
+      "captured": 60,
+      "valid_semantic_responses": 60,
+      "adapter_failures": 0,
+      "status_counts": {
+        "RESPONSE_VALID": 60
+      }
+    },
+    "llama3.1-8b": {
+      "schema": "prf-repeated-model-block.v0",
+      "model_key": "llama3.1-8b",
+      "available": true,
+      "capture_complete": true,
+      "scheduled": 60,
+      "attempted": 60,
+      "captured": 60,
+      "valid_semantic_responses": 57,
+      "adapter_failures": 3,
+      "status_counts": {
+        "INVALID_EVALUATOR_OUTPUT": 1,
+        "MALFORMED_RESPONSE": 2,
+        "RESPONSE_VALID": 57
+      }
+    }
+  },
+  "per_challenge": {
+    "prf-001": {
+      "qwen2.5-3b-instruct": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "qwen2.5-coder-7b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "llama3.1-8b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      }
+    },
+    "prf-002": {
+      "qwen2.5-3b-instruct": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "qwen2.5-coder-7b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "llama3.1-8b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 9,
+        "adapter_failures": 1
+      }
+    },
+    "prf-003": {
+      "qwen2.5-3b-instruct": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "qwen2.5-coder-7b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "llama3.1-8b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 9,
+        "adapter_failures": 1
+      }
+    },
+    "prf-004": {
+      "qwen2.5-3b-instruct": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "qwen2.5-coder-7b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "llama3.1-8b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      }
+    },
+    "prf-005": {
+      "qwen2.5-3b-instruct": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "qwen2.5-coder-7b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "llama3.1-8b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      }
+    },
+    "prf-006": {
+      "qwen2.5-3b-instruct": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "qwen2.5-coder-7b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 10,
+        "adapter_failures": 0
+      },
+      "llama3.1-8b": {
+        "scheduled": 10,
+        "attempted": 10,
+        "captured": 10,
+        "valid_semantic_responses": 9,
+        "adapter_failures": 1
+      }
+    }
+  },
+  "capture_inventory": {
+    "path": "capture-inventory.json",
+    "sha256": "66c57f0f0c94e6f33154a94168db909b2202c1ebd0a98ef55ef9a822cbe33f71",
+    "total_files": 1669,
+    "total_bytes": 3205443
+  }
+}

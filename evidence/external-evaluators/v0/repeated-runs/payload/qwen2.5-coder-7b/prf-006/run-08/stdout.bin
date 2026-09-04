@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"{\"before\":{\"relation\":\"OWNER\",\"source\":\"acct:001\",\"target\":\"doc:alpha\"},\"after\":{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"}} - The protected relation profile specifies that the 'OWNER' relation must be preserved as 'owns', and since the source 'acct:001' is aliased to 'alice' and the target 'doc:alpha' is aliased to 'document-A', the before state violates the protected relation profile by using 'OWNER' instead of 'owns'. The after state correctly follows the protected relation profile."}
+

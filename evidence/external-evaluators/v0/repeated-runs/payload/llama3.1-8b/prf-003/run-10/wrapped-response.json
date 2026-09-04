@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "bc7e15dbc826c26cac4bc3a662144f5cbec4ae2e8b0bfd729b18682fc5805e5f",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "c9fe153a90a51c2fe0785459dff09fdea84b8020288bd1fe854c01e19c3e1227",
+  "invocation_digest": "a14702a22a27cbef0bcdcf37f6b24a3e6e93b45411e53e424646d568297b4929",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"status\":\"UNVERIFIABLE\"}",
+  "evidence": []
+}

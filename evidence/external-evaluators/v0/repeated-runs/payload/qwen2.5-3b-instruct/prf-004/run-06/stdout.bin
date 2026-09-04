@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The relation type 'supports' is removed from the links, which violates the protected relation profile where all instances of 'supports' between 'A' and 'B' are preserved."}
+

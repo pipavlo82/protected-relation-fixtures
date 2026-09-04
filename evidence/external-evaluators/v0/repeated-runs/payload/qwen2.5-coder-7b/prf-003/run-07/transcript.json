@@ -1,0 +1,77 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+  "response_digest": "319b2becd6977cd745f7055d8e93093f71e3fa4f629d33704fffed4ebd5883d6",
+  "evaluator_output_digest": "3499cc33d441fdb8f3ddcfe24a1477179155d8c2b1ce2fc71665b81f2eb49f58",
+  "raw_response_digest": "623486b8f391e5befb3deac6c8ed2a5c37bb447cb835c81f3dd0b9d3be83a8cd",
+  "stderr_digest": "c3902665c06736e78b7446b4a590f4c8c52a509acd4daba0234c7193bde121d1",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+    "evaluator": {
+      "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+      "id": "local-ollama-repeated-qwen2.5-coder-7b",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "qwen2.5-coder:7b",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227\",\"challenge_id\":\"prf-003\",\"evaluation_input\":{\"after\":{\"reason\":null,\"reason_vocabulary_preserved\":false,\"status\":\"UNVERIFIABLE\"},\"before\":{\"reason\":\"X\",\"status\":\"UNVERIFIABLE\"}},\"evaluator\":{\"config_digest\":\"0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f\",\"id\":\"local-ollama-repeated-qwen2.5-coder-7b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"not-applicable\",\"equivalence_policy\":\"status-preserving\",\"identity_policy\":\"anchored\",\"kind\":\"verifier_status_class\",\"multiplicity_policy\":\"not-applicable\",\"policy_version\":\"v0\",\"relation_type_policy\":\"status-exact\",\"scope\":\"status-field\",\"universe\":\"declared_status_space\"},\"protected_relation_profile_digest\":\"0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-003",
+      "run_index": 7,
+      "request_bytes_sha256": "4fc747926a9f432719e12c03d1eea3ab18deba464e899820554a05efe931d127",
+      "prompt_sha256": "1d1455d04a7850d2db90d7bad32c6ccc81d810710736524b76fb3b241db62d31",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "1ae1352ceb206e1f3a7d1de0b8c624789721a5180656a719bc3213664945bbed",
+  "recorded_at": "2026-09-04T03:32:17.566391+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "e09e637b20aa2c64e95da50cfd2a09489615a8dd6aa3aba84e080753b03a37c1",
+    "challenge_id": "prf-003",
+    "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+    "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+    "evaluator": {
+      "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+      "id": "local-ollama-repeated-qwen2.5-coder-7b",
+      "version": "ollama-0.15.2"
+    },
+    "evaluator_output_digest": "3499cc33d441fdb8f3ddcfe24a1477179155d8c2b1ce2fc71665b81f2eb49f58",
+    "invocation_digest": "1ae1352ceb206e1f3a7d1de0b8c624789721a5180656a719bc3213664945bbed",
+    "outcome": "UNVERIFIABLE",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "{\"message\": \"Insufficient semantic information to determine preservation or violation. Both before and after states have a status of 'UNVERIFIABLE' and no additional details are provided to evaluate against the protected relation profile.\"}",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "UNVERIFIABLE",
+    "reason_detail": "{\"message\": \"Insufficient semantic information to determine preservation or violation. Both before and after states have a status of 'UNVERIFIABLE' and no additional details are provided to evaluate against the protected relation profile.\"}"
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "evaluator semantic payload validated and deterministically wrapped",
+  "exit_code": 0
+}

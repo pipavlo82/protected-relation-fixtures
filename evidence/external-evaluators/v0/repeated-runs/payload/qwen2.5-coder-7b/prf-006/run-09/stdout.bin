@@ -1,0 +1,5 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "{\"error\": \"Insufficient semantic information to determine if the protected relation is preserved or violated. The before and after states do not provide enough details about the specific entities involved in the relationship.\"}"
+}
+

@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"The relation 'owns' in the before state is equivalent to 'OWNER' in the after state through normalization. The identity and relation aliases are correctly handled according to the provided profile."}
+

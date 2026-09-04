@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"The provided relation 'owns' in the before state matches the relation 'owns' in the after state. The identity and type normalization of relations are also consistent with the protected relation profile."}
+

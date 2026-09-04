@@ -1,0 +1,35 @@
+{
+  "schema": "protected-relation-external-adapter-invocation.v0",
+  "request_digest": "a20c4cfa48b0e1ee23234d8ce8d40e7303529354d565af735ec4aceb65bcd1d6",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "OLLAMA_NOHISTORY=1",
+    "/usr/local/bin/ollama",
+    "run",
+    "qwen2.5-coder:7b",
+    "--format",
+    "json",
+    "--hidethinking",
+    "--keepalive",
+    "0",
+    "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0\",\"challenge_id\":\"prf-001\",\"evaluation_input\":{\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]}},\"evaluator\":{\"config_digest\":\"0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f\",\"id\":\"local-ollama-repeated-qwen2.5-coder-7b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"direction-ignored\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"kind\":\"exact_neighborhood_identity\",\"multiplicity_policy\":\"set-collapsed\",\"policy_version\":\"v0\",\"relation_type_policy\":\"type-ignored\",\"scope\":[\"A\"],\"universe\":[\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\"]},\"protected_relation_profile_digest\":\"0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+  ],
+  "metadata": {
+    "study": "prf-repeated-runs-v0",
+    "model_key": "qwen2.5-coder-7b",
+    "challenge_id": "prf-001",
+    "run_index": 6,
+    "request_bytes_sha256": "c1ac06b93c5b270bb8c81efa6149f6d5a84d1744db692a0751c8453d283eb33b",
+    "prompt_sha256": "ba4ed828e8b908589bd721f87791df38078982b0415dadde64cd7a17de72ea39",
+    "semantic_retry": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "prf-external-evaluator-repeated-methodology.v0",
+  "starting_main": "5fdd96a0ca9df399bb946fdba089992b8b3ad4db",
+  "frozen_v0_commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+  "frozen_v0_tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63",
+  "adapter_commit": "cf39a37d66222522368e719e3910c27a3eab31dd",
+  "evaluator_output_schema_sha256": "60c3c89bf2ae7d5d406c4449da5e3de728cd37c9ab3749038b7da30193a33fff",
+  "response_schema_sha256": "a8557965c090cb8e6d1a4dbc0e2b7cd44832e1b16dd2021d63a92729aaab0a7a",
+  "model_order": [
+    "qwen2.5-3b-instruct",
+    "qwen2.5-coder-7b",
+    "llama3.1-8b"
+  ],
+  "challenge_order": [
+    "prf-001",
+    "prf-002",
+    "prf-003",
+    "prf-004",
+    "prf-005",
+    "prf-006"
+  ],
+  "runs_per_challenge": 10,
+  "one_invocation_per_observation": true,
+  "semantic_retries": 0,
+  "no_conversation_memory": true,
+  "capture_before_scoring": true,
+  "initial_ollama_server_started_for_study": true,
+  "instruction_sha256": "e0ef9545f98cc07309535d8ded704ddd7ddbd7d7045a0d321868d65e345e3d3d"
+}

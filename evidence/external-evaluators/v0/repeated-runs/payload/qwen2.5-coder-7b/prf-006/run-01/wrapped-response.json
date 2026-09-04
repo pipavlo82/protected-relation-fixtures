@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "1f0432053db0989bab2b57e51252b7cc6f4534f4b3f700d18369a5a9bb141aa3",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "a00f39ed4655facd2f7342212cfcbcbf92afa0f0764a81b3ccbb89a7605124c4",
+  "invocation_digest": "dd43c3be430e6a3c4241cc803ba060efe0009fc2e4ec2e90c9168fe31599998f",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "\"OWNER\" in the before state is not equivalent to \"owns\" in the after state according to the provided protected relation profile.",
+  "evidence": []
+}

@@ -1,0 +1,2 @@
+{ "outcome": "VIOLATED", "reason_detail": "{\"relation_name\":\"A\",\"before\":[\"E\",\"F\",\"G\"],\"after\":[\"B\",\"C\",\"D\"],\"justification\": \"multiplicity policy set-collapsed and identity policy anchored, so an element in the before set cannot be replaced by a different element in the after set\"}" }
+

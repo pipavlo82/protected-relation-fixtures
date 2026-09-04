@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"The relation 'supports' in the state where there is only one link between 'A' and 'B' (after) does not match the state with two links between 'A' and 'B' (before). According to the protected relation profile, the multiplicity of the relation must be preserved."}
+

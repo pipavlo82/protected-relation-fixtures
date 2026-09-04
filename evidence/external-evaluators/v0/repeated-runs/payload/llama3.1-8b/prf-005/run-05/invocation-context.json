@@ -1,0 +1,35 @@
+{
+  "schema": "protected-relation-external-adapter-invocation.v0",
+  "request_digest": "0ad3178742277a138e99a17a932da964652b886789a2f10ad12fc3fcc2545447",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "OLLAMA_NOHISTORY=1",
+    "/usr/local/bin/ollama",
+    "run",
+    "llama3.1:8b",
+    "--format",
+    "json",
+    "--hidethinking",
+    "--keepalive",
+    "0",
+    "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b\",\"challenge_id\":\"prf-005\",\"evaluation_input\":{\"after\":{\"composition\":\"T2(T1(S0))\",\"state\":{\"authorization_scope\":\"agent-A-and-B\",\"id\":\"S2\"},\"step_results\":[{\"id\":\"T1\",\"locally_admissible\":true},{\"id\":\"T2\",\"locally_admissible\":true}]},\"before\":{\"protected_predicate\":{\"equals\":\"agent-A-only\",\"path\":\"authorization_scope\"},\"state\":{\"authorization_scope\":\"agent-A-only\",\"id\":\"S0\"},\"transforms\":[{\"id\":\"T1\",\"locally_admissible\":true},{\"id\":\"T2\",\"locally_admissible\":true}]}},\"evaluator\":{\"config_digest\":\"61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726\",\"id\":\"local-ollama-repeated-llama3.1-8b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"ordered-composition\",\"equivalence_policy\":\"composition-safe\",\"identity_policy\":\"anchored\",\"kind\":\"composed_semantic_validity\",\"multiplicity_policy\":\"not-applicable\",\"policy_version\":\"v0\",\"relation_type_policy\":\"typed-exact\",\"scope\":\"transformation-pipeline\",\"universe\":\"declared_pipeline_states\"},\"protected_relation_profile_digest\":\"354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+  ],
+  "metadata": {
+    "study": "prf-repeated-runs-v0",
+    "model_key": "llama3.1-8b",
+    "challenge_id": "prf-005",
+    "run_index": 5,
+    "request_bytes_sha256": "26c834da4463877e80dad0ba918bf7ac5fd0693913d6c34296ccdaa8a84d463a",
+    "prompt_sha256": "148f50dda7c49b4dad4fd95e70885182dd69c6182276443e39c62d262d9dc3ee",
+    "semantic_retry": false
+  }
+}

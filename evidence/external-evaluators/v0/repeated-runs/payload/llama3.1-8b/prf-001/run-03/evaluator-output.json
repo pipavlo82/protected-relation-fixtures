@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "\"A\" contains \"E\" which is not in the before state, violating anchored identity policy."
+}

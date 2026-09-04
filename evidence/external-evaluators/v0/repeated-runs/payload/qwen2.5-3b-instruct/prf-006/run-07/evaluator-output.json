@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The relation 'owns' is preserved under the given protected relation profile. The direction, identity aliases, normalization, and universe scopes are consistent with the original 'OWNER' relation to 'doc:alpha'."
+}

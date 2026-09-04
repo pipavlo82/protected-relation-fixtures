@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "d8cd877a430e3b051e32f9266d48cfc7d07d6bf18926346fba865d2c89c9b9d4",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "0308d3a62de70ab3cf18f8bb88b1414f06b156db58a4806f4dc729aea0bb9fd2",
+  "invocation_digest": "60c1f42e132f4cb3ee7485876ea6fb2fedb78afefc8f81d87538e65349e53bb0",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The protected relation has the exact kind 'exact_neighborhood_identity', which specifies that two sets are equivalent if they have exactly the same elements in a specific order. The before and after states of set A are {'A': ['B', 'C', 'D', 'E', 'F', 'G']}",
+  "evidence": []
+}

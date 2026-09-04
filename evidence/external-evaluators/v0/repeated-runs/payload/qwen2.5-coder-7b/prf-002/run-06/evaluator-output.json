@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"violation_type\": \"direction_policy\", \"description\": \"The protected relation profile specifies a 'directed-exact' direction policy, but the before and after states have different relationship types ('owns' vs. 'depends_on').\"}"
+}

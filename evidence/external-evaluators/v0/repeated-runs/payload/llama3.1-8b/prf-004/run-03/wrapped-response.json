@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "d3db6fd0dc5febc325737d8b9d96ccc6830cb424dea65bafb624151504a64679",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "c3ef5843ecee2fc36b75a414eb5ffd87d9a66a11be7e35426c30d105a2cca4ac",
+  "invocation_digest": "da30adbd5139e3f11065b1d69bcc118ed13122bb34c333d9ccb74a65046fa23b",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"policy\":\"exact\",\"source\":\"A\",\"target\":\"B\"}",
+  "evidence": []
+}

@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "The after state contains the same links as the before state, preserving the exact multiplicity and direction of the protected relation."
+}

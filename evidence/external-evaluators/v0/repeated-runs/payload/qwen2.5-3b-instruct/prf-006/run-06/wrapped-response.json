@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "3035ea08230540aa0ce9335bb9ba7e36db8fda1f2124a9dad655f19b02e196d4",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "560c5464e7e5498c89a9ae1c7c094ebdf42c74cd102bb107a9b07f373ccb294f",
+  "invocation_digest": "9bae4dad0356b7a66406fcf5c0117769fa96047c23a52ab08220bb12c03c4615",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The provided relation 'owns' in the before state matches the 'owns' relation in the after state, which is within the allowed scope and universe according to the protected relation profile.",
+  "evidence": []
+}

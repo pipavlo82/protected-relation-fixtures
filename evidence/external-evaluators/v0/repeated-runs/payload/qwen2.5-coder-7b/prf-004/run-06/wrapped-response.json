@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "daa5e5ec09450084761dbe2e0ce8f91281cdd483552628493a261354c7cb99ad",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "e2c9902bb318fbc33f0677946af8bbe4cc3724b5f3346b3c5b2a61556d467b7a",
+  "invocation_digest": "a945631b0f5dbfbdddd40863cac650e5dd5b019820d94018f175f88c3b63b0e3",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"before\":{\"links\":[{\"link_id\":\"L1\",\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"},{\"link_id\":\"L2\",\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"}]},\"after\":{\"links\":[{\"link_id\":\"L1\",\"relation\":\"supports\",\"source\":\"A\",\"target\":\"B\"}]}}\"",
+  "evidence": []
+}

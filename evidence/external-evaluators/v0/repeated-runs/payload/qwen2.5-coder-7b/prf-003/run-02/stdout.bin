@@ -1,0 +1,2 @@
+{"outcome":"UNVERIFIABLE","reason_detail":"The supplied before/after state does not contain enough information to determine preservation or violation under the given protected relation profile. The status fields are UNVERIFIABLE in both states, which is insufficient for any policy to apply."}
+

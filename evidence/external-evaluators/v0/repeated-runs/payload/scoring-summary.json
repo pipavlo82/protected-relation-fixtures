@@ -1,0 +1,21 @@
+{
+  "schema": "prf-external-evaluator-repeated-scoring-summary.v0",
+  "capture_summary_sha256": "5b7fe3224f37bf526b658ca8042ca7cb5a1a05ee9b0a3130b4a36ad030b58775",
+  "observations_scored": 180,
+  "valid_semantic_observations": 177,
+  "adapter_failures": 3,
+  "classification_counts": {
+    "MATCH": 98,
+    "UNSAFE_FALSE_PRESERVATION": 53,
+    "UNSAFE_UNVERIFIABLE_UPGRADE": 4,
+    "FALSE_VIOLATION": 3,
+    "PRESERVATION_NOT_ESTABLISHED": 3,
+    "VIOLATION_NOT_ESTABLISHED": 12,
+    "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 4
+  },
+  "outputs": {
+    "repeated-run-matrix.json": "1bcba212948f4109a983bb706bfead927184b4d2cc1ebf8dce16cf9bf31ffe28",
+    "stability-summary.json": "2dd4fe92b4d1095bff85da7568620add50a0a45abb804da60fac74c49e7c00d2",
+    "cross-model-summary.json": "fdbeb4b4ec4a05bbe843d23eed1c8657cd174d6e68f9f8056252a11b70ce1b66"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "d3db6fd0dc5febc325737d8b9d96ccc6830cb424dea65bafb624151504a64679",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "e1ffc990ccdaf731096a42cbd8ff60ebd87a549d0f2e70d30b12af671350093e",
+  "invocation_digest": "038c9bd9feaff63974b3ffdeea48346f9401a555957bbea4a29436455ce2e6d6",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"policy_version\":\"v0\",\"universe\":[\"A\",\"B\"],\"scope\":[\"A\",\"B\"],\"direction_policy\":\"directed-exact\",\"relation_type_policy\":\"typed-exact\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"multiplicity_policy\":\"multiset-exact\",\"kind\":\"multiplicity_sensitive_relation\"}",
+  "evidence": []
+}

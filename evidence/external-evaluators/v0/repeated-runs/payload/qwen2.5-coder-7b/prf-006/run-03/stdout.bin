@@ -1,0 +1,5 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"before\":{\"relation\":\"OWNER\",\"source\":\"acct:001\",\"target\":\"doc:alpha\"},\"after\":{\"relation\":\"owns\",\"source\":\"user:alice\",\"target\":\"document:A\"}}"
+}
+

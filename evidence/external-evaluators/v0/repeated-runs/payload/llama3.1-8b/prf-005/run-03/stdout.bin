@@ -1,0 +1,2 @@
+{ "outcome": "VIOLATED", "reason_detail": "{\"path\":\"authorization_scope\",\"description\":\"agent-A-and-B is not a subset of agent-A-only\"}" }
+

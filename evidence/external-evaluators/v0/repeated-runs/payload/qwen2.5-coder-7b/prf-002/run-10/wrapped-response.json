@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cc4262fd51952b7ff024ad1d5399ccb60bbaf72bf8b9823b7381c09ff2897f6e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "7bacfb47e6dda958b6767aa9d5af7ae503a7e8417232a1ae578c775406237ea6",
+  "invocation_digest": "e00bf0fca92960d33025b605a989c140c7cb21f676838d6c7bc8a24692def339",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"before\":{\"relation\":\"owns\",\"source\":\"A\",\"target\":\"B\"},\"after\":{\"relation\":\"depends_on\",\"source\":\"A\",\"target\":\"B\"}}; The protected relation profile specifies that the relationship between A and B must be preserved exactly, but the change from 'owns' to 'depends_on' violates this constraint.",
+  "evidence": []
+}

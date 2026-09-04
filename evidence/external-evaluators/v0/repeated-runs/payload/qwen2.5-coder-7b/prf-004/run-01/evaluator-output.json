@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"violation_type\": \"multiplicity\", \"description\": \"The number of 'supports' relations between A and B changed from 2 to 1, violating the multiset-exact multiplicity policy.\"}"
+}

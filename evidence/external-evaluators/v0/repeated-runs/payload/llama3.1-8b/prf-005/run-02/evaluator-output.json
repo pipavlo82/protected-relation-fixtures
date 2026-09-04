@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"policy_type\":\"direction_policy\",\"decision\":\"violated\",\"details\":{\"transform_id\":\"T2\",\"composition_path\":\"T2(T1(S0))\"}}"
+}

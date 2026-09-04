@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The protected relation profile specifies that the relation 'depends_on' between 'A' and 'B' must be exactly preserved, but the before state shows a different relation 'owns' between them."
+}

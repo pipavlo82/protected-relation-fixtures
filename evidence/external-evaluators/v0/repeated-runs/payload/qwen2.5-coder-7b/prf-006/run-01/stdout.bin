@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"\"OWNER\" in the before state is not equivalent to \"owns\" in the after state according to the provided protected relation profile."}
+

@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "daa5e5ec09450084761dbe2e0ce8f91281cdd483552628493a261354c7cb99ad",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "ac83c52d7c751eb1e0b9bcc8cd366aa3a409869096ea8a24a8d399aaaf354ead",
+  "invocation_digest": "71ac6c25afa1da15ce7448c1e7caf965c4de08dd4eb42ca84df4d003d31b444b",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The before and after states have the same set of links, and the protected relation profile allows for exact multiplicity. Therefore, the preservation is justified.",
+  "evidence": []
+}

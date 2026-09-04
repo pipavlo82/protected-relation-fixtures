@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "31aa1923bc8dcd750d742e1092228ba967d4b5d98a9429777c6cb71d315d057e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "3139fc092338ebe9b9b84668edf1da7081cad9ff93bb956c2064474733ccd689",
+  "invocation_digest": "aeb443fa008c96c1903973755668b337c406302772e0075d0cf5bdc2b3974ded",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "{\"relation\":\"depends_on\",\"target\":\"B\"} violates the policy of \"owns\" as specified by source A in the before state",
+  "evidence": []
+}

@@ -1,0 +1,2 @@
+{"outcome":"VIOLATED","reason_detail":"{\"before_relation\":\"owns\",\"after_relation\":\"depends_on\",\"source\":\"A\",\"target\":\"B\"}"}
+

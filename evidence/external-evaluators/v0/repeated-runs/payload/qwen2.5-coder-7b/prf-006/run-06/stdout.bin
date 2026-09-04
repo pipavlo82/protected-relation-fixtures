@@ -1,0 +1,5 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "{\"detail\": \"The provided protected relation profile does not specify how the 'before' and 'after' states should be compared under the given policies. The profiles only provide aliases and normalization rules but lack the specific rules for evaluating violations or preservation between the two states.\"}"
+}
+

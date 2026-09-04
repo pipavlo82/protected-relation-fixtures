@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "cc4262fd51952b7ff024ad1d5399ccb60bbaf72bf8b9823b7381c09ff2897f6e",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "6b24baead47fafb5f3d4977e1a9df50332731b697e28e49e3c0c8bf62b823d80",
+  "invocation_digest": "c3d137d4792cd9382355bb74d8f7ab354b1a40b70c2a0991d2c794ea089633fa",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The before state indicates an 'owns' relationship between A and B, while the after state shows a 'depends_on' relationship. These are fundamentally different types of relations that violate the protected relation profile which specifies exact type for the relation.",
+  "evidence": []
+}

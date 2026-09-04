@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"direction\":\"directed\",\"equivalence\":\"exact\",\"identity\":\"anchored\",\"kind\":\"typed_exact\",\"multiplicity\":\"collapsed\",\"policy_version\":\"v0\",\"scope\":[\"A\",\"B\"],\"target_kind\":\"relation\",\"universe\":[\"A\",\"B\"]}"
+}

@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The protected relation profile specifies that the multiplicity of the relation 'supports' between 'A' and 'B' should be exactly two (multiset-exact), but there are now three links instead of two. This change violates the exact multiplicity requirement."
+}

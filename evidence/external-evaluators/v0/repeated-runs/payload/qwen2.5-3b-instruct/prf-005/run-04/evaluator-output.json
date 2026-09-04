@@ -1,0 +1,4 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "The 'authorization_scope' in the 'before' state ('agent-A-only') does not match the 'equals' protected predicate ('agent-A-and-B')."
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "prf-repeated-model-block.v0",
+  "model_key": "qwen2.5-3b-instruct",
+  "available": true,
+  "capture_complete": true,
+  "scheduled": 60,
+  "attempted": 60,
+  "captured": 60,
+  "valid_semantic_responses": 60,
+  "adapter_failures": 0,
+  "status_counts": {
+    "RESPONSE_VALID": 60
+  }
+}

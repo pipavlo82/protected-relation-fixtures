@@ -1,0 +1,4 @@
+{
+  "outcome": "PRESERVED",
+  "reason_detail": "{\"relation_type\":\"owns\",\"source\":\"A\",\"target\":\"B\"} matches the protected relation profile's exact typed relation, anchored identity, directed policy, and universe [\"A\", \"B\"]; however, it is not a dependency, so it is not PRESERVED under the 'depends_on' relation."
+}

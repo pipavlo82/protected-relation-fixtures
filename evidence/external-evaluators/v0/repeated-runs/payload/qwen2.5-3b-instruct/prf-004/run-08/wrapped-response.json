@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "569654fc5d1050e30f855c45c373301f7aaf6593ef34ae64c5e784755d9d8f6f",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "config_digest": "87a9f9a49c03cdbe8bc8f3dd0ccde3d10b976b6e571e540cdc7bb4bf83785019",
+    "id": "local-ollama-repeated-qwen2.5-3b-instruct",
+    "version": "ollama-0.15.2"
+  },
+  "evaluator_output_digest": "5af5f35217a1aa7fbe889c290ab629ee8b7386538da45b368031d053c4de03ee",
+  "invocation_digest": "41378bca932d4b833c3189ef4134d8bb73077d4055c617665af1e64f6b41aa14",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The before state contains a link with relation 'supports', source 'A', and target 'B' which is not present in the after state. This indicates a change that violates the directed-exact identity policy of the protected relation profile.",
+  "evidence": []
+}

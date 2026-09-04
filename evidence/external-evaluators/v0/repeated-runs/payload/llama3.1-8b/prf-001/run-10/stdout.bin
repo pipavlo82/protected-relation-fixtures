@@ -1,0 +1,2 @@
+{ "outcome": "VIOLATED", "reason_detail": "{\"violated_node_set\": [\"E\", \"F\", \"G\"], \"violated_relation_type\": null, \"violated_universe_element\": {\"A\": [null]}}" }
+

@@ -1,0 +1,4 @@
+{
+  "outcome": "UNVERIFIABLE",
+  "reason_detail": "{\"status\":\"The evaluation input does not provide sufficient information to determine if the protected relation is preserved or violated. The before and after states both have a status of 'UNVERIFIABLE', which indicates that there is no meaningful comparison that can be made under the given protected relation profile.\"}"
+}

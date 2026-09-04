@@ -1,0 +1,77 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "a20c4cfa48b0e1ee23234d8ce8d40e7303529354d565af735ec4aceb65bcd1d6",
+  "response_digest": "8986978a44f1a76388d4ffa7fe0d738d5ba0da03dc2e400eee1ff20659a2475f",
+  "evaluator_output_digest": "d54fb1efc9239b2997e4fae1aeb00335bafa7b93c4db19539c0d03fcf79faa15",
+  "raw_response_digest": "12360565882548d7dcac0443ef7cb892c9188d4b6c09d4def196080d194a049b",
+  "stderr_digest": "edaa6570536cebf55f1de050137442ba24429e1219233ab32be7107dc63367bd",
+  "evaluator": {
+    "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+    "id": "local-ollama-repeated-qwen2.5-coder-7b",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "a20c4cfa48b0e1ee23234d8ce8d40e7303529354d565af735ec4aceb65bcd1d6",
+    "evaluator": {
+      "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+      "id": "local-ollama-repeated-qwen2.5-coder-7b",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "qwen2.5-coder:7b",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0\",\"challenge_id\":\"prf-001\",\"evaluation_input\":{\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]}},\"evaluator\":{\"config_digest\":\"0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f\",\"id\":\"local-ollama-repeated-qwen2.5-coder-7b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"direction-ignored\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"kind\":\"exact_neighborhood_identity\",\"multiplicity_policy\":\"set-collapsed\",\"policy_version\":\"v0\",\"relation_type_policy\":\"type-ignored\",\"scope\":[\"A\"],\"universe\":[\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\"]},\"protected_relation_profile_digest\":\"0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "qwen2.5-coder-7b",
+      "challenge_id": "prf-001",
+      "run_index": 4,
+      "request_bytes_sha256": "c1ac06b93c5b270bb8c81efa6149f6d5a84d1744db692a0751c8453d283eb33b",
+      "prompt_sha256": "ba4ed828e8b908589bd721f87791df38078982b0415dadde64cd7a17de72ea39",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "55c4218c694c04a7eddc981f3063a709a22eae4a2463bb9de6e35fafb6e8bd2e",
+  "recorded_at": "2026-09-04T03:29:03.296568+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "a20c4cfa48b0e1ee23234d8ce8d40e7303529354d565af735ec4aceb65bcd1d6",
+    "challenge_id": "prf-001",
+    "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+    "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+    "evaluator": {
+      "config_digest": "0ecdbc4fa8d8ef509c89e6a45c38771225808bbcb25ab362cbca014726bb153f",
+      "id": "local-ollama-repeated-qwen2.5-coder-7b",
+      "version": "ollama-0.15.2"
+    },
+    "evaluator_output_digest": "d54fb1efc9239b2997e4fae1aeb00335bafa7b93c4db19539c0d03fcf79faa15",
+    "invocation_digest": "55c4218c694c04a7eddc981f3063a709a22eae4a2463bb9de6e35fafb6e8bd2e",
+    "outcome": "PRESERVED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "{\"preservation_justified\": true, \"reason\": \"The sets of elements in scope 'A' are identical after the change, thus preserving the exact neighborhood identity under the given protected relation profile.\"}",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "PRESERVED",
+    "reason_detail": "{\"preservation_justified\": true, \"reason\": \"The sets of elements in scope 'A' are identical after the change, thus preserving the exact neighborhood identity under the given protected relation profile.\"}"
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "evaluator semantic payload validated and deterministically wrapped",
+  "exit_code": 0
+}

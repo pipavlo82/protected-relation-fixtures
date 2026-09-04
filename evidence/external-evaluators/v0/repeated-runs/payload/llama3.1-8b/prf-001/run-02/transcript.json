@@ -1,0 +1,77 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "d8cd877a430e3b051e32f9266d48cfc7d07d6bf18926346fba865d2c89c9b9d4",
+  "response_digest": "ba757eaf2439ca45438b16bfcdacdae5ba7eff0d56cbe930baaa0032e3a4d5c8",
+  "evaluator_output_digest": "ed469d91192893371dc20d79ab1c529e0cda55227acf135538c3e911e10f9059",
+  "raw_response_digest": "d3c2fad26c6914e68582f49b59eca290c98910deb087cf6891473dabbb348a71",
+  "stderr_digest": "4cba136f120dee6e42cb2cbf97114ffb2bef6e47a9a4c661d7fc9f6494bfe8a5",
+  "evaluator": {
+    "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+    "id": "local-ollama-repeated-llama3.1-8b",
+    "version": "ollama-0.15.2"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "d8cd877a430e3b051e32f9266d48cfc7d07d6bf18926346fba865d2c89c9b9d4",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "env",
+      "OLLAMA_NOHISTORY=1",
+      "/usr/local/bin/ollama",
+      "run",
+      "llama3.1:8b",
+      "--format",
+      "json",
+      "--hidethinking",
+      "--keepalive",
+      "0",
+      "You are an external Protected Relation Fixtures semantic evaluator.\n\nApply ONLY the protected relation profile supplied by the request to the supplied before/after state.\n\nDo not guess benchmark correctness and do not invent a different protected relation.\n\nReturn PRESERVED only if preservation is justified under the supplied relation.\nReturn VIOLATED only if violation is justified.\nIf the available semantic information is insufficient, return UNVERIFIABLE.\n\nReturn only one JSON object with exactly these two fields and no others:\n{\"outcome\":\"PRESERVED | VIOLATED | UNVERIFIABLE\",\"reason_detail\":\"string\"}\n\nThe outcome value must be exactly one of PRESERVED, VIOLATED, or UNVERIFIABLE. The reason_detail value must be a JSON string.\n\nValidated blind request:\n{\"adapter_contract_version\":\"v0\",\"challenge_digest\":\"5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0\",\"challenge_id\":\"prf-001\",\"evaluation_input\":{\"after\":{\"A\":[\"B\",\"C\",\"D\",\"H\",\"I\",\"J\"]},\"before\":{\"A\":[\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]}},\"evaluator\":{\"config_digest\":\"61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726\",\"id\":\"local-ollama-repeated-llama3.1-8b\",\"version\":\"ollama-0.15.2\"},\"protected_relation_profile\":{\"direction_policy\":\"direction-ignored\",\"equivalence_policy\":\"exact\",\"identity_policy\":\"anchored\",\"kind\":\"exact_neighborhood_identity\",\"multiplicity_policy\":\"set-collapsed\",\"policy_version\":\"v0\",\"relation_type_policy\":\"type-ignored\",\"scope\":[\"A\"],\"universe\":[\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\"]},\"protected_relation_profile_digest\":\"0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255\",\"schema\":\"protected-relation-external-adapter-request.v0\"}\n"
+    ],
+    "metadata": {
+      "study": "prf-repeated-runs-v0",
+      "model_key": "llama3.1-8b",
+      "challenge_id": "prf-001",
+      "run_index": 2,
+      "request_bytes_sha256": "c694e166afaada91c5c983a91e92ef24e1dd57a14f0e22dca6d265f262a8a5b2",
+      "prompt_sha256": "e7e632cc7f123a6153118a0f19891703ad98ccdd4b5c25ac007557d3a97c7ac6",
+      "semantic_retry": false
+    }
+  },
+  "invocation_digest": "e2edec1fc6ed8e6ce81c894450403160727209d4d7a6b24df201872952b65cdb",
+  "recorded_at": "2026-09-04T03:39:18.445260+00:00",
+  "timestamp_authoritative": false,
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "d8cd877a430e3b051e32f9266d48cfc7d07d6bf18926346fba865d2c89c9b9d4",
+    "challenge_id": "prf-001",
+    "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+    "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+    "evaluator": {
+      "config_digest": "61b9956739ebf38c9f5ee38e2bee4f1eb6de97c0c7c96899fef8b10592b97726",
+      "id": "local-ollama-repeated-llama3.1-8b",
+      "version": "ollama-0.15.2"
+    },
+    "evaluator_output_digest": "ed469d91192893371dc20d79ab1c529e0cda55227acf135538c3e911e10f9059",
+    "invocation_digest": "e2edec1fc6ed8e6ce81c894450403160727209d4d7a6b24df201872952b65cdb",
+    "outcome": "PRESERVED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The relation 'A' is the same before and after. The exact neighborhood identity policy with anchored identity ignores changes in the multiplicity of elements, but not their order or absence. Since A has the same neighbors (B, C, D) and no new or deleted elements, the protected relation remains preserved.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "PRESERVED",
+    "reason_detail": "The relation 'A' is the same before and after. The exact neighborhood identity policy with anchored identity ignores changes in the multiplicity of elements, but not their order or absence. Since A has the same neighbors (B, C, D) and no new or deleted elements, the protected relation remains preserved."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "evaluator semantic payload validated and deterministically wrapped",
+  "exit_code": 0
+}

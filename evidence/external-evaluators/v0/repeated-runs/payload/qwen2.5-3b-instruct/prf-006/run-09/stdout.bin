@@ -1,0 +1,2 @@
+{"outcome":"PRESERVED","reason_detail":"The relation type 'owns' in the before state is equivalent to 'OWNER' after normalization, which matches the equivalence policy. The source and target identities are preserved according to the identity policy."}
+

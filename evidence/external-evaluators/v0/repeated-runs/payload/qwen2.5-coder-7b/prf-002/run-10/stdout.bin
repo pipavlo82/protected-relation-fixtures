@@ -1,0 +1,5 @@
+{
+  "outcome": "VIOLATED",
+  "reason_detail": "{\"before\":{\"relation\":\"owns\",\"source\":\"A\",\"target\":\"B\"},\"after\":{\"relation\":\"depends_on\",\"source\":\"A\",\"target\":\"B\"}}; The protected relation profile specifies that the relationship between A and B must be preserved exactly, but the change from 'owns' to 'depends_on' violates this constraint."
+}
+
