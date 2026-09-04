@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "f91c4ccd25d259ad7d21b7b50564078c4fb334ffc88376fd2d9d0067d926c1ab",
+  "invocation_digest": "5524d45b81a948c9ac935185d50dc656c30ac0e400b3108291199718e8b1317b",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The protected relation requires an exact directed, typed multiset between anchored A and B. Before contained two A→B 'supports' links (L1 and L2), while after contains only one (L1), so multiplicity is not preserved.",
+  "evidence": []
+}

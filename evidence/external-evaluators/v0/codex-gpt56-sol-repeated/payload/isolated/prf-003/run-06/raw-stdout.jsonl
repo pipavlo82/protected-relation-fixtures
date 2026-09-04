@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a06c97-b2f3-77c0-b122-e0f1bb56606c"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"outcome\":\"PRESERVED\",\"reason_detail\":\"The protected relation is scoped only to the status field with status-exact equivalence. The anchored status remains UNVERIFIABLE before and after; changes to the reason and its vocabulary are outside the declared protected relation.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":10608,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":65,"reasoning_output_tokens":0}}

@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+  "response_digest": "9f90109aeff5518150aa9cf37cc1416c7f1aa19318aecf3e8ea072cc09cb84cc",
+  "evaluator_output_digest": "65b91121317fd1eaef3cef24e60d8ad1db9faaba475f732fcd834fdc416a02cb",
+  "raw_response_digest": "65b91121317fd1eaef3cef24e60d8ad1db9faaba475f732fcd834fdc416a02cb",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVGhlIG9yZGVyZWQgY29tcG9zaXRpb24gVDIoVDEoUzApKSBjaGFuZ2VzIHRoZSBwcm90ZWN0ZWQgYXV0aG9yaXphdGlvbl9zY29wZSBmcm9tIHRoZSByZXF1aXJlZCBhbmNob3JlZCB2YWx1ZSBcImFnZW50LUEtb25seVwiIHRvIFwiYWdlbnQtQS1hbmQtQlwiLiBMb2NhbCBhZG1pc3NpYmlsaXR5IG9mIGVhY2ggdHJhbnNmb3JtIGRvZXMgbm90IHByZXNlcnZlIHRoZSBkZWNsYXJlZCBjb21wb3NlZCBwcmVkaWNhdGUuIn0=",
+  "stderr_digest": "01640a4f8f661cb87740e988648c6dc0f6283e4cac5e19bd70d67f64d1eed8e2",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNzoxNS4yMDgyMTdaICBXQVJOIHNxbHg6OnF1ZXJ5OiBzbG93IHN0YXRlbWVudDogZXhlY3V0aW9uIHRpbWUgZXhjZWVkZWQgYWxlcnQgdGhyZXNob2xkIHN1bW1hcnk9IlBSQUdNQSBhdXRvX3ZhY3V1bSA9IElOQ1JFTUVOVEFMOyDigKYiIGRiLnN0YXRlbWVudD0iXG5cblBSQUdNQSBhdXRvX3ZhY3V1bSA9IElOQ1JFTUVOVEFMOyBQUkFHTUEgam91cm5hbF9tb2RlID0gV0FMOyBQUkFHTUEgZm9yZWlnbl9rZXlzID0gT047IFBSQUdNQSBzeW5jaHJvbm91cyA9IE5PUk1BTDsgXG4iIHJvd3NfYWZmZWN0ZWQ9MCByb3dzX3JldHVybmVkPTEgZWxhcHNlZD0xLjE1NzU1OTlzIGVsYXBzZWRfc2Vjcz0xLjE1NzU1OTkgc2xvd190aHJlc2hvbGQ9MXMKMjAyNi0wOS0wNFQxMzoyNzoxNS41MDY1NDFaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-005",
+      "run_index": 9,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-005\\run-09",
+      "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "1d13b93b8bd176e9f384a020bc2a0f838fe92d62828cfae2f0e3d39aa41cc992",
+  "recorded_at": "2026-09-04T13:27:19.833512Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The ordered composition T2(T1(S0)) changes the protected authorization_scope from the required anchored value \\\"agent-A-only\\\" to \\\"agent-A-and-B\\\". Local admissibility of each transform does not preserve the declared composed predicate.\"}",
+  "stderr": "2026-09-04T13:27:15.208217Z  WARN sqlx::query: slow statement: execution time exceeded alert threshold summary=\"PRAGMA auto_vacuum = INCREMENTAL; …\" db.statement=\"\\n\\nPRAGMA auto_vacuum = INCREMENTAL; PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON; PRAGMA synchronous = NORMAL; \\n\" rows_affected=0 rows_returned=1 elapsed=1.1575599s elapsed_secs=1.1575599 slow_threshold=1s\n2026-09-04T13:27:15.506541Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "challenge_id": "prf-005",
+    "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+    "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "65b91121317fd1eaef3cef24e60d8ad1db9faaba475f732fcd834fdc416a02cb",
+    "invocation_digest": "1d13b93b8bd176e9f384a020bc2a0f838fe92d62828cfae2f0e3d39aa41cc992",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The ordered composition T2(T1(S0)) changes the protected authorization_scope from the required anchored value \"agent-A-only\" to \"agent-A-and-B\". Local admissibility of each transform does not preserve the declared composed predicate.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The ordered composition T2(T1(S0)) changes the protected authorization_scope from the required anchored value \"agent-A-only\" to \"agent-A-and-B\". Local admissibility of each transform does not preserve the declared composed predicate."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

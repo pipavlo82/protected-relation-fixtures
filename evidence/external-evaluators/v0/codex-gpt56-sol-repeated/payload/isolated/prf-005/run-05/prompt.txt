@@ -1,0 +1,88 @@
+You are an external Protected Relation Fixtures semantic evaluator.
+
+Apply ONLY the protected relation profile supplied in the request to the supplied before/after semantic state.
+
+Do not decide from weak observational equality alone.
+
+Do not guess benchmark correctness.
+
+Do not invent or substitute another protected relation.
+
+Return PRESERVED only if the declared protected relation is preserved.
+
+Return VIOLATED if it is not preserved.
+
+Return UNVERIFIABLE if the supplied evidence is insufficient.
+
+Do not call any tool. The complete semantic task is contained in the request below.
+
+Return ONLY this JSON:
+
+{
+  "outcome": "PRESERVED | VIOLATED | UNVERIFIABLE",
+  "reason_detail": "string"
+}
+
+Validated blind request:
+{
+  "schema": "protected-relation-external-adapter-request.v0",
+  "adapter_contract_version": "v0",
+  "challenge_id": "prf-005",
+  "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+  "protected_relation_profile": {
+    "kind": "composed_semantic_validity",
+    "identity_policy": "anchored",
+    "relation_type_policy": "typed-exact",
+    "multiplicity_policy": "not-applicable",
+    "direction_policy": "ordered-composition",
+    "scope": "transformation-pipeline",
+    "universe": "declared_pipeline_states",
+    "equivalence_policy": "composition-safe",
+    "policy_version": "v0"
+  },
+  "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluation_input": {
+    "before": {
+      "state": {
+        "id": "S0",
+        "authorization_scope": "agent-A-only"
+      },
+      "transforms": [
+        {
+          "id": "T1",
+          "locally_admissible": true
+        },
+        {
+          "id": "T2",
+          "locally_admissible": true
+        }
+      ],
+      "protected_predicate": {
+        "path": "authorization_scope",
+        "equals": "agent-A-only"
+      }
+    },
+    "after": {
+      "state": {
+        "id": "S2",
+        "authorization_scope": "agent-A-and-B"
+      },
+      "composition": "T2(T1(S0))",
+      "step_results": [
+        {
+          "id": "T1",
+          "locally_admissible": true
+        },
+        {
+          "id": "T2",
+          "locally_admissible": true
+        }
+      ]
+    }
+  }
+}

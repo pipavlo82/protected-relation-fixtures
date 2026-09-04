@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+  "response_digest": "d0b7dcaad4e74e2ca079864ce5bfc0fa5e0a9aa1f8efd1d2a6c4e08de65895c4",
+  "evaluator_output_digest": "eab1191ef9f9708c492d9100c3a9f1a44ae5fc2c831a88859ca919370bf0b32c",
+  "raw_response_digest": "eab1191ef9f9708c492d9100c3a9f1a44ae5fc2c831a88859ca919370bf0b32c",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVW5kZXIgdGhlIHR5cGVkLWV4YWN0IHBvbGljeSwgdGhlIHByb3RlY3RlZCBkaXJlY3RlZCByZWxhdGlvbiBtdXN0IHJldGFpbiBpdHMgZXhhY3QgdHlwZS4gQWx0aG91Z2ggdGhlIGFuY2hvcmVkIHNvdXJjZSBBIGFuZCB0YXJnZXQgQiBhcmUgdW5jaGFuZ2VkLCB0aGUgcmVsYXRpb24gY2hhbmdlZCBmcm9tIFwib3duc1wiIHRvIFwiZGVwZW5kc19vblwiLiJ9",
+  "stderr_digest": "63e89e517a42856a2efa09105e6e6dc0fabb6ab998b97c515d49689e9fc5deb0",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyMzowMS4yNjkzNTlaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-002",
+      "run_index": 2,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-002\\run-02",
+      "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "9d7a44b67e75b93bed981b5b52a05dffc36af5f8d53e4cdf8586700d4f2a23bc",
+  "recorded_at": "2026-09-04T13:23:04.888948Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"Under the typed-exact policy, the protected directed relation must retain its exact type. Although the anchored source A and target B are unchanged, the relation changed from \\\"owns\\\" to \\\"depends_on\\\".\"}",
+  "stderr": "2026-09-04T13:23:01.269359Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+    "challenge_id": "prf-002",
+    "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+    "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "eab1191ef9f9708c492d9100c3a9f1a44ae5fc2c831a88859ca919370bf0b32c",
+    "invocation_digest": "9d7a44b67e75b93bed981b5b52a05dffc36af5f8d53e4cdf8586700d4f2a23bc",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "Under the typed-exact policy, the protected directed relation must retain its exact type. Although the anchored source A and target B are unchanged, the relation changed from \"owns\" to \"depends_on\".",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "Under the typed-exact policy, the protected directed relation must retain its exact type. Although the anchored source A and target B are unchanged, the relation changed from \"owns\" to \"depends_on\"."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

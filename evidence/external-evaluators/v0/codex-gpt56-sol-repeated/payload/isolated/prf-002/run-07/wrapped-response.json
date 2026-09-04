@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+  "invocation_digest": "60fd580bceb7dacfe05d46edd16614e712bb478b9896296e4706d34a2e9f4703",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The anchored directed endpoints remain A→B, but the relation type changed from \"owns\" to \"depends_on\". Under the typed-exact equivalence policy, the protected relation is not preserved.",
+  "evidence": []
+}

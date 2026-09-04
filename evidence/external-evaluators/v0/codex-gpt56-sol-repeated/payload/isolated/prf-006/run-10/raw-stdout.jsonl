@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a06c9b-4c4d-7103-a853-1020427024e3"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"outcome\":\"PRESERVED\",\"reason_detail\":\"After canonical identity-alias and relation-type normalization, both states represent the same directed set-collapsed relation: alice --owns--> document-A.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":10712,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":51,"reasoning_output_tokens":0}}

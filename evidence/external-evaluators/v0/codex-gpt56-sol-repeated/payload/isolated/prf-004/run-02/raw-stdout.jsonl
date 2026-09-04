@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a06c98-541b-7e41-b680-51cb5777da10"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The protected directed typed relation A -> B with relation type \\\"supports\\\" had multiplicity 2 before and multiplicity 1 after. Under the multiset-exact multiplicity policy, removing one occurrence violates the protected relation.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":10689,"cached_input_tokens":8576,"cache_write_input_tokens":0,"output_tokens":67,"reasoning_output_tokens":0}}

@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+  "challenge_id": "prf-004",
+  "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+  "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "adf01a888c919cd79d75f6b8fe2840cbfe09ffc2e5a7444b3d6460c3f17b80d2",
+  "invocation_digest": "18355ed9d22adc1e513ffe199e2231195e9c1573d978d3cfb3360e13dfff056f",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The protected relation requires exact multiset multiplicity. Before, there were two directed typed-exact 'supports' links from anchored A to B (L1 and L2); after, only one remains (L1), so the multiplicity changed from two to one.",
+  "evidence": []
+}

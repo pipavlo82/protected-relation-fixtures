@@ -1,0 +1,84 @@
+You are an external Protected Relation Fixtures semantic evaluator.
+
+Apply ONLY the protected relation profile supplied in the request to the supplied before/after semantic state.
+
+Do not decide from weak observational equality alone.
+
+Do not guess benchmark correctness.
+
+Do not invent or substitute another protected relation.
+
+Return PRESERVED only if the declared protected relation is preserved.
+
+Return VIOLATED if it is not preserved.
+
+Return UNVERIFIABLE if the supplied evidence is insufficient.
+
+Do not call any tool. The complete semantic task is contained in the request below.
+
+Return ONLY this JSON:
+
+{
+  "outcome": "PRESERVED | VIOLATED | UNVERIFIABLE",
+  "reason_detail": "string"
+}
+
+Validated blind request:
+{
+  "schema": "protected-relation-external-adapter-request.v0",
+  "adapter_contract_version": "v0",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile": {
+    "kind": "exact_neighborhood_identity",
+    "identity_policy": "anchored",
+    "relation_type_policy": "type-ignored",
+    "multiplicity_policy": "set-collapsed",
+    "direction_policy": "direction-ignored",
+    "scope": [
+      "A"
+    ],
+    "universe": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "equivalence_policy": "exact",
+    "policy_version": "v0"
+  },
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluation_input": {
+    "before": {
+      "A": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ]
+    },
+    "after": {
+      "A": [
+        "B",
+        "C",
+        "D",
+        "H",
+        "I",
+        "J"
+      ]
+    }
+  }
+}

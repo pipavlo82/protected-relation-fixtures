@@ -1,0 +1,62 @@
+{
+  "schema": "prf-codex-gpt56-capture-summary.v0",
+  "capture_closed": true,
+  "scoring_performed": false,
+  "scheduled_observations": 60,
+  "attempted_observations": 60,
+  "captured_observations": 60,
+  "valid_semantic_responses": 60,
+  "adapter_failures": 0,
+  "per_challenge": {
+    "prf-001": {
+      "scheduled": 10,
+      "attempted": 10,
+      "captured": 10,
+      "valid_semantic_responses": 10,
+      "adapter_failures": 0
+    },
+    "prf-002": {
+      "scheduled": 10,
+      "attempted": 10,
+      "captured": 10,
+      "valid_semantic_responses": 10,
+      "adapter_failures": 0
+    },
+    "prf-003": {
+      "scheduled": 10,
+      "attempted": 10,
+      "captured": 10,
+      "valid_semantic_responses": 10,
+      "adapter_failures": 0
+    },
+    "prf-004": {
+      "scheduled": 10,
+      "attempted": 10,
+      "captured": 10,
+      "valid_semantic_responses": 10,
+      "adapter_failures": 0
+    },
+    "prf-005": {
+      "scheduled": 10,
+      "attempted": 10,
+      "captured": 10,
+      "valid_semantic_responses": 10,
+      "adapter_failures": 0
+    },
+    "prf-006": {
+      "scheduled": 10,
+      "attempted": 10,
+      "captured": 10,
+      "valid_semantic_responses": 10,
+      "adapter_failures": 0
+    }
+  },
+  "capture_inventory": {
+    "path": "capture-inventory.json",
+    "sha256": "4c722858c486bb6bc7a3a9d5b5fc18a98dca98e939eb1810199bf1ed31f8b424",
+    "total_files": 507,
+    "total_bytes": 908760
+  },
+  "capture_closed_at": "2026-09-04T13:29:11.641490Z",
+  "timestamp_authoritative": false
+}

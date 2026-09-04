@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"The protected relation requires exact multiset multiplicity. Before, there are two directed typed 'supports' links from anchored A to B (L1 and L2); after, only one remains (L1), so the multiplicity is not preserved."}

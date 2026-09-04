@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under the typed-exact policy, the relation type must remain identical. The anchored directed endpoints remain A to B, but the relation changed from \"owns\" to \"depends_on\"."}

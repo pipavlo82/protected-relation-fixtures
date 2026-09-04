@@ -1,0 +1,8 @@
+{
+  "schema": "prf-codex-gpt56-scoring-phase.v0",
+  "capture_summary_sha256": "84c7b5e010767f4b12409856ec224b8b154affd9d5fa707ecb832359c77ccf30",
+  "capture_inventory_sha256": "4c722858c486bb6bc7a3a9d5b5fc18a98dca98e939eb1810199bf1ed31f8b424",
+  "capture_was_closed_before_oracle_load": true,
+  "captured_observations_before_scoring": 60,
+  "oracle_sha256": "8fa93a5ef4a61c3a7d80c8951c131e694d4947f16a9f38c9c813dd0a29a0b6e5"
+}

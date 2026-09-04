@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+  "response_digest": "41d5cb111f1db51d38bcb627c5b72decbef3880d0399f07d19b55f1f23cbb3f1",
+  "evaluator_output_digest": "a2fef2af09efcc64ad1c10f20b352a5dcac97a7533c6ffc0f812c79f2c438b95",
+  "raw_response_digest": "a2fef2af09efcc64ad1c10f20b352a5dcac97a7533c6ffc0f812c79f2c438b95",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVW5kZXIgdGhlIGFuY2hvcmVkLCB0eXBlZC1leGFjdCwgb3JkZXJlZC1jb21wb3NpdGlvbiBwcm9maWxlLCB0aGUgY29tcG9zZWQgcGlwZWxpbmUgbXVzdCBwcmVzZXJ2ZSB0aGUgcHJvdGVjdGVkIGF1dGhvcml6YXRpb25fc2NvcGUgcHJlZGljYXRlLiBJdCBjaGFuZ2VkIGZyb20gXCJhZ2VudC1BLW9ubHlcIiBpbiBTMCB0byBcImFnZW50LUEtYW5kLUJcIiBpbiBTMi4gVGhlIGxvY2FsIGFkbWlzc2liaWxpdHkgb2YgVDEgYW5kIFQyIGRvZXMgbm90IGVzdGFibGlzaCBjb21wb3NpdGlvbi1zYWZlIHByZXNlcnZhdGlvbi4ifQ==",
+  "stderr_digest": "a1adf96f66594a72846de017753f86ae09d2366c4df3f04fcf1321550717aea2",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNjo1NC4wMDM1NjFaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-005",
+      "run_index": 6,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-005\\run-06",
+      "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "c181cfdc7ddaaab4c9429235dccd3852a48ea35fabb22d6acf60dc4496ae0d6c",
+  "recorded_at": "2026-09-04T13:26:58.056838Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"Under the anchored, typed-exact, ordered-composition profile, the composed pipeline must preserve the protected authorization_scope predicate. It changed from \\\"agent-A-only\\\" in S0 to \\\"agent-A-and-B\\\" in S2. The local admissibility of T1 and T2 does not establish composition-safe preservation.\"}",
+  "stderr": "2026-09-04T13:26:54.003561Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "challenge_id": "prf-005",
+    "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+    "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "a2fef2af09efcc64ad1c10f20b352a5dcac97a7533c6ffc0f812c79f2c438b95",
+    "invocation_digest": "c181cfdc7ddaaab4c9429235dccd3852a48ea35fabb22d6acf60dc4496ae0d6c",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "Under the anchored, typed-exact, ordered-composition profile, the composed pipeline must preserve the protected authorization_scope predicate. It changed from \"agent-A-only\" in S0 to \"agent-A-and-B\" in S2. The local admissibility of T1 and T2 does not establish composition-safe preservation.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "Under the anchored, typed-exact, ordered-composition profile, the composed pipeline must preserve the protected authorization_scope predicate. It changed from \"agent-A-only\" in S0 to \"agent-A-and-B\" in S2. The local admissibility of T1 and T2 does not establish composition-safe preservation."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

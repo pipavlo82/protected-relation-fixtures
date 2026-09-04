@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under the anchored, typed-exact, ordered-composition profile, the composed pipeline must preserve the protected authorization_scope predicate. It changed from \"agent-A-only\" in S0 to \"agent-A-and-B\" in S2. The local admissibility of T1 and T2 does not establish composition-safe preservation."}

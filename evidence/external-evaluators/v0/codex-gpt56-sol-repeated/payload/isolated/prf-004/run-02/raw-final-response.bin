@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"The protected directed typed relation A -> B with relation type \"supports\" had multiplicity 2 before and multiplicity 1 after. Under the multiset-exact multiplicity policy, removing one occurrence violates the protected relation."}

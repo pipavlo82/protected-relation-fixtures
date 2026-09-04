@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+  "response_digest": "9c94c3f2e769e09ff02039effe99e2660d1a2b0dc75843464a725835c1f1a378",
+  "evaluator_output_digest": "8a3c41b5ba37af408eb881591ef8c7bbfd05aca53e360bdc36a141c40ff2518d",
+  "raw_response_digest": "8a3c41b5ba37af408eb881591ef8c7bbfd05aca53e360bdc36a141c40ff2518d",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVGhlIHByb3RlY3RlZCBkaXJlY3RlZCB0eXBlZCByZWxhdGlvbiBBIC0+IEIgd2l0aCByZWxhdGlvbiB0eXBlIFwic3VwcG9ydHNcIiBoYWQgbXVsdGlwbGljaXR5IDIgYmVmb3JlIGFuZCBtdWx0aXBsaWNpdHkgMSBhZnRlci4gVW5kZXIgdGhlIG11bHRpc2V0LWV4YWN0IG11bHRpcGxpY2l0eSBwb2xpY3ksIHJlbW92aW5nIG9uZSBvY2N1cnJlbmNlIHZpb2xhdGVzIHRoZSBwcm90ZWN0ZWQgcmVsYXRpb24uIn0=",
+  "stderr_digest": "816cbd2031449051d16438dc9870f6dfb2418488bb2c7d440fb3ae1d9d7321dd",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNToxNy40Njk0MjlaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-004",
+      "run_index": 2,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-004\\run-02",
+      "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "f82d8e39340347bb00a8d8303a3fa098b3c07fa3bae45e231e9a0d75efe207bf",
+  "recorded_at": "2026-09-04T13:25:21.810396Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The protected directed typed relation A -> B with relation type \\\"supports\\\" had multiplicity 2 before and multiplicity 1 after. Under the multiset-exact multiplicity policy, removing one occurrence violates the protected relation.\"}",
+  "stderr": "2026-09-04T13:25:17.469429Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+    "challenge_id": "prf-004",
+    "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+    "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "8a3c41b5ba37af408eb881591ef8c7bbfd05aca53e360bdc36a141c40ff2518d",
+    "invocation_digest": "f82d8e39340347bb00a8d8303a3fa098b3c07fa3bae45e231e9a0d75efe207bf",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The protected directed typed relation A -> B with relation type \"supports\" had multiplicity 2 before and multiplicity 1 after. Under the multiset-exact multiplicity policy, removing one occurrence violates the protected relation.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The protected directed typed relation A -> B with relation type \"supports\" had multiplicity 2 before and multiplicity 1 after. Under the multiset-exact multiplicity policy, removing one occurrence violates the protected relation."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

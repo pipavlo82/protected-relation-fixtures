@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "c2b9e072a108b34b5ce759d5cd3b7c65f4848f701804f38ff51e963034cd79d5",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "47bb88609c469406ad336ce2b3873c272a4faa30c4efd2994fb55982d72d3eff",
+  "invocation_digest": "01c65b898b3995edb7e69124f0e3ce707aa7fc0a3e98c483416beee8eb6b3985",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "After canonical identity-alias and relation-type normalization, both states represent the same directed set-collapsed relation: alice --owns--> document-A.",
+  "evidence": []
+}

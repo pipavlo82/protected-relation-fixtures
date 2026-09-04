@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "outcome": {
+      "enum": ["PRESERVED", "VIOLATED", "UNVERIFIABLE"]
+    },
+    "reason_detail": {
+      "type": "string"
+    }
+  },
+  "required": ["outcome", "reason_detail"]
+}

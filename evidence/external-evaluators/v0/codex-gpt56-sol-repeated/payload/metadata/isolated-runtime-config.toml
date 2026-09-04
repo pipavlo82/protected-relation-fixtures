@@ -1,0 +1,22 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+approval_policy = "never"
+
+[features]
+apps = false
+browser_use = false
+browser_use_external = false
+code_mode = false
+code_mode_host = false
+computer_use = false
+hooks = false
+image_generation = false
+in_app_browser = false
+memories = false
+multi_agent = false
+plugins = false
+remote_plugin = false
+shell_tool = false
+skill_search = false
+standalone_web_search = false
+unified_exec = false

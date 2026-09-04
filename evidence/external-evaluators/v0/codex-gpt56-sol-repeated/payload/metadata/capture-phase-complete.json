@@ -1,0 +1,9 @@
+{
+  "schema": "prf-codex-gpt56-capture-phase.v0",
+  "capture_complete": true,
+  "scoring_started": false,
+  "scheduled_observations": 60,
+  "attempted_observations": 60,
+  "captured_observations": 60,
+  "completed_at": "2026-09-04T13:28:36.255167Z"
+}

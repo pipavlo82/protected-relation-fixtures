@@ -1,0 +1,64 @@
+{
+  "schema": "prf-codex-gpt56-repeated-evidence-record.v0",
+  "benchmark": "Protected Relation Fixtures",
+  "version": "v0",
+  "authority": {
+    "starting_canonical_main": "4062457fdf85547a944027e45d7662dcf97d4d0e",
+    "frozen_v0_commit": "98ccba804c725777e155ad2f1a07bae49754376b",
+    "frozen_v0_tree": "c2449cb3a52e60c4f93e3c8a3a35c086c47f2d63",
+    "external_adapter_commit": "cf39a37d66222522368e719e3910c27a3eab31dd",
+    "evaluator_output_schema_sha256": "60c3c89bf2ae7d5d406c4449da5e3de728cd37c9ab3749038b7da30193a33fff",
+    "response_schema_sha256": "a8557965c090cb8e6d1a4dbc0e2b7cd44832e1b16dd2021d63a92729aaab0a7a"
+  },
+  "evaluator": {
+    "provider": "openai-codex-cli",
+    "cli_version": "0.153.2",
+    "executable": "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "high",
+    "configuration_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3",
+    "session_mode": "EPHEMERAL_FRESH_PROCESS",
+    "semantic_retries": 0
+  },
+  "methodology": {
+    "coordinator_supplied_semantic_judgments": false,
+    "standalone_child_process_per_observation": true,
+    "scheduled_observations": 60,
+    "runs_per_challenge": 10,
+    "capture_before_scoring": true,
+    "oracle_leakage_status": "PASS",
+    "child_filesystem_shell_web_mcp_capability": "NO_CAPABILITY",
+    "isolated_cwd_contains_prf_repository": false,
+    "historical_model_results_exposed_to_children": false
+  },
+  "payload_inventory": {
+    "files": 753,
+    "bytes": 1611446,
+    "sha256": "adf00df460db9ea8efcb0ad69a4285a1eefb617dda86a4d8b5c6537aed4b7353"
+  },
+  "capture": {
+    "raw_capture_inventory_sha256": "4c722858c486bb6bc7a3a9d5b5fc18a98dca98e939eb1810199bf1ed31f8b424",
+    "capture_summary_sha256": "84c7b5e010767f4b12409856ec224b8b154affd9d5fa707ecb832359c77ccf30",
+    "oracle_leakage_check_sha256": "96ad53e6a8ab7b6f071c8bd6eeefcb93654dea3bdedaec4a8704a156ff018991",
+    "isolation_declaration_sha256": "b3f77cb9c9d16795fd11506b67b4e1cf61a60d444d4391d368927d586f2074e6"
+  },
+  "derived": {
+    "repeated_run_matrix_sha256": "aaf5dd6a2d43fa2cf96d1b1df33466e752ea693c2688efa8caf3b0d087cce186",
+    "stability_summary_sha256": "78e2aea27c308f5db37533eb0e8fadde3ae7e291e9c137afb533448b5ee60322",
+    "cross_model_comparison_sha256": "2f77300ce833ed24683aac9e5280197607b965acebbd20f6b2492a16d9620549"
+  },
+  "results": {
+    "valid_semantic_judgments": 60,
+    "adapter_failures": 0,
+    "match": 50,
+    "unsafe_false_preservation": 0,
+    "unsafe_unverifiable_upgrade": 10,
+    "other_mismatches": 0
+  },
+  "secret_scan": {
+    "status": "PASS",
+    "credential_pattern_hits": 0,
+    "authentication_material_in_payload": false
+  },
+  "authority_boundary": "These results characterize 60 fresh blind standalone Codex Exec observations using gpt-5.6-sol with high reasoning under the frozen PRF v0 benchmark. The coordinator did not supply semantic judgments; each judgment came from a fresh isolated child execution. The results do not establish universal or deterministic Codex behavior."
+}

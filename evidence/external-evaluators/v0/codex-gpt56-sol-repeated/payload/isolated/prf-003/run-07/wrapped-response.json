@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "0b3aaffcc8df3456ca54c962717eaea77b9f68d92bd118302fb5fc9cb73f0131",
+  "challenge_id": "prf-003",
+  "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+  "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "ee5383a2e51c71a7e2283b41dba74d21ee42c8a9d5e670bedfb87919c0e25e1c",
+  "invocation_digest": "0df68552e786ef1318cfff03ae1f005d438920929caabe5b6af11877959e3464",
+  "outcome": "PRESERVED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The protected relation is scoped only to the status field and requires exact, status-preserving equivalence. Both before and after have status UNVERIFIABLE; changes to the reason field and its vocabulary are outside the declared scope.",
+  "evidence": []
+}

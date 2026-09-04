@@ -1,0 +1,1 @@
+{"outcome":"PRESERVED","reason_detail":"The protected relation is scoped only to the anchored status field and requires exact status preservation. Both before and after have status UNVERIFIABLE; changes to the reason field and its vocabulary are outside the declared scope."}

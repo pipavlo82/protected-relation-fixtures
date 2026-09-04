@@ -1,0 +1,53 @@
+{
+  "schema": "protected-relation-external-adapter-request.v0",
+  "adapter_contract_version": "v0",
+  "challenge_id": "prf-006",
+  "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+  "protected_relation_profile": {
+    "kind": "normalized_typed_relation",
+    "identity_policy": "alias-permitted",
+    "relation_type_policy": "type-normalized",
+    "multiplicity_policy": "set-collapsed",
+    "direction_policy": "directed-exact",
+    "scope": [
+      "alice",
+      "document-A"
+    ],
+    "universe": [
+      "alice",
+      "document-A"
+    ],
+    "equivalence_policy": "canonical-alias-and-type-normalization",
+    "policy_version": "v0",
+    "normalization": {
+      "identity_aliases": {
+        "acct:001": "alice",
+        "user:alice": "alice",
+        "doc:alpha": "document-A",
+        "document:A": "document-A"
+      },
+      "relation_aliases": {
+        "OWNER": "owns",
+        "owns": "owns"
+      }
+    }
+  },
+  "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluation_input": {
+    "before": {
+      "source": "acct:001",
+      "target": "doc:alpha",
+      "relation": "OWNER"
+    },
+    "after": {
+      "source": "user:alice",
+      "target": "document:A",
+      "relation": "owns"
+    }
+  }
+}

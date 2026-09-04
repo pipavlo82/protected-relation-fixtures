@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+  "response_digest": "9d9a9f784d2a818541237cf49f5aa63a29fad058ee2546cefc98c26c35f341f8",
+  "evaluator_output_digest": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+  "raw_response_digest": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVGhlIGFuY2hvcmVkIGRpcmVjdGVkIGVuZHBvaW50cyByZW1haW4gQeKGkkIsIGJ1dCB0aGUgcmVsYXRpb24gdHlwZSBjaGFuZ2VkIGZyb20gXCJvd25zXCIgdG8gXCJkZXBlbmRzX29uXCIuIFVuZGVyIHRoZSB0eXBlZC1leGFjdCBlcXVpdmFsZW5jZSBwb2xpY3ksIHRoZSBwcm90ZWN0ZWQgcmVsYXRpb24gaXMgbm90IHByZXNlcnZlZC4ifQ==",
+  "stderr_digest": "5039290a026f1cf222b136b8ea60894443b746e35741fb510435cdae8fd1dfc2",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyMzo1My40NzEzMTRaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-002",
+      "run_index": 10,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-002\\run-10",
+      "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "c9831f941f471cc0b043c7433556f77b5ebc9aae42d9442a5245498c536f64f6",
+  "recorded_at": "2026-09-04T13:23:59.933304Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The anchored directed endpoints remain A→B, but the relation type changed from \\\"owns\\\" to \\\"depends_on\\\". Under the typed-exact equivalence policy, the protected relation is not preserved.\"}",
+  "stderr": "2026-09-04T13:23:53.471314Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+    "challenge_id": "prf-002",
+    "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+    "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+    "invocation_digest": "c9831f941f471cc0b043c7433556f77b5ebc9aae42d9442a5245498c536f64f6",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The anchored directed endpoints remain A→B, but the relation type changed from \"owns\" to \"depends_on\". Under the typed-exact equivalence policy, the protected relation is not preserved.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The anchored directed endpoints remain A→B, but the relation type changed from \"owns\" to \"depends_on\". Under the typed-exact equivalence policy, the protected relation is not preserved."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

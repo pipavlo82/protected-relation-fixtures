@@ -1,0 +1,60 @@
+{
+  "schema": "prf-codex-gpt56-child-observation.v0",
+  "challenge_id": "prf-004",
+  "run_index": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "codex_cli_version": "0.153.2",
+  "codex_executable": "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+  "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-004\\run-03",
+  "prf_repository_outside_child_workspace": true,
+  "session_mode": "EPHEMERAL_FRESH_PROCESS",
+  "semantic_retry_count": 0,
+  "invocation": {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "stdin": "prompt.txt",
+    "environment_allowlisted_metadata": {
+      "CODEX_HOME": "isolated runtime home; authentication bytes excluded",
+      "NO_COLOR": "1",
+      "TERM": "dumb"
+    },
+    "timeout_seconds": 300
+  },
+  "started_at": "2026-09-04T13:25:21.815159Z",
+  "ended_at": "2026-09-04T13:25:28.430642Z",
+  "timestamps_authoritative": false,
+  "exit_code": 0,
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_failure_detail": null,
+  "semantic_payload": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The protected relation requires exact multiset multiplicity for anchored, typed, directed links. Before contained two A→B 'supports' links (L1 and L2), while after contains only one (L1), so the multiplicity is not preserved."
+  },
+  "bindings": {
+    "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+    "instruction_sha256": "59f3c12ea367276fed6d490dc2adafa110b7d5dc5f27d6d7aa9ecbdb66a04090",
+    "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+    "evaluator_output_schema_sha256": "4078d63ab0070eb39831e91c22257a51bc13265509fef10dc37351a79254b240",
+    "raw_stdout_sha256": "f209320ae376c4770e5c60e26747cdf470898f515bb48a4a27aecf6cd295acee",
+    "raw_stderr_sha256": "fb4bd80e2c4934fd4b09395e7173b5ca45ebe8cda34af9101d3ba26c36b81a52",
+    "raw_final_response_sha256": "63432fa5f7f7a7ac28028fa9373d674250d1e82044a6c285e41326f28b1e612d",
+    "semantic_payload_sha256": "63432fa5f7f7a7ac28028fa9373d674250d1e82044a6c285e41326f28b1e612d"
+  }
+}

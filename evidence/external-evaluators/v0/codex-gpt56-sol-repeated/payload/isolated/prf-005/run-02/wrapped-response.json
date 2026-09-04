@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+  "challenge_id": "prf-005",
+  "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+  "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "951cae7ed46991153f32e5c543638301b7c601cf3e166c52a19f68c82fd40aea",
+  "invocation_digest": "b04a004a26debddb4dbf9b38e5ee71cd3f7ef8e9b7813e3f025d002a9ce80aa8",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "The ordered composition T2(T1(S0)) changes the protected authorization_scope from the anchored value \"agent-A-only\" to \"agent-A-and-B\". Individual local admissibility does not preserve the declared composed semantic predicate.",
+  "evidence": []
+}
