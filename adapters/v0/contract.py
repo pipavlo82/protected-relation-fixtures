@@ -14,6 +14,7 @@ from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[2]
 REQUEST_SCHEMA_PATH = Path(__file__).with_name("request-schema.json")
+EVALUATOR_OUTPUT_SCHEMA_PATH = Path(__file__).with_name("evaluator-output-schema.json")
 RESPONSE_SCHEMA_PATH = Path(__file__).with_name("response-schema.json")
 CHALLENGE_ROOT = ROOT / "corpus" / "v0" / "challenge" / "cases"
 V0_INVENTORY_PATH = ROOT / "releases" / "v0" / "sha256-inventory.json"
@@ -36,7 +37,7 @@ ADAPTER_STATUSES = {
     "TIMEOUT",
     "EMPTY_RESPONSE",
     "MALFORMED_RESPONSE",
-    "INVALID_RESPONSE",
+    "INVALID_EVALUATOR_OUTPUT",
 }
 BANNED_REQUEST_KEYS = {
     "class",
@@ -243,10 +244,65 @@ def build_request(
     return validate_request(request)
 
 
+def validate_evaluator_output(evaluator_output: Any) -> dict[str, Any]:
+    require(isinstance(evaluator_output, dict), "evaluator output must be an object")
+    _validate_schema(evaluator_output, EVALUATOR_OUTPUT_SCHEMA_PATH, "evaluator output")
+    canonical_json_bytes(evaluator_output)
+    return evaluator_output
+
+
+def invocation_context_for(
+    request: dict[str, Any],
+    command: list[str],
+    *,
+    metadata: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    validate_request(request)
+    require(bool(command), "adapter command is empty")
+    require(all(isinstance(part, str) and part for part in command), "invalid adapter command")
+    require(metadata is None or isinstance(metadata, dict), "invalid invocation metadata")
+    context = {
+        "schema": "protected-relation-external-adapter-invocation.v0",
+        "request_digest": digest_value(request),
+        "evaluator": request["evaluator"],
+        "command": list(command),
+        "metadata": metadata or {},
+    }
+    canonical_json_bytes(context)
+    return context
+
+
+def _validate_invocation_context(request: dict[str, Any], context: Any) -> dict[str, Any]:
+    require(isinstance(context, dict), "invocation context must be an object")
+    require(
+        set(context) == {"schema", "request_digest", "evaluator", "command", "metadata"},
+        "INVALID_INVOCATION_CONTEXT_FIELDS",
+    )
+    require(
+        context["schema"] == "protected-relation-external-adapter-invocation.v0",
+        "INVALID_INVOCATION_CONTEXT_SCHEMA",
+    )
+    require(
+        context["request_digest"] == digest_value(request),
+        "EVALUATOR_OUTPUT_REPLAY_REQUEST_MISMATCH",
+    )
+    require(context["evaluator"] == request["evaluator"], "INVOCATION_EVALUATOR_IDENTITY_MISMATCH")
+    command = context["command"]
+    require(
+        isinstance(command, list) and bool(command) and all(isinstance(part, str) and part for part in command),
+        "INVALID_INVOCATION_COMMAND",
+    )
+    require(isinstance(context["metadata"], dict), "INVALID_INVOCATION_METADATA")
+    canonical_json_bytes(context)
+    return context
+
+
 def validate_response(request: dict[str, Any], response: Any) -> dict[str, Any]:
     validate_request(request)
     require(isinstance(response, dict), "response must be an object")
     _validate_schema(response, RESPONSE_SCHEMA_PATH, "response")
+    require(response["adapter_status"] == "RESPONSE_VALID", "RESPONSE_ADAPTER_STATUS_MISMATCH")
+    require(response["request_digest"] == digest_value(request), "RESPONSE_REQUEST_DIGEST_MISMATCH")
     require(response["challenge_id"] == request["challenge_id"], "RESPONSE_CHALLENGE_ID_MISMATCH")
     require(response["challenge_digest"] == request["challenge_digest"], "RESPONSE_CHALLENGE_DIGEST_MISMATCH")
     require(
@@ -264,37 +320,67 @@ def validate_response(request: dict[str, Any], response: Any) -> dict[str, Any]:
     return response
 
 
-def response_for(
+def validate_response_binding(
     request: dict[str, Any],
-    *,
-    outcome: str,
-    reason_code: str,
-    reason_detail: str | None,
-    evidence: list[dict[str, Any]],
+    response: dict[str, Any],
+    evaluator_output: dict[str, Any],
+    invocation_context: dict[str, Any],
 ) -> dict[str, Any]:
+    response = validate_response(request, response)
+    evaluator_output = validate_evaluator_output(evaluator_output)
+    invocation_context = _validate_invocation_context(request, invocation_context)
+    require(
+        response["evaluator_output_digest"] == digest_value(evaluator_output),
+        "RESPONSE_EVALUATOR_OUTPUT_DIGEST_MISMATCH",
+    )
+    require(
+        response["invocation_digest"] == digest_value(invocation_context),
+        "RESPONSE_INVOCATION_DIGEST_MISMATCH",
+    )
+    require(response["outcome"] == evaluator_output["outcome"], "RESPONSE_OUTCOME_BINDING_MISMATCH")
+    require(
+        response["reason_detail"] == evaluator_output["reason_detail"],
+        "RESPONSE_REASON_DETAIL_BINDING_MISMATCH",
+    )
+    return response
+
+
+def bind_evaluator_output(
+    request: dict[str, Any],
+    evaluator_output: dict[str, Any],
+    invocation_context: dict[str, Any],
+) -> dict[str, Any]:
+    validate_request(request)
+    evaluator_output = validate_evaluator_output(evaluator_output)
+    invocation_context = _validate_invocation_context(request, invocation_context)
     response = {
         "schema": "protected-relation-external-adapter-response.v0",
+        "adapter_status": "RESPONSE_VALID",
+        "request_digest": digest_value(request),
         "challenge_id": request["challenge_id"],
         "challenge_digest": request["challenge_digest"],
         "protected_relation_profile_digest": request["protected_relation_profile_digest"],
         "evaluator": request["evaluator"],
-        "outcome": outcome,
-        "reason_code": reason_code,
-        "reason_detail": reason_detail,
-        "evidence": evidence,
+        "evaluator_output_digest": digest_value(evaluator_output),
+        "invocation_digest": digest_value(invocation_context),
+        "outcome": evaluator_output["outcome"],
+        "reason_code": "EVALUATOR_JUDGMENT",
+        "reason_detail": evaluator_output["reason_detail"],
+        "evidence": [],
     }
-    return validate_response(request, response)
+    return validate_response_binding(request, response, evaluator_output, invocation_context)
 
 
 def _transcript(
     request: dict[str, Any],
-    command: list[str],
+    invocation_context: dict[str, Any],
     status: str,
     *,
     raw_response_bytes: bytes,
     stderr_bytes: bytes,
     exit_code: int | None,
     normalized_response: dict[str, Any] | None,
+    evaluator_output: dict[str, Any] | None,
     detail: str,
     recorded_at: str | None,
 ) -> dict[str, Any]:
@@ -305,15 +391,20 @@ def _transcript(
         "schema": "protected-relation-external-adapter-transcript.v0",
         "request_digest": digest_value(request),
         "response_digest": digest_value(normalized_response) if normalized_response is not None else None,
+        "evaluator_output_digest": digest_value(evaluator_output) if evaluator_output is not None else None,
         "raw_response_digest": digest_bytes(raw_response_bytes),
         "raw_response_base64": base64.b64encode(raw_response_bytes).decode("ascii"),
+        "stderr_digest": digest_bytes(stderr_bytes),
+        "stderr_base64": base64.b64encode(stderr_bytes).decode("ascii"),
         "evaluator": request["evaluator"],
-        "invocation": {"command": command},
+        "invocation": invocation_context,
+        "invocation_digest": digest_value(invocation_context),
         "recorded_at": recorded_at or datetime.now(timezone.utc).isoformat(),
         "timestamp_authoritative": False,
         "raw_response": raw_response,
         "stderr": stderr,
         "normalized_response": normalized_response,
+        "evaluator_output": evaluator_output,
         "adapter_status": status,
         "adapter_detail": detail,
         "exit_code": exit_code,
@@ -326,9 +417,10 @@ def run_command_adapter(
     *,
     timeout_seconds: float = 30.0,
     recorded_at: str | None = None,
+    invocation_metadata: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     validate_request(request)
-    require(bool(command), "adapter command is empty")
+    invocation_context = invocation_context_for(request, command, metadata=invocation_metadata)
     payload = canonical_json_bytes(request) + b"\n"
     try:
         process = subprocess.run(
@@ -343,24 +435,26 @@ def run_command_adapter(
         stderr = exc.stderr or b""
         return _transcript(
             request,
-            command,
+            invocation_context,
             "TIMEOUT",
             raw_response_bytes=raw,
             stderr_bytes=stderr,
             exit_code=None,
             normalized_response=None,
+            evaluator_output=None,
             detail="adapter process exceeded timeout",
             recorded_at=recorded_at,
         )
     except OSError as exc:
         return _transcript(
             request,
-            command,
+            invocation_context,
             "PROCESS_ERROR",
             raw_response_bytes=b"",
             stderr_bytes=str(exc).encode("utf-8", errors="replace"),
             exit_code=None,
             normalized_response=None,
+            evaluator_output=None,
             detail="adapter process could not start",
             recorded_at=recorded_at,
         )
@@ -371,24 +465,26 @@ def run_command_adapter(
     if process.returncode != 0:
         return _transcript(
             request,
-            command,
+            invocation_context,
             "PROCESS_ERROR",
             raw_response_bytes=raw_response_bytes,
             stderr_bytes=stderr_bytes,
             exit_code=process.returncode,
             normalized_response=None,
+            evaluator_output=None,
             detail="adapter process exited nonzero",
             recorded_at=recorded_at,
         )
     if not raw_response.strip():
         return _transcript(
             request,
-            command,
+            invocation_context,
             "EMPTY_RESPONSE",
             raw_response_bytes=raw_response_bytes,
             stderr_bytes=stderr_bytes,
             exit_code=process.returncode,
             normalized_response=None,
+            evaluator_output=None,
             detail="adapter returned no response",
             recorded_at=recorded_at,
         )
@@ -397,37 +493,41 @@ def run_command_adapter(
     except json.JSONDecodeError as exc:
         return _transcript(
             request,
-            command,
+            invocation_context,
             "MALFORMED_RESPONSE",
             raw_response_bytes=raw_response_bytes,
             stderr_bytes=stderr_bytes,
             exit_code=process.returncode,
             normalized_response=None,
+            evaluator_output=None,
             detail=f"adapter response is not JSON: {exc}",
             recorded_at=recorded_at,
         )
     try:
-        normalized = validate_response(request, parsed)
+        evaluator_output = validate_evaluator_output(parsed)
+        normalized = bind_evaluator_output(request, evaluator_output, invocation_context)
     except AdapterContractViolation as exc:
         return _transcript(
             request,
-            command,
-            "INVALID_RESPONSE",
+            invocation_context,
+            "INVALID_EVALUATOR_OUTPUT",
             raw_response_bytes=raw_response_bytes,
             stderr_bytes=stderr_bytes,
             exit_code=process.returncode,
             normalized_response=None,
+            evaluator_output=None,
             detail=str(exc),
             recorded_at=recorded_at,
         )
     return _transcript(
         request,
-        command,
+        invocation_context,
         "RESPONSE_VALID",
         raw_response_bytes=raw_response_bytes,
         stderr_bytes=stderr_bytes,
         exit_code=process.returncode,
         normalized_response=normalized,
+        evaluator_output=evaluator_output,
         detail="response validated",
         recorded_at=recorded_at,
     )

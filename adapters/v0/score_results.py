@@ -14,7 +14,7 @@ if __package__:
         digest_value,
         require,
         validate_frozen_v0_request_binding,
-        validate_response,
+        validate_response_binding,
     )
 else:
     from contract import (
@@ -23,7 +23,7 @@ else:
         digest_value,
         require,
         validate_frozen_v0_request_binding,
-        validate_response,
+        validate_response_binding,
     )
 
 
@@ -109,7 +109,22 @@ def score_results(
             adapter_failures[status] += 1
             details.append({"challenge_id": challenge_id, "adapter_status": status, "classification": None})
             continue
-        response = validate_response(request, transcript.get("normalized_response"))
+        evaluator_output = transcript.get("evaluator_output")
+        invocation = transcript.get("invocation")
+        response = validate_response_binding(
+            request,
+            transcript.get("normalized_response"),
+            evaluator_output,
+            invocation,
+        )
+        require(
+            transcript.get("evaluator_output_digest") == digest_value(evaluator_output),
+            "transcript evaluator-output digest mismatch",
+        )
+        require(
+            transcript.get("invocation_digest") == digest_value(invocation),
+            "transcript invocation digest mismatch",
+        )
         require(transcript.get("response_digest") == digest_value(response), "transcript response digest mismatch")
         expected = oracle["results"][challenge_id]["semantic_outcome"]
         classification = classify(expected, response["outcome"])

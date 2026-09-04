@@ -12,9 +12,12 @@ import unittest
 from adapters.v0.contract import (
     AdapterContractViolation,
     CHALLENGE_ROOT,
+    bind_evaluator_output,
     build_request,
     digest_value,
+    invocation_context_for,
     run_command_adapter,
+    validate_evaluator_output,
     validate_request,
     validate_response,
 )
@@ -43,8 +46,19 @@ class ExternalAdapterContractTests(unittest.TestCase):
         ]
         cls.request_by_id = {request["challenge_id"]: request for request in cls.requests}
 
+    def _context(self, request: dict[str, object]) -> dict[str, object]:
+        return invocation_context_for(
+            request,
+            ["test-evaluator", request["challenge_id"]],
+            metadata={"invocation_id": f"test-{request['challenge_id']}"},
+        )
+
+    def _semantic(self, outcome: str, detail: str = "Evaluator explanation.") -> dict[str, str]:
+        return {"outcome": outcome, "reason_detail": detail}
+
     def _response(self, challenge_id: str = "prf-001") -> dict[str, object]:
-        return evaluate(self.request_by_id[challenge_id])
+        request = self.request_by_id[challenge_id]
+        return bind_evaluator_output(request, evaluate(request), self._context(request))
 
     def _run_python(self, request: dict[str, object], source: str, timeout: float = 5.0) -> dict[str, object]:
         return run_command_adapter(
@@ -52,7 +66,12 @@ class ExternalAdapterContractTests(unittest.TestCase):
             [sys.executable, "-c", source],
             timeout_seconds=timeout,
             recorded_at="2026-09-04T00:00:00+00:00",
+            invocation_metadata={"invocation_id": f"test-{request['challenge_id']}"},
         )
+
+    def _run_output(self, request: dict[str, object], output: object) -> dict[str, object]:
+        source = f"import json; print(json.dumps({output!r}))"
+        return self._run_python(request, source)
 
     def _reference_transcripts(self) -> list[dict[str, object]]:
         adapter = str(ROOT / "adapters" / "v0" / "reference_adapter.py")
@@ -62,6 +81,7 @@ class ExternalAdapterContractTests(unittest.TestCase):
                 [sys.executable, adapter],
                 timeout_seconds=5.0,
                 recorded_at="2026-09-04T00:00:00+00:00",
+                invocation_metadata={"invocation_id": f"reference-{request['challenge_id']}"},
             )
             for request in self.requests
         ]
@@ -74,8 +94,12 @@ class ExternalAdapterContractTests(unittest.TestCase):
         self.assertEqual(report["classifications"]["MATCH"], 6)
         self.assertEqual(sum(report["classifications"].values()), 6)
         self.assertEqual(report["classifications"]["UNSAFE_FALSE_PRESERVATION"], 0)
-        self.assertEqual(report["classification_rates"]["UNSAFE_FALSE_PRESERVATION"], 0.0)
         self.assertEqual(report["adapter_failures"], {})
+
+    def test_reference_adapter_emits_only_minimal_semantic_payload(self) -> None:
+        for request in self.requests:
+            with self.subTest(challenge_id=request["challenge_id"]):
+                self.assertEqual(set(evaluate(request)), {"outcome", "reason_detail"})
 
     def test_reference_adapter_source_does_not_read_scorer_or_oracle(self) -> None:
         source = (ROOT / "adapters/v0/reference_adapter.py").read_text(encoding="utf-8").lower()
@@ -90,6 +114,11 @@ class ExternalAdapterContractTests(unittest.TestCase):
         self.assertNotIn("UNSAFE_FALSE_PRESERVATION", serialized)
         self.assertNotIn("UNSAFE_UNVERIFIABLE_UPGRADE", serialized)
 
+    def test_evaluator_output_schema_exposes_no_benchmark_owned_fields(self) -> None:
+        schema = json.loads((ROOT / "adapters/v0/evaluator-output-schema.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(schema["properties"]), {"outcome", "reason_detail"})
+        self.assertEqual(set(schema["required"]), {"outcome", "reason_detail"})
+
     def test_request_with_expected_field_is_rejected(self) -> None:
         request = dict(self.requests[0])
         request["expected"] = "VIOLATED"
@@ -98,9 +127,7 @@ class ExternalAdapterContractTests(unittest.TestCase):
 
     def test_request_with_nested_oracle_derived_label_is_rejected(self) -> None:
         request = json.loads(json.dumps(self.requests[0]))
-        request["execution_metadata"] = {
-            "invocation_id": "oracle says violated",
-        }
+        request["execution_metadata"] = {"invocation_id": "oracle says violated"}
         with self.assertRaisesRegex(AdapterContractViolation, "ORACLE_LEAKAGE"):
             validate_request(request)
 
@@ -130,60 +157,88 @@ class ExternalAdapterContractTests(unittest.TestCase):
         with self.assertRaisesRegex(AdapterContractViolation, "PROTECTED_RELATION_PROFILE_DIGEST_MISMATCH"):
             validate_request(request)
 
-    def test_response_challenge_digest_mismatch_is_rejected(self) -> None:
-        response = self._response()
-        response["challenge_digest"] = "f" * 64
-        with self.assertRaisesRegex(AdapterContractViolation, "RESPONSE_CHALLENGE_DIGEST_MISMATCH"):
-            validate_response(self.requests[0], response)
+    def test_valid_violated_minimal_output_becomes_bound_envelope(self) -> None:
+        transcript = self._run_output(self.requests[0], self._semantic("VIOLATED"))
+        self.assertEqual(transcript["adapter_status"], "RESPONSE_VALID")
+        self.assertEqual(transcript["normalized_response"]["outcome"], "VIOLATED")
 
-    def test_response_profile_digest_mismatch_is_rejected(self) -> None:
-        response = self._response()
-        response["protected_relation_profile_digest"] = "f" * 64
-        with self.assertRaisesRegex(AdapterContractViolation, "RESPONSE_PROTECTED_RELATION_DIGEST_MISMATCH"):
-            validate_response(self.requests[0], response)
+    def test_valid_preserved_minimal_output_becomes_bound_envelope(self) -> None:
+        transcript = self._run_output(self.requests[0], self._semantic("PRESERVED"))
+        self.assertEqual(transcript["adapter_status"], "RESPONSE_VALID")
+        self.assertEqual(transcript["normalized_response"]["outcome"], "PRESERVED")
 
-    def test_unknown_outcome_is_rejected(self) -> None:
-        response = self._response()
-        response["outcome"] = "UNKNOWN"
-        with self.assertRaisesRegex(AdapterContractViolation, "response schema violation"):
-            validate_response(self.requests[0], response)
+    def test_valid_unverifiable_is_semantic_outcome_not_adapter_failure(self) -> None:
+        transcript = self._run_output(self.requests[0], self._semantic("UNVERIFIABLE", "Insufficient facts."))
+        self.assertEqual(transcript["adapter_status"], "RESPONSE_VALID")
+        self.assertEqual(transcript["evaluator_output"]["outcome"], "UNVERIFIABLE")
+        self.assertEqual(transcript["normalized_response"]["outcome"], "UNVERIFIABLE")
+
+    def test_wrapper_copies_exact_request_challenge_and_profile_digests(self) -> None:
+        request = self.requests[0]
+        response = bind_evaluator_output(request, self._semantic("VIOLATED"), self._context(request))
+        self.assertEqual(response["challenge_digest"], request["challenge_digest"])
+        self.assertEqual(
+            response["protected_relation_profile_digest"],
+            request["protected_relation_profile_digest"],
+        )
+        self.assertEqual(response["request_digest"], digest_value(request))
+
+    def test_model_supplies_no_digest_or_identity_fields(self) -> None:
+        output = evaluate(self.requests[0])
+        forbidden = {"challenge_digest", "protected_relation_profile_digest", "request_digest", "evaluator"}
+        self.assertTrue(forbidden.isdisjoint(output))
+
+    def test_model_provided_fake_digest_is_rejected_as_undeclared(self) -> None:
+        output = self._semantic("VIOLATED")
+        output["challenge_digest"] = "f" * 64
+        with self.assertRaisesRegex(AdapterContractViolation, "evaluator output schema violation"):
+            validate_evaluator_output(output)
+
+    def test_non_string_reason_detail_is_protocol_failure(self) -> None:
+        transcript = self._run_output(self.requests[0], {"outcome": "VIOLATED", "reason_detail": None})
+        self.assertEqual(transcript["adapter_status"], "INVALID_EVALUATOR_OUTPUT")
+        self.assertIsNone(transcript["normalized_response"])
+
+    def test_unknown_outcome_is_protocol_failure(self) -> None:
+        transcript = self._run_output(self.requests[0], self._semantic("UNKNOWN"))
+        self.assertEqual(transcript["adapter_status"], "INVALID_EVALUATOR_OUTPUT")
+        self.assertIsNone(transcript["normalized_response"])
 
     def test_benchmark_mismatch_class_cannot_be_semantic_outcome(self) -> None:
-        response = self._response()
-        response["outcome"] = "UNSAFE_FALSE_PRESERVATION"
-        with self.assertRaisesRegex(AdapterContractViolation, "response schema violation"):
-            validate_response(self.requests[0], response)
+        transcript = self._run_output(self.requests[0], self._semantic("UNSAFE_FALSE_PRESERVATION"))
+        self.assertEqual(transcript["adapter_status"], "INVALID_EVALUATOR_OUTPUT")
+        self.assertIsNone(transcript["normalized_response"])
 
     def test_malformed_json_is_adapter_failure_not_semantic_outcome(self) -> None:
         transcript = self._run_python(self.requests[0], "print('not-json')")
         self.assertEqual(transcript["adapter_status"], "MALFORMED_RESPONSE")
-        self.assertIsNone(transcript["normalized_response"])
+        self.assertIsNone(transcript["evaluator_output"])
 
     def test_nonzero_exit_is_adapter_failure_not_preserved(self) -> None:
         transcript = self._run_python(self.requests[0], "raise RuntimeError('boom')")
         self.assertEqual(transcript["adapter_status"], "PROCESS_ERROR")
-        self.assertIsNone(transcript["normalized_response"])
+        self.assertIsNone(transcript["evaluator_output"])
 
     def test_timeout_is_adapter_failure_not_preserved(self) -> None:
         transcript = self._run_python(self.requests[0], "import time; time.sleep(2)", timeout=0.05)
         self.assertEqual(transcript["adapter_status"], "TIMEOUT")
-        self.assertIsNone(transcript["normalized_response"])
+        self.assertIsNone(transcript["evaluator_output"])
 
     def test_empty_response_is_adapter_failure_not_preserved(self) -> None:
         transcript = self._run_python(self.requests[0], "pass")
         self.assertEqual(transcript["adapter_status"], "EMPTY_RESPONSE")
-        self.assertIsNone(transcript["normalized_response"])
+        self.assertIsNone(transcript["evaluator_output"])
 
     def test_unsupported_challenge_cannot_be_upgraded_to_preserved(self) -> None:
         request = json.loads(json.dumps(self.requests[0]))
         request["challenge_id"] = "prf-999"
-        response = json.loads(json.dumps(self._response()))
-        response["challenge_id"] = "prf-999"
+        context = self._context(request)
         with self.assertRaisesRegex(AdapterContractViolation, "UNSUPPORTED_CHALLENGE_UPGRADED"):
-            validate_response(request, response)
+            bind_evaluator_output(request, self._semantic("PRESERVED"), context)
         unsupported = evaluate(request)
         self.assertEqual(unsupported["outcome"], "UNVERIFIABLE")
-        self.assertEqual(unsupported["reason_code"], "UNSUPPORTED_CHALLENGE_CLASS")
+        response = bind_evaluator_output(request, unsupported, context)
+        self.assertEqual(response["outcome"], "UNVERIFIABLE")
 
     def test_scorer_rejects_noncanonical_oracle_identity(self) -> None:
         transcripts = self._reference_transcripts()
@@ -218,10 +273,25 @@ class ExternalAdapterContractTests(unittest.TestCase):
         with self.assertRaisesRegex(AdapterContractViolation, "REQUEST_EVALUATION_INPUT_MISMATCH"):
             score_results([request], [transcript])
 
-    def test_response_replay_against_different_challenge_is_rejected(self) -> None:
-        response = self._response("prf-001")
-        with self.assertRaisesRegex(AdapterContractViolation, "RESPONSE_CHALLENGE_ID_MISMATCH"):
-            validate_response(self.request_by_id["prf-002"], response)
+    def test_captured_output_cannot_be_replayed_against_different_request(self) -> None:
+        request0 = self.request_by_id["prf-001"]
+        request1 = self.request_by_id["prf-002"]
+        captured_output = self._semantic("VIOLATED")
+        original_context = self._context(request0)
+        with self.assertRaisesRegex(AdapterContractViolation, "EVALUATOR_OUTPUT_REPLAY_REQUEST_MISMATCH"):
+            bind_evaluator_output(request1, captured_output, original_context)
+
+    def test_response_challenge_digest_mismatch_is_rejected(self) -> None:
+        response = self._response()
+        response["challenge_digest"] = "f" * 64
+        with self.assertRaisesRegex(AdapterContractViolation, "RESPONSE_CHALLENGE_DIGEST_MISMATCH"):
+            validate_response(self.requests[0], response)
+
+    def test_response_profile_digest_mismatch_is_rejected(self) -> None:
+        response = self._response()
+        response["protected_relation_profile_digest"] = "f" * 64
+        with self.assertRaisesRegex(AdapterContractViolation, "RESPONSE_PROTECTED_RELATION_DIGEST_MISMATCH"):
+            validate_response(self.requests[0], response)
 
     def test_adapter_failure_is_scored_separately(self) -> None:
         request = self.requests[0]
@@ -243,28 +313,25 @@ class ExternalAdapterContractTests(unittest.TestCase):
         }
         self.assertEqual({pair: classify(*pair) for pair in expected}, expected)
 
-    def test_transcript_binds_request_response_and_marks_timestamp_non_authoritative(self) -> None:
+    def test_transcript_binds_request_output_invocation_and_response(self) -> None:
         transcript = self._reference_transcripts()[0]
         self.assertEqual(transcript["request_digest"], digest_value(self.requests[0]))
         self.assertEqual(transcript["response_digest"], digest_value(transcript["normalized_response"]))
+        self.assertEqual(transcript["evaluator_output_digest"], digest_value(transcript["evaluator_output"]))
+        self.assertEqual(transcript["invocation_digest"], digest_value(transcript["invocation"]))
+        self.assertEqual(transcript["invocation"]["request_digest"], digest_value(self.requests[0]))
         raw = transcript["raw_response"].encode("utf-8")
         self.assertEqual(transcript["raw_response_digest"], hashlib.sha256(raw).hexdigest())
+        stderr = transcript["stderr"].encode("utf-8")
+        self.assertEqual(transcript["stderr_digest"], hashlib.sha256(stderr).hexdigest())
         self.assertFalse(transcript["timestamp_authoritative"])
 
     def test_every_frozen_inventory_path_matches_immutable_v0_tag(self) -> None:
         tag_commit = subprocess.run(
-            ["git", "rev-parse", "v0^{commit}"],
-            cwd=ROOT,
-            check=True,
-            capture_output=True,
-            text=True,
+            ["git", "rev-parse", "v0^{commit}"], cwd=ROOT, check=True, capture_output=True, text=True
         ).stdout.strip()
         tag_tree = subprocess.run(
-            ["git", "rev-parse", "v0^{tree}"],
-            cwd=ROOT,
-            check=True,
-            capture_output=True,
-            text=True,
+            ["git", "rev-parse", "v0^{tree}"], cwd=ROOT, check=True, capture_output=True, text=True
         ).stdout.strip()
         self.assertEqual(tag_commit, V0_COMMIT)
         self.assertEqual(tag_tree, V0_TREE)
@@ -274,10 +341,7 @@ class ExternalAdapterContractTests(unittest.TestCase):
         for entry in inventory["entries"]:
             with self.subTest(path=entry["path"]):
                 tag_bytes = subprocess.run(
-                    ["git", "show", f"v0:{entry['path']}"],
-                    cwd=ROOT,
-                    check=True,
-                    capture_output=True,
+                    ["git", "show", f"v0:{entry['path']}"], cwd=ROOT, check=True, capture_output=True
                 ).stdout
                 current = (ROOT / entry["path"]).read_bytes()
                 self.assertEqual(current, tag_bytes)

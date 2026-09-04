@@ -6,10 +6,14 @@
   "additionalProperties": false,
   "required": [
     "schema",
+    "adapter_status",
+    "request_digest",
     "challenge_id",
     "challenge_digest",
     "protected_relation_profile_digest",
     "evaluator",
+    "evaluator_output_digest",
+    "invocation_digest",
     "outcome",
     "reason_code",
     "reason_detail",
@@ -18,6 +22,12 @@
   "properties": {
     "schema": {
       "const": "protected-relation-external-adapter-response.v0"
+    },
+    "adapter_status": {
+      "const": "RESPONSE_VALID"
+    },
+    "request_digest": {
+      "$ref": "#/$defs/sha256"
     },
     "challenge_id": {
       "type": "string",
@@ -32,15 +42,20 @@
     "evaluator": {
       "$ref": "#/$defs/evaluator"
     },
+    "evaluator_output_digest": {
+      "$ref": "#/$defs/sha256"
+    },
+    "invocation_digest": {
+      "$ref": "#/$defs/sha256"
+    },
     "outcome": {
       "enum": ["PRESERVED", "VIOLATED", "UNVERIFIABLE"]
     },
     "reason_code": {
-      "type": "string",
-      "pattern": "^[A-Z][A-Z0-9_]*$"
+      "const": "EVALUATOR_JUDGMENT"
     },
     "reason_detail": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "evidence": {
       "type": "array",

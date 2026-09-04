@@ -39,26 +39,51 @@ The builder fails closed if answer-bearing fields are copied into a challenge or
 request. Challenge identifiers must have the opaque form `prf-NNN` and must not
 encode an answer class.
 
-## 3. Response
+## 3. Evaluator output and bound response
 
-`adapters/v0/response-schema.json` defines the response. An evaluator returns
-exactly one semantic outcome:
+The external evaluator has one responsibility: return the minimal semantic
+payload defined by `adapters/v0/evaluator-output-schema.json`:
+
+```json
+{
+  "outcome": "PRESERVED | VIOLATED | UNVERIFIABLE",
+  "reason_detail": "human-readable semantic explanation"
+}
+```
+
+These are the only evaluator-owned fields. The evaluator does not copy or
+construct challenge, request, relation-profile, evaluator-identity,
+configuration, transcript, invocation, or response digests. It does not return
+a benchmark classification, oracle identity, adapter status, or normative
+reason code.
+
+`adapters/v0/response-schema.json` defines the full benchmark-bound response.
+After validating the minimal payload, the deterministic wrapper constructs that
+envelope. It copies the challenge and evaluator identity from the validated
+request, computes the request, evaluator-output, and invocation digests, binds
+the invocation to that exact request digest, sets `adapter_status` to
+`RESPONSE_VALID`, and derives the reason code `EVALUATOR_JUDGMENT`. It preserves
+the evaluator's outcome and explanation exactly and adds no invented semantic
+evidence.
+
+The permitted semantic outcomes are:
 
 ```text
 PRESERVED | VIOLATED | UNVERIFIABLE
 ```
 
-The response echoes the challenge digest, protected-relation profile digest,
-and evaluator identity. It includes a reason code, optional reason detail, and
-opaque evidence items. It contains no benchmark correctness label or mismatch
-classification. A response content digest is recorded outside the response in
-the execution transcript, avoiding self-reference.
+The model never echoes the protected-relation digest, but relation substitution
+remains impossible through the contract: the benchmark supplies and validates
+the profile and the wrapper copies its digest from the same request into the
+response. The response content digest is recorded outside the response in the
+execution transcript, avoiding self-reference.
 
-Unknown outcomes, malformed JSON, empty output, nonzero exit, timeout, binding
-mismatch, and evaluator exceptions are adapter/conformance failures. They are
-not semantic preservation and are not silently converted to `UNVERIFIABLE`.
-When an evaluator can execute but cannot justify a semantic conclusion, it must
-return a well-formed `UNVERIFIABLE` response with an explicit reason.
+Unknown outcomes, undeclared evaluator-output members, non-string explanation,
+malformed JSON, empty output, nonzero exit, timeout, binding mismatch, and
+evaluator exceptions are adapter/conformance failures. They are not semantic
+preservation and are not silently converted to `UNVERIFIABLE`. A well-formed
+minimal payload whose outcome is `UNVERIFIABLE` is instead a valid semantic
+judgment and reaches the scorer unchanged.
 
 ## 4. Process protocol
 
@@ -66,22 +91,31 @@ The generic command protocol is:
 
 ```text
 stdin:  one JSON request followed by LF
-stdout: one JSON response
-exit 0: response available for schema and binding validation
+stdout: one minimal evaluator semantic payload
+exit 0: evaluator output available for schema validation and deterministic wrapping
 nonzero: adapter execution failure
 ```
 
 `adapters/v0/run_adapter.py` accepts a command as an argument vector; it does not
-invoke a shell or require a network. External adapters may use network or model
-APIs, but scoring begins only after their response is captured and validated.
+invoke a shell or require a network. The runner captures raw stdout before
+validating the minimal payload, creates the bound response through the common
+wrapper, validates it, and records both forms in the transcript. External
+adapters may use network or model APIs, but scoring begins only after output is
+captured and validated.
 
 ## 5. Transcript binding
 
-Every command run produces a transcript containing the request digest, raw and
-normalized response digests, evaluator identity, command vector, non-authority
-timestamp, an exact base64 carrier and SHA-256 for raw stdout, a UTF-8 display
-form, stderr, normalized response, process exit code, and a separate adapter
-execution status.
+Every command run produces a transcript containing the request digest, exact
+validated evaluator output and digest where available, invocation context and
+digest, raw and normalized response digests, evaluator identity, command
+vector, non-authority timestamp, an exact base64 carrier and SHA-256 for raw
+stdout, a UTF-8 display form, stderr, normalized response, process exit code,
+and a separate adapter execution status.
+
+The wrapper-owned invocation context includes the exact request digest. A
+captured evaluator output cannot be bound to another request using its original
+invocation context; that attempt fails explicitly as replay. This is request
+binding, not a claim that a nondeterministic evaluator will repeat its judgment.
 
 A transcript binds what was returned under a declared evaluator identity and
 configuration. It does not automatically prove that an LLM or other
@@ -114,13 +148,16 @@ the request digest, profile, and evaluation input must match the exact challenge
 bytes named by the pinned inventory. A request cannot preserve a frozen digest
 while substituting different semantic input.
 
-## 7. Reference adapter
+## 7. Reference evaluator
 
-The deterministic reference adapter supports the six frozen challenge
+The deterministic reference evaluator supports the six frozen challenge
 identifiers and implements only their public, declared semantic rules. It reads
-only a validated blind request. It does not read or import the oracle or scorer.
-An unsupported challenge or protected relation profile returns `UNVERIFIABLE`
-with an explicit reason; insufficient semantic input also fails closed.
+only a validated blind request and emits the same two-field minimal semantic
+payload required from every external evaluator. The common wrapper, not the
+reference evaluator, constructs its full response envelope. It does not read or
+import the oracle or scorer. An unsupported challenge or protected relation
+profile returns `UNVERIFIABLE` with an explicit explanation; insufficient
+semantic input also fails closed.
 
 ## 8. Non-goals
 
