@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under anchored exact neighborhood identity for A, with relation type and direction ignored and multiplicity set-collapsed, the before-neighborhood is {B,C,D,E,F,G} while the after-neighborhood is {B,C,D,H,I,J}. The sets differ: E, F, and G were removed, and H, I, and J were added."}

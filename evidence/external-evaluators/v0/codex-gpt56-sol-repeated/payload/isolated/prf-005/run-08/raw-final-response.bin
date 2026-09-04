@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"The ordered composition T2(T1(S0)) changes the protected authorization_scope from \"agent-A-only\" to \"agent-A-and-B\", so the declared protected predicate is not preserved, regardless of each transform being locally admissible."}

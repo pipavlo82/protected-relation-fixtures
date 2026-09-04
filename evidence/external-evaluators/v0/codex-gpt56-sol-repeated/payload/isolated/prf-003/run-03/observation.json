@@ -1,0 +1,60 @@
+{
+  "schema": "prf-codex-gpt56-child-observation.v0",
+  "challenge_id": "prf-003",
+  "run_index": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "codex_cli_version": "0.153.2",
+  "codex_executable": "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+  "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-003\\run-03",
+  "prf_repository_outside_child_workspace": true,
+  "session_mode": "EPHEMERAL_FRESH_PROCESS",
+  "semantic_retry_count": 0,
+  "invocation": {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "stdin": "prompt.txt",
+    "environment_allowlisted_metadata": {
+      "CODEX_HOME": "isolated runtime home; authentication bytes excluded",
+      "NO_COLOR": "1",
+      "TERM": "dumb"
+    },
+    "timeout_seconds": 300
+  },
+  "started_at": "2026-09-04T13:24:13.848575Z",
+  "ended_at": "2026-09-04T13:24:21.121969Z",
+  "timestamps_authoritative": false,
+  "exit_code": 0,
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_failure_detail": null,
+  "semantic_payload": {
+    "outcome": "PRESERVED",
+    "reason_detail": "The protected relation is scoped only to the status field with status-exact equivalence. The anchored status remains UNVERIFIABLE before and after; changes to the reason field and reason vocabulary are outside the declared protected relation."
+  },
+  "bindings": {
+    "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+    "instruction_sha256": "59f3c12ea367276fed6d490dc2adafa110b7d5dc5f27d6d7aa9ecbdb66a04090",
+    "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+    "evaluator_output_schema_sha256": "4078d63ab0070eb39831e91c22257a51bc13265509fef10dc37351a79254b240",
+    "raw_stdout_sha256": "d99aa2cf9db142b129453d465b4d65658d6eae3949bee73e3aa5ff4dc8dc9ebc",
+    "raw_stderr_sha256": "c00cdbd84f92909739339d5de0732d4be793ee2e3c4af86432b755e459c99389",
+    "raw_final_response_sha256": "24bfde77b943e98346cbb7e1e87b6cfe1d9655872e3c1d06bfb9ad31f23e47dd",
+    "semantic_payload_sha256": "24bfde77b943e98346cbb7e1e87b6cfe1d9655872e3c1d06bfb9ad31f23e47dd"
+  }
+}

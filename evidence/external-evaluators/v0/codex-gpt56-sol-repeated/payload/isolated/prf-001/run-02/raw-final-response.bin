@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under exact anchored neighborhood identity for A, with relation type and direction ignored and multiplicity set-collapsed, A's neighborhood changed from {B,C,D,E,F,G} to {B,C,D,H,I,J}; E, F, and G were removed and H, I, and J were added."}

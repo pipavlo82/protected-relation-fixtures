@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under the anchored, typed-exact, ordered-composition profile, the protected authorization_scope predicate must remain equal to \"agent-A-only\" across the composed pipeline. After T2(T1(S0)), it is \"agent-A-and-B\", so the protected relation is not preserved despite both transforms being locally admissible."}

@@ -1,0 +1,830 @@
+{
+  "schema": "prf-codex-gpt56-cross-model-comparison.v0",
+  "comparison_boundary": "Recorded fresh n=10 distributions; no universal model ranking",
+  "codex": {
+    "scheduled_observations": 60,
+    "attempted_observations": 60,
+    "captured_observations": 60,
+    "valid_semantic_observations": 60,
+    "adapter_failures": 0,
+    "adapter_status_counts": {
+      "RESPONSE_VALID": 60
+    },
+    "classification_counts": {
+      "MATCH": 50,
+      "UNSAFE_FALSE_PRESERVATION": 0,
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 10,
+      "FALSE_VIOLATION": 0,
+      "PRESERVATION_NOT_ESTABLISHED": 0,
+      "VIOLATION_NOT_ESTABLISHED": 0,
+      "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+    },
+    "security_significant_failures": 10
+  },
+  "prior_models": {
+    "qwen2.5-3b-instruct": {
+      "valid_semantic_observations": 60,
+      "adapter_failures": 0,
+      "classification_counts": {
+        "MATCH": 51,
+        "UNSAFE_FALSE_PRESERVATION": 9,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      }
+    },
+    "qwen2.5-coder-7b": {
+      "valid_semantic_observations": 60,
+      "adapter_failures": 0,
+      "classification_counts": {
+        "MATCH": 25,
+        "UNSAFE_FALSE_PRESERVATION": 21,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 2,
+        "PRESERVATION_NOT_ESTABLISHED": 3,
+        "VIOLATION_NOT_ESTABLISHED": 9,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      }
+    },
+    "llama3.1-8b": {
+      "valid_semantic_observations": 57,
+      "adapter_failures": 3,
+      "classification_counts": {
+        "MATCH": 22,
+        "UNSAFE_FALSE_PRESERVATION": 23,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 4,
+        "FALSE_VIOLATION": 1,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 3,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 4
+      }
+    }
+  },
+  "challenges": [
+    {
+      "challenge_id": "prf-001",
+      "frozen_expected_outcome": "VIOLATED",
+      "codex": {
+        "outcome_counts": {
+          "PRESERVED": 0,
+          "VIOLATED": 10,
+          "UNVERIFIABLE": 0
+        },
+        "classification_counts": {
+          "MATCH": 10,
+          "UNSAFE_FALSE_PRESERVATION": 0,
+          "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+          "FALSE_VIOLATION": 0,
+          "PRESERVATION_NOT_ESTABLISHED": 0,
+          "VIOLATION_NOT_ESTABLISHED": 0,
+          "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+        },
+        "adapter_failures": 0,
+        "modal_outcomes": [
+          "VIOLATED"
+        ],
+        "modal_outcome_share": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "pairwise_semantic_disagreement_rate": {
+          "numerator": 0,
+          "denominator": 45,
+          "decimal": 0.0
+        }
+      },
+      "prior_models": {
+        "qwen2.5-3b-instruct": {
+          "outcome_counts": {
+            "PRESERVED": 9,
+            "VIOLATED": 1,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 1,
+            "UNSAFE_FALSE_PRESERVATION": 9,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 9,
+            "denominator": 10,
+            "decimal": 0.9
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 9,
+            "denominator": 45,
+            "decimal": 0.2
+          }
+        },
+        "qwen2.5-coder-7b": {
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 4
+          },
+          "classification_counts": {
+            "MATCH": 0,
+            "UNSAFE_FALSE_PRESERVATION": 6,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 4,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 24,
+            "denominator": 45,
+            "decimal": 0.533333333333
+          }
+        },
+        "llama3.1-8b": {
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 4,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 4,
+            "UNSAFE_FALSE_PRESERVATION": 6,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 24,
+            "denominator": 45,
+            "decimal": 0.533333333333
+          }
+        }
+      }
+    },
+    {
+      "challenge_id": "prf-002",
+      "frozen_expected_outcome": "VIOLATED",
+      "codex": {
+        "outcome_counts": {
+          "PRESERVED": 0,
+          "VIOLATED": 10,
+          "UNVERIFIABLE": 0
+        },
+        "classification_counts": {
+          "MATCH": 10,
+          "UNSAFE_FALSE_PRESERVATION": 0,
+          "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+          "FALSE_VIOLATION": 0,
+          "PRESERVATION_NOT_ESTABLISHED": 0,
+          "VIOLATION_NOT_ESTABLISHED": 0,
+          "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+        },
+        "adapter_failures": 0,
+        "modal_outcomes": [
+          "VIOLATED"
+        ],
+        "modal_outcome_share": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "pairwise_semantic_disagreement_rate": {
+          "numerator": 0,
+          "denominator": 45,
+          "decimal": 0.0
+        }
+      },
+      "prior_models": {
+        "qwen2.5-3b-instruct": {
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 10,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 10,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          }
+        },
+        "qwen2.5-coder-7b": {
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 8,
+            "UNVERIFIABLE": 2
+          },
+          "classification_counts": {
+            "MATCH": 8,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 2,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 8,
+            "denominator": 10,
+            "decimal": 0.8
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 16,
+            "denominator": 45,
+            "decimal": 0.355555555556
+          }
+        },
+        "llama3.1-8b": {
+          "outcome_counts": {
+            "PRESERVED": 3,
+            "VIOLATED": 4,
+            "UNVERIFIABLE": 2
+          },
+          "classification_counts": {
+            "MATCH": 4,
+            "UNSAFE_FALSE_PRESERVATION": 3,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 2,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 1,
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 4,
+            "denominator": 9,
+            "decimal": 0.444444444444
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 26,
+            "denominator": 36,
+            "decimal": 0.722222222222
+          }
+        }
+      }
+    },
+    {
+      "challenge_id": "prf-003",
+      "frozen_expected_outcome": "UNVERIFIABLE",
+      "codex": {
+        "outcome_counts": {
+          "PRESERVED": 10,
+          "VIOLATED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "classification_counts": {
+          "MATCH": 0,
+          "UNSAFE_FALSE_PRESERVATION": 0,
+          "UNSAFE_UNVERIFIABLE_UPGRADE": 10,
+          "FALSE_VIOLATION": 0,
+          "PRESERVATION_NOT_ESTABLISHED": 0,
+          "VIOLATION_NOT_ESTABLISHED": 0,
+          "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+        },
+        "adapter_failures": 0,
+        "modal_outcomes": [
+          "PRESERVED"
+        ],
+        "modal_outcome_share": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "pairwise_semantic_disagreement_rate": {
+          "numerator": 0,
+          "denominator": 45,
+          "decimal": 0.0
+        }
+      },
+      "prior_models": {
+        "qwen2.5-3b-instruct": {
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 10
+          },
+          "classification_counts": {
+            "MATCH": 10,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "UNVERIFIABLE"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          }
+        },
+        "qwen2.5-coder-7b": {
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 10
+          },
+          "classification_counts": {
+            "MATCH": 10,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "UNVERIFIABLE"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          }
+        },
+        "llama3.1-8b": {
+          "outcome_counts": {
+            "PRESERVED": 4,
+            "VIOLATED": 4,
+            "UNVERIFIABLE": 1
+          },
+          "classification_counts": {
+            "MATCH": 1,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 4,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 4
+          },
+          "adapter_failures": 1,
+          "modal_outcomes": [
+            "PRESERVED",
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 4,
+            "denominator": 9,
+            "decimal": 0.444444444444
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 24,
+            "denominator": 36,
+            "decimal": 0.666666666667
+          }
+        }
+      }
+    },
+    {
+      "challenge_id": "prf-004",
+      "frozen_expected_outcome": "VIOLATED",
+      "codex": {
+        "outcome_counts": {
+          "PRESERVED": 0,
+          "VIOLATED": 10,
+          "UNVERIFIABLE": 0
+        },
+        "classification_counts": {
+          "MATCH": 10,
+          "UNSAFE_FALSE_PRESERVATION": 0,
+          "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+          "FALSE_VIOLATION": 0,
+          "PRESERVATION_NOT_ESTABLISHED": 0,
+          "VIOLATION_NOT_ESTABLISHED": 0,
+          "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+        },
+        "adapter_failures": 0,
+        "modal_outcomes": [
+          "VIOLATED"
+        ],
+        "modal_outcome_share": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "pairwise_semantic_disagreement_rate": {
+          "numerator": 0,
+          "denominator": 45,
+          "decimal": 0.0
+        }
+      },
+      "prior_models": {
+        "qwen2.5-3b-instruct": {
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 10,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 10,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          }
+        },
+        "qwen2.5-coder-7b": {
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 2,
+            "UNVERIFIABLE": 2
+          },
+          "classification_counts": {
+            "MATCH": 2,
+            "UNSAFE_FALSE_PRESERVATION": 6,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 2,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 28,
+            "denominator": 45,
+            "decimal": 0.622222222222
+          }
+        },
+        "llama3.1-8b": {
+          "outcome_counts": {
+            "PRESERVED": 8,
+            "VIOLATED": 2,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 2,
+            "UNSAFE_FALSE_PRESERVATION": 8,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 8,
+            "denominator": 10,
+            "decimal": 0.8
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 16,
+            "denominator": 45,
+            "decimal": 0.355555555556
+          }
+        }
+      }
+    },
+    {
+      "challenge_id": "prf-005",
+      "frozen_expected_outcome": "VIOLATED",
+      "codex": {
+        "outcome_counts": {
+          "PRESERVED": 0,
+          "VIOLATED": 10,
+          "UNVERIFIABLE": 0
+        },
+        "classification_counts": {
+          "MATCH": 10,
+          "UNSAFE_FALSE_PRESERVATION": 0,
+          "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+          "FALSE_VIOLATION": 0,
+          "PRESERVATION_NOT_ESTABLISHED": 0,
+          "VIOLATION_NOT_ESTABLISHED": 0,
+          "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+        },
+        "adapter_failures": 0,
+        "modal_outcomes": [
+          "VIOLATED"
+        ],
+        "modal_outcome_share": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "pairwise_semantic_disagreement_rate": {
+          "numerator": 0,
+          "denominator": 45,
+          "decimal": 0.0
+        }
+      },
+      "prior_models": {
+        "qwen2.5-3b-instruct": {
+          "outcome_counts": {
+            "PRESERVED": 0,
+            "VIOLATED": 10,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 10,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "VIOLATED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          }
+        },
+        "qwen2.5-coder-7b": {
+          "outcome_counts": {
+            "PRESERVED": 9,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 1
+          },
+          "classification_counts": {
+            "MATCH": 0,
+            "UNSAFE_FALSE_PRESERVATION": 9,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 1,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 9,
+            "denominator": 10,
+            "decimal": 0.9
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 9,
+            "denominator": 45,
+            "decimal": 0.2
+          }
+        },
+        "llama3.1-8b": {
+          "outcome_counts": {
+            "PRESERVED": 6,
+            "VIOLATED": 3,
+            "UNVERIFIABLE": 1
+          },
+          "classification_counts": {
+            "MATCH": 3,
+            "UNSAFE_FALSE_PRESERVATION": 6,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 1,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 6,
+            "denominator": 10,
+            "decimal": 0.6
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 27,
+            "denominator": 45,
+            "decimal": 0.6
+          }
+        }
+      }
+    },
+    {
+      "challenge_id": "prf-006",
+      "frozen_expected_outcome": "PRESERVED",
+      "codex": {
+        "outcome_counts": {
+          "PRESERVED": 10,
+          "VIOLATED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "classification_counts": {
+          "MATCH": 10,
+          "UNSAFE_FALSE_PRESERVATION": 0,
+          "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+          "FALSE_VIOLATION": 0,
+          "PRESERVATION_NOT_ESTABLISHED": 0,
+          "VIOLATION_NOT_ESTABLISHED": 0,
+          "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+        },
+        "adapter_failures": 0,
+        "modal_outcomes": [
+          "PRESERVED"
+        ],
+        "modal_outcome_share": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "pairwise_semantic_disagreement_rate": {
+          "numerator": 0,
+          "denominator": 45,
+          "decimal": 0.0
+        }
+      },
+      "prior_models": {
+        "qwen2.5-3b-instruct": {
+          "outcome_counts": {
+            "PRESERVED": 10,
+            "VIOLATED": 0,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 10,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 0,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 10,
+            "denominator": 10,
+            "decimal": 1.0
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 0,
+            "denominator": 45,
+            "decimal": 0.0
+          }
+        },
+        "qwen2.5-coder-7b": {
+          "outcome_counts": {
+            "PRESERVED": 5,
+            "VIOLATED": 2,
+            "UNVERIFIABLE": 3
+          },
+          "classification_counts": {
+            "MATCH": 5,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 2,
+            "PRESERVATION_NOT_ESTABLISHED": 3,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 0,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 5,
+            "denominator": 10,
+            "decimal": 0.5
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 31,
+            "denominator": 45,
+            "decimal": 0.688888888889
+          }
+        },
+        "llama3.1-8b": {
+          "outcome_counts": {
+            "PRESERVED": 8,
+            "VIOLATED": 1,
+            "UNVERIFIABLE": 0
+          },
+          "classification_counts": {
+            "MATCH": 8,
+            "UNSAFE_FALSE_PRESERVATION": 0,
+            "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+            "FALSE_VIOLATION": 1,
+            "PRESERVATION_NOT_ESTABLISHED": 0,
+            "VIOLATION_NOT_ESTABLISHED": 0,
+            "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+          },
+          "adapter_failures": 1,
+          "modal_outcomes": [
+            "PRESERVED"
+          ],
+          "modal_outcome_share": {
+            "numerator": 8,
+            "denominator": 9,
+            "decimal": 0.888888888889
+          },
+          "pairwise_semantic_disagreement_rate": {
+            "numerator": 8,
+            "denominator": 36,
+            "decimal": 0.222222222222
+          }
+        }
+      }
+    }
+  ],
+  "codex_recurring_failures": {
+    "prf-003": {
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 10
+    }
+  },
+  "codex_only_recurring_failures": []
+}

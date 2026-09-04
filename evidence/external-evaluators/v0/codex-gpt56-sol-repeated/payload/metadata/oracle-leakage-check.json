@@ -1,0 +1,68 @@
+{
+  "schema": "prf-codex-gpt56-oracle-leakage-check.v0",
+  "status": "PASS",
+  "requests_checked": 6,
+  "answer_bearing_markers_found": 0,
+  "checks": [
+    {
+      "challenge_id": "prf-001",
+      "request_schema_validation": "PASS",
+      "frozen_request_binding": "PASS",
+      "canonical_oracle_blind_guard": "PASS",
+      "forbidden_key_hits": [],
+      "answer_bearing_text_hits": [],
+      "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+      "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79"
+    },
+    {
+      "challenge_id": "prf-002",
+      "request_schema_validation": "PASS",
+      "frozen_request_binding": "PASS",
+      "canonical_oracle_blind_guard": "PASS",
+      "forbidden_key_hits": [],
+      "answer_bearing_text_hits": [],
+      "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+      "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280"
+    },
+    {
+      "challenge_id": "prf-003",
+      "request_schema_validation": "PASS",
+      "frozen_request_binding": "PASS",
+      "canonical_oracle_blind_guard": "PASS",
+      "forbidden_key_hits": [],
+      "answer_bearing_text_hits": [],
+      "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+      "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420"
+    },
+    {
+      "challenge_id": "prf-004",
+      "request_schema_validation": "PASS",
+      "frozen_request_binding": "PASS",
+      "canonical_oracle_blind_guard": "PASS",
+      "forbidden_key_hits": [],
+      "answer_bearing_text_hits": [],
+      "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+      "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82"
+    },
+    {
+      "challenge_id": "prf-005",
+      "request_schema_validation": "PASS",
+      "frozen_request_binding": "PASS",
+      "canonical_oracle_blind_guard": "PASS",
+      "forbidden_key_hits": [],
+      "answer_bearing_text_hits": [],
+      "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+      "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c"
+    },
+    {
+      "challenge_id": "prf-006",
+      "request_schema_validation": "PASS",
+      "frozen_request_binding": "PASS",
+      "canonical_oracle_blind_guard": "PASS",
+      "forbidden_key_hits": [],
+      "answer_bearing_text_hits": [],
+      "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+      "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a06c99-cd30-7ab2-85b0-b2bac29747ec"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"outcome\":\"VIOLATED\",\"reason_detail\":\"Under the anchored, typed-exact, ordered-composition profile, the composed pipeline must preserve the protected authorization_scope predicate. It changed from \\\"agent-A-only\\\" in S0 to \\\"agent-A-and-B\\\" in S2. The local admissibility of T1 and T2 does not establish composition-safe preservation.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":10763,"cached_input_tokens":8576,"cache_write_input_tokens":0,"output_tokens":85,"reasoning_output_tokens":0}}

@@ -331,7 +331,8 @@ def validate_git_authority(root: Path) -> None:
     require(_git(root, "rev-parse", "v0^{tree}") == V0_TREE, "FROZEN_V0_TREE_CHANGED")
     protected = [
         "corpus/v0", "releases/v0", "adapters/v0", "spec/external-adapter-contract-v0.md",
-        "evidence/external-evaluators/v0",
+        "evidence/external-evaluators/v0/first-runs",
+        "evidence/external-evaluators/v0/repeated-runs",
     ]
     completed = subprocess.run(
         ["git", "diff", "--quiet", STARTING_MAIN, "--", *protected], cwd=root,

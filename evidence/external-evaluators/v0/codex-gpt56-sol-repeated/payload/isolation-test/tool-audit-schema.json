@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "exec_like_tools": {"type": "array", "items": {"type": "string"}},
+    "read_like_tools": {"type": "array", "items": {"type": "string"}},
+    "outside_access": {"enum": ["ACCESSIBLE", "DENIED", "NO_CAPABILITY"]}
+  },
+  "required": ["exec_like_tools", "read_like_tools", "outside_access"]
+}

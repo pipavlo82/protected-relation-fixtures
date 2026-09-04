@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under the ordered composition T2(T1(S0)), the anchored protected predicate requires authorization_scope to remain exactly \"agent-A-only\". The resulting state S2 has authorization_scope \"agent-A-and-B\", so the composed transformation does not preserve the declared relation, regardless of each step's local admissibility."}

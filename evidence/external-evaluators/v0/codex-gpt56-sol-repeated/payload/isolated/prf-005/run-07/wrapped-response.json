@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+  "challenge_id": "prf-005",
+  "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+  "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "ca4ea86031b38cee771ad51a438089a2b6d7b86bbc646073d7161c16289c88de",
+  "invocation_digest": "118fdff6ba7f5b8dd771a5953599f1e2d81ab12de78fef5414f5451a6ef0cc57",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "Under the anchored, typed-exact, ordered-composition profile, the protected authorization_scope predicate must remain equal to \"agent-A-only\" across the composed pipeline. After T2(T1(S0)), it is \"agent-A-and-B\", so the protected relation is not preserved despite both transforms being locally admissible.",
+  "evidence": []
+}

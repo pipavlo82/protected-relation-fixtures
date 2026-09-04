@@ -1,0 +1,1882 @@
+{
+  "schema": "prf-codex-gpt56-repeated-run-matrix.v0",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "fresh_observation_policy": "10 new observations per challenge; historical runs excluded",
+  "challenges": [
+    {
+      "challenge_id": "prf-001",
+      "protected_relation": "exact_neighborhood_identity",
+      "frozen_expected_outcome": "VIOLATED",
+      "scheduled_observations": 10,
+      "valid_semantic_observations": 10,
+      "adapter_failures": 0,
+      "adapter_status_counts": {
+        "RESPONSE_VALID": 10
+      },
+      "outcome_counts": {
+        "PRESERVED": 0,
+        "VIOLATED": 10,
+        "UNVERIFIABLE": 0
+      },
+      "classification_counts": {
+        "MATCH": 10,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      },
+      "classification_rates_scheduled": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "classification_rates_valid": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "unsafe_observed_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "conditional_valid_unsafe_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "modal_outcomes": [
+        "VIOLATED"
+      ],
+      "modal_outcome_share": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "nonmodal_valid_judgment_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "pairwise_semantic_disagreement_rate": {
+        "numerator": 0,
+        "denominator": 45,
+        "decimal": 0.0
+      },
+      "observations": [
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 1,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "8fa9669637cfe23fe147d65d60d7b898ff310cb504dda9027c955ca73c0e122e",
+          "raw_stderr_sha256": "cb3a0225909d6f330bf5f09e7432cb4a3389e5a15f8ed408ec2b7b374e54073a",
+          "raw_final_response_sha256": "dd431f0322ad6d4117b86deadf25b929941024bc4d4be8c53f3e5925956ca790",
+          "evaluator_output_digest": "dd431f0322ad6d4117b86deadf25b929941024bc4d4be8c53f3e5925956ca790",
+          "wrapped_response_digest": "9a74706186e19556c2296aa883b74505e27d1aeacf6d68cf98034fcd199d66cf",
+          "invocation_context_digest": "3f8b2022c0de54625c79d92b33c990c314e440d527b2ac5f62b72eeb72ba56d2"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 2,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "23f182cf22d70a650d31fc4ceaff2ff71cee59c1b1bf887601b24c5050bb3f11",
+          "raw_stderr_sha256": "5a9d197be9740affac34e5b1d117a14ef0c3f9258a719ea2fc5dbf573f045db3",
+          "raw_final_response_sha256": "c4a1d8b9d9b0cdff57726c8021d2c5afe19e83967b5241a851a3caa7a5e0d4e0",
+          "evaluator_output_digest": "c4a1d8b9d9b0cdff57726c8021d2c5afe19e83967b5241a851a3caa7a5e0d4e0",
+          "wrapped_response_digest": "9e8290d06e9f294e3ae110ee99515af4ca2d8dac944ae5b83defd85ebc7e9cc0",
+          "invocation_context_digest": "0ddf4c5e131392dc44727a21d9d8e31fd2a806c071b711030a39aa6b89a782d3"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 3,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "79040b036ef188ed2cb3de0f9b2ef7e95fc9f0eb4a14c030e4763539a6122fc5",
+          "raw_stderr_sha256": "91f82582d43cfe3860c621826e5144fc6c7d86658599781590d136e8626c4a0f",
+          "raw_final_response_sha256": "a6c0064069f98d6e72acf17dbe116624ba27e423e8152fc733541739d7483b3a",
+          "evaluator_output_digest": "a6c0064069f98d6e72acf17dbe116624ba27e423e8152fc733541739d7483b3a",
+          "wrapped_response_digest": "515a14b6126e4bbc58b03ac18ef3126d7f163868d7794981fe5b1884a4e7a885",
+          "invocation_context_digest": "705f2952cefa53ec44f4cd67f00a5179a507e0b739b30194671c944d55e70ece"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 4,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "7d0fc6937c73ca46c84308ddd11e096273b4484976ba13f2a752d603f83abb39",
+          "raw_stderr_sha256": "a00966e73af379aff920a1b607ce216a755823fb7a2bac56a634e0d3d846cd10",
+          "raw_final_response_sha256": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+          "evaluator_output_digest": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+          "wrapped_response_digest": "3d23493ba26d94bbede7bbcb99a1a1ecb0cbaa6769ed60218e6c35d89994d001",
+          "invocation_context_digest": "469ce77134c676072aaee860b5aa5b68e6dd0771a908b3f149b7994d84e37020"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 5,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "e2d93bea48d53cc88c5173297ea6d8c40c8d654034bd090207dc50a94c1ae811",
+          "raw_stderr_sha256": "e7f7e341ef382a0b258076036fdca7efbfd5a6b94c029f3490d0d94b02d31434",
+          "raw_final_response_sha256": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+          "evaluator_output_digest": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+          "wrapped_response_digest": "344526dfff5717a6005316da68a27e4c775c3193e77bd97905e613b316753d21",
+          "invocation_context_digest": "d0615d1a4aecbc667a69dfdc45fecc7517cbbb7af906211dc682b8fa0bffba67"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 6,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "b03afd84c66d1e336fc9ef7a4c2a64f33b3116824cc1c438c1b9d69ef7f3dc53",
+          "raw_stderr_sha256": "ebd707c0f24de3093366ddb31c0a5abe09be3fecde251c44ddfa0f93b50e0214",
+          "raw_final_response_sha256": "50364dca7571d3f193368b6198e44c227f9e34fc6b7fed62a87698fecfc12f5c",
+          "evaluator_output_digest": "50364dca7571d3f193368b6198e44c227f9e34fc6b7fed62a87698fecfc12f5c",
+          "wrapped_response_digest": "1efc0f0640ba5e4f64d07fa67aa381a1f454b51725faf0acdcb9df3b2b592988",
+          "invocation_context_digest": "b05c2f9109fb369aad0dac8885b2dcd6305ce429dec9d82347dbc72cf7b9c82e"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 7,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "81c8fb4510e093557d1fdaef13525c8d23d385fdf0aed8b4ccc90207ef05243d",
+          "raw_stderr_sha256": "e37403aa7572604608cae256d439dc1bc2294212589c9370dabe0f206dd388de",
+          "raw_final_response_sha256": "278c45a06f1d2773580e36c53fe2f44e89b374b458c4a419fec95381163175d5",
+          "evaluator_output_digest": "278c45a06f1d2773580e36c53fe2f44e89b374b458c4a419fec95381163175d5",
+          "wrapped_response_digest": "7a142c2183dda7e18004ab0ae3528e08e75250b4172556c9e2af284bb37e8595",
+          "invocation_context_digest": "4555a76d61481b867531b5441d0c96656c7510356621ca56e132c1901d6dc3c5"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 8,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "90a7193bc5e92ecb0dc6b5835bf5116cb243047fe4126bd7e9f2c032c1e67ddb",
+          "raw_stderr_sha256": "0f0bffd10e53aa5103a0a2a4c2a8530577fce54912f00774f4b679c0392b2a02",
+          "raw_final_response_sha256": "3c0d52f76fd6ec10d2886e22409d20ef4ba46ec8e6413e6b19345865ae913877",
+          "evaluator_output_digest": "3c0d52f76fd6ec10d2886e22409d20ef4ba46ec8e6413e6b19345865ae913877",
+          "wrapped_response_digest": "173fdc489f988667888d401366170c05a599477fae6078fdaeb45bc6e3da6ff0",
+          "invocation_context_digest": "f08853ee20bba40f8be86d5769e0b3ce780e257ae8da07b63953dbbd88932896"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 9,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "85491138378f74cd6bae3db174ebd1ffdef03d71787215e863dff01b505b528f",
+          "raw_stderr_sha256": "f91ad346f3f815128bbb5efacc07d9e281140517a9aa957eb604637a61e4446b",
+          "raw_final_response_sha256": "c0324cdc2d121c113c4914b99b15c6b10b5b65be2d20ec9a62ba998a7e931d44",
+          "evaluator_output_digest": "c0324cdc2d121c113c4914b99b15c6b10b5b65be2d20ec9a62ba998a7e931d44",
+          "wrapped_response_digest": "d23984b551b3464d79d63b0ac97af36e887bad87699ae39e1d730fce52bce11d",
+          "invocation_context_digest": "4d26337f9e9ebc1cde8677e96e75afde4eba32c5c4fbc651f20b052ee9ef2f6c"
+        },
+        {
+          "challenge_id": "prf-001",
+          "protected_relation": "exact_neighborhood_identity",
+          "run_index": 10,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "d5568d4b2e076382d6922f41dac7203a77b7a6f7d1cf78f64e8700879e5134ad",
+          "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+          "raw_stdout_sha256": "7bc864e6a2b52b51e9edf24c0b902406f890356a75971b20f5c24b28b5533eaa",
+          "raw_stderr_sha256": "2baef53a1065aea3d329cbc7dd36b0dd4f9809e2118788719206223b07722be1",
+          "raw_final_response_sha256": "6b6a0d9a65a11882b20b70e7b3dcea0cd6b32b118a90483c28ae9beb8fd1e2a5",
+          "evaluator_output_digest": "6b6a0d9a65a11882b20b70e7b3dcea0cd6b32b118a90483c28ae9beb8fd1e2a5",
+          "wrapped_response_digest": "e23a677652fef893da24a3bead44026542bd73eafadcbeeaec144cbcbc90463c",
+          "invocation_context_digest": "30c3b8c39a12f49c371c3c973bd31ebd42e2d0fbe4fe7d40c43cad40cbeea727"
+        }
+      ]
+    },
+    {
+      "challenge_id": "prf-002",
+      "protected_relation": "exact_typed_relation",
+      "frozen_expected_outcome": "VIOLATED",
+      "scheduled_observations": 10,
+      "valid_semantic_observations": 10,
+      "adapter_failures": 0,
+      "adapter_status_counts": {
+        "RESPONSE_VALID": 10
+      },
+      "outcome_counts": {
+        "PRESERVED": 0,
+        "VIOLATED": 10,
+        "UNVERIFIABLE": 0
+      },
+      "classification_counts": {
+        "MATCH": 10,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      },
+      "classification_rates_scheduled": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "classification_rates_valid": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "unsafe_observed_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "conditional_valid_unsafe_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "modal_outcomes": [
+        "VIOLATED"
+      ],
+      "modal_outcome_share": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "nonmodal_valid_judgment_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "pairwise_semantic_disagreement_rate": {
+        "numerator": 0,
+        "denominator": 45,
+        "decimal": 0.0
+      },
+      "observations": [
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 1,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "1bc98e9cd57d49977d6da81d63e79ed0931d44f379b97fda0c6ba4f783d66218",
+          "raw_stderr_sha256": "6dd08894f53e9d81dc59aec6c7e98d213d623a0f6caf932020f82733b96f28c5",
+          "raw_final_response_sha256": "b0837720f7fea0783afe9cd7de373b460f2ebde4c7b56b1adf9e4d715b7bd809",
+          "evaluator_output_digest": "b0837720f7fea0783afe9cd7de373b460f2ebde4c7b56b1adf9e4d715b7bd809",
+          "wrapped_response_digest": "8ab906d4a82bd122cd9c23144bcd3489704278d9997ed5828d896211ccdd098e",
+          "invocation_context_digest": "5d06d847f67c47e7db68e654924276f733a11fd403a46ad67ec3e6b8be5625a3"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 2,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "16a091d8aabebcd35d8d8de006f6c7332ce713032add865f35c604efcc98d5e6",
+          "raw_stderr_sha256": "63e89e517a42856a2efa09105e6e6dc0fabb6ab998b97c515d49689e9fc5deb0",
+          "raw_final_response_sha256": "eab1191ef9f9708c492d9100c3a9f1a44ae5fc2c831a88859ca919370bf0b32c",
+          "evaluator_output_digest": "eab1191ef9f9708c492d9100c3a9f1a44ae5fc2c831a88859ca919370bf0b32c",
+          "wrapped_response_digest": "d0b7dcaad4e74e2ca079864ce5bfc0fa5e0a9aa1f8efd1d2a6c4e08de65895c4",
+          "invocation_context_digest": "9d7a44b67e75b93bed981b5b52a05dffc36af5f8d53e4cdf8586700d4f2a23bc"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 3,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "285d119fca690bb03b3c8d279c7b8b8243dce8e9f7ae8872066277e893128fb5",
+          "raw_stderr_sha256": "c7b1c628ccc0629ecbf4e73f1d93c2724fef8bdb9881c1a96311181262d2c323",
+          "raw_final_response_sha256": "7ff0ede42a8cd8afead174c80711e7d12a625eaae3400c9488cef51b481f4cc4",
+          "evaluator_output_digest": "7ff0ede42a8cd8afead174c80711e7d12a625eaae3400c9488cef51b481f4cc4",
+          "wrapped_response_digest": "265ebdd8760c1cd41e2a4d239ead8a2b7067063a6a9c4bbed560ededfaeb4169",
+          "invocation_context_digest": "349bf051357f0a6cbce81ab9ff16e8eb7783e971d3b691327a46b18dc2b27377"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 4,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "e4a42b2f787a26937adcea80ccdd0818d872bd23149cd90a1577aeb08d1decaa",
+          "raw_stderr_sha256": "b859c00bebea29b3914ee5ec20ea347bd83f9364c02befe503e610f2dba0c204",
+          "raw_final_response_sha256": "eb0fcab04dc09df3a2228b4afbd6f61e52b190d71233e4c7d054380fb0e0ef2d",
+          "evaluator_output_digest": "eb0fcab04dc09df3a2228b4afbd6f61e52b190d71233e4c7d054380fb0e0ef2d",
+          "wrapped_response_digest": "954692365def698ccc0cc2f7e09b2f729a70c24ea0835699f093d7657fd9d925",
+          "invocation_context_digest": "9dd6bea9f245a2f0c241df133d93200dd8cdf843080dc5056a42239475d73136"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 5,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "1ad18c11f99ad3ca2b766ccf412414546997c1d4a3be2d5186d09c9f38b5649e",
+          "raw_stderr_sha256": "efd3cb325892e6a87bd804c6b0e6efae0ed9527b81644880d7453aeaeec9bbb9",
+          "raw_final_response_sha256": "b0837720f7fea0783afe9cd7de373b460f2ebde4c7b56b1adf9e4d715b7bd809",
+          "evaluator_output_digest": "b0837720f7fea0783afe9cd7de373b460f2ebde4c7b56b1adf9e4d715b7bd809",
+          "wrapped_response_digest": "e3fd61aa334f78927de0a3ded3ea13bbfac99dfa67b5617dd19ce349c93329f2",
+          "invocation_context_digest": "d1e7aaf7f914b34c7e80a130ccfafb8904e06077f0589f06e33c093289a2a68a"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 6,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "ee5e066e59d3b58306b5d027663a3ca6172410907bdc84f8f6b48e768f58864b",
+          "raw_stderr_sha256": "3210b41c74c21d1f1db7a9f789005e252be015934d79f47d0a92dc674914b656",
+          "raw_final_response_sha256": "6823b4855148ef7049e9cfe13e66ad9e7647eb53356d3db4af33e8d2a304f9fe",
+          "evaluator_output_digest": "6823b4855148ef7049e9cfe13e66ad9e7647eb53356d3db4af33e8d2a304f9fe",
+          "wrapped_response_digest": "b1c7de11a5a0179cb7bed017d086c427eed467c5250d04957a774b40d29c266f",
+          "invocation_context_digest": "6b43a6904b950f257bf0344aac6814dc6af1c9ae694c8a677f1c997b000d1b87"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 7,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "a9d173d6580ae5e8d5869c942ebb486455e24d8c28f79dfc5724987538f69926",
+          "raw_stderr_sha256": "35214838e9830d524614bcb339ef34add714a8afda5901335975c5e1e045473a",
+          "raw_final_response_sha256": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+          "evaluator_output_digest": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+          "wrapped_response_digest": "684ef8b6c186807c196abcc3b44831800db28330d1db0785c8098f3488db4d2c",
+          "invocation_context_digest": "60fd580bceb7dacfe05d46edd16614e712bb478b9896296e4706d34a2e9f4703"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 8,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "7d3d8df99c6291fc5f16265af778678e5f7a7d86e0c1d64aae7aa3e199379397",
+          "raw_stderr_sha256": "d390115b0285025253ba40af6b1d1a5fee5d61c1a72de646f9421da44b5cccc2",
+          "raw_final_response_sha256": "3fac7e280dba9758d50ca8bcd92cf1025e346fc20bfd84597233b12ff17339cf",
+          "evaluator_output_digest": "3fac7e280dba9758d50ca8bcd92cf1025e346fc20bfd84597233b12ff17339cf",
+          "wrapped_response_digest": "74f88b590a37ee825b4aeadc35f457a6936c603bd02493076c938167bafebbc9",
+          "invocation_context_digest": "ee974f8e93c076133421799a653a89d594c2cc5a2fab367e6462ad769fb5fa1b"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 9,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "66681caf1b6f1fa7b746b0302833b1a3147824bd7c471dc736063c22e474823f",
+          "raw_stderr_sha256": "0d6f5c7864536b73103b7e33eaf5ecb806209cde672efdce8930b0cd6fa2ad4e",
+          "raw_final_response_sha256": "bdd1daa84d5d2cd862476374e969411a409d8e372d12993b1d097b60d2c3afac",
+          "evaluator_output_digest": "bdd1daa84d5d2cd862476374e969411a409d8e372d12993b1d097b60d2c3afac",
+          "wrapped_response_digest": "a42232f6739e241eca68c7e5542692547a93aa0f5602600bb223747ecade6180",
+          "invocation_context_digest": "c3b3eae0e1adac0516a4af21e67ad2063aeded1f50c1595f066a89951842f236"
+        },
+        {
+          "challenge_id": "prf-002",
+          "protected_relation": "exact_typed_relation",
+          "run_index": 10,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "87d06ca03270d13162747b8058e6cd990e7f99b6a24d0a56bfe785cd32fe3c91",
+          "prompt_sha256": "772efd7657959443949594b6b1c45102292efef37a591f486aef9698783f7280",
+          "raw_stdout_sha256": "177f403696ccbeae67aa81e89def5a8fc8e291d80f4e0b7ee57e8181feba9e27",
+          "raw_stderr_sha256": "5039290a026f1cf222b136b8ea60894443b746e35741fb510435cdae8fd1dfc2",
+          "raw_final_response_sha256": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+          "evaluator_output_digest": "ad55d5d54af9c6c1e42e4f9e4fdb2a6afa26f9cd7a48f9f3f323d7b28218c3b5",
+          "wrapped_response_digest": "9d9a9f784d2a818541237cf49f5aa63a29fad058ee2546cefc98c26c35f341f8",
+          "invocation_context_digest": "c9831f941f471cc0b043c7433556f77b5ebc9aae42d9442a5245498c536f64f6"
+        }
+      ]
+    },
+    {
+      "challenge_id": "prf-003",
+      "protected_relation": "verifier_status_class",
+      "frozen_expected_outcome": "UNVERIFIABLE",
+      "scheduled_observations": 10,
+      "valid_semantic_observations": 10,
+      "adapter_failures": 0,
+      "adapter_status_counts": {
+        "RESPONSE_VALID": 10
+      },
+      "outcome_counts": {
+        "PRESERVED": 10,
+        "VIOLATED": 0,
+        "UNVERIFIABLE": 0
+      },
+      "classification_counts": {
+        "MATCH": 0,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 10,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      },
+      "classification_rates_scheduled": {
+        "MATCH": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "classification_rates_valid": {
+        "MATCH": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "unsafe_observed_rate": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "conditional_valid_unsafe_rate": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "modal_outcomes": [
+        "PRESERVED"
+      ],
+      "modal_outcome_share": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "nonmodal_valid_judgment_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "pairwise_semantic_disagreement_rate": {
+        "numerator": 0,
+        "denominator": 45,
+        "decimal": 0.0
+      },
+      "observations": [
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 1,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "e6216b8846224d3d0993c26cc7179f7fea869aa2ef4cdc941ed1955a2e0e77e2",
+          "raw_stderr_sha256": "6fab205f6891ef98c46ec203bbd7d73de5122c1cc8add6467b1343259703b676",
+          "raw_final_response_sha256": "0f89bf6751be11a92ee137b2d25108487a3623adb86c97e243d2028ea246bb00",
+          "evaluator_output_digest": "0f89bf6751be11a92ee137b2d25108487a3623adb86c97e243d2028ea246bb00",
+          "wrapped_response_digest": "04ea5055367da81e6e07247a0cf8798c2fc07e33526a3a383d18d54bcdeeb375",
+          "invocation_context_digest": "4c42438a46e03fa171d6411b9bcf3df2f1494ef96213adc6bf9fc65d44d7cfea"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 2,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "93f9bc776aa87cc60e6eb9f6ac03cd4a560ccb73eeb8fa14ba79f7eaaca7a612",
+          "raw_stderr_sha256": "fea722f03dcb87f7d3a61c7dba8958a78d92c449d3aef96f8cb8026507ab3819",
+          "raw_final_response_sha256": "afa9ae8262743cedd1a9a615fced87ba07b4803d23c554ae0cb456cbc7d7600b",
+          "evaluator_output_digest": "afa9ae8262743cedd1a9a615fced87ba07b4803d23c554ae0cb456cbc7d7600b",
+          "wrapped_response_digest": "e40cff34831a6592c1337d6e777279afec7db7583e7869b7b7bae83b49c611da",
+          "invocation_context_digest": "8e30d1c23b1e50ea55d8158d0ccc85f63b6660ce426e9763ff2b81ccb1893c56"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 3,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "d99aa2cf9db142b129453d465b4d65658d6eae3949bee73e3aa5ff4dc8dc9ebc",
+          "raw_stderr_sha256": "c00cdbd84f92909739339d5de0732d4be793ee2e3c4af86432b755e459c99389",
+          "raw_final_response_sha256": "24bfde77b943e98346cbb7e1e87b6cfe1d9655872e3c1d06bfb9ad31f23e47dd",
+          "evaluator_output_digest": "24bfde77b943e98346cbb7e1e87b6cfe1d9655872e3c1d06bfb9ad31f23e47dd",
+          "wrapped_response_digest": "2eedd758a37b18b4b112fc1dc81bc7368c821cc10486a1cb401837671c593755",
+          "invocation_context_digest": "69e41765e546f1fb8f05cbf66361c80b7ddc4dca69308371ab5031a43babf331"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 4,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "d89f93d6026f9e22d48985cb65dbb6c4275ff3ac980e5b115dd4d4234054a48f",
+          "raw_stderr_sha256": "29129fa4abe37eef1ad836c3ada2aefb2f5cd85d7061a26497d71cbc86e3c77f",
+          "raw_final_response_sha256": "31b10149ee4d8ac00132a3b8b146b962bec0c7489cc82d09aa74cc5f7f3da268",
+          "evaluator_output_digest": "31b10149ee4d8ac00132a3b8b146b962bec0c7489cc82d09aa74cc5f7f3da268",
+          "wrapped_response_digest": "418c6cd5f02d791f48d5cb23fbba9e015d7bbd7def0584304aee6e0dddd3607b",
+          "invocation_context_digest": "bca7bcc7e67edb2a2250fe1ecff82b98f9952a6303d01dbb36a5a9ee9837dba4"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 5,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "c1a243e861573562106036d1059cfef828574676559b9d75e9901fcb4a12100c",
+          "raw_stderr_sha256": "1e4909f06f424f0faf6b8e5e6506d1baea43d5a257a4ab1006be6d4607c58cfd",
+          "raw_final_response_sha256": "1372a3ea79e1e09d431691b1a2ff2e4a11e8c7c5dc31c2fe4cd5b2689b85b611",
+          "evaluator_output_digest": "1372a3ea79e1e09d431691b1a2ff2e4a11e8c7c5dc31c2fe4cd5b2689b85b611",
+          "wrapped_response_digest": "34bf3396779697a58d84795c8fd024bae172daec83e0d6413cca28c8761dc8eb",
+          "invocation_context_digest": "76b4f0ee494b05ae5be466cfaaad226ff8e31b2a84f05cd37f62878b38ba5326"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 6,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "e376233148de95b845f0272758afe1738282eaa77fc7c93f80ea7390844e7030",
+          "raw_stderr_sha256": "a9b6543864cc8f040958ac738cfbacdad8310f4abae316d8739d92f43a0e7c21",
+          "raw_final_response_sha256": "fabfdc5e7f674a282b462d950e42225e7bcd21ffa6b916b6d159895209156e48",
+          "evaluator_output_digest": "fabfdc5e7f674a282b462d950e42225e7bcd21ffa6b916b6d159895209156e48",
+          "wrapped_response_digest": "4ded93e4795c2bdc020fd8c5e22cc4b27faa60174a1b4a418d9628f39f7706dd",
+          "invocation_context_digest": "d7e6ade86a191ec791b4ac3ebff4d93db59e7fdb6f83448a787b474d6f7635fa"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 7,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "55ec07e6a11af4b2dd4254e43f5b6a3a11c5d9c0175012290239549002ab3302",
+          "raw_stderr_sha256": "99f48b218fbf16c7f955b4d711c3008d8b313ce3aed0f1c9c62827f871fed6f4",
+          "raw_final_response_sha256": "ee5383a2e51c71a7e2283b41dba74d21ee42c8a9d5e670bedfb87919c0e25e1c",
+          "evaluator_output_digest": "ee5383a2e51c71a7e2283b41dba74d21ee42c8a9d5e670bedfb87919c0e25e1c",
+          "wrapped_response_digest": "346eb838cae08b6f334c5635f5b4a8fd8bf7ccc1ceeca2841793286064569a11",
+          "invocation_context_digest": "0df68552e786ef1318cfff03ae1f005d438920929caabe5b6af11877959e3464"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 8,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "b9988f34f78f76845a46d33479dd4a3dc14ac89e99228308608f97bf617189e7",
+          "raw_stderr_sha256": "5ad921e28748cfecbbe94ce50ef6d7f4de4cad29e9f0a12728a92aec2ecf1dac",
+          "raw_final_response_sha256": "75c4c3050cdc68dd9866d4894503c9e0586735e337b4750c74255901de423dbc",
+          "evaluator_output_digest": "75c4c3050cdc68dd9866d4894503c9e0586735e337b4750c74255901de423dbc",
+          "wrapped_response_digest": "6ef2ccf95d2a00cc1a35a64b2e1ad2cf9f9ccbade61eeb62cc76ba432e129295",
+          "invocation_context_digest": "ce7615420d2ceb7ad0d4b83cbe47b2488edf615cb1008e4b44989936c338681c"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 9,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "a16f9bfbe65d455cdec791d91f95a2a5a71d5d1262057f4a2c8dc1fd24ac0419",
+          "raw_stderr_sha256": "ada11ed7733367ece58bc9d03e73fa68af3869b7ff4277d53ad328cc2ab8c484",
+          "raw_final_response_sha256": "10afaa186590562110c04e045df307c6e5fc3e9a2fddca40ee56d93da54266c2",
+          "evaluator_output_digest": "10afaa186590562110c04e045df307c6e5fc3e9a2fddca40ee56d93da54266c2",
+          "wrapped_response_digest": "63fd653fc3d659db73dd535e1806951ce991fbf241103a70b0de4ddf891437bb",
+          "invocation_context_digest": "16b65aff33d64c2ca42eff1d9488c6aa5e6b80b8f5c974f4e2e39a34be82f2f5"
+        },
+        {
+          "challenge_id": "prf-003",
+          "protected_relation": "verifier_status_class",
+          "run_index": 10,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "UNVERIFIABLE",
+          "benchmark_classification": "UNSAFE_UNVERIFIABLE_UPGRADE",
+          "request_sha256": "26b6110bb3ec8e1db2820d21707c21d31f899157892164c820cec0791054c8bb",
+          "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+          "raw_stdout_sha256": "dac72776912a8c043d418e7810d5ae13f1fe15bc97c95c15fbf4fff214dec970",
+          "raw_stderr_sha256": "0abb3f008b206ac8c5240b056edb63c2ebba6eaf8f446de1a8280d1b5e4b4d27",
+          "raw_final_response_sha256": "cfeeb1fe3508c5156222dbfa3bcf2f50ff3896ea37da4e35c85900a5b6af90ec",
+          "evaluator_output_digest": "cfeeb1fe3508c5156222dbfa3bcf2f50ff3896ea37da4e35c85900a5b6af90ec",
+          "wrapped_response_digest": "ca668494829346304f47c12695db1d513a76bb72e4f159b40cad0f371a1282a5",
+          "invocation_context_digest": "33589a8a0b7e4eaff361fa509210bc96bee44cc6c1ab6c80e79d6a033d47de02"
+        }
+      ]
+    },
+    {
+      "challenge_id": "prf-004",
+      "protected_relation": "multiplicity_sensitive_relation",
+      "frozen_expected_outcome": "VIOLATED",
+      "scheduled_observations": 10,
+      "valid_semantic_observations": 10,
+      "adapter_failures": 0,
+      "adapter_status_counts": {
+        "RESPONSE_VALID": 10
+      },
+      "outcome_counts": {
+        "PRESERVED": 0,
+        "VIOLATED": 10,
+        "UNVERIFIABLE": 0
+      },
+      "classification_counts": {
+        "MATCH": 10,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      },
+      "classification_rates_scheduled": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "classification_rates_valid": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "unsafe_observed_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "conditional_valid_unsafe_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "modal_outcomes": [
+        "VIOLATED"
+      ],
+      "modal_outcome_share": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "nonmodal_valid_judgment_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "pairwise_semantic_disagreement_rate": {
+        "numerator": 0,
+        "denominator": 45,
+        "decimal": 0.0
+      },
+      "observations": [
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 1,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "e2278ef64a7b0ea9c2a3a53787761d350d603b0487031a27a24c5b860e1e970a",
+          "raw_stderr_sha256": "089c2ec9e1e76964fbf9c2fb874d5b0f375d628b55920e41f6b4d16c0d6fda17",
+          "raw_final_response_sha256": "e44da06f2d49c394140c5e2f6b357c64209350ab59d22f23ea89f820b7430529",
+          "evaluator_output_digest": "e44da06f2d49c394140c5e2f6b357c64209350ab59d22f23ea89f820b7430529",
+          "wrapped_response_digest": "40678f291bcfd05ea7ddf50d44b98c313b338b36da2b35ba934a987b84ce6d18",
+          "invocation_context_digest": "275bdc37e84d19b60391977a8308b1ee574ab7318d24a879b0b4d62ce021c49d"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 2,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "99984e0680610a6720b29338f00d20a38baa681e7dd5ba13140b84499699eeec",
+          "raw_stderr_sha256": "816cbd2031449051d16438dc9870f6dfb2418488bb2c7d440fb3ae1d9d7321dd",
+          "raw_final_response_sha256": "8a3c41b5ba37af408eb881591ef8c7bbfd05aca53e360bdc36a141c40ff2518d",
+          "evaluator_output_digest": "8a3c41b5ba37af408eb881591ef8c7bbfd05aca53e360bdc36a141c40ff2518d",
+          "wrapped_response_digest": "9c94c3f2e769e09ff02039effe99e2660d1a2b0dc75843464a725835c1f1a378",
+          "invocation_context_digest": "f82d8e39340347bb00a8d8303a3fa098b3c07fa3bae45e231e9a0d75efe207bf"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 3,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "f209320ae376c4770e5c60e26747cdf470898f515bb48a4a27aecf6cd295acee",
+          "raw_stderr_sha256": "fb4bd80e2c4934fd4b09395e7173b5ca45ebe8cda34af9101d3ba26c36b81a52",
+          "raw_final_response_sha256": "63432fa5f7f7a7ac28028fa9373d674250d1e82044a6c285e41326f28b1e612d",
+          "evaluator_output_digest": "63432fa5f7f7a7ac28028fa9373d674250d1e82044a6c285e41326f28b1e612d",
+          "wrapped_response_digest": "026e233e743ed9a807203a844f37a18d2155b636cc5fc89b2f8a868b2b1a059e",
+          "invocation_context_digest": "417f866c1c1c3f063ec4d3ed5ef32279f8965127ac9e4cb1e65b376802a93495"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 4,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "5ba5c03a1a37eae97b801d91bbd2aaf63c3a073b19aebdafe711af171e57163c",
+          "raw_stderr_sha256": "38df8e5ec37dce13d9032d6e52a274dc8f2ab48a4332708c8a9ebeaa9dff1ce0",
+          "raw_final_response_sha256": "9041bf16f4f3a128a62d025b18b53285c387a1e54350e80777462cb926b06313",
+          "evaluator_output_digest": "9041bf16f4f3a128a62d025b18b53285c387a1e54350e80777462cb926b06313",
+          "wrapped_response_digest": "36164bfb5ec0296f48bb4d5fd2438ea25dab8f16c6315506c7ecb4a2ec165e32",
+          "invocation_context_digest": "bca12df481142eada966f50bae78af969ee297f7dcfa19617707c211ce8558f1"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 5,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "b222fb8430a974dc12b6eba3a1be2e56bde2939d7b7b8510bf0966513a435626",
+          "raw_stderr_sha256": "e3a4bfd2f7734c275bed55e49f4094be5dc2c3d7d7bd8c2c04bc11a8873ea1ae",
+          "raw_final_response_sha256": "31ae8ce0416907ffa241cc21854f4dc322d218c32ce103dd213ece0ea9418ab9",
+          "evaluator_output_digest": "31ae8ce0416907ffa241cc21854f4dc322d218c32ce103dd213ece0ea9418ab9",
+          "wrapped_response_digest": "074a3370653c76a150f405d19b15a33908890d402588bf9a1621874feb5c14d7",
+          "invocation_context_digest": "d4e17bb056bf72ef8a7a0aa140ee55514a8157232aa46f92d9fc17b180e5c728"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 6,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "4d7fbc7dd82ec28101fb1709b7646fc23490c82a1d065babbf689b91e318d412",
+          "raw_stderr_sha256": "3883562bcf9361e77e04e0cfef5c58621d811d2adda4f8971dcf018431b352aa",
+          "raw_final_response_sha256": "b6271d082cf876a29b91b0d3b53a9a99a034435fa8d0f50d691951e631d2b8e4",
+          "evaluator_output_digest": "b6271d082cf876a29b91b0d3b53a9a99a034435fa8d0f50d691951e631d2b8e4",
+          "wrapped_response_digest": "0611226b9e2e72ba6f58771bbe65996d896f8bfd33c7f5557cfa60c4920983b9",
+          "invocation_context_digest": "88aa30061c8c9acf1e0320814ea6e3e53da5687a08a974c8b51d469ae0506f4e"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 7,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "576233082208e9ab72ba21d030474c7c0143a16ddac723b8a6d5884b5a10609e",
+          "raw_stderr_sha256": "5eddee68cc90d43618eaf6109c5dcbe913744a604362a58d8cb2065899726c4d",
+          "raw_final_response_sha256": "f91c4ccd25d259ad7d21b7b50564078c4fb334ffc88376fd2d9d0067d926c1ab",
+          "evaluator_output_digest": "f91c4ccd25d259ad7d21b7b50564078c4fb334ffc88376fd2d9d0067d926c1ab",
+          "wrapped_response_digest": "edb4d7c4b1b2c945ed338e5933fc9b9a85cec4fe9bc94631fee3819cb3e64125",
+          "invocation_context_digest": "5524d45b81a948c9ac935185d50dc656c30ac0e400b3108291199718e8b1317b"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 8,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "0b19697bababedf9ae03c1cf1f39d2c0e814350f6b5f0e58098fdd28b6927818",
+          "raw_stderr_sha256": "f2481b303c69ee11a6cb0d0a92d4ced962b007dadcc0be35b7a1e7e24af19f57",
+          "raw_final_response_sha256": "adf01a888c919cd79d75f6b8fe2840cbfe09ffc2e5a7444b3d6460c3f17b80d2",
+          "evaluator_output_digest": "adf01a888c919cd79d75f6b8fe2840cbfe09ffc2e5a7444b3d6460c3f17b80d2",
+          "wrapped_response_digest": "dda273049c2d72e066307147eab414e98c9e831d0517829eb30b10c83e92758e",
+          "invocation_context_digest": "18355ed9d22adc1e513ffe199e2231195e9c1573d978d3cfb3360e13dfff056f"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 9,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "34525ac371ff00e96d3bd688d21d446d4b10cc755b207519fbe2b252fad3ff3e",
+          "raw_stderr_sha256": "e3ed3197030c5a853641013a64db55dd153441a9ec3178102de0bf243e059d64",
+          "raw_final_response_sha256": "062fd54aade9020e49d8f9709f5e61b7dcd2de718309a267affbe19ab7013a98",
+          "evaluator_output_digest": "062fd54aade9020e49d8f9709f5e61b7dcd2de718309a267affbe19ab7013a98",
+          "wrapped_response_digest": "f3f7ceb62feb32f173c42b76a80d885e23bea1ea6a8308a606815a697bc7191a",
+          "invocation_context_digest": "6159273acb48ee84417c2110191ca58a0ce9034bc47d96e08c6e2af6ddfddf2d"
+        },
+        {
+          "challenge_id": "prf-004",
+          "protected_relation": "multiplicity_sensitive_relation",
+          "run_index": 10,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "407dcbeacd8c425bd6c6ea0c23abf4d276de8859c320db55d8bda4c925c1d230",
+          "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+          "raw_stdout_sha256": "43d1d98e90250b0e5abe2b11ad762ba31c9bac37a69fedc5fffb905b13f8e671",
+          "raw_stderr_sha256": "2de5fa06391a1d35a211ab797b9e3176ea756df224f6fa5fcc724c34e21310a9",
+          "raw_final_response_sha256": "9174d24f6c6fc16ffd071a024d35634bf92eb57af28787435ba4f7d59bb53bfd",
+          "evaluator_output_digest": "9174d24f6c6fc16ffd071a024d35634bf92eb57af28787435ba4f7d59bb53bfd",
+          "wrapped_response_digest": "98fb32b373c32a6a83ea31b043a1e77f2a8e9ec739696fdc39d9e6fe437cc4e5",
+          "invocation_context_digest": "3d466c31f5f42e8dc77fe35225eb83694a800f77b097caf83396822c9b7d361b"
+        }
+      ]
+    },
+    {
+      "challenge_id": "prf-005",
+      "protected_relation": "composed_semantic_validity",
+      "frozen_expected_outcome": "VIOLATED",
+      "scheduled_observations": 10,
+      "valid_semantic_observations": 10,
+      "adapter_failures": 0,
+      "adapter_status_counts": {
+        "RESPONSE_VALID": 10
+      },
+      "outcome_counts": {
+        "PRESERVED": 0,
+        "VIOLATED": 10,
+        "UNVERIFIABLE": 0
+      },
+      "classification_counts": {
+        "MATCH": 10,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      },
+      "classification_rates_scheduled": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "classification_rates_valid": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "unsafe_observed_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "conditional_valid_unsafe_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "modal_outcomes": [
+        "VIOLATED"
+      ],
+      "modal_outcome_share": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "nonmodal_valid_judgment_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "pairwise_semantic_disagreement_rate": {
+        "numerator": 0,
+        "denominator": 45,
+        "decimal": 0.0
+      },
+      "observations": [
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 1,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "9e8ffebfc8703d1fe1cf8f2374628cbcd1d3f8661537767f15a2c9d1db94840e",
+          "raw_stderr_sha256": "34ffbebba9d735f756b9f1b39e9e109fcdf7be6de2ca1fa4a40d63a5a53f1956",
+          "raw_final_response_sha256": "a1cb75e6d19fe116653892906cdfcb64442b02628c3681ec9af7c0ca001d273f",
+          "evaluator_output_digest": "a1cb75e6d19fe116653892906cdfcb64442b02628c3681ec9af7c0ca001d273f",
+          "wrapped_response_digest": "59659924c9922ab7124782515be8517b91232fe0f1ac797586c6ec6da919cb87",
+          "invocation_context_digest": "5a64047c3e9676fc818a500c8c64fbab4e050b35501ec2767c7d403304f639bc"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 2,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "aa6d16c5da11629f715657fda474bc37129b3ee4c333cbb5fc6acfc3ba333d30",
+          "raw_stderr_sha256": "c4d407b07afd75b7e15cbbac3b0a2ef86da919a042576322a43f64ea11b67e6f",
+          "raw_final_response_sha256": "951cae7ed46991153f32e5c543638301b7c601cf3e166c52a19f68c82fd40aea",
+          "evaluator_output_digest": "951cae7ed46991153f32e5c543638301b7c601cf3e166c52a19f68c82fd40aea",
+          "wrapped_response_digest": "13d786cab7c54153b24ac7ceb899f598e775beab10d188e28558c9ce7c879adf",
+          "invocation_context_digest": "b04a004a26debddb4dbf9b38e5ee71cd3f7ef8e9b7813e3f025d002a9ce80aa8"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 3,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "3dcc0afc530cf28f3bb4861016d9c5858095fd9b3bb5fd31efcb1b38908d134a",
+          "raw_stderr_sha256": "2bd184beb71c3f65080dbed96cc6b9a10c6ec26e4f7c46020453681a6bee6158",
+          "raw_final_response_sha256": "05642a36d0c4348dfa0313607cfbe69df83ec36715dca21b75f9aaabc4a2483c",
+          "evaluator_output_digest": "05642a36d0c4348dfa0313607cfbe69df83ec36715dca21b75f9aaabc4a2483c",
+          "wrapped_response_digest": "b9bc096ee431970ae5f66a45c7ff3358e109029d20c2602d737f225c9dfd2ce1",
+          "invocation_context_digest": "fb9a468747a78be0c3d6190c6e766caf1e04017e62899a583ea68fdcb4b8850f"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 4,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "3058e07ece1ca3ff54675a780b0bcbdf6aa0289b8453ca9d48623c91ccdae9db",
+          "raw_stderr_sha256": "88709884280d94ed882866597505ced3b661bce5fb2318feac47f0c994192cdc",
+          "raw_final_response_sha256": "75117b8bcd4e113c560fdc057361adfdeaa7cff6d6a5154b9acbc13d3560f56e",
+          "evaluator_output_digest": "75117b8bcd4e113c560fdc057361adfdeaa7cff6d6a5154b9acbc13d3560f56e",
+          "wrapped_response_digest": "3e9cfa2ebffeab2681057c36b11b88cffa1cc5949db8ec1f7d299051acde56f3",
+          "invocation_context_digest": "031c5e456f08fa3d64cd099149f0d44d2f8abd4783690dc5e50f1351946313e0"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 5,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "15ce2946e327c554517e3c15767bf0102b6cbe6aaf7689a56705d4ef6414623e",
+          "raw_stderr_sha256": "0ccb7d60406637467c6e66789a349322b00085d99f5448a58417827b30ae0110",
+          "raw_final_response_sha256": "e4d331037ba99cc4f89d634333cd7f3486562c704088bc1a7dacb0859a07489e",
+          "evaluator_output_digest": "e4d331037ba99cc4f89d634333cd7f3486562c704088bc1a7dacb0859a07489e",
+          "wrapped_response_digest": "ee6a0a0f861d167d216b1bfbb66c686e54cddbcb583e64d3abe68930892e31f6",
+          "invocation_context_digest": "6c503335d727094653eabe5f132273c744cc8c9e411e5c534f57b93fba152f48"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 6,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "0b4e3a7e82e21f8670b37cc43559a05e1a1f3a198e2f03cbf5ddfe384549a789",
+          "raw_stderr_sha256": "a1adf96f66594a72846de017753f86ae09d2366c4df3f04fcf1321550717aea2",
+          "raw_final_response_sha256": "a2fef2af09efcc64ad1c10f20b352a5dcac97a7533c6ffc0f812c79f2c438b95",
+          "evaluator_output_digest": "a2fef2af09efcc64ad1c10f20b352a5dcac97a7533c6ffc0f812c79f2c438b95",
+          "wrapped_response_digest": "41d5cb111f1db51d38bcb627c5b72decbef3880d0399f07d19b55f1f23cbb3f1",
+          "invocation_context_digest": "c181cfdc7ddaaab4c9429235dccd3852a48ea35fabb22d6acf60dc4496ae0d6c"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 7,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "92aa3618c426a9be810909d99738cce1760a55be86bbcb9cb1cfabd50d056c13",
+          "raw_stderr_sha256": "9a6327b00a121040a0819e369cf701fdf46f83fd137dda402d93770cb7934363",
+          "raw_final_response_sha256": "ca4ea86031b38cee771ad51a438089a2b6d7b86bbc646073d7161c16289c88de",
+          "evaluator_output_digest": "ca4ea86031b38cee771ad51a438089a2b6d7b86bbc646073d7161c16289c88de",
+          "wrapped_response_digest": "2864e91ab303c53803bfe457b4718e585f7403925adec89c36f41e86e55552dd",
+          "invocation_context_digest": "118fdff6ba7f5b8dd771a5953599f1e2d81ab12de78fef5414f5451a6ef0cc57"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 8,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "59bfc6cd783b8a1557644b8052e8987c22e943343c5375096f3272ed68e7bb87",
+          "raw_stderr_sha256": "211f95f1a4d3701b62ad6c7c06ce5b1a371043861661be160e9916629200d4ab",
+          "raw_final_response_sha256": "e7f13ab1b069cf3719a86e09a947f1c018daef62a8080a55c11c87a55dd73fbd",
+          "evaluator_output_digest": "e7f13ab1b069cf3719a86e09a947f1c018daef62a8080a55c11c87a55dd73fbd",
+          "wrapped_response_digest": "63fbfb857ea0878e05825b96c7bbce42a64a929f0047e557d0bfc1c63054e3c0",
+          "invocation_context_digest": "bc927100bc31ed06642c76d258c426dd4f5e25a003fe13a3207143bddc1a867a"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 9,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "6ca9783f81bbf0370fc76a7fd784665dc5fc68cd10235f271c6ad02a7db25cd7",
+          "raw_stderr_sha256": "01640a4f8f661cb87740e988648c6dc0f6283e4cac5e19bd70d67f64d1eed8e2",
+          "raw_final_response_sha256": "65b91121317fd1eaef3cef24e60d8ad1db9faaba475f732fcd834fdc416a02cb",
+          "evaluator_output_digest": "65b91121317fd1eaef3cef24e60d8ad1db9faaba475f732fcd834fdc416a02cb",
+          "wrapped_response_digest": "9f90109aeff5518150aa9cf37cc1416c7f1aa19318aecf3e8ea072cc09cb84cc",
+          "invocation_context_digest": "1d13b93b8bd176e9f384a020bc2a0f838fe92d62828cfae2f0e3d39aa41cc992"
+        },
+        {
+          "challenge_id": "prf-005",
+          "protected_relation": "composed_semantic_validity",
+          "run_index": 10,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "VIOLATED",
+          "frozen_expected_outcome": "VIOLATED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+          "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+          "raw_stdout_sha256": "1756526762c01952bfd77cca09a5129af0ef906336d40e64c12f5299a83247eb",
+          "raw_stderr_sha256": "ae20f90d92a9c08ca30ee0524fe9ce787a670a78b6ab848fefefdc35ba095845",
+          "raw_final_response_sha256": "df4871f6dd18449f8658a8ff9c201b1599b5cb2451cc80bb7ced7a5c3269d44c",
+          "evaluator_output_digest": "df4871f6dd18449f8658a8ff9c201b1599b5cb2451cc80bb7ced7a5c3269d44c",
+          "wrapped_response_digest": "e26bfdc593cb5452ea09a9787c1d13e38813e0ad616761c4e2e5672a34fc2c14",
+          "invocation_context_digest": "14043e4582a044718c1a721e7b7fc5235b19fdb7b752fd1658c0c63528ef411b"
+        }
+      ]
+    },
+    {
+      "challenge_id": "prf-006",
+      "protected_relation": "normalized_typed_relation",
+      "frozen_expected_outcome": "PRESERVED",
+      "scheduled_observations": 10,
+      "valid_semantic_observations": 10,
+      "adapter_failures": 0,
+      "adapter_status_counts": {
+        "RESPONSE_VALID": 10
+      },
+      "outcome_counts": {
+        "PRESERVED": 10,
+        "VIOLATED": 0,
+        "UNVERIFIABLE": 0
+      },
+      "classification_counts": {
+        "MATCH": 10,
+        "UNSAFE_FALSE_PRESERVATION": 0,
+        "UNSAFE_UNVERIFIABLE_UPGRADE": 0,
+        "FALSE_VIOLATION": 0,
+        "PRESERVATION_NOT_ESTABLISHED": 0,
+        "VIOLATION_NOT_ESTABLISHED": 0,
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+      },
+      "classification_rates_scheduled": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "classification_rates_valid": {
+        "MATCH": {
+          "numerator": 10,
+          "denominator": 10,
+          "decimal": 1.0
+        },
+        "UNSAFE_FALSE_PRESERVATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNSAFE_UNVERIFIABLE_UPGRADE": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "FALSE_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "PRESERVATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "VIOLATION_NOT_ESTABLISHED": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        },
+        "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": {
+          "numerator": 0,
+          "denominator": 10,
+          "decimal": 0.0
+        }
+      },
+      "unsafe_observed_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "conditional_valid_unsafe_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "modal_outcomes": [
+        "PRESERVED"
+      ],
+      "modal_outcome_share": {
+        "numerator": 10,
+        "denominator": 10,
+        "decimal": 1.0
+      },
+      "nonmodal_valid_judgment_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "decimal": 0.0
+      },
+      "pairwise_semantic_disagreement_rate": {
+        "numerator": 0,
+        "denominator": 45,
+        "decimal": 0.0
+      },
+      "observations": [
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 1,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "72979af722e9d156740392f8879918efb98d30fe2131d7a6335a59789a031aa6",
+          "raw_stderr_sha256": "79a590aa6cfcc3a74cabe2ead4556890540222535c57890596d45dedef029a01",
+          "raw_final_response_sha256": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+          "evaluator_output_digest": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+          "wrapped_response_digest": "37f0547c4d36706f64b24e0c914a0bb4a08a3a05757bf7273ab0c612c9ca7133",
+          "invocation_context_digest": "c94cb3004de91f5c81d61ecf628192e2d60f92cf5e536d2ceac74a642be6d767"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 2,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "74932faf7d1c2c73212872fd9c017b3402e58817c17cd758a23d29a1bc74b95d",
+          "raw_stderr_sha256": "f4c19a8cbbbd8f2b270a262a62b548eb378da11ed10ceeab4c0da1e0fa000c19",
+          "raw_final_response_sha256": "c8481d031f6b04e47058ccadd648f5c08b1a14ecc7591899898afd252276e556",
+          "evaluator_output_digest": "c8481d031f6b04e47058ccadd648f5c08b1a14ecc7591899898afd252276e556",
+          "wrapped_response_digest": "64b6b0facf33c213dbbf89ccb9a8356a9f81b0ff407b8ed3967fc427aa136f44",
+          "invocation_context_digest": "b16a873ac80d148a6a93da1276472dfb8bd22474d5907c3bc0d629ac8bd491de"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 3,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "242c8e966a09d55732801cd4f5d86e9921d4f78fd13972fc4d3c50cd7c7e225e",
+          "raw_stderr_sha256": "23f523721d142192ec974651ef56739bcb054a19e45aca808bd7f9148d4c9f25",
+          "raw_final_response_sha256": "6b3b31b83cf765673373bbad91666b695e22654bb51752da93933b5dbc198bad",
+          "evaluator_output_digest": "6b3b31b83cf765673373bbad91666b695e22654bb51752da93933b5dbc198bad",
+          "wrapped_response_digest": "ef118940bdfdf913333c4770e99d89d22778be02fc892154306e1d267341a435",
+          "invocation_context_digest": "03b32196865e0eb40fd998c9e9b46e0ea4768f9de2702b26d3e3cc5ffa2dc438"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 4,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "f27b7fad6e54eec14b8302286ae98adca6b22d24c3f9853239ee2685fb69f356",
+          "raw_stderr_sha256": "dab1160f2471b7e07a6f80f7323e99fdd408c774082341133ea8f79849342080",
+          "raw_final_response_sha256": "e1b6b63ed7a530b8b67a51fe1af28cfc5ced33bd11a934a1226b889bd109bd0a",
+          "evaluator_output_digest": "e1b6b63ed7a530b8b67a51fe1af28cfc5ced33bd11a934a1226b889bd109bd0a",
+          "wrapped_response_digest": "81e2c8bd75f4d2aa6ee163c32dad32e09db8ecec5937615f9d5e4a95ff22006a",
+          "invocation_context_digest": "28dd2866af31cc8a7a30205470723fa3cc6ebfb88495f48726231cad701aad06"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 5,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "8b7b7cb5677d4e31835343c7437a5a986e457715167300720b8f52eeecaa90da",
+          "raw_stderr_sha256": "700cc2b60d7e04aa814ceb60510a28869bd5b357533e83067107c0220cfd41d5",
+          "raw_final_response_sha256": "37021546decbc86a329a4a442b20178d013e0818cb253e39b700bff29f15c4d6",
+          "evaluator_output_digest": "37021546decbc86a329a4a442b20178d013e0818cb253e39b700bff29f15c4d6",
+          "wrapped_response_digest": "cc6b6c26aaf16ff738c858c87da30da012f6b17665cdae6c1210f4595dec6d40",
+          "invocation_context_digest": "f822f3716be9005a4d2f5e9d980f6909a1a12abe4df4b521bf7315c0765d1bd3"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 6,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "f3a6908ef455f8e3b9d00f397819c44e3b8bfed9a0a71f0e2ec8bf6e7b12d5f7",
+          "raw_stderr_sha256": "1bbcaafbb9912e710e89ebe1644e79760854dd4a07682f0c60df3ad074a9d3c2",
+          "raw_final_response_sha256": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+          "evaluator_output_digest": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+          "wrapped_response_digest": "4d43530757adb02f9aecf00577a2d644f266471c5ff47d3ececdea75c0e05c23",
+          "invocation_context_digest": "01c92d4df051659f3c8792bda56bccc611a3a914e64e8d4d2e331b169cb9875e"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 7,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "4c7f238119c3ceac0e7bf193b9a96372a6e4adede4d42ad47ebefeaec9483dd3",
+          "raw_stderr_sha256": "eb85b8decedb54db872e8bfbfb5730a04ca93cfee86e4736463f4de44be92709",
+          "raw_final_response_sha256": "e1b6b63ed7a530b8b67a51fe1af28cfc5ced33bd11a934a1226b889bd109bd0a",
+          "evaluator_output_digest": "e1b6b63ed7a530b8b67a51fe1af28cfc5ced33bd11a934a1226b889bd109bd0a",
+          "wrapped_response_digest": "3cf46e8aef99a3d927a4232a48e8bd5a4cdf0eea23162fd1125247dd45421d4d",
+          "invocation_context_digest": "e4146bfc9989fa070b6772a361f8e3a93b5d7c5a84cc281466bc93538d94f07e"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 8,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "00bdd94d5263db2e4655a24d07dd0c8e616da273e621f61edd5a5457f6cade27",
+          "raw_stderr_sha256": "bcaf23d0b4febcff0356c7f8de4571a69ed17b7b4cbff94b49d9bbd06f2f885b",
+          "raw_final_response_sha256": "47bb88609c469406ad336ce2b3873c272a4faa30c4efd2994fb55982d72d3eff",
+          "evaluator_output_digest": "47bb88609c469406ad336ce2b3873c272a4faa30c4efd2994fb55982d72d3eff",
+          "wrapped_response_digest": "cf0f61ac9d2b4debe698aa2b6e603a0634051b1859612813e2318ab0d1ac2b32",
+          "invocation_context_digest": "01c65b898b3995edb7e69124f0e3ce707aa7fc0a3e98c483416beee8eb6b3985"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 9,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "4e82403dfe71c94f57d317a7b8f629522c01c443490dec7df6f8e724fb06cc73",
+          "raw_stderr_sha256": "8717f9a7455b283c8fc55a0be3b17ba263f5220c4a50bc19ae6ef23c6f0077b9",
+          "raw_final_response_sha256": "3ef583501fd7c0a2043a1c6c1c83293581c3f41abab9e038dd5674ad3ad92f65",
+          "evaluator_output_digest": "3ef583501fd7c0a2043a1c6c1c83293581c3f41abab9e038dd5674ad3ad92f65",
+          "wrapped_response_digest": "5fdfa5e48473c0889677a52de9edd82f363871a693abb872792d49c04bb896d0",
+          "invocation_context_digest": "19cb12074d82938889b00dc591ec779b71b8d6c640e7f908eeaa7fc235df6705"
+        },
+        {
+          "challenge_id": "prf-006",
+          "protected_relation": "normalized_typed_relation",
+          "run_index": 10,
+          "scheduled_observations": 1,
+          "adapter_status": "RESPONSE_VALID",
+          "semantic_outcome": "PRESERVED",
+          "frozen_expected_outcome": "PRESERVED",
+          "benchmark_classification": "MATCH",
+          "request_sha256": "971883508a4cda11b6a7b2f4a734f38a4ef91fc32863cc47100dc01968f4d105",
+          "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+          "raw_stdout_sha256": "de2f7749e86f8bcca2b65835c1ee199f251a2552937e6fb69c73f6774ea66ee6",
+          "raw_stderr_sha256": "29c7e04caa9acf8ffdd9291449f14dc1f13aaddc4ae70470196f083da04d82c6",
+          "raw_final_response_sha256": "47bb88609c469406ad336ce2b3873c272a4faa30c4efd2994fb55982d72d3eff",
+          "evaluator_output_digest": "47bb88609c469406ad336ce2b3873c272a4faa30c4efd2994fb55982d72d3eff",
+          "wrapped_response_digest": "26ed971615e977691b7350cbc9d8827e87f7a7721af71d5145db29b629e3650e",
+          "invocation_context_digest": "1fcc1d182e73f5a16dd2d4c26a2e671906a40fff852cfaa50ea0d4d8b57860cb"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "scheduled_observations": 60,
+    "attempted_observations": 60,
+    "captured_observations": 60,
+    "valid_semantic_observations": 60,
+    "adapter_failures": 0,
+    "adapter_status_counts": {
+      "RESPONSE_VALID": 60
+    },
+    "classification_counts": {
+      "MATCH": 50,
+      "UNSAFE_FALSE_PRESERVATION": 0,
+      "UNSAFE_UNVERIFIABLE_UPGRADE": 10,
+      "FALSE_VIOLATION": 0,
+      "PRESERVATION_NOT_ESTABLISHED": 0,
+      "VIOLATION_NOT_ESTABLISHED": 0,
+      "UNVERIFIABLE_MISCLASSIFIED_AS_VIOLATION": 0
+    },
+    "security_significant_failures": 10
+  }
+}

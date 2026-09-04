@@ -1,0 +1,36 @@
+{
+  "schema": "protected-relation-external-adapter-invocation.v0",
+  "request_digest": "c2b9e072a108b34b5ce759d5cd3b7c65f4848f701804f38ff51e963034cd79d5",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "command": [
+    "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+    "exec",
+    "--strict-config",
+    "--skip-git-repo-check",
+    "--ephemeral",
+    "--ignore-rules",
+    "--model",
+    "gpt-5.6-sol",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "--output-schema",
+    "evaluator-output-schema.json",
+    "--json",
+    "-o",
+    "raw-final-response.bin",
+    "-"
+  ],
+  "metadata": {
+    "challenge_id": "prf-006",
+    "run_index": 10,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "high",
+    "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-006\\run-10",
+    "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+    "session_mode": "EPHEMERAL_FRESH_PROCESS"
+  }
+}

@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a06c96-c6ae-7dd1-a072-452d12cf924b"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The anchored directed endpoints remain A→B, but the relation type changed from \\\"owns\\\" to \\\"depends_on\\\". Under the typed-exact equivalence policy, the protected relation is not preserved.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":10621,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":62,"reasoning_output_tokens":0}}

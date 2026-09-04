@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "c2b9e072a108b34b5ce759d5cd3b7c65f4848f701804f38ff51e963034cd79d5",
+  "response_digest": "4d43530757adb02f9aecf00577a2d644f266471c5ff47d3ececdea75c0e05c23",
+  "evaluator_output_digest": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+  "raw_response_digest": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+  "raw_response_base64": "eyJvdXRjb21lIjoiUFJFU0VSVkVEIiwicmVhc29uX2RldGFpbCI6IkFmdGVyIGFwcGx5aW5nIHRoZSBkZWNsYXJlZCBpZGVudGl0eSBhbGlhc2VzIGFuZCByZWxhdGlvbi10eXBlIG5vcm1hbGl6YXRpb24sIGJvdGggc3RhdGVzIHJlcHJlc2VudCB0aGUgc2FtZSBkaXJlY3RlZCByZWxhdGlvbjogYWxpY2Ugb3ducyBkb2N1bWVudC1BLiBTZXQtY29sbGFwc2VkIG11bHRpcGxpY2l0eSBkb2VzIG5vdCBhbHRlciB0aGlzIHJlc3VsdC4ifQ==",
+  "stderr_digest": "1bbcaafbb9912e710e89ebe1644e79760854dd4a07682f0c60df3ad074a9d3c2",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyODowMy42ODUxNzBaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "c2b9e072a108b34b5ce759d5cd3b7c65f4848f701804f38ff51e963034cd79d5",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-006",
+      "run_index": 6,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-006\\run-06",
+      "prompt_sha256": "3487aa5e56ec314e7c363ac6eb31f64318fde83365f088b3e5377ca154a4f8f3",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "01c92d4df051659f3c8792bda56bccc611a3a914e64e8d4d2e331b169cb9875e",
+  "recorded_at": "2026-09-04T13:28:08.170705Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"PRESERVED\",\"reason_detail\":\"After applying the declared identity aliases and relation-type normalization, both states represent the same directed relation: alice owns document-A. Set-collapsed multiplicity does not alter this result.\"}",
+  "stderr": "2026-09-04T13:28:03.685170Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "c2b9e072a108b34b5ce759d5cd3b7c65f4848f701804f38ff51e963034cd79d5",
+    "challenge_id": "prf-006",
+    "challenge_digest": "634d762b57b63a671460c648de136c51fbdaea9d35d6334d1dc33fa267c5150d",
+    "protected_relation_profile_digest": "5bcd9e36190ce88cde5d9b21687ff7745acc28376d6586b687b1d63673d5d9c5",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "7d13d07a42077be032ae5158de5794415a63451eefe37bc3abdf95d129a7c2c9",
+    "invocation_digest": "01c92d4df051659f3c8792bda56bccc611a3a914e64e8d4d2e331b169cb9875e",
+    "outcome": "PRESERVED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "After applying the declared identity aliases and relation-type normalization, both states represent the same directed relation: alice owns document-A. Set-collapsed multiplicity does not alter this result.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "PRESERVED",
+    "reason_detail": "After applying the declared identity aliases and relation-type normalization, both states represent the same directed relation: alice owns document-A. Set-collapsed multiplicity does not alter this result."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

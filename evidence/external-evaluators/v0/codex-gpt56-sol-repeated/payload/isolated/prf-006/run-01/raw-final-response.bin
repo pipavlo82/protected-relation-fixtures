@@ -1,0 +1,1 @@
+{"outcome":"PRESERVED","reason_detail":"After applying the declared identity aliases and relation-type normalization, both states represent the same directed relation: alice owns document-A. Set-collapsed multiplicity does not alter this result."}

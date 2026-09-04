@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+  "response_digest": "3e9cfa2ebffeab2681057c36b11b88cffa1cc5949db8ec1f7d299051acde56f3",
+  "evaluator_output_digest": "75117b8bcd4e113c560fdc057361adfdeaa7cff6d6a5154b9acbc13d3560f56e",
+  "raw_response_digest": "75117b8bcd4e113c560fdc057361adfdeaa7cff6d6a5154b9acbc13d3560f56e",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVW5kZXIgdGhlIG9yZGVyZWQgY29tcG9zaXRpb24gVDIoVDEoUzApKSwgdGhlIGFuY2hvcmVkIHByb3RlY3RlZCBwcmVkaWNhdGUgcmVxdWlyZXMgYXV0aG9yaXphdGlvbl9zY29wZSB0byByZW1haW4gZXhhY3RseSBcImFnZW50LUEtb25seVwiLiBUaGUgcmVzdWx0aW5nIHN0YXRlIFMyIGhhcyBhdXRob3JpemF0aW9uX3Njb3BlIFwiYWdlbnQtQS1hbmQtQlwiLCBzbyB0aGUgY29tcG9zZWQgdHJhbnNmb3JtYXRpb24gZG9lcyBub3QgcHJlc2VydmUgdGhlIGRlY2xhcmVkIHJlbGF0aW9uLCByZWdhcmRsZXNzIG9mIGVhY2ggc3RlcCdzIGxvY2FsIGFkbWlzc2liaWxpdHkuIn0=",
+  "stderr_digest": "88709884280d94ed882866597505ced3b661bce5fb2318feac47f0c994192cdc",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNjozOC4zMzE1MzhaICBXQVJOIHNxbHg6OnF1ZXJ5OiBzbG93IHN0YXRlbWVudDogZXhlY3V0aW9uIHRpbWUgZXhjZWVkZWQgYWxlcnQgdGhyZXNob2xkIHN1bW1hcnk9IlBSQUdNQSBhdXRvX3ZhY3V1bSA9IElOQ1JFTUVOVEFMOyDigKYiIGRiLnN0YXRlbWVudD0iXG5cblBSQUdNQSBhdXRvX3ZhY3V1bSA9IElOQ1JFTUVOVEFMOyBQUkFHTUEgam91cm5hbF9tb2RlID0gV0FMOyBQUkFHTUEgZm9yZWlnbl9rZXlzID0gT047IFBSQUdNQSBzeW5jaHJvbm91cyA9IE5PUk1BTDsgXG4iIHJvd3NfYWZmZWN0ZWQ9MCByb3dzX3JldHVybmVkPTEgZWxhcHNlZD0xLjMwODM1NzFzIGVsYXBzZWRfc2Vjcz0xLjMwODM1NzEgc2xvd190aHJlc2hvbGQ9MXMKMjAyNi0wOS0wNFQxMzoyNjozOC43MDA2NjhaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-005",
+      "run_index": 4,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-005\\run-04",
+      "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "031c5e456f08fa3d64cd099149f0d44d2f8abd4783690dc5e50f1351946313e0",
+  "recorded_at": "2026-09-04T13:26:43.654832Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"Under the ordered composition T2(T1(S0)), the anchored protected predicate requires authorization_scope to remain exactly \\\"agent-A-only\\\". The resulting state S2 has authorization_scope \\\"agent-A-and-B\\\", so the composed transformation does not preserve the declared relation, regardless of each step's local admissibility.\"}",
+  "stderr": "2026-09-04T13:26:38.331538Z  WARN sqlx::query: slow statement: execution time exceeded alert threshold summary=\"PRAGMA auto_vacuum = INCREMENTAL; …\" db.statement=\"\\n\\nPRAGMA auto_vacuum = INCREMENTAL; PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON; PRAGMA synchronous = NORMAL; \\n\" rows_affected=0 rows_returned=1 elapsed=1.3083571s elapsed_secs=1.3083571 slow_threshold=1s\n2026-09-04T13:26:38.700668Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "challenge_id": "prf-005",
+    "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+    "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "75117b8bcd4e113c560fdc057361adfdeaa7cff6d6a5154b9acbc13d3560f56e",
+    "invocation_digest": "031c5e456f08fa3d64cd099149f0d44d2f8abd4783690dc5e50f1351946313e0",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "Under the ordered composition T2(T1(S0)), the anchored protected predicate requires authorization_scope to remain exactly \"agent-A-only\". The resulting state S2 has authorization_scope \"agent-A-and-B\", so the composed transformation does not preserve the declared relation, regardless of each step's local admissibility.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "Under the ordered composition T2(T1(S0)), the anchored protected predicate requires authorization_scope to remain exactly \"agent-A-only\". The resulting state S2 has authorization_scope \"agent-A-and-B\", so the composed transformation does not preserve the declared relation, regardless of each step's local admissibility."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

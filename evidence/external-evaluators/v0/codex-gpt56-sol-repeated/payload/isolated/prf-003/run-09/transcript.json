@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "0b3aaffcc8df3456ca54c962717eaea77b9f68d92bd118302fb5fc9cb73f0131",
+  "response_digest": "63fd653fc3d659db73dd535e1806951ce991fbf241103a70b0de4ddf891437bb",
+  "evaluator_output_digest": "10afaa186590562110c04e045df307c6e5fc3e9a2fddca40ee56d93da54266c2",
+  "raw_response_digest": "10afaa186590562110c04e045df307c6e5fc3e9a2fddca40ee56d93da54266c2",
+  "raw_response_base64": "eyJvdXRjb21lIjoiUFJFU0VSVkVEIiwicmVhc29uX2RldGFpbCI6IlRoZSBwcm90ZWN0ZWQgcmVsYXRpb24gaXMgc2NvcGVkIG9ubHkgdG8gdGhlIHN0YXR1cyBmaWVsZCBhbmQgcmVxdWlyZXMgZXhhY3Qgc3RhdHVzIHByZXNlcnZhdGlvbi4gQm90aCBiZWZvcmUgYW5kIGFmdGVyIGhhdmUgc3RhdHVzIFVOVkVSSUZJQUJMRTsgY2hhbmdlcyB0byB0aGUgcmVhc29uIGZpZWxkIGFuZCBpdHMgdm9jYWJ1bGFyeSBhcmUgb3V0c2lkZSB0aGUgZGVjbGFyZWQgc2NvcGUuIn0=",
+  "stderr_digest": "ada11ed7733367ece58bc9d03e73fa68af3869b7ff4277d53ad328cc2ab8c484",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNDo1OC43NjU5MzFaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "0b3aaffcc8df3456ca54c962717eaea77b9f68d92bd118302fb5fc9cb73f0131",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-003",
+      "run_index": 9,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-003\\run-09",
+      "prompt_sha256": "7ef0590becf080bfc5cc771e273ff2388941946b7a3792f92aaa8415e10c5420",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "16b65aff33d64c2ca42eff1d9488c6aa5e6b80b8f5c974f4e2e39a34be82f2f5",
+  "recorded_at": "2026-09-04T13:25:02.844918Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"PRESERVED\",\"reason_detail\":\"The protected relation is scoped only to the status field and requires exact status preservation. Both before and after have status UNVERIFIABLE; changes to the reason field and its vocabulary are outside the declared scope.\"}",
+  "stderr": "2026-09-04T13:24:58.765931Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "0b3aaffcc8df3456ca54c962717eaea77b9f68d92bd118302fb5fc9cb73f0131",
+    "challenge_id": "prf-003",
+    "challenge_digest": "0b4d6ae1b101b249215a34c47336a48295ac5ab1acc77ae26eab7d4b93ebc227",
+    "protected_relation_profile_digest": "0995c5fb097f6729bee979daaf7c4d1ae64b181cfb270c8abbdb7118c49df59a",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "10afaa186590562110c04e045df307c6e5fc3e9a2fddca40ee56d93da54266c2",
+    "invocation_digest": "16b65aff33d64c2ca42eff1d9488c6aa5e6b80b8f5c974f4e2e39a34be82f2f5",
+    "outcome": "PRESERVED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The protected relation is scoped only to the status field and requires exact status preservation. Both before and after have status UNVERIFIABLE; changes to the reason field and its vocabulary are outside the declared scope.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "PRESERVED",
+    "reason_detail": "The protected relation is scoped only to the status field and requires exact status preservation. Both before and after have status UNVERIFIABLE; changes to the reason field and its vocabulary are outside the declared scope."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

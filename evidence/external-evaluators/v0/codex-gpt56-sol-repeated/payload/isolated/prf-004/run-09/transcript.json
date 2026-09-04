@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+  "response_digest": "f3f7ceb62feb32f173c42b76a80d885e23bea1ea6a8308a606815a697bc7191a",
+  "evaluator_output_digest": "062fd54aade9020e49d8f9709f5e61b7dcd2de718309a267affbe19ab7013a98",
+  "raw_response_digest": "062fd54aade9020e49d8f9709f5e61b7dcd2de718309a267affbe19ab7013a98",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVGhlIHByb3RlY3RlZCByZWxhdGlvbiByZXF1aXJlcyBleGFjdCBtdWx0aXNldCBtdWx0aXBsaWNpdHkuIEJlZm9yZSwgdGhlcmUgYXJlIHR3byBkaXJlY3RlZCB0eXBlZCAnc3VwcG9ydHMnIGxpbmtzIGZyb20gYW5jaG9yZWQgQSB0byBCOyBhZnRlciwgb25seSBvbmUgcmVtYWlucywgc28gbXVsdGlwbGljaXR5IGlzIG5vdCBwcmVzZXJ2ZWQuIn0=",
+  "stderr_digest": "e3ed3197030c5a853641013a64db55dd153441a9ec3178102de0bf243e059d64",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNjowMi42ODAwMzZaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-004",
+      "run_index": 9,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-004\\run-09",
+      "prompt_sha256": "903694ba8d70610677e691c3f85244d417342152209eef06fd732d72e8ddfc82",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "6159273acb48ee84417c2110191ca58a0ce9034bc47d96e08c6e2af6ddfddf2d",
+  "recorded_at": "2026-09-04T13:26:06.828295Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The protected relation requires exact multiset multiplicity. Before, there are two directed typed 'supports' links from anchored A to B; after, only one remains, so multiplicity is not preserved.\"}",
+  "stderr": "2026-09-04T13:26:02.680036Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "8335e12e53946102e4f0a20274a09d8a7066dac358de852800c717e2268afeab",
+    "challenge_id": "prf-004",
+    "challenge_digest": "aba413eff3634779f7ff3a78fb39b4018803071f3f1cba12cee81cc4cacd0407",
+    "protected_relation_profile_digest": "936a144db694d1f394317ce2a396cd49d3253d0b371c31243a4f137a5891e21e",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "062fd54aade9020e49d8f9709f5e61b7dcd2de718309a267affbe19ab7013a98",
+    "invocation_digest": "6159273acb48ee84417c2110191ca58a0ce9034bc47d96e08c6e2af6ddfddf2d",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The protected relation requires exact multiset multiplicity. Before, there are two directed typed 'supports' links from anchored A to B; after, only one remains, so multiplicity is not preserved.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The protected relation requires exact multiset multiplicity. Before, there are two directed typed 'supports' links from anchored A to B; after, only one remains, so multiplicity is not preserved."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

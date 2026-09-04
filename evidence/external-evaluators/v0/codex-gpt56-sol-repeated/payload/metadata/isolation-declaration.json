@@ -1,0 +1,15 @@
+{
+  "schema": "prf-codex-child-isolation.v0",
+  "experiment_root": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0",
+  "isolated_root": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated",
+  "prf_repository": "C:\\Users\\msi\\Documents\\Codex\\2026-08-25\\we-are-closing-the-erc-8309\\protected-relation-fixtures-codex-eval",
+  "paths_disjoint": true,
+  "git_ancestor_found": false,
+  "agents_instruction_ancestor_found": false,
+  "mcp_servers_configured": 0,
+  "filesystem_shell_web_browser_tools_disabled": true,
+  "code_mode_tool_audit_result": "NO_CAPABILITY",
+  "outside_filesystem_canary_result": "NO_CAPABILITY",
+  "session_mode": "EPHEMERAL_FRESH_PROCESS",
+  "semantic_retries": 0
+}

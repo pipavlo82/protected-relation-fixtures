@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "36faf43723f24d21b3569b14b63dcbe6118daa67b1b407b142d7f6867d9fb83c",
+  "challenge_id": "prf-002",
+  "challenge_digest": "8c55396b39c5ec65372484447ecf0d1afae5fc06c4a50056beb554e6a2f3a8c7",
+  "protected_relation_profile_digest": "985c6a68326e20f439bf9bdbd73541cfb2e467ebe8f50067bb4cf250b002d499",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "eab1191ef9f9708c492d9100c3a9f1a44ae5fc2c831a88859ca919370bf0b32c",
+  "invocation_digest": "9d7a44b67e75b93bed981b5b52a05dffc36af5f8d53e4cdf8586700d4f2a23bc",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "Under the typed-exact policy, the protected directed relation must retain its exact type. Although the anchored source A and target B are unchanged, the relation changed from \"owns\" to \"depends_on\".",
+  "evidence": []
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+  "response_digest": "e26bfdc593cb5452ea09a9787c1d13e38813e0ad616761c4e2e5672a34fc2c14",
+  "evaluator_output_digest": "df4871f6dd18449f8658a8ff9c201b1599b5cb2451cc80bb7ced7a5c3269d44c",
+  "raw_response_digest": "df4871f6dd18449f8658a8ff9c201b1599b5cb2451cc80bb7ced7a5c3269d44c",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVGhlIG9yZGVyZWQgY29tcG9zaXRpb24gVDIoVDEoUzApKSBjaGFuZ2VzIHRoZSBwcm90ZWN0ZWQgYXV0aG9yaXphdGlvbl9zY29wZSBmcm9tIFwiYWdlbnQtQS1vbmx5XCIgdG8gXCJhZ2VudC1BLWFuZC1CXCIuIExvY2FsIGFkbWlzc2liaWxpdHkgb2YgZWFjaCB0cmFuc2Zvcm0gZG9lcyBub3QgcHJlc2VydmUgdGhlIGRlY2xhcmVkIGNvbXBvc2VkIHByZWRpY2F0ZS4ifQ==",
+  "stderr_digest": "ae20f90d92a9c08ca30ee0524fe9ce787a670a78b6ab848fefefdc35ba095845",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyNzoyMi4yNTE3MzhaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-005",
+      "run_index": 10,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-005\\run-10",
+      "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "14043e4582a044718c1a721e7b7fc5235b19fdb7b752fd1658c0c63528ef411b",
+  "recorded_at": "2026-09-04T13:27:27.990472Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"The ordered composition T2(T1(S0)) changes the protected authorization_scope from \\\"agent-A-only\\\" to \\\"agent-A-and-B\\\". Local admissibility of each transform does not preserve the declared composed predicate.\"}",
+  "stderr": "2026-09-04T13:27:22.251738Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "067f0c1c775030522d2ddc09805a3228c36e9b60d432df707e6f3e49187dec37",
+    "challenge_id": "prf-005",
+    "challenge_digest": "ce1f8c477a5d202eb7869d2328165177d31c458450d39ae070b67f9f4a32fa5b",
+    "protected_relation_profile_digest": "354cc500c9b4796f9ed2fdb0f8130fae3eba45e3da8ff45c8987957e15708173",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "df4871f6dd18449f8658a8ff9c201b1599b5cb2451cc80bb7ced7a5c3269d44c",
+    "invocation_digest": "14043e4582a044718c1a721e7b7fc5235b19fdb7b752fd1658c0c63528ef411b",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "The ordered composition T2(T1(S0)) changes the protected authorization_scope from \"agent-A-only\" to \"agent-A-and-B\". Local admissibility of each transform does not preserve the declared composed predicate.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The ordered composition T2(T1(S0)) changes the protected authorization_scope from \"agent-A-only\" to \"agent-A-and-B\". Local admissibility of each transform does not preserve the declared composed predicate."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

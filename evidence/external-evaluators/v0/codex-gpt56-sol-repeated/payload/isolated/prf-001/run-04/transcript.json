@@ -1,0 +1,82 @@
+{
+  "schema": "protected-relation-external-adapter-transcript.v0",
+  "request_digest": "77a1e556a4205abf5eb0a68e6bdb5fb5f65b1e8e3715cd43d2d6391d8259ccbe",
+  "response_digest": "3d23493ba26d94bbede7bbcb99a1a1ecb0cbaa6769ed60218e6c35d89994d001",
+  "evaluator_output_digest": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+  "raw_response_digest": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+  "raw_response_base64": "eyJvdXRjb21lIjoiVklPTEFURUQiLCJyZWFzb25fZGV0YWlsIjoiVW5kZXIgYW5jaG9yZWQgZXhhY3QgbmVpZ2hib3Job29kIGlkZW50aXR5IGZvciBBLCB3aXRoIHJlbGF0aW9uIHR5cGUgYW5kIGRpcmVjdGlvbiBpZ25vcmVkIGFuZCBtdWx0aXBsaWNpdHkgc2V0LWNvbGxhcHNlZCwgdGhlIGJlZm9yZS1uZWlnaGJvcmhvb2QgaXMge0IsQyxELEUsRixHfSB3aGlsZSB0aGUgYWZ0ZXItbmVpZ2hib3Job29kIGlzIHtCLEMsRCxILEksSn0uIFRoZXNlIHNldHMgYXJlIG5vdCBleGFjdGx5IGVxdWFsOiBFLCBGLCBhbmQgRyB3ZXJlIHJlbW92ZWQsIGFuZCBILCBJLCBhbmQgSiB3ZXJlIGFkZGVkLiJ9",
+  "stderr_digest": "a00966e73af379aff920a1b607ce216a755823fb7a2bac56a634e0d3d846cd10",
+  "stderr_base64": "MjAyNi0wOS0wNFQxMzoyMjowMy4wNjU4NDZaICBXQVJOIGNvZGV4X2NvcmU6OnNoZWxsX3NuYXBzaG90OiBGYWlsZWQgdG8gY3JlYXRlIHNoZWxsIHNuYXBzaG90IGZvciBwb3dlcnNoZWxsOiBTaGVsbCBzbmFwc2hvdCBub3Qgc3VwcG9ydGVkIHlldCBmb3IgUG93ZXJTaGVsbAo=",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "invocation": {
+    "schema": "protected-relation-external-adapter-invocation.v0",
+    "request_digest": "77a1e556a4205abf5eb0a68e6bdb5fb5f65b1e8e3715cd43d2d6391d8259ccbe",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "command": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "metadata": {
+      "challenge_id": "prf-001",
+      "run_index": 4,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-001\\run-04",
+      "prompt_sha256": "544ea6c304122fce2379dface280abc2b3930ee4b52dd78c26917308003ceb79",
+      "session_mode": "EPHEMERAL_FRESH_PROCESS"
+    }
+  },
+  "invocation_digest": "469ce77134c676072aaee860b5aa5b68e6dd0771a908b3f149b7994d84e37020",
+  "recorded_at": "2026-09-04T13:22:07.806558Z",
+  "timestamp_authoritative": false,
+  "raw_response": "{\"outcome\":\"VIOLATED\",\"reason_detail\":\"Under anchored exact neighborhood identity for A, with relation type and direction ignored and multiplicity set-collapsed, the before-neighborhood is {B,C,D,E,F,G} while the after-neighborhood is {B,C,D,H,I,J}. These sets are not exactly equal: E, F, and G were removed, and H, I, and J were added.\"}",
+  "stderr": "2026-09-04T13:22:03.065846Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n",
+  "normalized_response": {
+    "schema": "protected-relation-external-adapter-response.v0",
+    "adapter_status": "RESPONSE_VALID",
+    "request_digest": "77a1e556a4205abf5eb0a68e6bdb5fb5f65b1e8e3715cd43d2d6391d8259ccbe",
+    "challenge_id": "prf-001",
+    "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+    "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+    "evaluator": {
+      "id": "openai-codex-cli",
+      "version": "0.153.2",
+      "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+    },
+    "evaluator_output_digest": "56a36c8f5556d010930d827b58f591bf2266961de26a0c6a8d25712ed40c41af",
+    "invocation_digest": "469ce77134c676072aaee860b5aa5b68e6dd0771a908b3f149b7994d84e37020",
+    "outcome": "VIOLATED",
+    "reason_code": "EVALUATOR_JUDGMENT",
+    "reason_detail": "Under anchored exact neighborhood identity for A, with relation type and direction ignored and multiplicity set-collapsed, the before-neighborhood is {B,C,D,E,F,G} while the after-neighborhood is {B,C,D,H,I,J}. These sets are not exactly equal: E, F, and G were removed, and H, I, and J were added.",
+    "evidence": []
+  },
+  "evaluator_output": {
+    "outcome": "VIOLATED",
+    "reason_detail": "Under anchored exact neighborhood identity for A, with relation type and direction ignored and multiplicity set-collapsed, the before-neighborhood is {B,C,D,E,F,G} while the after-neighborhood is {B,C,D,H,I,J}. These sets are not exactly equal: E, F, and G were removed, and H, I, and J were added."
+  },
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_detail": "standalone Codex child response captured",
+  "exit_code": 0
+}

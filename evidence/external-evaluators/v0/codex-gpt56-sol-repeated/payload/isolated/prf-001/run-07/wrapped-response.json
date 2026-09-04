@@ -1,0 +1,19 @@
+{
+  "schema": "protected-relation-external-adapter-response.v0",
+  "adapter_status": "RESPONSE_VALID",
+  "request_digest": "77a1e556a4205abf5eb0a68e6bdb5fb5f65b1e8e3715cd43d2d6391d8259ccbe",
+  "challenge_id": "prf-001",
+  "challenge_digest": "5092d1e58a43894cf4c4b33a37eb0e13b9f5adf6313205fd660e1738d44ba9a0",
+  "protected_relation_profile_digest": "0d26b428a55e7916775daaaf2b3445f2bf2d1dc34f9c8712fd7f08e3d4d91255",
+  "evaluator": {
+    "id": "openai-codex-cli",
+    "version": "0.153.2",
+    "config_digest": "fb3f2a64f65104c14ff16a376675ca08dda601a9264a5cef41e9d2a90b1a34a3"
+  },
+  "evaluator_output_digest": "278c45a06f1d2773580e36c53fe2f44e89b374b458c4a419fec95381163175d5",
+  "invocation_digest": "4555a76d61481b867531b5441d0c96656c7510356621ca56e132c1901d6dc3c5",
+  "outcome": "VIOLATED",
+  "reason_code": "EVALUATOR_JUDGMENT",
+  "reason_detail": "Under anchored exact neighborhood identity for A, with relation type and direction ignored and multiplicity set-collapsed, A's neighborhood changed from {B, C, D, E, F, G} to {B, C, D, H, I, J}; therefore the neighborhoods are not exactly equal.",
+  "evidence": []
+}

@@ -1,0 +1,1 @@
+{"outcome":"VIOLATED","reason_detail":"Under the typed-exact policy, the protected directed relation must retain its exact type. Although the anchored source A and target B are unchanged, the relation changed from \"owns\" to \"depends_on\"."}

@@ -1,0 +1,60 @@
+{
+  "schema": "prf-codex-gpt56-child-observation.v0",
+  "challenge_id": "prf-005",
+  "run_index": 8,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "codex_cli_version": "0.153.2",
+  "codex_executable": "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+  "isolated_cwd": "D:\\prf-experiments\\codex-gpt56-sol-repeated-v0\\isolated\\prf-005\\run-08",
+  "prf_repository_outside_child_workspace": true,
+  "session_mode": "EPHEMERAL_FRESH_PROCESS",
+  "semantic_retry_count": 0,
+  "invocation": {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "exec",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--ignore-rules",
+      "--model",
+      "gpt-5.6-sol",
+      "-c",
+      "model_reasoning_effort=\"high\"",
+      "--output-schema",
+      "evaluator-output-schema.json",
+      "--json",
+      "-o",
+      "raw-final-response.bin",
+      "-"
+    ],
+    "stdin": "prompt.txt",
+    "environment_allowlisted_metadata": {
+      "CODEX_HOME": "isolated runtime home; authentication bytes excluded",
+      "NO_COLOR": "1",
+      "TERM": "dumb"
+    },
+    "timeout_seconds": 300
+  },
+  "started_at": "2026-09-04T13:27:04.347840Z",
+  "ended_at": "2026-09-04T13:27:12.387450Z",
+  "timestamps_authoritative": false,
+  "exit_code": 0,
+  "adapter_status": "RESPONSE_VALID",
+  "adapter_failure_detail": null,
+  "semantic_payload": {
+    "outcome": "VIOLATED",
+    "reason_detail": "The ordered composition T2(T1(S0)) changes the protected authorization_scope from \"agent-A-only\" to \"agent-A-and-B\", so the declared protected predicate is not preserved, regardless of each transform being locally admissible."
+  },
+  "bindings": {
+    "request_sha256": "75b72735e1c865bf5adc5b6fec67c466394c4a49e8b51d48e8e972a7e9aef0e2",
+    "instruction_sha256": "59f3c12ea367276fed6d490dc2adafa110b7d5dc5f27d6d7aa9ecbdb66a04090",
+    "prompt_sha256": "01872fd5f1dda309793aa58768f441afe79d5018c6cd596456ad52068812722c",
+    "evaluator_output_schema_sha256": "4078d63ab0070eb39831e91c22257a51bc13265509fef10dc37351a79254b240",
+    "raw_stdout_sha256": "59bfc6cd783b8a1557644b8052e8987c22e943343c5375096f3272ed68e7bb87",
+    "raw_stderr_sha256": "211f95f1a4d3701b62ad6c7c06ce5b1a371043861661be160e9916629200d4ab",
+    "raw_final_response_sha256": "e7f13ab1b069cf3719a86e09a947f1c018daef62a8080a55c11c87a55dd73fbd",
+    "semantic_payload_sha256": "e7f13ab1b069cf3719a86e09a947f1c018daef62a8080a55c11c87a55dd73fbd"
+  }
+}
