@@ -1,0 +1,283 @@
+{
+  "profile_id": "award-actual-settlement-v0",
+  "evidence_class": "SYNTHETIC_CONDITIONAL_MODEL",
+  "bounds": {
+    "max_bidders": 2,
+    "max_amount": 1000,
+    "units": 1,
+    "accepted_completions": 1
+  },
+  "assumptions": [
+    "same accepted successful performance at true cost",
+    "loser incurs no work cost",
+    "reveal bond refunded",
+    "equal normalized transaction costs"
+  ],
+  "incentive_experiment": {
+    "cost": 60,
+    "reserve": 100,
+    "fixed_reward": 100,
+    "truthful_bid": 60,
+    "deviation_bid": 49,
+    "other_bid": 50
+  },
+  "cases": [
+    {
+      "id": "price_preserving",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "PRESERVED",
+      "settlement_policy": "award_price"
+    },
+    {
+      "id": "fixed_reward_equal_price",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "PRESERVED",
+      "settlement_policy": "fixed_reward",
+      "fixed_reward": 50
+    },
+    {
+      "id": "fixed_reward_substitution",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 100,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "VIOLATED",
+      "settlement_policy": "fixed_reward",
+      "fixed_reward": 100
+    },
+    {
+      "id": "wrong_winner",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "B",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "wrong_task",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task8",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "wrong_tender",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender2",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "unaccepted_work",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": false
+        }
+      ],
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "premature_award",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": false
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "repeated_settlement",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        },
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "missing_payment",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "UNVERIFIABLE"
+    },
+    {
+      "id": "missing_award",
+      "award": null,
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": 50,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "UNVERIFIABLE"
+    },
+    {
+      "id": "absent_settlement",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [],
+      "expected_outcome": "UNVERIFIABLE"
+    },
+    {
+      "id": "malformed_amount",
+      "award": {
+        "target_ref": "synthetic:chain1:task7",
+        "tender_id": "synthetic:tender1",
+        "winner": "A",
+        "price": 50,
+        "finalized": true
+      },
+      "settlements": [
+        {
+          "target_ref": "synthetic:chain1:task7",
+          "tender_id": "synthetic:tender1",
+          "fulfiller": "A",
+          "amount": true,
+          "accepted": true
+        }
+      ],
+      "expected_outcome": "UNVERIFIABLE"
+    }
+  ]
+}
