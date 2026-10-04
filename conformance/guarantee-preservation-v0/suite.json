@@ -1,0 +1,104 @@
+{
+  "schema_version": "guarantee-preservation-v0",
+  "cases": [
+    {
+      "id": "prf-price_preserving",
+      "adapter_ref": "prf-award-actual-settlement-adapter-v0",
+      "input_ref": "prf:price_preserving",
+      "native_ref": null,
+      "policy_id": "policy-prf-price_preserving",
+      "evidence_class": "SYNTHETIC_CONDITIONAL_MODEL",
+      "expected_outcome": "PRESERVED"
+    },
+    {
+      "id": "prf-fixed_reward_substitution",
+      "adapter_ref": "prf-award-actual-settlement-adapter-v0",
+      "input_ref": "prf:fixed_reward_substitution",
+      "native_ref": null,
+      "policy_id": "policy-prf-fixed_reward_substitution",
+      "evidence_class": "SYNTHETIC_CONDITIONAL_MODEL",
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "prf-missing_payment",
+      "adapter_ref": "prf-award-actual-settlement-adapter-v0",
+      "input_ref": "prf:missing_payment",
+      "native_ref": null,
+      "policy_id": "policy-prf-missing_payment",
+      "evidence_class": "SYNTHETIC_CONDITIONAL_MODEL",
+      "expected_outcome": "UNVERIFIABLE"
+    },
+    {
+      "id": "prf-wrong_task",
+      "adapter_ref": "prf-award-actual-settlement-adapter-v0",
+      "input_ref": "prf:wrong_task",
+      "native_ref": null,
+      "policy_id": "policy-prf-wrong_task",
+      "evidence_class": "SYNTHETIC_CONDITIONAL_MODEL",
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "prf-repeated_settlement",
+      "adapter_ref": "prf-award-actual-settlement-adapter-v0",
+      "input_ref": "prf:repeated_settlement",
+      "native_ref": null,
+      "policy_id": "policy-prf-repeated_settlement",
+      "evidence_class": "SYNTHETIC_CONDITIONAL_MODEL",
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "kit-c2",
+      "adapter_ref": "kit59-authentication-grade-adapter-v0",
+      "input_ref": "kit:c2",
+      "native_ref": "baseline",
+      "policy_id": "policy-kit-c2",
+      "evidence_class": "PINNED_SOURCE_EXPECTATION",
+      "expected_outcome": "PRESERVED"
+    },
+    {
+      "id": "kit-c4",
+      "adapter_ref": "kit59-authentication-grade-adapter-v0",
+      "input_ref": "kit:c4",
+      "native_ref": "baseline",
+      "policy_id": "policy-kit-c4",
+      "evidence_class": "PINNED_SOURCE_EXPECTATION",
+      "expected_outcome": "PRESERVED"
+    },
+    {
+      "id": "kit-c4b",
+      "adapter_ref": "kit59-authentication-grade-adapter-v0",
+      "input_ref": "kit:c4b",
+      "native_ref": "baseline",
+      "policy_id": "policy-kit-c4b",
+      "evidence_class": "PINNED_SOURCE_EXPECTATION",
+      "expected_outcome": "PRESERVED"
+    },
+    {
+      "id": "kit-c6",
+      "adapter_ref": "kit59-authentication-grade-adapter-v0",
+      "input_ref": "kit:c6",
+      "native_ref": "baseline",
+      "policy_id": "policy-kit-c6",
+      "evidence_class": "PINNED_SOURCE_EXPECTATION",
+      "expected_outcome": "UNVERIFIABLE"
+    },
+    {
+      "id": "kit-M8-replay-signature-guard-removed",
+      "adapter_ref": "kit59-authentication-grade-adapter-v0",
+      "input_ref": "kit:c6",
+      "native_ref": "M8-replay-signature-guard-removed",
+      "policy_id": "policy-kit-M8-replay-signature-guard-removed",
+      "evidence_class": "SYNTHETIC_NATIVE_MUTATION",
+      "expected_outcome": "VIOLATED"
+    },
+    {
+      "id": "kit-M9-grade-signature-guard-removed",
+      "adapter_ref": "kit59-authentication-grade-adapter-v0",
+      "input_ref": "kit:c6",
+      "native_ref": "M9-grade-signature-guard-removed",
+      "policy_id": "policy-kit-M9-grade-signature-guard-removed",
+      "evidence_class": "SYNTHETIC_NATIVE_MUTATION",
+      "expected_outcome": "VIOLATED"
+    }
+  ]
+}

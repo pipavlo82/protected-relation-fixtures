@@ -1,0 +1,758 @@
+{
+  "trust_boundary": "explicit caller-selected local experimental configuration; does not prove acceptance authority",
+  "policies": {
+    "policy-prf-price_preserving": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-prf-price_preserving",
+      "basis_id": "basis-prf-price_preserving",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:8835e37404ca19515a0bcb239753324aaa13272212061a990a658868b6059257",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "accepted_basis_digest": "sha256:5153410ffa308c4ead978a8b2f16a5462f2eeabf0d2cfc6b92c5605be7970791",
+      "allowed_adapters": [
+        "prf-award-actual-settlement-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_CONDITIONAL_MODEL"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-prf-fixed_reward_substitution": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-prf-fixed_reward_substitution",
+      "basis_id": "basis-prf-fixed_reward_substitution",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:b9afc0bdc95212955d2d12d7fd602134f4e5cc6a583b57b0e2912ef1c997fe51",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "accepted_basis_digest": "sha256:ad055e25b45772ba8677202be992ee515cc656e11f1d7c7e34241f4572c5df84",
+      "allowed_adapters": [
+        "prf-award-actual-settlement-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_CONDITIONAL_MODEL"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-prf-missing_payment": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-prf-missing_payment",
+      "basis_id": "basis-prf-missing_payment",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:4ac1fec7d2d7f80a40bb91cae91ed05b05999257253ed993b1b78120e1a30bc0",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "accepted_basis_digest": "sha256:d575b7617f70782ecd47509e8efa3da585057ce14b7efb6c790b1a8fac5159c5",
+      "allowed_adapters": [
+        "prf-award-actual-settlement-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_CONDITIONAL_MODEL"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-prf-wrong_task": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-prf-wrong_task",
+      "basis_id": "basis-prf-wrong_task",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:5580199026f3eebd69993fe9ab2c4babadba2e313933202026aca7cee4e4219a",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "accepted_basis_digest": "sha256:c97ad439a2770eaffebf960b533007022846fa756152ad4a829bd6e1ecb17a0b",
+      "allowed_adapters": [
+        "prf-award-actual-settlement-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_CONDITIONAL_MODEL"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-prf-repeated_settlement": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-prf-repeated_settlement",
+      "basis_id": "basis-prf-repeated_settlement",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:8c24e213fb88aa94e1f9f15f17eb6777c20c185d8acbf26041c21886facd4198",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "accepted_basis_digest": "sha256:b70eb2f3a423e0f5bba2354f61304b1e4927799bbeb2193831ff678cf8f57fe5",
+      "allowed_adapters": [
+        "prf-award-actual-settlement-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_CONDITIONAL_MODEL"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-kit-c2": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-kit-c2",
+      "basis_id": "basis-kit-c2",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:b078f4b490f6893c6a55e6ac996bc815cb9bd3cc5fb8ab09b3312c3dd81ee051",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "accepted_basis_digest": "sha256:175a3059abf1399d2cd8a1c2a4bcba46ad0953240ccb16d73b38760563cba6dd",
+      "allowed_adapters": [
+        "kit59-authentication-grade-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "PINNED_SOURCE_EXPECTATION",
+        "EXTERNAL_NATIVE_OUTPUT_COMPARISON"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-kit-c4": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-kit-c4",
+      "basis_id": "basis-kit-c4",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:3054c48c6d390a8702f69f337802db4ec762879a3dd54c44bf8876e8c61a0c6b",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "accepted_basis_digest": "sha256:8343acc67a076fb8d3e0b4f82678647844786ced817500800afbd43e7690bcdd",
+      "allowed_adapters": [
+        "kit59-authentication-grade-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "PINNED_SOURCE_EXPECTATION",
+        "EXTERNAL_NATIVE_OUTPUT_COMPARISON"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-kit-c4b": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-kit-c4b",
+      "basis_id": "basis-kit-c4b",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:781f037f68dc364c950d1573787b04faf4679966f8d6d6b015397cbd245ee09b",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "accepted_basis_digest": "sha256:99b4a6c89023a24e1b4e9b97d6491a5b62d34806416dc5b6cb783cb70cc1374d",
+      "allowed_adapters": [
+        "kit59-authentication-grade-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "PINNED_SOURCE_EXPECTATION",
+        "EXTERNAL_NATIVE_OUTPUT_COMPARISON"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-kit-c6": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-kit-c6",
+      "basis_id": "basis-kit-c6",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:d7fc84fff19127107055bd4e5a581a9234d918f0b8b7b47f150c67e75c663f8a",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "accepted_basis_digest": "sha256:4d11704017604b80ddc9652595f540213bb986bc4591c9a562e2f3c3479fda66",
+      "allowed_adapters": [
+        "kit59-authentication-grade-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "PINNED_SOURCE_EXPECTATION",
+        "EXTERNAL_NATIVE_OUTPUT_COMPARISON"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-kit-M8-replay-signature-guard-removed": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-kit-M8-replay-signature-guard-removed",
+      "basis_id": "basis-kit-M8-replay-signature-guard-removed",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:3d7e8e7e9c794c2b68302bd695b6f52c061faa5584cd858b4c9fb8a821df77d6",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "accepted_basis_digest": "sha256:c66f9908837bc3e29e25620e73c4719e872740b065f43baf816dcd08994acfa5",
+      "allowed_adapters": [
+        "kit59-authentication-grade-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_NATIVE_MUTATION"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    },
+    "policy-kit-M9-grade-signature-guard-removed": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "policy-kit-M9-grade-signature-guard-removed",
+      "basis_id": "basis-kit-M9-grade-signature-guard-removed",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:6820aa5fc102e89da28db02aabba113a2a8362320afe577491c205bddd7ead14",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "accepted_basis_digest": "sha256:7f489d4b2d058a8b01113ca743513a7936457dd2139a3c34d578c822572fb7cc",
+      "allowed_adapters": [
+        "kit59-authentication-grade-adapter-v0"
+      ],
+      "allowed_evidence_classes": [
+        "SYNTHETIC_NATIVE_MUTATION"
+      ],
+      "conflict_rule": "withhold",
+      "aggregation_rule": "all-required-relations-v0"
+    }
+  },
+  "accepted_bases": {
+    "basis-prf-price_preserving": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-prf-price_preserving",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:8835e37404ca19515a0bcb239753324aaa13272212061a990a658868b6059257",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": []
+        },
+        "award_settlement_relation": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-prf-fixed_reward_substitution": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-prf-fixed_reward_substitution",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:b9afc0bdc95212955d2d12d7fd602134f4e5cc6a583b57b0e2912ef1c997fe51",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": []
+        },
+        "award_settlement_relation": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-prf-missing_payment": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-prf-missing_payment",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:4ac1fec7d2d7f80a40bb91cae91ed05b05999257253ed993b1b78120e1a30bc0",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": []
+        },
+        "award_settlement_relation": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-prf-wrong_task": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-prf-wrong_task",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:5580199026f3eebd69993fe9ab2c4babadba2e313933202026aca7cee4e4219a",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": []
+        },
+        "award_settlement_relation": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-prf-repeated_settlement": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-prf-repeated_settlement",
+      "context": {
+        "guarantee_id": "supplied-award-actual-settlement-tuple-preserved",
+        "subject": "sha256:8c24e213fb88aa94e1f9f15f17eb6777c20c185d8acbf26041c21886facd4198",
+        "scope": "one supplied synthetic award and observed settlement list",
+        "assumptions": [
+          "same accepted successful performance at true cost",
+          "loser incurs no work cost",
+          "reveal bond refunded",
+          "equal normalized transaction costs",
+          "no authenticated chain or award-authority evidence"
+        ],
+        "authority": {
+          "id": "caller-supplied-synthetic-tuples",
+          "semantics": "tuple comparison only; opaque refs confer no authority"
+        },
+        "version": "award-actual-settlement-v0@fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": []
+        },
+        "award_settlement_relation": {
+          "evaluator_ref": "prf-supplied-tuple-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-kit-c2": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-kit-c2",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:b078f4b490f6893c6a55e6ac996bc815cb9bd3cc5fb8ab09b3312c3dd81ee051",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": []
+        },
+        "authentication_grade_transfer": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-kit-c4": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-kit-c4",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:3054c48c6d390a8702f69f337802db4ec762879a3dd54c44bf8876e8c61a0c6b",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": []
+        },
+        "authentication_grade_transfer": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-kit-c4b": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-kit-c4b",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:781f037f68dc364c950d1573787b04faf4679966f8d6d6b015397cbd245ee09b",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": []
+        },
+        "authentication_grade_transfer": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-kit-c6": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-kit-c6",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:d7fc84fff19127107055bd4e5a581a9234d918f0b8b7b47f150c67e75c663f8a",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": []
+        },
+        "authentication_grade_transfer": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-kit-M8-replay-signature-guard-removed": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-kit-M8-replay-signature-guard-removed",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:3d7e8e7e9c794c2b68302bd695b6f52c061faa5584cd858b4c9fb8a821df77d6",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": []
+        },
+        "authentication_grade_transfer": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    },
+    "basis-kit-M9-grade-signature-guard-removed": {
+      "schema_version": "guarantee-preservation-v0",
+      "id": "basis-kit-M9-grade-signature-guard-removed",
+      "context": {
+        "guarantee_id": "pinned-scan-authentication-to-grade-transfer-preserved",
+        "subject": "sha256:6820aa5fc102e89da28db02aabba113a2a8362320afe577491c205bddd7ead14",
+        "scope": "one pinned k=1 scan fixture; report/replay grading gates only",
+        "assumptions": [
+          "reviewed pinned fixture/source expectation contract",
+          "fixed public test key; no origin or operational authority",
+          "k=1; recordwise corpus-to-subset requires all inclusion proofs",
+          "native reproduced flag is expectation conformance only"
+        ],
+        "authority": {
+          "id": "recompute-kit-public-test-key@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+          "semantics": "source-expectation model; no live key authority/freshness"
+        },
+        "version": "scan_subject_binding.v0@a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87"
+      },
+      "acceptance": {
+        "status": "ACCEPTED_BOUNDED",
+        "acceptance_ref": "local-experiment-policy-review-v0"
+      },
+      "rule": "all-required-relations-v0",
+      "mandatory": {
+        "supplied_input_binding": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": []
+        },
+        "authentication_grade_transfer": {
+          "evaluator_ref": "kit59-pinned-contract-evaluator-v0",
+          "requires": [
+            "supplied_input_binding"
+          ]
+        }
+      }
+    }
+  }
+}

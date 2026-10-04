@@ -1,0 +1,27 @@
+{
+  "verified_base": "fac26d2e8346aeab08194343b78c345d235c6935",
+  "kit": {
+    "repository": "trustless-ai/recompute-kit",
+    "commit": "a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+    "source_hashes": {
+      "scan_check.py": "b6d3889f165f72b255bcf0d5698567056ee69606dd007d0378f30194c74ba23f",
+      "mutation_check.py": "b39f9b1e3f03d8110f7e1323ef364f2e59167b8e12a1a8a15a801258a5b0b7a9",
+      "vectors.json": "f9a1b3e547a55caf498f14ced1e239171f843fb9c81aa6e279fd6fd3f7446e89",
+      "suite.json": "12b8528dc56a79539305bde5a143666fa1d65afe8adb6c149432aa337371c135"
+    },
+    "comment": "https://github.com/trustless-ai/recompute-kit/pull/59#issuecomment-5981125433",
+    "execution": "NOT_RUN; serialized results derived from pinned source and expectations",
+    "fixture_license": "CC0-1.0; UPSTREAM-DATA-LICENSE.txt"
+  },
+  "prf": {
+    "profile": "award-actual-settlement-v0",
+    "execution": "own-repository relation recomputed; synthetic supplied tuple only"
+  },
+  "nonclaims": [
+    "upstream_runtime_capture",
+    "deployed_exploit",
+    "independent_consumer_interoperability",
+    "ERC_necessity",
+    "accepted_standard"
+  ]
+}

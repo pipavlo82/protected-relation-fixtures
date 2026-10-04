@@ -1,0 +1,21 @@
+{
+  "schema_version": "guarantee-preservation-v0",
+  "role": "identity pins only; no completeness or soundness proof",
+  "files": {
+    "conformance/award-actual-settlement-v0/suite.json": "ef3507f00b22b2ca091e8268fd55d6e95e3f5744ac213bcba3b2b89e1f8a14c1",
+    "conformance/guarantee-preservation-v0/consumer-inputs.json": "2e5fab971539800f5d744adc982d48f780962e38741b298e47c06e10486c7a0c",
+    "conformance/guarantee-preservation-v0/contract.schema.json": "44229b0a8322b4fe2f2c2946e0fa705e64c9bee4565693276e7db53155c5ae31",
+    "conformance/guarantee-preservation-v0/kit59-fixtures.json": "7bc6a71bfe70cb16957c7b997d9bbdd6e77c376b11f80325e2472e9d66290091",
+    "conformance/guarantee-preservation-v0/README.md": "e84a3296f6b0fa4c64de0f279bc849588d95cd976ec371acec142d5df1e64c41",
+    "conformance/guarantee-preservation-v0/sources.json": "b7bf31c3fcd5718d45778bb34918ae747b7285556b181098af7b0c6e310c8b8d",
+    "conformance/guarantee-preservation-v0/suite.json": "d19b571f43b0cad9afca78ef704c878e370ae96f2becb5f20bed367a12aa51e2",
+    "conformance/guarantee-preservation-v0/UPSTREAM-DATA-LICENSE.txt": "405d0af6743b62b00a440d519b85fd9c3f159ff85b3bcfcd8c683e6372b4a7aa",
+    "tests/test_guarantee_preservation.py": "8676645983076e514b4abbc6c5658f54778448b2439b9e2b5570014679e3f5f6",
+    "tests/test_guarantee_preservation_mutations.py": "341f445a2d4db70a2454faa1585ddd3fb519c329763ff18e3f76d7ff29dea6b7",
+    "tools/award_actual_settlement.py": "5780733a43b023b52d8c035277ca2b926f5ab1ae40edcc74e61880b43d665cd1",
+    "tools/guarantee_preservation.py": "4cd064ae8af814c19d0948d86eed625e30d3190b91d73725c083071f86cc0b5d",
+    "tools/guarantee_preservation_adapters.py": "85a9ff9a23702622b202b50f4752728bcb6faf436255f797284367ebcd49d6d1",
+    "tools/guarantee_preservation_mutations.py": "a8e030baaff271ad307a23894ee7a7fba7ba08855b515c401248cce0b5b20911",
+    "tools/validate_guarantee_preservation.py": "8a2f39399d156997d49ddf0658d06cbe26eb0dfdf83cdf44022626f947c20771"
+  }
+}
