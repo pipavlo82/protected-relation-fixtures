@@ -1,0 +1,3 @@
+# Payload bytes are hash-bound, including intentional CRLF and binary.
+# Preserve them without clean or checkout EOL conversion.
+payload/** -text -eol
